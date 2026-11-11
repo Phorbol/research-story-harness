@@ -33,7 +33,7 @@ Each command rebuilds only the named figure, producing PDF, editable SVG, 600 dp
 - **Fig1:** edit `scripts/fig1.py` and the shared `style-profile.json`. All 60 directional marks have equal size; CRO remains the fourth testing-drug column. The four numerical CRO values are a separate aligned readout with their own adjacent unit.
 - **Evidence:** edit `scripts/evidence.py` and the shared `style-profile.json`. The matrix, points, axes, counts and retained text are vectors. `scripts/common.py` supplies source-backed helpers; data remain in `data/`.
 
-The normal [figure captions](captions.md) define the sampling unit, threshold zero and inference boundaries. The two illustrated drug pairs are observations, not estimates of future evolutionary success or treatment advice. The original source workbook and its full mapping are included, while the full article PDF, private workspace files, conversation records and historical reviews are excluded.
+The normal [figure captions](captions.md) define the sampling unit, threshold zero and inference boundaries. The two illustrated drug pairs are observations, not estimates of future evolutionary success or treatment advice. The source workbook and its mapping are included. Use the paper link below for the original article and the captions for definitions and interpretation limits.
 
 ## Source and license attribution
 

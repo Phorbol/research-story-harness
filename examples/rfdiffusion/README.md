@@ -1,6 +1,6 @@
 # RFdiffusion · 完整中文文献汇报
 
-20页，16:9；18页主讲加2页备份。基于 Watson, Juergens, Bennett et al. 的公开论文 *De novo design of protein structure and function with RFdiffusion*, Nature 620 (2023), DOI [10.1038/s41586-023-06415-8](https://doi.org/10.1038/s41586-023-06415-8)。这是一套已有最终汇报的公开整理，不是为了展示重新编造的研究结果。
+20页，16:9；18页主讲加2页备份。基于 Watson, Juergens, Bennett et al. 的公开论文 *De novo design of protein structure and function with RFdiffusion*, Nature 620 (2023), DOI [10.1038/s41586-023-06415-8](https://doi.org/10.1038/s41586-023-06415-8)。提供完整讲述、可编辑页面源与来源定位，可按听众背景调整。
 
 ## 查看与编辑
 
@@ -30,6 +30,6 @@ python skills/ansatz-slide/scripts/ansatz_slide.py export examples/rfdiffusion/p
 
 ## 许可与公开范围
 
-论文图像和选取的数据按原文 **CC BY 4.0** 保留归属、许可链接及改编说明：[权限原文](source/article-permissions.txt) · [来源链接](source/README.md) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。处理包括原图裁切、重新组版、中文讲解和带明确口径的数据汇总；不暗示原作者认可本汇报。新增讲稿、页面组织和代码没有被本文件重新授予统一开源许可。
+论文图像和选取的数据按原文 **CC BY 4.0** 保留归属、许可链接及改编说明：[权限原文](source/article-permissions.txt) · [来源链接](source/README.md) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。处理包括原图裁切、重新组版、中文讲解和带明确口径的数据汇总；不暗示原作者认可本汇报。本项目原创讲稿、页面组织与代码采用根目录的 [Apache-2.0](../../LICENSE)；论文图像和数据仍按 CC BY 4.0 使用。
 
-不包含完整原论文/SI PDF、历史冻结工具、生产日志、审阅聊天、私人论文或本机路径。PPTX包含20页与20页正常讲者备注；98个XML/关系文件（含docProps、customXml）、页面源、讲稿、来源映射及PDF文本/元数据经过针对性个人路径和内部项目名扫描，未命中。扫描不证明所有未知敏感信息都不存在；本包内容来源限定为上述公开论文。
+PPTX 包含 20 页及对应讲者备注。阅读原论文与补充材料请使用[来源链接](source/README.md)；示例包含重建汇报所需的页面源与选取素材。

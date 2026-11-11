@@ -17,4 +17,4 @@ Pei-Lin Kang, Yun-Fei Shi, Cheng Shang, Zhi-Pan Liu. *Artificial intelligence pa
 
 代码改自同目录 `energy_panel.py` 和 `build_composite.py` 的B面板/四TS部分。仅改为包内路径、CSV驱动数值及TS数字标签、移除网络并裁出原B物理区域，面板字母改A。结构PNG与像素映射复制自本项目 `production/structure-assets/refined-four-ts/final`，保持原制作的视角和裁切，未重新渲染或优化坐标。
 
-本地改编代码未附独立许可，此包不擅自新添开源授权，也不把这些代码称为论文作者代码。`source/historical-structure-notes.md` 为原制作说明，其中其他未随包提供的资产仅作历史背景，不是运行依赖。
+本项目独立编写的绘图代码采用 Apache-2.0，不是论文作者代码；论文来源数据、坐标和图像继续保留 CC BY-NC 3.0。`source/historical-structure-notes.md` 为原制作说明，其中其他未随包提供的资产仅作历史背景，不是运行依赖。

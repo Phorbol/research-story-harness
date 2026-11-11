@@ -15,7 +15,7 @@
 
 ## 核心字段
 
-导入论文附件、网络档案或绘图代码的数据时，先用其数据字典确认字段的科学含义，不能由列名或视觉样式推断。例如本轮公开反应网络的 `final_conc` 实为有效自由能，`final_conc_percent` 才是比例，边宽还做了截断；另一来源工作簿的 SEM 与正文 CI 标签冲突。将原字段、解释来源、转换与冲突保留在现有 dataset/source 记录中，显示字段不自动当物理量。来源已更正时逐系列处理，不凭旧代码键批量改标签。
+导入论文附件、网络档案或绘图代码的数据时，先用其数据字典确认字段的科学含义，不能由列名或视觉样式推断。例如反应网络数据中， `final_conc` 实为有效自由能，`final_conc_percent` 才是比例，边宽还做了截断；另一来源工作簿的 SEM 与正文 CI 标签冲突。将原字段、解释来源、转换与冲突保留在现有 dataset/source 记录中，显示字段不自动当物理量。来源已更正时逐系列处理，不凭旧代码键批量改标签。
 
 - 根：`schema_version: 1`，`revision: 0`，`project: {title, question, synthetic}`，七个集合，`protected: []`，`reviews: []`，`history: []`；可填 `journal_profile: "journal-profile.json"`。
 - source：`id, kind (file|literature|synthetic), path`；文献可改用 `citation, locator`。`verified` 是来源内容核验的记录，不等于文件存在；合成源必须配 `project.synthetic: true`。
@@ -101,7 +101,7 @@ render 另外保存 generator/*.py、实际输入文件摘要、每图 scene/dat
 
 文本审计保留科学对象原有 gid、语义颜色，并检查非 MathText 字符在解析字体中的覆盖。MathText 字体设置单独指定；其完整语义/字体组合仍需查看真实导出。关闭 Matplotlib 图片合并以保留多个独立 raster 对象 ID。每张 schematic 的 layout.json 报告实际文本边界相交；零相交不等于零遮挡，更不证明图件美观。
 
-`cases/visual-reproductions` 的 `fidelity-research.json` 与 `fidelity/` 是本次原图驱动对照；早期探索稿不计作标准复现。原四块 toc 后端保留为 MatterGen 特定组版，不能当通用 TOC 限制。来源、正文/图注、定量计算与视觉对照分别报告，未知仍保持未知。
+原图驱动对照应在项目中同时保存参考图、重绘规格与实际导出；早期探索稿不计作标准复现。原四块 toc 后端保留为 MatterGen 特定组版，不能当通用 TOC 限制。来源、正文/图注、定量计算与视觉对照分别报告，未知仍保持未知。
 
 
 ### 可选的呈现参数
@@ -125,7 +125,7 @@ def render_figure(spec, project, root, fig, ax, bind, load_data):
     ...
 ```
 
-程序可执行本机 Python，**没有运行沙箱**；不要直接执行下载论文的未知代码。只读入已核实数据，渲染逻辑按项目科学问题编写和审阅。数据转换、统计口径、物理限定、绘图对象绑定及图注需分别核对。recipe_semantics 始终保留人工审阅需求，自动导出/字体检查不认证科学结论。两个实际例子在 `cases/story-discovery/scripts/force_heatmap.py` 和 `spin_identity.py`。
+程序可执行本机 Python，**没有运行沙箱**；不要直接执行下载论文的未知代码。只读入已核实数据，渲染逻辑按项目科学问题编写和审阅。数据转换、统计口径、物理限定、绘图对象绑定及图注需分别核对。recipe_semantics 始终保留人工审阅需求，自动导出/字体检查不认证科学结论。可运行的复杂定量图见 `assets/real-data-examples/condition-map` 和 `assets/real-data-examples/reaction-energy`，从各自的 run.py 启动。
 
 `recipe` 未配置 `visual.title` 时，由 recipe 自行安排标题；宿主不再用内部 figure ID 补写或覆盖标题。显式配置 `visual.title` 仍设置主 axes 的左标题。合成项目始终保留 `SYNTHETIC DEMO` 标记：无显式标题时在主 axes 现有左标题前加标记，若左标题为空则只显示标记。其他后端的默认标题行为不变。
 

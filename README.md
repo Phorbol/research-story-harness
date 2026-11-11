@@ -8,19 +8,22 @@
 
 11 个协作 skills · 可运行绘图后端 · 真实数据范例 · 可追溯来源 · 实际尺寸审阅
 
-[看成图](#成图展厅) · [理解设计](#设计理念) · [开始使用](#开始使用) · [完整设计文档](design/HARNESS-DESIGN.md) · [许可与归属](THIRD_PARTY_NOTICES.md)
+[![License: Apache-2.0](https://img.shields.io/badge/Code%20%26%20docs-Apache--2.0-blue)](LICENSE)
+[第三方代码与素材许可](THIRD_PARTY_NOTICES.md)
+
+[看成图](#成图展厅) · [理解设计](#设计理念) · [开始使用](#开始使用) · [完整设计文档](design/HARNESS-DESIGN.md) · [Agent / Harness 方法论长文](design/AGENT-HARNESS-METHODOLOGY.zh-CN.md) · [许可与归属](THIRD_PARTY_NOTICES.md)
 
 </div>
 
 ![Research Story Harness — graphical abstracts, real-data figures, OVITO structures and complete research talks](docs/images/showcase-cover.png)
 
-科研绘图的起点往往不是“画一张什么图”，而是一个尚未讲清的研究判断。这个项目把材料、作者意图、主张、证据和科学对象连接起来，再为 TOC、论文图、正文与汇报分别组织表达。它同时提供 agent 的工作方法与本地执行工具，不能脱离理解材料和实际看图，自动认证科学正确性或发表质量。
+科研绘图的起点往往不是“画一张什么图”，而是一个尚未讲清的研究判断。这个项目把材料、作者意图、主张、证据和科学对象连接起来，再为 TOC、论文图、正文与汇报分别组织表达。你可以从一篇论文、一个数据集或一段零散想法开始，借助 agent 梳理论证，再用本地工具制作和修改成品。
 
-**当前公开的是完整的通用工具链。** 包括 11 个 skills、源码、模板、安装器、设计文档和可再分发实例；个人文稿、聊天记录、未获再分发许可的输入及本机环境不在仓库中。公开可见不等于所有文件统一采用 MIT；第三方资产保留各自许可，首方代码尚未指定开放源码许可证。
+**代码与文档采用 [Apache-2.0](LICENSE)。** 仓库包含 11 个 skills、绘图与汇报工具、模板和可运行示例。第三方代码、论文图像和数据按[各自许可](THIRD_PARTY_NOTICES.md)使用；其中反应能量示例的论文来源素材限非商业使用。
 
 ## 成图展厅
 
-以下是实际导出，不是设计效果图。页面上的图片会随屏幕缩放；毫米尺寸以链接中的 PDF 为准。示意图与数据图分别说明它们承担的任务，精修后的成品不冒充零反馈首稿。
+下面的示例提供成图、来源、可编辑文件和重建入口。网页预览随屏幕缩放；按刊载尺寸查看请打开对应 PDF。
 
 ### 01 · TOC：一个选择条件，四个独立结果
 
@@ -48,7 +51,7 @@
 
 **目标：178 × 126 mm。** [PDF](examples/collateral-response/figures/Evidence.pdf) · [SVG](examples/collateral-response/figures/Evidence.svg) · [数据与重建](examples/collateral-response/)
 
-**这组三图的验证边界：** 900 个源矩阵值对应 60 个分离株 × 15 个测试药；排除直接选择响应后为 840 个旁系值、210 个有方向药物对。源阈值零不等于“完全没有生物效应”。本轮经过独立制作与多轮评审辅助精修；独立上下文的模型审阅不等于人类领域专家或期刊认可。
+**这组三图的验证边界：** 900 个源矩阵值对应 60 个分离株 × 15 个测试药；排除直接选择响应后为 840 个旁系值、210 个有方向药物对。源阈值零不等于“完全没有生物效应”。完整阈值定义、数据映射和推断范围见[图注](examples/collateral-response/captions.md)。
 
 ### 04 · 条件地图：活性和选择性依赖条件
 
@@ -76,7 +79,7 @@
 
 密排球径、柔和环境遮蔽、低高光材质和统一正交相机，让颗粒轮廓与接触界面同时可辨。两个模型共用坐标和替换位点，仅改变指定位置的元素，避免把视角或粒形差异混入对照。
 
-**这是 ASE 构造的未弛豫理想示意模型，不是论文坐标或实测结构。** 每个模型含 1,413 个原子；构造参数和界面间距是本例示意选择。原记录标明 OVITO 3.16.0 / Tachyon CPU / final，透明成图为 2000 × 1375；本次公开打包未重新进行三维渲染。
+**这是 ASE 构造的未弛豫理想示意模型，不是论文坐标或实测结构。** 每个模型含 1,413 个原子；构造参数和界面间距是本例示意选择。透明成图为 2000 × 1375，采用 OVITO 3.16.0 / Tachyon 渲染。你可以修改坐标、相机和显示配置后重新渲染。
 
 [透明原图、坐标、构造源码、相机和光照配置](examples/supported-nanoparticles/) · [独立 OVITO skill](skills/ovito-structure/SKILL.md)
 
@@ -99,15 +102,15 @@
 
 </details>
 
-来源 Watson et al., *Nature* (2023), [10.1038/s41586-023-06415-8](https://doi.org/10.1038/s41586-023-06415-8)，论文图像与数据保留 **CC BY 4.0** 归属。标题、说明、节点与新增数据图表为 PPT 原生对象；蛋白结构和原文图像仍为位图。该展示是已有多轮自主精修后的完整汇报，不是零返工首稿，也不是重新训练或复算论文模型。
+来源 Watson et al., *Nature* (2023), [10.1038/s41586-023-06415-8](https://doi.org/10.1038/s41586-023-06415-8)，论文图像与数据保留 **CC BY 4.0** 归属。标题、说明、节点与新增数据图表为 PPT 原生对象；蛋白结构和原文图像仍为位图。示例同时提供讲稿、来源定位和重建命令，便于调整受众、讲述顺序与版式。
 
-## 修改前后：为什么清楚、整齐仍不够
+## 设计迭代：让对象承担叙事
 
 <p align="center"><img src="docs/images/toc-before-after.png" width="920" alt="同一故事和数据下，旧符号化TOC与新实验对象TOC的并排对照"></p>
 
-旧稿能够表达符号关系，却没有形成有分量的科学主体。新稿让独立对象、身份和结果共同承担故事。有效动作是重建对象关系；它不意味着“所有 TOC 都应加写实插画”。
+两版使用相同数据。前一版突出符号关系，后一版用四个独立实验对象承载身份与结果，使读者更容易理解比较单位。写实插画只是这项任务的一种选择；其他任务可使用结构、路径或定量编码。
 
-[三图源文件与原生尺寸检查](examples/collateral-response/) 保留可编辑入口。页面对照只是展示；不要从缩放后的网页截图推断出版时的实际可读性。
+[三图源文件与原生尺寸检查](examples/collateral-response/) 保留可编辑入口。请在目标尺寸的 PDF 中检查文字与局部细节。
 
 ## 设计理念
 
@@ -153,13 +156,13 @@ flowchart LR
 | 结构不能凭图猜造 | [OVITO skill](skills/ovito-structure/SKILL.md)，真实坐标与明确授权理想模型分开 |
 | 视觉质量有独立反馈 | [首稿与盲评](skills/research-harness/references/first-draft-and-blind-review.md)，保留失败稿与实质返工 |
 
-这些是本项目的实现重点，不是对所有其他绘图工具的穷尽比较，也不是“自动优于人工设计”的结论。
+这些组件可以分别使用，也可以围绕同一份研究材料组成连续工作流。
 
 ## 能力与边界
 
 支持的后端包括 paired、table、energy、energy_network、methods、series、structure3d、catalyst_surface、toc、schematic、summary 和 recipe。复杂图可用项目自己的可审阅绘图代码；共享约束连接来源和编辑入口，而不要求所有学科套同一布局。
 
-目前更可靠的是可追溯数据、明确科学对象、定向修改及已有图式的精修。**复杂新论文的首稿审美、模糊科学关系的判断和跨领域无辅助迁移仍不稳定。** 目标尺寸、实际反读与独立评审帮助暴露失败，不能保证消除失败。公开示例是经过修订的实例，不是对任意论文的性能承诺。
+适合需要保留数据来源、编辑结构与持续修订的科研表达任务。复杂材料通常需要多轮修改：研究者负责确认主张和证据边界，成品应在实际使用尺寸下审阅。示例展示经过修订的结果，不代表任意输入都能一次达到相同质量。
 
 程序检查关注字段、引用、数值绑定、导出与有限几何；科学判断检查主张是否得到支持；视觉审阅看故事、主次、密度、字体、材质与阅读路径。三者分别记录。
 
@@ -241,8 +244,12 @@ python scripts/research.py render research.json --out build
 - [依赖](DEPENDENCIES.md)：按所需后端安装，避免把本机环境当成可移植保证。
 - [第三方归属](THIRD_PARTY_NOTICES.md)：MIT 上游、CC BY 与 CC BY-NC 数据的不同适用范围。
 
-改进建议最好带上最小可分享材料、希望读者理解什么、目标尺寸、当前成图及具体失效位置。新图式应保留来源与适用条件；不要只追加一条“更美观”的规则，也不要把一次修订成功泛化成跨领域保证。
+欢迎通过 [Issues](https://github.com/Phorbol/research-story-harness/issues) 提交问题与示例。请附可公开分享的最小材料、表达目标、目标尺寸和复现步骤；涉及图件时，附上当前导出与希望改进的位置。
+
+## 许可证
+
+本项目原创代码、skills、模板和文档采用 [Apache License 2.0](LICENSE)。随附的第三方软件及论文来源素材保留原许可，具体路径与再利用条件见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。该授权不覆盖第三方商标或替代科学内容审核。
 
 ---
 
-**English summary.** Research Story Harness connects research intent, evidence, argument and scientific objects to editable figures, manuscripts and presentations. It packages eleven cooperating skills, executable rendering tools, reusable components and source-backed examples. Figure design starts from the reader's task; a talk reorganizes the same evidence for an audience rather than copying paper order. First drafts and substantive revisions are kept distinct. Automated checks do not certify scientific correctness or publication quality. Third-party licenses apply per asset; no blanket first-party open-source license has been assigned.
+**English summary.** Research Story Harness connects research intent, evidence, argument and scientific objects to editable figures, manuscripts and presentations. It packages eleven cooperating skills, executable rendering tools, reusable components and source-backed examples. Figure design starts from the reader's task; a talk reorganizes the same evidence for an audience rather than copying paper order. Use the examples to inspect the output, run the code, and adapt the editable sources to your own materials. Original code and documentation are licensed under Apache-2.0. Third-party code, paper figures and data retain their own licenses; the optional reaction-energy paper assets are CC BY-NC 3.0.

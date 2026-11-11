@@ -17,4 +17,4 @@ Minimum projection map: canonical project paths; shared intent/claim IDs or thei
 
 Read existing research-harness conventions before choosing file names or adding checks. This adapter is intentionally small: it does not install global rules, define a separate science workflow, require subagents, or claim that source freshness proves scientific validity.
 
-For a tested end-to-end example see the separately delivered slide-integration-20261106 study. Its source data are reported literature numbers; no models were trained. Unit tests cover state/revision behavior with mocked renderers; actual three-page rendering is a separate evidence item.
+The public RFdiffusion example includes source pages, speaker notes, rendered slides and a rebuild entry point. Program checks cover state and revision behavior; assess the rendered talk separately for scientific meaning and visual quality.

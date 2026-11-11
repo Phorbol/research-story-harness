@@ -54,4 +54,4 @@ The existing scene records explicitly identify **OVITO Tachyon CPU**, **OVITO 3.
 
 This public packaging pass inspected the existing images, metadata, coordinate identity and construction-code syntax. It did **not** rerun model construction or OVITO rendering, and file presence is not presented as a fresh end-to-end test. The lightweight side-by-side composition was executed and viewed. See [PACKAGE-CHECK.json](PACKAGE-CHECK.json).
 
-Only these constructed models, their existing renders, render settings and minimal source are included. No paper mechanism figure, internal research material or source image of uncertain redistribution status is bundled.
+The example includes coordinates, renders, render settings and reconstruction scripts. For reuse, see the root [license](../../LICENSE) and [attribution](../../THIRD_PARTY_NOTICES.md).

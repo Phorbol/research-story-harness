@@ -1119,7 +1119,7 @@
         "以特征筛选→计算→学习→筛选/验证分叉表达工作流；不同形状的对象承载不同任务。",
         "结构、漏斗、脑形图标、实验装置的材质与字体并不完全统一；可学叙事分叉，不把混合装饰当成期刊规范。"
       ],
-      "application": "用于校准 the target method 的输入、选择、训练、输出对象，而非再简化成四个等大卡片。",
+      "application": "用于区分方法图中的输入、选择、训练与输出对象，并按各阶段的科学职责设计视觉层级。",
       "figure_locator": "Fig. 1",
       "pattern": {
         "title": "The geometric-electronic coupled design of diatomic catalyst towards oxygen reduction reaction.",
@@ -1152,7 +1152,7 @@
             "locator": "Fig. 1"
           },
           "argument_role": {
-            "value": "用于校准 the target method 的输入、选择、训练、输出对象，而非再简化成四个等大卡片。",
+            "value": "用于区分方法图中的输入、选择、训练与输出对象，并按各阶段的科学职责设计视觉层级。",
             "origin": "inferred",
             "locator": "Fig. 1"
           },
@@ -1173,7 +1173,7 @@
           }
         },
         "transfer_conditions": [
-          "用于校准 the target method 的输入、选择、训练、输出对象，而非再简化成四个等大卡片。"
+          "用于区分方法图中的输入、选择、训练与输出对象，并按各阶段的科学职责设计视觉层级。"
         ],
         "do_not_transfer": [
           "Do not infer a universal journal style or scientific validity from these selected visuals."

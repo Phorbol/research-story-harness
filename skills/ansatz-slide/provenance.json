@@ -14,5 +14,5 @@
     "Added LICENSE, provenance.json, and reference/upstream-archive.md"
   ],
   "runtime": "Unmodified Python runtime from the pinned upstream commit; scripts/ansatz_slide.py, scripts/python_runtime.py and scripts/render_equation.py also match upstream.",
-  "distribution_note": "Public standalone bundle; first-party additions have no blanket open-source license grant. See repository THIRD_PARTY_NOTICES.md."
+  "distribution_note": "Public standalone bundle; original first-party additions are licensed under Apache-2.0; upstream code and adapted upstream material retain MIT terms. See repository THIRD_PARTY_NOTICES.md."
 }

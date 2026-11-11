@@ -34,6 +34,6 @@ python /path/to/reaction-energy/run.py --out /tmp/reaction-figure
 
 `config.json` 的 `font_family`、`text_roles_pt`、`text_weights` 是本例文字样式的单一入口。`axis` 对应坐标标题，`tick` 对应刻度，`legend` 对应图例，`annotation`/`small` 对应科学状态注释，`panel` 对应面板字母；能量图另有 `distance`、`footnote`，条件图另有 `colorbar`。字号单位是pt；`scientific_text_semantics` 记录正体/数学斜体/加粗语义。数字、化学物种、单位使用正体，变量仅在数学公式中斜体；加粗服务于面板与指定身份，不表示统计显著性。
 
-两例字体统一为DejaVu Sans；保留各自成熟版式的字号比例，并未把高密度能量图强行套成条件图同字号。本轮条件图轴7.8pt、刻度7.3pt；能量图分开路径与TS条带，状态7pt、轴8pt、图例/脚注7pt。按目标尺寸原生重排，不能整体缩小后沿用结论。调整字号后需要重新目视，程序不会自动解决碰撞。
+两例字体统一为DejaVu Sans；保留各自成熟版式的字号比例，并未把高密度能量图强行套成条件图同字号。条件图轴7.8pt、刻度7.3pt；能量图分开路径与TS条带，状态7pt、轴8pt、图例/脚注7pt。按目标尺寸原生重排，不能整体缩小后沿用结论。调整字号后需要重新目视，程序不会自动解决碰撞。
 
 2026-11-09样式修订：仅面板编号及科学身份承担粗体层级；详见 STYLE-REVISION.md。
