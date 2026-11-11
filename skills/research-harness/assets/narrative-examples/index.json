@@ -1,0 +1,27 @@
+{
+  "scope": "Editable explanatory templates. Project-specific identifiers were generalized; the landscape is synthetic and generated locally, not a published or user research result.",
+  "examples": [
+    {
+      "scene": "surface-cycle.json",
+      "task": "generic surface mechanism plus typed energy cycle",
+      "source": "Nature Communications 2023, Fig1a,b",
+      "requires_measurements": false
+    },
+    {
+      "scene": "structural-zoom.json",
+      "task": "periodic/local spatial explanation and projected clusters",
+      "source": "Nature Communications 2023, Fig2a-c",
+      "requires_measurements": false,
+      "geometry": "2D reconstruction of schematic, not original DFT coordinates"
+    },
+    {
+      "scene": "parallel-training.json",
+      "task": "parallel sampling, selection and typed output capabilities",
+      "source": "Nature Catalysis 2025, Fig1a",
+      "requires_measurements": false,
+      "asset_copy": "Copy qualitative-landscape.png into the project assets/ path declared in the scene; this is a qualitative glyph"
+    }
+  ],
+  "style": "reference-style.json; Arial must exist or be explicitly changed and reviewed",
+  "originals": "Original publisher layouts and private project files are not distributed. Public bibliographic references retained in individual templates identify inspiration, not a license to reproduce papers."
+}

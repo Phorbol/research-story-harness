@@ -1,0 +1,570 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "对称性是另一种强几何约束。作者先为一个亚基生成随机框架，再按指定点群复制，在每个去噪步骤重新对称化。这里选取C3、C6和D4三个例子，按同样顺序展示设计、AF2预测、负染电镜二维分类和三维重建。观众可以横向追踪同一个结构身份，而不需要记忆不同页的形状。实验规模也要看分母：作者选择608个设计，至少87个的尺寸排阻色谱支持预期组装状态，这是按校准的95%置信区间判断；电镜只测了其中的子集。因此这些图支持代表性组装体的正确性，不能表示所有设计都成功组装。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "结构证据 · 设计、预测与电镜相互对照",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "对称性把单链生成扩展到更大的组装体",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 3b,c and p. 1093; SEC sample counts in main text.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "11",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "sample",
+      "elementType": "text",
+      "bounds": [
+        48,
+        150,
+        1184,
+        38
+      ],
+      "content": {
+        "text": "608 个设计中，≥87 个的 SEC 与预期组装一致（95% 校准区间）；电镜验证为子集。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 20,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col-design",
+      "elementType": "text",
+      "bounds": [
+        245,
+        193,
+        165,
+        30
+      ],
+      "content": {
+        "text": "设计",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 20,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col-af2",
+      "elementType": "text",
+      "bounds": [
+        415,
+        193,
+        165,
+        30
+      ],
+      "content": {
+        "text": "AF2",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 20,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col-em",
+      "elementType": "text",
+      "bounds": [
+        585,
+        193,
+        165,
+        30
+      ],
+      "content": {
+        "text": "二维分类",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 20,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col-recon",
+      "elementType": "text",
+      "bounds": [
+        755,
+        193,
+        165,
+        30
+      ],
+      "content": {
+        "text": "三维重建",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 20,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col-overlay",
+      "elementType": "text",
+      "bounds": [
+        930,
+        193,
+        290,
+        30
+      ],
+      "content": {
+        "text": "模型与重建叠合",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 20,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "label-c3",
+      "elementType": "text",
+      "bounds": [
+        48,
+        260,
+        175,
+        85
+      ],
+      "content": {
+        "text": "C3\nHE0822",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 26,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "assembly-c3-design",
+      "elementType": "image",
+      "bounds": [
+        245,
+        231,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-c3-design.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-c3-af2",
+      "elementType": "image",
+      "bounds": [
+        415,
+        231,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-c3-af2.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-c3-em",
+      "elementType": "image",
+      "bounds": [
+        585,
+        231,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-c3-em.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-c3-recon",
+      "elementType": "image",
+      "bounds": [
+        755,
+        231,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-c3-recon.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-c3-overlay",
+      "elementType": "image",
+      "bounds": [
+        930,
+        231,
+        290,
+        128
+      ],
+      "src": "media/final-11-assembly-c3-overlay.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "label-c6",
+      "elementType": "text",
+      "bounds": [
+        48,
+        401,
+        175,
+        85
+      ],
+      "content": {
+        "text": "C6\nHE0626",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 26,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "assembly-c6-design",
+      "elementType": "image",
+      "bounds": [
+        245,
+        372,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-c6-design.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-c6-af2",
+      "elementType": "image",
+      "bounds": [
+        415,
+        372,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-c6-af2.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-c6-em",
+      "elementType": "image",
+      "bounds": [
+        585,
+        372,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-c6-em.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-c6-recon",
+      "elementType": "image",
+      "bounds": [
+        755,
+        372,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-c6-recon.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-c6-overlay",
+      "elementType": "image",
+      "bounds": [
+        930,
+        372,
+        290,
+        128
+      ],
+      "src": "media/final-11-assembly-c6-overlay.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "label-d4",
+      "elementType": "text",
+      "bounds": [
+        48,
+        542,
+        175,
+        85
+      ],
+      "content": {
+        "text": "D4\nHE0537",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 26,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "assembly-d4-design",
+      "elementType": "image",
+      "bounds": [
+        245,
+        513,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-d4-design.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-d4-af2",
+      "elementType": "image",
+      "bounds": [
+        415,
+        513,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-d4-af2.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-d4-em",
+      "elementType": "image",
+      "bounds": [
+        585,
+        513,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-d4-em.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-d4-recon",
+      "elementType": "image",
+      "bounds": [
+        755,
+        513,
+        165,
+        128
+      ],
+      "src": "media/final-11-assembly-d4-recon.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "assembly-d4-overlay",
+      "elementType": "image",
+      "bounds": [
+        930,
+        513,
+        290,
+        128
+      ],
+      "src": "media/final-11-assembly-d4-overlay.png",
+      "fit": {
+        "mode": "contain"
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

@@ -1,0 +1,238 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "先不提供功能条件，看看模型能不能生成合理的单体。左上给出300和600残基的设计，彩色AF2预测与灰色设计模型叠合。右图看全部采样分布，告诉我们不能只看精选图片：较短骨架偏差集中在低值区域，随着长度增长，分布变宽，800和1000残基尤其难以由单序列预测验证。因此论文展示了600残基成功设计，但并不是说600残基样本普遍都成功。实验上作者还测试了部分200和300残基设计，圆二色谱支持预期二级结构且耐高温；这些实验并没有给所有无条件设计提供原子分辨率结构。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "基础能力 · 先检验结构生成本身",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "无条件生成扩展了可设计骨架的规模",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 2a,c,f and pp. 1090–1093.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "07",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "structures",
+      "elementType": "image",
+      "bounds": [
+        48,
+        169,
+        735,
+        185
+      ],
+      "src": "media/fig2-structures.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "legend",
+      "elementType": "text",
+      "bounds": [
+        48,
+        372,
+        735,
+        57
+      ],
+      "content": {
+        "text": "300 与 600 残基的示例\n灰：设计模型；彩色：AF2 预测",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 21,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "lower",
+      "elementType": "text",
+      "bounds": [
+        48,
+        466,
+        735,
+        130
+      ],
+      "content": {
+        "text": "精选成功样本之外，还需要看采样分布。\n长度增加后，计算验证更困难；\n部分 200 / 300 残基样本已有 CD 与耐热性实验。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 26,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "distribution",
+      "elementType": "image",
+      "bounds": [
+        830,
+        168,
+        390,
+        398
+      ],
+      "src": "media/fig2-rmsd-clean.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "dist-caption",
+      "elementType": "text",
+      "bounds": [
+        830,
+        588,
+        390,
+        62
+      ],
+      "content": {
+        "text": "每个长度生成 100 个骨架；\n纵轴为 AF2 与设计的 RMSD。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

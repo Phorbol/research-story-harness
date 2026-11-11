@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术论文拆解"
+  short_description: "从全文到分句拆解论文组织与论证，保存原文定位、多标签功能、推理假设与未决问题"
+  default_prompt: "请使用 $paper-dissector 处理当前学术论文写作任务，并报告实际证据与未决问题。"

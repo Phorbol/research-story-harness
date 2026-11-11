@@ -1,0 +1,249 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "今天介绍2023年发表于Nature的RFdiffusion。这篇论文关心的不是给定一个序列预测它折叠成什么，而是反过来：如果我们想让蛋白质结合某个靶点、固定某个功能位点，能否直接生成满足这些几何要求的新结构？右边是论文中设计的流感血凝素结合蛋白，设计模型与冷冻电镜结构高度一致。接下来的主线分三步：模型为什么能生成合理骨架，条件怎样进入生成过程，以及计算一致性如何进一步落实到实验中的结构和功能。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "论文汇报 · AI for Science · 约20分钟",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "RFdiffusion：从几何要求生成蛋白质",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., Nature 620, 1089–1100 (2023). DOI: 10.1038/s41586-023-06415-8",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "01",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "hero",
+      "elementType": "text",
+      "bounds": [
+        48,
+        184,
+        560,
+        150
+      ],
+      "content": {
+        "text": "把结构预测能力\n转化为可控的生成能力",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 43,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "subtitle",
+      "elementType": "text",
+      "bounds": [
+        48,
+        365,
+        540,
+        100
+      ],
+      "content": {
+        "text": "结构生成 → 序列设计 → 分层验证",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#258C85",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "paper",
+      "elementType": "text",
+      "bounds": [
+        48,
+        508,
+        550,
+        96
+      ],
+      "content": {
+        "text": "De novo design of protein structure\nand function with RFdiffusion",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "hero-structure",
+      "elementType": "image",
+      "bounds": [
+        660,
+        195,
+        560,
+        310
+      ],
+      "src": "media/fig6-interface.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "hero-caption",
+      "elementType": "text",
+      "bounds": [
+        670,
+        537,
+        530,
+        70
+      ],
+      "content": {
+        "text": "流感 HA 结合蛋白：设计模型与实验结构叠合\n原作者 Fig. 6g；灰：设计，紫：实验",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

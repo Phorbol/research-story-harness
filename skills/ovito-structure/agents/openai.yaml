@@ -1,0 +1,4 @@
+interface:
+  display_name: "OVITO 结构渲染"
+  short_description: "Render scientific structures with traceable OVITO scenes"
+  default_prompt: "使用 $ovito-structure，从结构文件生成可复现的 OVITO 视图，并优化相机、原子、键和光照。"

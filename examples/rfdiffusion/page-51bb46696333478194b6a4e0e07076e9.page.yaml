@@ -1,0 +1,227 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "最有说服力的结构证据来自HA_20与流感血凝素的复合物。它的结合解离常数是28纳摩尔，作者进一步用冷冻电镜得到2.9埃分辨率的复合物重建。左图是电镜类别平均与三维重建，右上把实验结构和设计模型叠合，复合物环境中的偏差为0.63埃；右下只看结合蛋白自身，偏差为0.60埃。这里要区分两个容易混淆的数字：2.9埃是实验重建的分辨率，0.63埃是模型与实验结构之间的偏差。这个案例验证了设计的结合姿态和局部构象，但它是深入表征的代表性命中，不能代替所有binder的结构验证。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "结构验证 · 从亲和力到实际结合姿态",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "HA 结合蛋白的实验结构检验了原子级设计精度",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 6d–h, pp. 1098–1099; HA_20 / Iowa43 HA.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "15",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "cryo",
+      "elementType": "image",
+      "bounds": [
+        48,
+        172,
+        620,
+        394
+      ],
+      "src": "media/fig6-cryo-clean.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "cryo-caption",
+      "elementType": "text",
+      "bounds": [
+        48,
+        589,
+        620,
+        53
+      ],
+      "content": {
+        "text": "HA_20 / HA 复合物：cryo-EM 重建分辨率 2.9 Å",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "interface",
+      "elementType": "image",
+      "bounds": [
+        720,
+        174,
+        504,
+        250
+      ],
+      "src": "media/fig6-interface.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "binder",
+      "elementType": "image",
+      "bounds": [
+        720,
+        435,
+        504,
+        190
+      ],
+      "src": "media/final-15-binder.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "rmsd-context",
+      "elementType": "text",
+      "bounds": [
+        720,
+        641,
+        504,
+        27
+      ],
+      "content": {
+        "text": "灰：设计；紫：实验。RMSD：0.63 Å / 0.60 Å。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 17,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

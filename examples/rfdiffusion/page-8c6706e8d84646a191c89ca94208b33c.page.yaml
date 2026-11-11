@@ -1,0 +1,272 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "结果是在五个靶点上都找到了结合蛋白，选出的实验面板总体命中率约为19%。命中定义是在10微摩尔浓度下，BLI响应达到阳性对照最大响应的一半。左图保留了作者与此前Rosetta流程的比较，不过需要认真看口径：旧流程采用酵母表面展示，当前流程采用BLI，所以纵轴对应不同检测方式。作者估计，整体约两个数量级的提升中，一个数量级来自RFdiffusion，另一个来自AF2筛选。这是作者对流程贡献的归因，不是把全部增益都独立归给扩散模型的随机对照实验。实际含义是，至少对本文靶点，筛几十到不到一百个设计已经可以得到命中。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "应用证据 · 实验命中率及其归因",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "五个靶点都有命中，但提升属于完整设计流程",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 6b and pp. 1097–1098; BLI versus historical YSD comparison.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "14",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rates",
+      "elementType": "image",
+      "bounds": [
+        48,
+        161,
+        505,
+        482
+      ],
+      "src": "media/fig6-rates.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "overall",
+      "elementType": "text",
+      "bounds": [
+        650,
+        173,
+        550,
+        84
+      ],
+      "content": {
+        "text": "19%",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 59,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "overall-label",
+      "elementType": "text",
+      "bounds": [
+        650,
+        270,
+        550,
+        76
+      ],
+      "content": {
+        "text": "筛选后实验面板的总体命中率\n五个靶点均得到结合蛋白",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 26,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "definition",
+      "elementType": "text",
+      "bounds": [
+        650,
+        363,
+        560,
+        88
+      ],
+      "content": {
+        "text": "BLI 命中：10 μM 下响应\n≥ 阳性对照最大响应的 50%。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "sep",
+      "elementType": "line",
+      "bounds": [
+        650,
+        478,
+        560,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "attribution",
+      "elementType": "text",
+      "bounds": [
+        650,
+        513,
+        560,
+        122
+      ],
+      "content": {
+        "text": "作者归因：约 10× 来自 RFdiffusion，\n另约 10× 来自 AF2 筛选。\n历史比较检测方式不同（YSD / BLI）。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

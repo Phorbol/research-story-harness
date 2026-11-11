@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "source",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purposes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "scientific_evidence",
+          "rhetorical_example",
+          "venue_policy",
+          "pedagogical_principle",
+          "author_preference"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "identity_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "unconfirmed",
+        "unavailable"
+      ]
+    },
+    "extraction_status": {
+      "type": "string",
+      "enum": [
+        "checked",
+        "unchecked",
+        "unavailable"
+      ]
+    },
+    "artifact": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string"
+    },
+    "bibliography": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "retrieved_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coverage": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "title",
+    "locator",
+    "purposes",
+    "identity_status",
+    "extraction_status",
+    "artifact",
+    "sha256",
+    "bibliography",
+    "retrieved_at",
+    "coverage"
+  ],
+  "additionalProperties": false
+}

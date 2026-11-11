@@ -1,0 +1,362 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "到这里，模型能补全局部motif，也能组织对称组装。结合蛋白任务进一步只给定靶标的结构和希望接触的热点，而不预先指定一个完整的结合骨架。图中黄色是固定靶点，橙色是界面热点，紫色是生成中的结合蛋白。为了学会这个任务，作者在蛋白复合物上微调RFdiffusion，也可以额外提供有利的二级结构和折叠邻接条件。生成之后仍要经过ProteinMPNN和AF2筛选，然后每个靶点选择95个设计用于实验。所以接下来报告的命中率是被筛选设计的实验命中率，并非随机抽取任意一条扩散轨迹的成功率。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "应用任务 · De novo binder design",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "从目标表面的热点出发，直接生成结合骨架",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 6a; p. 1096; SI §5 binder settings.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "13",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "binder-process",
+      "elementType": "image",
+      "bounds": [
+        48,
+        169,
+        1184,
+        225
+      ],
+      "src": "media/fig6-condition.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "color-key",
+      "elementType": "text",
+      "bounds": [
+        48,
+        416,
+        1180,
+        35
+      ],
+      "content": {
+        "text": "黄：固定靶结构    橙：指定界面热点    紫：生成的结合蛋白",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "step48",
+      "elementType": "shape",
+      "bounds": [
+        48,
+        507,
+        370,
+        95
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#BF7086"
+      }
+    },
+    {
+      "elementId": "step48-text",
+      "elementType": "text",
+      "bounds": [
+        60,
+        522,
+        346,
+        75
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">复合物微调</p><p style=\"text-align:center\">学习界面几何</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "step455",
+      "elementType": "shape",
+      "bounds": [
+        455,
+        507,
+        370,
+        95
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#61729D"
+      }
+    },
+    {
+      "elementId": "step455-text",
+      "elementType": "text",
+      "bounds": [
+        467,
+        522,
+        346,
+        75
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">序列设计 + AF2</p><p style=\"text-align:center\">筛选结构与界面</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "step862",
+      "elementType": "shape",
+      "bounds": [
+        862,
+        507,
+        370,
+        95
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#258C85"
+      }
+    },
+    {
+      "elementId": "step862-text",
+      "elementType": "text",
+      "bounds": [
+        874,
+        522,
+        346,
+        75
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">每靶点选 95 个</p><p style=\"text-align:center\">进入实验测量</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "one",
+      "elementType": "line",
+      "bounds": [
+        426,
+        555,
+        20,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "two",
+      "elementType": "line",
+      "bounds": [
+        833,
+        555,
+        20,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    }
+  ],
+  "allowedOverlaps": [
+    {
+      "elements": [
+        "step48",
+        "step48-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "step455",
+        "step455-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "step862",
+        "step862-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    }
+  ]
+}

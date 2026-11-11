@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术写作上下文"
+  short_description: "建立期刊、研究设计、领域、体裁与作者上下文，并把写作原则整理为有条件的编辑策略"
+  default_prompt: "请使用 $context-pack-builder 处理当前学术论文写作任务，并报告实际证据与未决问题。"

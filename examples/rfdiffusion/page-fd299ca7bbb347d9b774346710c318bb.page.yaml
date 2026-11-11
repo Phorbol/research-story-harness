@@ -1,0 +1,452 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "如果讨论评价的独立性，需要回到这些具体设置。所有AF2计算都采用单序列模式，但单体与motif不使用模板；对称组装使用设计坐标初始化，部分高阶对称结构只验证子单元；结合蛋白则同时提供靶标模板并使用设计坐标初始化。标准也相应变化。论文明确承认，AF2、RF和ESMFold在架构和训练数据上存在联系，因此这些工具是部分正交而不是完全独立的验证手段。报告主讲使用共同流程解释逻辑，但科学比较仍应依据这一页列出的具体任务口径。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "备份 · 计算验证的适用范围",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "备份｜评价器的设置随设计任务变化",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, SI §§5.1–5.3, PDF pp. 80–82.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "20",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task0",
+      "elementType": "text",
+      "bounds": [
+        48,
+        181,
+        265,
+        42
+      ],
+      "content": {
+        "text": "单体 / motif",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "detail0",
+      "elementType": "text",
+      "bounds": [
+        350,
+        181,
+        870,
+        75
+      ],
+      "content": {
+        "text": "AF2 单序列、无模板；整体 RMSD &lt; 2 Å，pAE &lt; 5；motif &lt; 1 Å。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "sep0",
+      "elementType": "line",
+      "bounds": [
+        48,
+        269,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "task1",
+      "elementType": "text",
+      "bounds": [
+        48,
+        283,
+        265,
+        42
+      ],
+      "content": {
+        "text": "对称组装",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "detail1",
+      "elementType": "text",
+      "bounds": [
+        350,
+        283,
+        870,
+        75
+      ],
+      "content": {
+        "text": "使用设计坐标初始化；置信度采用 pLDDT &gt; 80。高阶对称有子单元验证。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "sep1",
+      "elementType": "line",
+      "bounds": [
+        48,
+        371,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "task2",
+      "elementType": "text",
+      "bounds": [
+        48,
+        385,
+        265,
+        42
+      ],
+      "content": {
+        "text": "结合蛋白",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "detail2",
+      "elementType": "text",
+      "bounds": [
+        350,
+        385,
+        870,
+        75
+      ],
+      "content": {
+        "text": "提供靶标模板与设计坐标初猜；界面 pAE &lt; 10，并有单体精度/置信度筛选。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "sep2",
+      "elementType": "line",
+      "bounds": [
+        48,
+        473,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "task3",
+      "elementType": "text",
+      "bounds": [
+        48,
+        487,
+        265,
+        42
+      ],
+      "content": {
+        "text": "催化位点",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "detail3",
+      "elementType": "text",
+      "bounds": [
+        350,
+        487,
+        870,
+        75
+      ],
+      "content": {
+        "text": "除骨架标准外，增加侧链 RMSD &lt; 1.5 Å 的几何要求。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "sep3",
+      "elementType": "line",
+      "bounds": [
+        48,
+        575,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "partial",
+      "elementType": "text",
+      "bounds": [
+        48,
+        611,
+        1184,
+        44
+      ],
+      "content": {
+        "text": "RF、AF2 与 ESMFold 具有架构 / 训练信息联系：计算验证仅部分独立。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#AA7433",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

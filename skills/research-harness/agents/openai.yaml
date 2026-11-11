@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研写作与绘图 Harness"
+  short_description: "Run a reproducible writing and figure project"
+  default_prompt: "使用 $research-harness，为当前研究建立写作、绘图和连续修改工作流。"

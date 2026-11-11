@@ -1,0 +1,617 @@
+[
+  {
+    "page": 1,
+    "page_source": "page-68e141f44a0b43769a044d77d970f33a.page.yaml",
+    "title": "RFdiffusion：从几何要求生成蛋白质",
+    "claim_id": "C01",
+    "claim": "RFdiffusion fine-tunes RoseTTAFold for conditional backbone generation; experiments test selected structures/functions.",
+    "source_locator": "Watson et al., Nature 620, 1089–1100 (2023). DOI: 10.1038/s41586-023-06415-8",
+    "speaking_seconds": 40,
+    "assets": [
+      "media/fig6-interface.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          1,
+          10,
+          11
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "Representative experimental example is not a universal success guarantee.",
+    "candidate_page_source": "pages/01.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 2,
+    "page_source": "page-b07cf5f575824f74995f89168a145bf7.page.yaml",
+    "title": "设计任务先规定“做什么”，再寻找“怎么折叠”",
+    "claim_id": "C02",
+    "claim": "The task is inverse design from structural/functional specifications; backbone, sequence and motif are distinct objects.",
+    "source_locator": "Watson et al., 2023, pp. 1089–1090; Fig. 4c.",
+    "speaking_seconds": 65,
+    "assets": [
+      "media/fig4-p53.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          1,
+          2,
+          7,
+          8
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "Conceptual relation, no synthetic protein coordinates.",
+    "candidate_page_source": "pages/02.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 3,
+    "page_source": "page-f4f405392ff8414a90915fae5e3fe5e8.page.yaml",
+    "title": "核心改造：让结构预测器学习“去噪”",
+    "claim_id": "C03",
+    "claim": "RF is fine-tuned with residue-frame noising; translations Gaussian, orientations rotational Brownian motion.",
+    "source_locator": "Watson et al., 2023, pp. 1090–1091, Fig. 1a; SI §§1–2.",
+    "speaking_seconds": 70,
+    "assets": [],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          2,
+          3
+        ],
+        "text_directory": "source/main-pages"
+      },
+      {
+        "file": "source/supplementary.pdf",
+        "pdf_pages": [
+          37,
+          47
+        ],
+        "text_directory": "source/supplementary-pages"
+      }
+    ],
+    "interpretation_boundary": "Training relation simplified; not a complete architecture or equation reproduction.",
+    "candidate_page_source": "pages/03.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 4,
+    "page_source": "page-50f4fddffdeb49629133b2210c0867ab.page.yaml",
+    "title": "采样逐步收紧可能解，最终形成蛋白质骨架",
+    "claim_id": "C04",
+    "claim": "Iterative denoising begins with random frames; prediction of clean structure is updated over steps.",
+    "source_locator": "Watson et al., 2023, Fig. 1c, p. 1091; 300-residue unconditional trajectory.",
+    "speaking_seconds": 65,
+    "assets": [
+      "media/fig1-trajectory.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          2,
+          3
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "Diffusion step order is not physical folding dynamics.",
+    "candidate_page_source": "pages/04.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 5,
+    "page_source": "page-7d298746551d42ba97a5c90c77d48b8b.page.yaml",
+    "title": "高质量生成来自预训练、训练目标与轨迹一致性",
+    "claim_id": "C05",
+    "claim": "Ablating pretraining, fine-tuning, MSE, self-conditioning degrades 300-residue unconditional generation.",
+    "source_locator": "Watson et al., 2023, Fig. 2e, p. 1092; Extended Data Fig. 1d–h.",
+    "speaking_seconds": 70,
+    "assets": [
+      "media/fig2-ablation.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          2,
+          4
+        ],
+        "text_directory": "source/main-pages"
+      },
+      {
+        "file": "source/supplementary.pdf",
+        "pdf_pages": [
+          47
+        ],
+        "text_directory": "source/supplementary-pages"
+      }
+    ],
+    "interpretation_boundary": "Ablation outcome is AF2 RMSD, not experimental folding success.",
+    "candidate_page_source": "pages/05.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 6,
+    "page_source": "page-06f9c203db594e769fb61d2eb6152f94.page.yaml",
+    "title": "骨架生成之后，还要跨过三道验证关",
+    "claim_id": "C06",
+    "claim": "ProteinMPNN sequences and AF2 filters connect generated structures to experiments; validation is partially orthogonal.",
+    "source_locator": "Watson et al., 2023, p. 1090; SI §§5.1–5.3, PDF pp. 80–82.",
+    "speaking_seconds": 80,
+    "assets": [],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          2
+        ],
+        "text_directory": "source/main-pages"
+      },
+      {
+        "file": "source/supplementary.pdf",
+        "pdf_pages": [
+          80,
+          81,
+          82
+        ],
+        "text_directory": "source/supplementary-pages"
+      }
+    ],
+    "interpretation_boundary": "Task-specific thresholds differ; AF2 validation is partially orthogonal.",
+    "candidate_page_source": "pages/06.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 7,
+    "page_source": "page-1ae2919ed8dc446cb1dd39d479a9b761.page.yaml",
+    "title": "无条件生成扩展了可设计骨架的规模",
+    "claim_id": "C07",
+    "claim": "Diverse monomers include successful 600-residue designs; whole distribution worsens at longer lengths; selected designs CD tested.",
+    "source_locator": "Watson et al., 2023, Fig. 2a,c,f and pp. 1090–1093.",
+    "speaking_seconds": 65,
+    "assets": [
+      "media/fig2-structures.png",
+      "media/fig2-rmsd-clean.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          2,
+          4,
+          5
+        ],
+        "text_directory": "source/main-pages"
+      },
+      {
+        "file": "source/supplementary.pdf",
+        "pdf_pages": [
+          82
+        ],
+        "text_directory": "source/supplementary-pages"
+      }
+    ],
+    "interpretation_boundary": "600residue selected successful examples do not imply uniformly high success at600.",
+    "candidate_page_source": "pages/07.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 8,
+    "page_source": "page-a6d2297917234fa4a7135b94ba792e75.page.yaml",
+    "title": "条件改变几何边界，生成器补全剩余结构",
+    "claim_id": "C08",
+    "claim": "Conditions include symmetry, binding target, motif and symmetric motif, with task-specific fine-tuning where needed.",
+    "source_locator": "Watson et al., 2023, Fig. 1b; pp. 1090, 1093, 1096.",
+    "speaking_seconds": 60,
+    "assets": [
+      "media/complete-08-in-sym.png",
+      "media/complete-08-out-sym.png",
+      "media/complete-08-in-target.png",
+      "media/clean-08-out-target.png",
+      "media/complete-08-in-motif.png",
+      "media/clean-08-out-motif.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          2,
+          3,
+          5,
+          8
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "Common conditional framework includes task-specific fine-tuning.",
+    "candidate_page_source": "pages/08.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 9,
+    "page_source": "page-153a27376d504bc2b52c169aad4ac907.page.yaml",
+    "title": "Motif 支架设计：更多任务能找到可行解",
+    "claim_id": "C09",
+    "claim": "RFdiffusion solves 23/25 problems vs RFjoint17 (SI Table10 union; main prose says19) and Hallucination15 across tested variants; not sample success rate.",
+    "source_locator": "Watson et al., 2023, Fig. 4a; SI Tables 9–10, PDF pp. 84–87.",
+    "speaking_seconds": 75,
+    "assets": [
+      "media/final-09-motifs.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          5,
+          6,
+          7
+        ],
+        "text_directory": "source/main-pages"
+      },
+      {
+        "file": "source/supplementary.pdf",
+        "pdf_pages": [
+          84,
+          85,
+          86,
+          87
+        ],
+        "text_directory": "source/supplementary-pages"
+      }
+    ],
+    "data_transformation": {
+      "input": "data/motif-benchmark.csv",
+      "source": "SI Table 10, PDF p87 / printed p86",
+      "operation": "Per method, maximum of its two tested variants. Solved count = number of rows with maximum >0. Values: RFdiffusion23, RFjoint17, Hallucination15.",
+      "discrepancy": "Main text pp1093–1094 says RFjoint19; the tabulated RFjoint and RFjoint+MPNN columns union gives17. This is disclosed on slide9; no attempt to infer missing trials."
+    },
+    "interpretation_boundary": "Task coverage is distinct from per-design success; SI/main discrepancy disclosed.",
+    "candidate_page_source": "pages/09.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 10,
+    "page_source": "page-a93c7822a4654fe29d4392691fdadb94.page.yaml",
+    "title": "固定 p53 螺旋后，新增支架可增强结合",
+    "claim_id": "C10",
+    "claim": "Two scaffolding designs bind MDM2 with KD0.7 and0.5nM versus cited native peptide600nM; no clinical efficacy claim.",
+    "source_locator": "Watson et al., 2023, Fig. 4c,d, pp. 1095–1096; p53 peptide reference 42.",
+    "speaking_seconds": 65,
+    "assets": [
+      "media/fig4-p53.png",
+      "media/fig4-bli.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "Affinity result is in vitro binding, not clinical efficacy; no p53 aggregate success count used because main and caption denominators/definitions differ.",
+    "candidate_page_source": "pages/10.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 11,
+    "page_source": "page-722cc38755c5415aa55a175baa0b4fa9.page.yaml",
+    "title": "对称性把单链生成扩展到更大的组装体",
+    "claim_id": "C11",
+    "claim": "Symmetric design yields experimentally consistent oligomers; 87/608 within95%SEC calibration CI, microscopy subset.",
+    "source_locator": "Watson et al., 2023, Fig. 3b,c and p. 1093; SEC sample counts in main text.",
+    "speaking_seconds": 70,
+    "assets": [
+      "media/final-11-assembly-c3-design.png",
+      "media/final-11-assembly-c3-af2.png",
+      "media/final-11-assembly-c3-em.png",
+      "media/final-11-assembly-c3-recon.png",
+      "media/final-11-assembly-c3-overlay.png",
+      "media/final-11-assembly-c6-design.png",
+      "media/final-11-assembly-c6-af2.png",
+      "media/final-11-assembly-c6-em.png",
+      "media/final-11-assembly-c6-recon.png",
+      "media/final-11-assembly-c6-overlay.png",
+      "media/final-11-assembly-d4-design.png",
+      "media/final-11-assembly-d4-af2.png",
+      "media/final-11-assembly-d4-em.png",
+      "media/final-11-assembly-d4-recon.png",
+      "media/final-11-assembly-d4-overlay.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          5,
+          6
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "SEC criterion at95%calibration interval, microscopy subset only; not87 atomic structures.",
+    "candidate_page_source": "pages/11.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 12,
+    "page_source": "page-706169e57e4645519ad2dd462d276a9a.page.yaml",
+    "title": "对称 motif 的功能来自指定残基，而非外形相似",
+    "claim_id": "C12",
+    "claim": "18/36 tested Ni binders bind; H52A weakens/abolishes binding in17/17 expressed mutants, one nonexpressed.",
+    "source_locator": "Watson et al., 2023, Fig. 5b,c; p. 1096; Extended Data Fig. 7.",
+    "speaking_seconds": 75,
+    "assets": [
+      "media/complete-12-nickel-generation.png",
+      "media/fig5-nickel-validation.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          8,
+          9
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "18of36tested bind Ni;17of17expressed mutants lose/reduce binding, one unexpressed. Distinguish ITC and nsEM.",
+    "candidate_page_source": "pages/12.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 13,
+    "page_source": "page-aa1ef8a1fe284e9a8983744eee455e24.page.yaml",
+    "title": "从目标表面的热点出发，直接生成结合骨架",
+    "claim_id": "C13",
+    "claim": "Complex-finetuned model conditions on target interface hotspots; designs filtered then95 per target selected.",
+    "source_locator": "Watson et al., 2023, Fig. 6a; p. 1096; SI §5 binder settings.",
+    "speaking_seconds": 65,
+    "assets": [
+      "media/fig6-condition.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          8,
+          10
+        ],
+        "text_directory": "source/main-pages"
+      },
+      {
+        "file": "source/supplementary.pdf",
+        "pdf_pages": [
+          80,
+          81,
+          82
+        ],
+        "text_directory": "source/supplementary-pages"
+      }
+    ],
+    "interpretation_boundary": "95designs per target are selected after computational filtering.",
+    "candidate_page_source": "pages/13.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 14,
+    "page_source": "page-8c6706e8d84646a191c89ca94208b33c.page.yaml",
+    "title": "五个靶点都有命中，但提升属于完整设计流程",
+    "claim_id": "C14",
+    "claim": "Overall19% BLI hits among selected panel; comparison combines RFdiffusion and AF2 filtering, assays differ.",
+    "source_locator": "Watson et al., 2023, Fig. 6b and pp. 1097–1098; BLI versus historical YSD comparison.",
+    "speaking_seconds": 80,
+    "assets": [
+      "media/fig6-rates.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          9,
+          10
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "Historical YSD and current BLI differ; model and filter contributions are author attribution, not controlled causal isolation.",
+    "candidate_page_source": "pages/14.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 15,
+    "page_source": "page-51bb46696333478194b6a4e0e07076e9.page.yaml",
+    "title": "HA 结合蛋白的实验结构检验了原子级设计精度",
+    "claim_id": "C15",
+    "claim": "HA20KD28nM; cryoEM2.9Å; design-vs-complexRMSD0.63Å, binder alone0.60Å; single selected example.",
+    "source_locator": "Watson et al., 2023, Fig. 6d–h, pp. 1098–1099; HA_20 / Iowa43 HA.",
+    "speaking_seconds": 75,
+    "assets": [
+      "media/fig6-cryo-clean.png",
+      "media/fig6-interface.png",
+      "media/final-15-binder.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          10,
+          11
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "2.9Å is map resolution;0.63Å is deviation; HA20 is one selected design.",
+    "candidate_page_source": "pages/15.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 16,
+    "page_source": "page-48239ec072c2445fb644dbfe0a295cf5.page.yaml",
+    "title": "同一框架的“通用性”，由不同层次的证据支撑",
+    "claim_id": "C16",
+    "claim": "Evidence varies by task from computational geometry to functional and structural experiments.",
+    "source_locator": "Watson et al., 2023, Figs. 2–6; SI §§5.1–5.3.",
+    "speaking_seconds": 65,
+    "assets": [],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "text_directory": "source/main-pages"
+      },
+      {
+        "file": "source/supplementary.pdf",
+        "pdf_pages": [
+          80,
+          81,
+          82
+        ],
+        "text_directory": "source/supplementary-pages"
+      }
+    ],
+    "interpretation_boundary": "Evidence maturity varies across tasks.",
+    "candidate_page_source": "pages/16.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 17,
+    "page_source": "page-df66e4f567124c75be148c0e8dd090e7.page.yaml",
+    "title": "催化位点能被固定，不等于新酶功能已实现",
+    "claim_id": "C17",
+    "claim": "Enzyme scaffolding requires fine-tuning; low in silico success; explicit ligand modeling absent and no catalytic activity result.",
+    "source_locator": "Watson et al., 2023, Fig. 4f,g, p. 1096; Extended Data Fig. 6.",
+    "speaking_seconds": 65,
+    "assets": [
+      "media/fig4-enzyme.png",
+      "media/fig4-enzyme-rates-complete.png"
+    ],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          7,
+          8
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "No catalytic activity data; ligands not explicit in this publication version.",
+    "candidate_page_source": "pages/17.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 18,
+    "page_source": "page-53bad256de87492c9e262424513c96d7.page.yaml",
+    "title": "RFdiffusion 提供的是可控的结构生成起点",
+    "claim_id": "C18",
+    "claim": "Presenter synthesis: reusable structural prior, geometric conditions, full validation stack; scope targeted cases.",
+    "source_locator": "Watson et al., 2023, Discussion, p. 1099; synthesis by presenter.",
+    "speaking_seconds": 65,
+    "assets": [],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/main.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "text_directory": "source/main-pages"
+      }
+    ],
+    "interpretation_boundary": "Presenter synthesis scoped to2023paper; no claims about later versions.",
+    "candidate_page_source": "pages/18.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 19,
+    "page_source": "page-ccc840bb3dc24f0db04e4ff2e7d2c5ca.page.yaml",
+    "title": "备份｜逐任务成功率显示优势与失败并存",
+    "claim_id": "C19",
+    "claim": "All25 exact rows; shown max of tested variants separately for each method (not average or single configuration).",
+    "source_locator": "Watson et al., 2023, SI Table 10 (PDF p. 87; printed p. 86); native redraw.",
+    "speaking_seconds": 0,
+    "assets": [],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/supplementary.pdf",
+        "pdf_pages": [
+          87
+        ],
+        "text_directory": "source/supplementary-pages"
+      }
+    ],
+    "data_transformation": {
+      "input": "data/motif-benchmark.csv",
+      "source": "SI Table 10, PDF p87 / printed p86",
+      "operation": "Per method, maximum of its two tested variants. Solved count = number of rows with maximum >0. Values: RFdiffusion23, RFjoint17, Hallucination15.",
+      "discrepancy": "Main text pp1093–1094 says RFjoint19; the tabulated RFjoint and RFjoint+MPNN columns union gives17. This is disclosed on slide9; no attempt to infer missing trials."
+    },
+    "interpretation_boundary": "Max across variants is summary, not one simultaneously achieved setting.",
+    "candidate_page_source": "pages/19.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  },
+  {
+    "page": 20,
+    "page_source": "page-fd299ca7bbb347d9b774346710c318bb.page.yaml",
+    "title": "备份｜评价器的设置随设计任务变化",
+    "claim_id": "C20",
+    "claim": "AF2 setup varies: single sequence; initial guess for oligomer/binder; targets templated; not fully independent.",
+    "source_locator": "Watson et al., 2023, SI §§5.1–5.3, PDF pp. 80–82.",
+    "speaking_seconds": 0,
+    "assets": [],
+    "native_content": "All text, bars, lines, conceptual diagram nodes are native editable PPT objects. Original author panels remain raster images.",
+    "evidence_files": [
+      {
+        "file": "source/supplementary.pdf",
+        "pdf_pages": [
+          80,
+          81,
+          82
+        ],
+        "text_directory": "source/supplementary-pages"
+      }
+    ],
+    "interpretation_boundary": "Different AF2 input modes and confidence thresholds; no blanket independence claim.",
+    "candidate_page_source": "pages/20.page.yaml",
+    "autonomous_source_change": "See production-records/self-review-autonomous-final.json"
+  }
+]

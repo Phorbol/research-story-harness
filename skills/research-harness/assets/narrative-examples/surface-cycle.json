@@ -1,0 +1,1041 @@
+{
+  "track": "explanatory",
+  "canvas": [
+    1000,
+    255
+  ],
+  "geometry_basis": "illustrative_reconstruction",
+  "scope_note": "Reconstruction of the source diagram composition and content; not measured coordinates or new scientific validation.",
+  "provenance": {
+    "locator": "Chen et al. Nat Commun 2023, Fig1a,b"
+  },
+  "palette": {
+    "ink": "#000000",
+    "blue": "#00B2DE",
+    "green": "#00B44F",
+    "red": "#F00000",
+    "white": "#FFFFFF"
+  },
+  "objects": [
+    {
+      "id": "text-1",
+      "semantic_id": "text-1",
+      "type": "text",
+      "xy": [
+        10,
+        232
+      ],
+      "text": "a",
+      "role": "panel",
+      "color_role": "ink",
+      "ha": "left",
+      "z": 20
+    },
+    {
+      "id": "text-2",
+      "semantic_id": "text-2",
+      "type": "text",
+      "xy": [
+        447,
+        232
+      ],
+      "text": "b",
+      "role": "panel",
+      "color_role": "ink",
+      "ha": "left",
+      "z": 20
+    },
+    {
+      "id": "sphere-21",
+      "semantic_id": "sphere-21",
+      "type": "sphere",
+      "box": [
+        130,
+        99,
+        30,
+        30
+      ],
+      "color": "#31BAD5",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 6,
+      "material": {
+        "shadow_color": "#2CACC5",
+        "light_color": "#8FE9F0",
+        "specular": 0.4,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "sphere-22",
+      "semantic_id": "sphere-22",
+      "type": "sphere",
+      "box": [
+        183,
+        101,
+        30,
+        30
+      ],
+      "color": "#31BAD5",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 6,
+      "material": {
+        "shadow_color": "#2CACC5",
+        "light_color": "#8FE9F0",
+        "specular": 0.4,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "sphere-23",
+      "semantic_id": "sphere-23",
+      "type": "sphere",
+      "box": [
+        242,
+        100,
+        30,
+        30
+      ],
+      "color": "#31BAD5",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 6,
+      "material": {
+        "shadow_color": "#2CACC5",
+        "light_color": "#8FE9F0",
+        "specular": 0.4,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "sphere-24",
+      "semantic_id": "sphere-24",
+      "type": "sphere",
+      "box": [
+        277,
+        100,
+        30,
+        30
+      ],
+      "color": "#E6404A",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 6,
+      "material": {
+        "shadow_color": "#CC172E",
+        "light_color": "#FB656D",
+        "specular": 0.35,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "sphere-25",
+      "semantic_id": "sphere-25",
+      "type": "sphere",
+      "box": [
+        335,
+        101,
+        30,
+        30
+      ],
+      "color": "#E6404A",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 6,
+      "material": {
+        "shadow_color": "#CC172E",
+        "light_color": "#FB656D",
+        "specular": 0.35,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "arrow-26",
+      "semantic_id": "arrow-26",
+      "type": "arrow",
+      "start": [
+        151,
+        173
+      ],
+      "end": [
+        139,
+        131
+      ],
+      "color": "#000000",
+      "lw": 1.5,
+      "head": 13,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "arrow-27",
+      "semantic_id": "arrow-27",
+      "type": "arrow",
+      "start": [
+        173,
+        173
+      ],
+      "end": [
+        188,
+        131
+      ],
+      "color": "#000000",
+      "lw": 1.5,
+      "head": 13,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "arrow-28",
+      "semantic_id": "arrow-28",
+      "type": "arrow",
+      "start": [
+        275,
+        127
+      ],
+      "end": [
+        275,
+        183
+      ],
+      "color": "#000000",
+      "lw": 1.5,
+      "head": 13,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "arrow-29",
+      "semantic_id": "arrow-29",
+      "type": "arrow",
+      "start": [
+        376,
+        175
+      ],
+      "end": [
+        359,
+        132
+      ],
+      "color": "#000000",
+      "lw": 1.5,
+      "head": 13,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "arrow-30",
+      "semantic_id": "arrow-30",
+      "type": "arrow",
+      "start": [
+        218,
+        111
+      ],
+      "end": [
+        242,
+        111
+      ],
+      "color": "#000000",
+      "lw": 1.5,
+      "head": 13,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "arrow-31",
+      "semantic_id": "arrow-31",
+      "type": "arrow",
+      "start": [
+        332,
+        112
+      ],
+      "end": [
+        310,
+        112
+      ],
+      "color": "#000000",
+      "lw": 1.5,
+      "head": 13,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "sphere-32",
+      "semantic_id": "sphere-32",
+      "type": "sphere",
+      "box": [
+        135,
+        177,
+        32,
+        32
+      ],
+      "color": "#31C3DB",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#2CACC5",
+        "light_color": "#8FE9F0",
+        "specular": 0.4,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "sphere-33",
+      "semantic_id": "sphere-33",
+      "type": "sphere",
+      "box": [
+        158,
+        177,
+        32,
+        32
+      ],
+      "color": "#31C3DB",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#2CACC5",
+        "light_color": "#8FE9F0",
+        "specular": 0.4,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "sphere-34",
+      "semantic_id": "sphere-34",
+      "type": "sphere",
+      "box": [
+        250,
+        203,
+        32,
+        32
+      ],
+      "color": "#31C3DB",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#2CACC5",
+        "light_color": "#8FE9F0",
+        "specular": 0.4,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "sphere-35",
+      "semantic_id": "sphere-35",
+      "type": "sphere",
+      "box": [
+        275,
+        195,
+        32,
+        32
+      ],
+      "color": "#EB3947",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#CC172E",
+        "light_color": "#FB656D",
+        "specular": 0.35,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "sphere-36",
+      "semantic_id": "sphere-36",
+      "type": "sphere",
+      "box": [
+        360,
+        184,
+        32,
+        32
+      ],
+      "color": "#EB3947",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#CC172E",
+        "light_color": "#FB656D",
+        "specular": 0.35,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "gasreactants",
+      "semantic_id": "gasreactants",
+      "type": "text",
+      "xy": [
+        625,
+        212
+      ],
+      "text": "0.5A$_2$(g)  +  B(g)",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "gasproduct",
+      "semantic_id": "gasproduct",
+      "type": "text",
+      "xy": [
+        927,
+        212
+      ],
+      "text": "AB(g)",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "adsreactants",
+      "semantic_id": "adsreactants",
+      "type": "text",
+      "xy": [
+        625,
+        50
+      ],
+      "text": "A(s)  +  B(s)",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "adsproduct",
+      "semantic_id": "adsproduct",
+      "type": "text",
+      "xy": [
+        927,
+        50
+      ],
+      "text": "AB(s)",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "arrow-41",
+      "semantic_id": "arrow-41",
+      "type": "arrow",
+      "start": [
+        767,
+        212
+      ],
+      "end": [
+        857,
+        212
+      ],
+      "color": "#00B44F",
+      "lw": 2.1,
+      "head": 20,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "arrow-42",
+      "semantic_id": "arrow-42",
+      "type": "arrow",
+      "start": [
+        767,
+        50
+      ],
+      "end": [
+        857,
+        50
+      ],
+      "color": "#000000",
+      "lw": 2.1,
+      "head": 20,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "arrow-43",
+      "semantic_id": "arrow-43",
+      "type": "arrow",
+      "start": [
+        577,
+        178
+      ],
+      "end": [
+        577,
+        85
+      ],
+      "color": "#00B5DE",
+      "lw": 2.1,
+      "head": 20,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "arrow-44",
+      "semantic_id": "arrow-44",
+      "type": "arrow",
+      "start": [
+        705,
+        178
+      ],
+      "end": [
+        705,
+        85
+      ],
+      "color": "#00B5DE",
+      "lw": 2.1,
+      "head": 20,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "id": "arrow-45",
+      "semantic_id": "arrow-45",
+      "type": "arrow",
+      "start": [
+        906,
+        85
+      ],
+      "end": [
+        906,
+        178
+      ],
+      "color": "#00B5DE",
+      "lw": 2.1,
+      "head": 20,
+      "connectionstyle": "arc3,rad=0",
+      "z": 8,
+      "arrowstyle": "->"
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-0-0",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        121,
+        94,
+        48,
+        48
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.0,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-0-1",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        171,
+        94,
+        48,
+        48
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.0,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-0-2",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        219,
+        94,
+        48,
+        48
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.0,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-0-3",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        267,
+        94,
+        48,
+        48
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.0,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-0-4",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        316,
+        94,
+        48,
+        48
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.0,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-1-0",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        87,
+        80,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.2,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-1-1",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        140,
+        80,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.2,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-1-2",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        195,
+        80,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.2,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-1-3",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        251,
+        80,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.2,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-1-4",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        305,
+        80,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.2,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-1-5",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        358,
+        80,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.2,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-2-0",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        55,
+        56,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.4,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-2-1",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        110,
+        56,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.4,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-2-2",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        165,
+        56,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.4,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-2-3",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        222,
+        56,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.4,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-2-4",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        279,
+        56,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.4,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-2-5",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        334,
+        56,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.4,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-2-6",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        380,
+        56,
+        50,
+        50
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.4,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-3-0",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        69,
+        28,
+        54,
+        54
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.6,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-3-1",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        126,
+        28,
+        54,
+        54
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.6,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-3-2",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        183,
+        28,
+        54,
+        54
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.6,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-3-3",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        240,
+        28,
+        54,
+        54
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.6,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-3-4",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        297,
+        28,
+        54,
+        54
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.6,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    },
+    {
+      "type": "sphere",
+      "id": "surface-cu-3-5",
+      "semantic_id": "conceptual-surface-atom",
+      "box": [
+        354,
+        28,
+        54,
+        54
+      ],
+      "color": "#F8B84D",
+      "stroke": "none",
+      "z": 3.6,
+      "material": {
+        "shadow_color": "#E5812F",
+        "light_color": "#FFD76E",
+        "specular": 0.28,
+        "shininess": 18
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "arrow-41",
+      "from": "gasreactants",
+      "to": "gasproduct",
+      "meaning": "energy_cycle",
+      "basis": "source_schematic"
+    },
+    {
+      "id": "arrow-42",
+      "from": "adsreactants",
+      "to": "adsproduct",
+      "meaning": "energy_cycle",
+      "basis": "source_schematic"
+    },
+    {
+      "id": "arrow-43",
+      "from": "gasreactants",
+      "to": "adsreactants",
+      "meaning": "energy_cycle",
+      "basis": "source_schematic"
+    },
+    {
+      "id": "arrow-44",
+      "from": "gasreactants",
+      "to": "adsreactants",
+      "meaning": "energy_cycle",
+      "basis": "source_schematic"
+    },
+    {
+      "id": "arrow-45",
+      "from": "adsproduct",
+      "to": "gasproduct",
+      "meaning": "energy_cycle",
+      "basis": "source_schematic"
+    }
+  ]
+}

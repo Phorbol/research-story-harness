@@ -1,0 +1,191 @@
+{
+  "source": "SI Table S6, S17; visually rechecked 2026-11-06",
+  "scope": "first C-O cleavage only",
+  "unit": "eV",
+  "reference": "gas-phase glycerol; preserve Table S6 reservoir convention",
+  "conditions": "473 K; do not conflate Fig5 mixture specification and TableS6 reservoir specification",
+  "derivation": "G(next)=G(current)+Ga_forward-Ga_reverse; G(TS)=G(current)+Ga_forward. Reaction 0 reversed to obtain G(g)->G*.",
+  "note": "TS(n) identifies Table S6 row n, not an author-assigned TS number. Original Fig5A and S6 differ at the numbering of the enol+OH state; this endpoint has a chemical label, not an asserted Fig5A state10 ID. No late-path reconstruction.",
+  "paths": [
+    {
+      "id": "deH12",
+      "levels": [
+        {
+          "state": "G(g)",
+          "g_eV": 0,
+          "type": "minimum"
+        },
+        {
+          "state": "G*",
+          "g_eV": 0.249,
+          "type": "minimum"
+        },
+        {
+          "state": "TS(6)",
+          "g_eV": 1.058,
+          "type": "transition",
+          "source_row": 6
+        },
+        {
+          "state": "2",
+          "g_eV": -0.082,
+          "type": "minimum",
+          "source_row": 6
+        },
+        {
+          "state": "TS(7)",
+          "g_eV": 0.765,
+          "type": "transition",
+          "source_row": 7
+        },
+        {
+          "state": "8 (DHA)",
+          "g_eV": 0.351,
+          "type": "minimum",
+          "source_row": 7
+        },
+        {
+          "state": "TS1",
+          "g_eV": 1.164,
+          "type": "transition",
+          "source_row": 8
+        },
+        {
+          "state": "6 + OH",
+          "g_eV": -0.074,
+          "type": "minimum",
+          "source_row": 8
+        }
+      ]
+    },
+    {
+      "id": "deH13",
+      "levels": [
+        {
+          "state": "G(g)",
+          "g_eV": 0,
+          "type": "minimum"
+        },
+        {
+          "state": "G*",
+          "g_eV": 0.249,
+          "type": "minimum"
+        },
+        {
+          "state": "TS(12)",
+          "g_eV": 1.28,
+          "type": "transition",
+          "source_row": 12
+        },
+        {
+          "state": "3",
+          "g_eV": 0.185,
+          "type": "minimum",
+          "source_row": 12
+        },
+        {
+          "state": "TS(13)",
+          "g_eV": 1.204,
+          "type": "transition",
+          "source_row": 13
+        },
+        {
+          "state": "9 (GA)",
+          "g_eV": 0.789,
+          "type": "minimum",
+          "source_row": 13
+        },
+        {
+          "state": "TS2",
+          "g_eV": 1.442,
+          "type": "transition",
+          "source_row": 14
+        },
+        {
+          "state": "enol + OH",
+          "g_eV": 0.045,
+          "type": "minimum",
+          "source_row": 14
+        }
+      ]
+    },
+    {
+      "id": "water12",
+      "levels": [
+        {
+          "state": "G(g)",
+          "g_eV": 0,
+          "type": "minimum"
+        },
+        {
+          "state": "G*",
+          "g_eV": 0.249,
+          "type": "minimum"
+        },
+        {
+          "state": "TS(18)",
+          "g_eV": 1.086,
+          "type": "transition",
+          "source_row": 18
+        },
+        {
+          "state": "7",
+          "g_eV": 1.08,
+          "type": "minimum",
+          "source_row": 18
+        },
+        {
+          "state": "TS4",
+          "g_eV": 1.764,
+          "type": "transition",
+          "source_row": 19
+        },
+        {
+          "state": "13 + H2O",
+          "g_eV": 0.183,
+          "type": "minimum",
+          "source_row": 19
+        }
+      ]
+    },
+    {
+      "id": "water13",
+      "levels": [
+        {
+          "state": "G(g)",
+          "g_eV": 0,
+          "type": "minimum"
+        },
+        {
+          "state": "G*",
+          "g_eV": 0.249,
+          "type": "minimum"
+        },
+        {
+          "state": "TS(21)",
+          "g_eV": 1.03,
+          "type": "transition",
+          "source_row": 21
+        },
+        {
+          "state": "1",
+          "g_eV": 0.986,
+          "type": "minimum",
+          "source_row": 21
+        },
+        {
+          "state": "TS3",
+          "g_eV": 1.705,
+          "type": "transition",
+          "source_row": 22
+        },
+        {
+          "state": "14 + H2O",
+          "g_eV": 0.501,
+          "type": "minimum",
+          "source_row": 22
+        }
+      ]
+    }
+  ]
+}

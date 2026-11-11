@@ -1,0 +1,496 @@
+[
+  {
+    "asset": "media/fig1-trajectory.png",
+    "source": "source/main.pdf",
+    "pdf_page": 3,
+    "panel": "Fig. 1c",
+    "crop_normalized": [
+      0.135,
+      0.505,
+      0.855,
+      0.667
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig2-structures.png",
+    "source": "source/main.pdf",
+    "pdf_page": 4,
+    "panel": "Fig. 2a",
+    "crop_normalized": [
+      0.11,
+      0.068,
+      0.925,
+      0.208
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig2-ablation.png",
+    "source": "source/main.pdf",
+    "pdf_page": 4,
+    "panel": "Fig. 2e",
+    "crop_normalized": [
+      0.742,
+      0.229,
+      0.949,
+      0.405
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig4-p53.png",
+    "source": "source/main.pdf",
+    "pdf_page": 7,
+    "panel": "Fig. 4c",
+    "crop_normalized": [
+      0.077,
+      0.333,
+      0.326,
+      0.488
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig4-bli.png",
+    "source": "source/main.pdf",
+    "pdf_page": 7,
+    "panel": "Fig. 4d",
+    "crop_normalized": [
+      0.333,
+      0.341,
+      0.806,
+      0.49
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig4-enzyme.png",
+    "source": "source/main.pdf",
+    "pdf_page": 7,
+    "panel": "Fig. 4f",
+    "crop_normalized": [
+      0.078,
+      0.525,
+      0.682,
+      0.653
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig5-nickel-validation.png",
+    "source": "source/main.pdf",
+    "pdf_page": 9,
+    "panel": "Fig. 5c",
+    "crop_normalized": [
+      0.686,
+      0.062,
+      0.941,
+      0.351
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig6-condition.png",
+    "source": "source/main.pdf",
+    "pdf_page": 10,
+    "panel": "Fig. 6a",
+    "crop_normalized": [
+      0.088,
+      0.066,
+      0.937,
+      0.173
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig6-rates.png",
+    "source": "source/main.pdf",
+    "pdf_page": 10,
+    "panel": "Fig. 6b",
+    "crop_normalized": [
+      0.075,
+      0.196,
+      0.291,
+      0.401
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig6-interface.png",
+    "source": "source/main.pdf",
+    "pdf_page": 10,
+    "panel": "Fig. 6g",
+    "crop_normalized": [
+      0.662,
+      0.424,
+      0.92,
+      0.553
+    ],
+    "treatment": "Original-author figure crop; aspect ratio preserved; no data redraw",
+    "editable": "Raster image in PPTX; separately movable/resizable/croppable, not atom/curve editable"
+  },
+  {
+    "asset": "media/fig2-rmsd-clean.png",
+    "source": "source/main.pdf",
+    "pdf_page": 4,
+    "panel": "Fig. 2c",
+    "crop_normalized": [
+      0.303,
+      0.243,
+      0.509,
+      0.404
+    ],
+    "treatment": "Autonomous revised crop; original-author pixels preserved; no data reconstruction",
+    "editable": "Raster image; separate native annotations/relations remain editable"
+  },
+  {
+    "asset": "media/fig6-cryo-clean.png",
+    "source": "source/main.pdf",
+    "pdf_page": 10,
+    "panel": "Fig. 6e,f",
+    "crop_normalized": [
+      0.265,
+      0.419,
+      0.636,
+      0.659
+    ],
+    "treatment": "Autonomous revised crop; original-author pixels preserved; no data reconstruction",
+    "editable": "Raster image; separate native annotations/relations remain editable"
+  },
+  {
+    "asset": "media/fig4-enzyme-rates-complete.png",
+    "source": "source/main.pdf",
+    "pdf_page": 7,
+    "panel": "Fig. 4g",
+    "crop_normalized": [
+      0.709,
+      0.505,
+      0.942,
+      0.671
+    ],
+    "treatment": "Autonomous revised crop; original-author pixels preserved; no data reconstruction",
+    "editable": "Raster image; separate native annotations/relations remain editable"
+  },
+  {
+    "asset": "media/final-11-assembly-c3-design.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      170,
+      58,
+      231,
+      118
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-c3-af2.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      235,
+      58,
+      293,
+      118
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-c3-em.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      305,
+      58,
+      361,
+      118
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-c3-recon.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      370,
+      58,
+      428,
+      118
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-c3-overlay.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      432,
+      58,
+      561,
+      118
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-c6-design.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      170,
+      122,
+      231,
+      182
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-c6-af2.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      235,
+      122,
+      293,
+      182
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-c6-em.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      305,
+      122,
+      361,
+      182
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-c6-recon.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      370,
+      122,
+      428,
+      182
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-c6-overlay.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      432,
+      122,
+      561,
+      182
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-d4-design.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      170,
+      314,
+      231,
+      373
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-d4-af2.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      235,
+      314,
+      293,
+      373
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-d4-em.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      305,
+      314,
+      361,
+      373
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-d4-recon.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      370,
+      314,
+      428,
+      373
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-11-assembly-d4-overlay.png",
+    "source": "source/main.pdf",
+    "pdf_page": 6,
+    "crop_pdf_points": [
+      432,
+      314,
+      561,
+      373
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-09-motifs.png",
+    "source": "source/main.pdf",
+    "pdf_page": 7,
+    "crop_pdf_points": [
+      318.47266052246096,
+      58.52408605957031,
+      559.5594409179687,
+      232.51461218261718
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/final-15-binder.png",
+    "source": "source/main.pdf",
+    "pdf_page": 10,
+    "crop_pdf_points": [
+      380.976640625,
+      442.0941095581055,
+      558.3688889160156,
+      523.5533104248047
+    ],
+    "treatment": "Precise crop after full image review; unmodified original pixels",
+    "editable": "Raster; native labels outside image"
+  },
+  {
+    "asset": "media/complete-08-in-sym.png",
+    "source": "source/main.pdf",
+    "pdf_page": 3,
+    "crop_pdf_points": [
+      350,
+      139,
+      399,
+      194
+    ],
+    "treatment": "Complete original objects and original labels retained; exact PDF point crop",
+    "editable": "Raster"
+  },
+  {
+    "asset": "media/complete-08-out-sym.png",
+    "source": "source/main.pdf",
+    "pdf_page": 3,
+    "crop_pdf_points": [
+      485,
+      139,
+      547,
+      198
+    ],
+    "treatment": "Complete original objects and original labels retained; exact PDF point crop",
+    "editable": "Raster"
+  },
+  {
+    "asset": "media/complete-08-in-target.png",
+    "source": "source/main.pdf",
+    "pdf_page": 3,
+    "crop_pdf_points": [
+      352,
+      202,
+      396,
+      257
+    ],
+    "treatment": "Complete original objects and original labels retained; exact PDF point crop",
+    "editable": "Raster"
+  },
+  {
+    "asset": "media/complete-08-in-motif.png",
+    "source": "source/main.pdf",
+    "pdf_page": 3,
+    "crop_pdf_points": [
+      350,
+      265,
+      397,
+      319
+    ],
+    "treatment": "Complete original objects and original labels retained; exact PDF point crop",
+    "editable": "Raster"
+  },
+  {
+    "asset": "media/complete-12-nickel-generation.png",
+    "source": "source/main.pdf",
+    "pdf_page": 9,
+    "crop_pdf_points": [
+      42,
+      169,
+      393,
+      276
+    ],
+    "treatment": "Complete original objects and original labels retained; exact PDF point crop",
+    "editable": "Raster"
+  },
+  {
+    "asset": "media/clean-08-out-target.png",
+    "source": "source/main.pdf",
+    "pdf_page": 3,
+    "crop_pdf_points": [
+      492,
+      202,
+      547,
+      262
+    ],
+    "treatment": "Complete final object and label; excludes preceding sampling-column pixels",
+    "editable": "Raster"
+  },
+  {
+    "asset": "media/clean-08-out-motif.png",
+    "source": "source/main.pdf",
+    "pdf_page": 3,
+    "crop_pdf_points": [
+      492,
+      265,
+      547,
+      323
+    ],
+    "treatment": "Complete final object and label; excludes preceding sampling-column pixels",
+    "editable": "Raster"
+  }
+]

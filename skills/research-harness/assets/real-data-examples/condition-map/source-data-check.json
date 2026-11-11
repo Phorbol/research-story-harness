@@ -1,0 +1,22 @@
+{
+  "data_a": {
+    "rows": 200,
+    "max_absolute_difference": 0.0,
+    "exactly_equal": true
+  },
+  "data_b": {
+    "rows": 200,
+    "max_absolute_difference": 0.0,
+    "exactly_equal": true
+  },
+  "data_tv_t": {
+    "rows": 62500,
+    "max_absolute_difference": 0.0,
+    "exactly_equal": true
+  },
+  "data_tv_time": {
+    "rows": 40000,
+    "max_absolute_difference": 0.0,
+    "exactly_equal": true
+  }
+}

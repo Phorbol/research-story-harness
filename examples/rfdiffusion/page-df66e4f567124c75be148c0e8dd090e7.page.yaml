@@ -1,0 +1,213 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "最后看一个重要边界：酶活性位点设计。左图从原酶提取少数关键残基，RFdiffusion在微调后可以围绕这些残基生成支架，并在AF2预测中保留相应几何。右图显示不同酶类别的计算成功率仍然只有几个百分点的量级，说明这是更严格、更困难的任务。这个版本不能显式建模结合的小分子，作者用外部势能间接引导口袋形成。更进一步的催化能力还取决于底物定位、反应能量和动力学等因素，本文没有给出这些新支架的催化活性实验。因此这项工作为功能设计提供了强大的几何起点，但不能把活性位点支架直接称作已经设计成功的酶。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "边界 · 几何精度与化学功能之间仍有距离",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "催化位点能被固定，不等于新酶功能已实现",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 4f,g, p. 1096; Extended Data Fig. 6.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "17",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "enzyme",
+      "elementType": "image",
+      "bounds": [
+        48,
+        203,
+        796,
+        236
+      ],
+      "src": "media/fig4-enzyme.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "enzyme-rates",
+      "elementType": "image",
+      "bounds": [
+        904,
+        172,
+        316,
+        334
+      ],
+      "src": "media/fig4-enzyme-rates-complete.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "steps",
+      "elementType": "text",
+      "bounds": [
+        48,
+        470,
+        800,
+        45
+      ],
+      "content": {
+        "text": "原酶 → 提取功能残基 → 生成支架 → AF2 检查几何",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "boundaries",
+      "elementType": "text",
+      "bounds": [
+        48,
+        551,
+        1170,
+        86
+      ],
+      "content": {
+        "text": "需要任务微调；本文版本尚不显式建模配体原子。\n这里的结果是计算上的位点支架成功，尚未提供新支架的催化活性验证。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#AA7433",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

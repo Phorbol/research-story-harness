@@ -1,0 +1,238 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "这页从计算支架进入功能测量。p53的一段螺旋本来就能接触MDM2，RFdiffusion在MDM2存在的情况下围绕这段螺旋生成新支架，使它保留原有接触并增加额外界面。左边可以看到粉色新增结构。右边是两种设计的生物层干涉测量，也就是BLI，拟合得到0.7和0.5纳摩尔的解离常数；数值越小表示结合越紧。原文引用的p53肽段亲和力约为600纳摩尔，所以这两个设计约提高三个数量级。这里证明的是体外结合能力，不能进一步推成细胞内抑制作用或治疗效果。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "功能证据 · 从局部几何走向实测亲和力",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "固定 p53 螺旋后，新增支架可增强结合",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 4c,d, pp. 1095–1096; p53 peptide reference 42.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "10",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "p53",
+      "elementType": "image",
+      "bounds": [
+        48,
+        187,
+        420,
+        310
+      ],
+      "src": "media/fig4-p53.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "p53-key",
+      "elementType": "text",
+      "bounds": [
+        48,
+        535,
+        420,
+        90
+      ],
+      "content": {
+        "text": "青：MDM2；灰：p53 螺旋\n粉：围绕螺旋生成的新增支架",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "bli",
+      "elementType": "image",
+      "bounds": [
+        520,
+        193,
+        704,
+        292
+      ],
+      "src": "media/fig4-bli.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "affinity",
+      "elementType": "text",
+      "bounds": [
+        520,
+        520,
+        704,
+        59
+      ],
+      "content": {
+        "text": "0.7 nM / 0.5 nM",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 42,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "comparison",
+      "elementType": "text",
+      "bounds": [
+        520,
+        591,
+        704,
+        54
+      ],
+      "content": {
+        "text": "两种设计的 Kd；原文引用 p53 肽段约为 600 nM。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

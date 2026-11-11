@@ -1,0 +1,516 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "这页建立后面所有结果的评价口径。RFdiffusion首先输出骨架，ProteinMPNN为它寻找序列，通常每个骨架采样八条序列。AF2再从单序列预测结构，用于筛选是否回到设计目标。对单体和motif任务，主要阈值是整体骨架RMSD小于2埃、pAE小于5，如果有motif则局部偏差小于1埃。这里pAE是预测的对齐误差，用作模型信心指标。结合蛋白和对称组装使用另外的设定，不能把这个阈值简单套用所有任务。更关键的是，RF和AF2在架构和训练信息上有重合，所以这种检查只提供部分独立证据。实际表达、结合测量和实验结构才回答下一层问题。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "评价 · 计算成功与实验成功分层",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "骨架生成之后，还要跨过三道验证关",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, p. 1090; SI §§5.1–5.3, PDF pp. 80–82.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "06",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "node0",
+      "elementType": "shape",
+      "bounds": [
+        48,
+        190,
+        270,
+        104
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#BF7086"
+      }
+    },
+    {
+      "elementId": "node0-text",
+      "elementType": "text",
+      "bounds": [
+        60,
+        205,
+        246,
+        76
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">RFdiffusion</p><p style=\"text-align:center\">生成骨架</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "arr0",
+      "elementType": "line",
+      "bounds": [
+        324,
+        242,
+        20,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "node1",
+      "elementType": "shape",
+      "bounds": [
+        350,
+        190,
+        270,
+        104
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#61729D"
+      }
+    },
+    {
+      "elementId": "node1-text",
+      "elementType": "text",
+      "bounds": [
+        362,
+        205,
+        246,
+        76
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">ProteinMPNN</p><p style=\"text-align:center\">为骨架设计序列</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "arr1",
+      "elementType": "line",
+      "bounds": [
+        626,
+        242,
+        20,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "node2",
+      "elementType": "shape",
+      "bounds": [
+        652,
+        190,
+        270,
+        104
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#61729D"
+      }
+    },
+    {
+      "elementId": "node2-text",
+      "elementType": "text",
+      "bounds": [
+        664,
+        205,
+        246,
+        76
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">AF2</p><p style=\"text-align:center\">重新预测与筛选</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "arr2",
+      "elementType": "line",
+      "bounds": [
+        928,
+        242,
+        20,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "node3",
+      "elementType": "shape",
+      "bounds": [
+        954,
+        190,
+        270,
+        104
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#258C85"
+      }
+    },
+    {
+      "elementId": "node3-text",
+      "elementType": "text",
+      "bounds": [
+        966,
+        205,
+        246,
+        76
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">实验</p><p style=\"text-align:center\">结构与功能测量</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "seq-note",
+      "elementType": "text",
+      "bounds": [
+        350,
+        324,
+        270,
+        70
+      ],
+      "content": {
+        "text": "通常每个骨架\n采样 8 条序列",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 21,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "af-note",
+      "elementType": "text",
+      "bounds": [
+        652,
+        324,
+        270,
+        120
+      ],
+      "content": {
+        "text": "单体 / motif 主要标准：\n整体 RMSD &lt; 2 Å\npAE &lt; 5\nmotif RMSD &lt; 1 Å",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 20,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "exp-note",
+      "elementType": "text",
+      "bounds": [
+        954,
+        324,
+        270,
+        100
+      ],
+      "content": {
+        "text": "表达与可溶性\n结合测量\n电镜 / 实验结构",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "separate",
+      "elementType": "line",
+      "bounds": [
+        48,
+        500,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "level",
+      "elementType": "text",
+      "bounds": [
+        48,
+        538,
+        1180,
+        90
+      ],
+      "content": {
+        "text": "AF2 一致性回答“序列是否可能回到设计结构”。\n实验继续回答“能否制备、是否有功能、实际结构是否正确”。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": [
+    {
+      "elements": [
+        "node0",
+        "node0-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "node1",
+        "node1-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "node2",
+        "node2-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "node3",
+        "node3-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    }
+  ]
+}

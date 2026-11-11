@@ -1,0 +1,112 @@
+{
+  "source": "Maltas and Wood (2019), S1 Data, Figure1",
+  "source_file": "assets/pbio.3000515.s017.xlsx",
+  "records": [
+    {
+      "id": "DAP-M1-test-CRO",
+      "selecting": "DAP",
+      "testing": "CRO",
+      "replicate": 1,
+      "value": 1.74,
+      "cell": "B10",
+      "collateral": 1,
+      "glyph_id": "DAP-M1-test-CRO-response",
+      "sign": "+",
+      "color": "#C35D37",
+      "geometry": "equal-sized vector rectangle over conceptual population illustration; not quantitative area"
+    },
+    {
+      "id": "DAP-M2-test-CRO",
+      "selecting": "DAP",
+      "testing": "CRO",
+      "replicate": 2,
+      "value": -8.68,
+      "cell": "C10",
+      "collateral": 1,
+      "glyph_id": "DAP-M2-test-CRO-response",
+      "sign": "\u2212",
+      "color": "#176E96",
+      "geometry": "equal-sized vector rectangle over conceptual population illustration; not quantitative area"
+    },
+    {
+      "id": "DAP-M3-test-CRO",
+      "selecting": "DAP",
+      "testing": "CRO",
+      "replicate": 3,
+      "value": 0,
+      "cell": "D10",
+      "collateral": 1,
+      "glyph_id": "DAP-M3-test-CRO-response",
+      "sign": "0",
+      "color": "#E4E8EA",
+      "geometry": "equal-sized vector rectangle over conceptual population illustration; not quantitative area"
+    },
+    {
+      "id": "DAP-M4-test-CRO",
+      "selecting": "DAP",
+      "testing": "CRO",
+      "replicate": 4,
+      "value": 1.3,
+      "cell": "E10",
+      "collateral": 1,
+      "glyph_id": "DAP-M4-test-CRO-response",
+      "sign": "+",
+      "color": "#C35D37",
+      "geometry": "equal-sized vector rectangle over conceptual population illustration; not quantitative area"
+    },
+    {
+      "id": "CRO-M1-test-RIF",
+      "selecting": "CRO",
+      "testing": "RIF",
+      "replicate": 1,
+      "value": -3.43,
+      "cell": "N21",
+      "collateral": 1,
+      "glyph_id": "CRO-M1-test-RIF-response",
+      "sign": "\u2212",
+      "color": "#176E96",
+      "geometry": "equal-sized vector rectangle (4.9 x 4.0 mm); replicate 1\u20134 left to right"
+    },
+    {
+      "id": "CRO-M2-test-RIF",
+      "selecting": "CRO",
+      "testing": "RIF",
+      "replicate": 2,
+      "value": -4.14,
+      "cell": "O21",
+      "collateral": 1,
+      "glyph_id": "CRO-M2-test-RIF-response",
+      "sign": "\u2212",
+      "color": "#176E96",
+      "geometry": "equal-sized vector rectangle (4.9 x 4.0 mm); replicate 1\u20134 left to right"
+    },
+    {
+      "id": "CRO-M3-test-RIF",
+      "selecting": "CRO",
+      "testing": "RIF",
+      "replicate": 3,
+      "value": -3.68,
+      "cell": "P21",
+      "collateral": 1,
+      "glyph_id": "CRO-M3-test-RIF-response",
+      "sign": "\u2212",
+      "color": "#176E96",
+      "geometry": "equal-sized vector rectangle (4.9 x 4.0 mm); replicate 1\u20134 left to right"
+    },
+    {
+      "id": "CRO-M4-test-RIF",
+      "selecting": "CRO",
+      "testing": "RIF",
+      "replicate": 4,
+      "value": -4.46,
+      "cell": "Q21",
+      "collateral": 1,
+      "glyph_id": "CRO-M4-test-RIF-response",
+      "sign": "\u2212",
+      "color": "#176E96",
+      "geometry": "equal-sized vector rectangle (4.9 x 4.0 mm); replicate 1\u20134 left to right"
+    }
+  ],
+  "concept_illustration": "assets/four-independent-cultures.png; image generation, no empirical data or measurements",
+  "zero": "Source threshold zero: absolute IC50 difference did not exceed 3 \u00d7 ancestral SEM; not missing and not proof of zero biological effect"
+}

@@ -1,0 +1,31 @@
+{
+  "journal": null,
+  "medium": "manuscript",
+  "figure_use": null,
+  "tool_roles": [],
+  "dimensions_mm": null,
+  "working_dimensions_mm": null,
+  "dimension_basis": {
+    "status": "unresolved",
+    "source_type": null,
+    "source_url_or_user_request": null,
+    "checked_on": null,
+    "applies_to": null
+  },
+  "font_requirements": null,
+  "formats": [],
+  "policy": {
+    "status": "unknown",
+    "checked_on": null,
+    "official_url": null,
+    "applicable_conditions": null,
+    "disclosure": null
+  },
+  "official_entrypoints": {
+    "ACS": "https://researcher-resources.acs.org/publish/aipolicy",
+    "Elsevier": "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals",
+    "Springer Nature": "https://www.springernature.com/gp/policies/editorial-policies/ai-manuscript-preparation",
+    "Nature figure preparation": "https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/"
+  },
+  "note": "URLs are discovery entrypoints from the supplied research, not verified policy permissions. Recheck the target journal and use at submission."
+}

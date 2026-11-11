@@ -1,0 +1,41 @@
+{
+  "scope": "Rebuild reproducibility and public-package contents only; no repeated scientific computation.",
+  "figures": {
+    "TOC": {
+      "selected_exports_copied_without_changes": true,
+      "rebuilt_600dpi_png_pixel_identical": true,
+      "rebuilt_pdf_mm": [
+        79.99999953375921,
+        39.999999766879604
+      ]
+    },
+    "Fig1": {
+      "selected_exports_copied_without_changes": true,
+      "rebuilt_600dpi_png_pixel_identical": true,
+      "rebuilt_pdf_mm": [
+        177.99999855889212,
+        94.00000093248156
+      ]
+    },
+    "Evidence": {
+      "selected_exports_copied_without_changes": true,
+      "rebuilt_600dpi_png_pixel_identical": true,
+      "rebuilt_pdf_mm": [
+        177.99999855889212,
+        125.99999643961587
+      ]
+    }
+  },
+  "privacy_scan": {
+    "private_absolute_paths_found": [],
+    "included_pdf_files": [
+      "figures/Evidence.pdf",
+      "figures/Fig1.pdf",
+      "figures/TOC.pdf"
+    ],
+    "raster_metadata_keys": [],
+    "history_or_review_files_included": false,
+    "full_article_pdf_included": false
+  },
+  "local_markdown_links_checked": 14
+}

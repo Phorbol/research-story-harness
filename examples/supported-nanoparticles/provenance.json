@@ -1,0 +1,35 @@
+{
+  "origin": "constructed_illustration",
+  "parameters": {
+    "Pd_fcc_a_A": 3.89,
+    "ZnO_wurtzite_a_A": 3.25,
+    "ZnO_c_A": 5.21,
+    "ZnO_u": 0.382,
+    "particle_radius_A": 13.5,
+    "substitution_fraction": 0.35,
+    "random_seed": 17,
+    "vertical_gap_A": 2.45
+  },
+  "parameter_status": "Chosen idealized illustration parameters, not fitted to the paper. Substitution pattern, particle shape, phase, interface registry and contact angle are not research results.",
+  "same_geometry_both_models": true,
+  "adsorbates": "None attached; separate chemical labels only. No guessed adsorption sites.",
+  "models": {
+    "Zn": {
+      "path": "models/illustrative-PdZn-ZnO.extxyz",
+      "atoms": 1413,
+      "support_atoms": 1048,
+      "particle_atoms": 365,
+      "substitution_count": 128,
+      "formula": "O524Pd237Zn652"
+    },
+    "Cu": {
+      "path": "models/illustrative-PdCu-ZnO.extxyz",
+      "atoms": 1413,
+      "support_atoms": 1048,
+      "particle_atoms": 365,
+      "substitution_count": 128,
+      "formula": "Cu128O524Pd237Zn524"
+    }
+  },
+  "origin_description": "ASE-constructed illustrative supported-particle models; not experimental or paper atomic coordinates."
+}

@@ -1,0 +1,2860 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "这张备份页给出全部25个任务的计算成功比例。为使三列可比较，此处分别显示每个方法在本文测试变体中的最高成功率：RFdiffusion取两种噪声设置的较大值，另两种方法取是否使用ProteinMPNN的较大值。这是明确的汇总操作，不代表某一套统一参数能同时达到所有行的最好结果。每个原始格子的分母是100个骨架，完整六列原始值保存在随附CSV中。可以看到RFdiffusion仍然会在部分任务落后，也有两个完全失败的任务。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "备份 · 数值来自 SI Table 10",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "备份｜逐任务成功率显示优势与失败并存",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, SI Table 10 (PDF p. 87; printed p. 86); native redraw.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "19",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "transform",
+      "elementType": "text",
+      "bounds": [
+        48,
+        153,
+        1184,
+        52
+      ],
+      "content": {
+        "text": "每格为成功率（%）；取各方法所测变体的最高值。每个原始设置生成 100 个骨架。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 21,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "hh0",
+      "elementType": "text",
+      "bounds": [
+        48,
+        221,
+        185,
+        30
+      ],
+      "content": {
+        "text": "任务",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 19,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col00",
+      "elementType": "text",
+      "bounds": [
+        238,
+        221,
+        122,
+        30
+      ],
+      "content": {
+        "text": "RFdiffusion",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col01",
+      "elementType": "text",
+      "bounds": [
+        363,
+        221,
+        122,
+        30
+      ],
+      "content": {
+        "text": "RFjoint",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#61729D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col02",
+      "elementType": "text",
+      "bounds": [
+        488,
+        221,
+        122,
+        30
+      ],
+      "content": {
+        "text": "Hallucination",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task00",
+      "elementType": "text",
+      "bounds": [
+        48,
+        260,
+        180,
+        27
+      ],
+      "content": {
+        "text": "1BCF",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v000",
+      "elementType": "text",
+      "bounds": [
+        238,
+        260,
+        118,
+        27
+      ],
+      "content": {
+        "text": "100",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v001",
+      "elementType": "text",
+      "bounds": [
+        363,
+        260,
+        118,
+        27
+      ],
+      "content": {
+        "text": "100",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v002",
+      "elementType": "text",
+      "bounds": [
+        488,
+        260,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task01",
+      "elementType": "text",
+      "bounds": [
+        48,
+        288,
+        180,
+        27
+      ],
+      "content": {
+        "text": "6E6R med",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v010",
+      "elementType": "text",
+      "bounds": [
+        238,
+        288,
+        118,
+        27
+      ],
+      "content": {
+        "text": "89",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v011",
+      "elementType": "text",
+      "bounds": [
+        363,
+        288,
+        118,
+        27
+      ],
+      "content": {
+        "text": "27",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v012",
+      "elementType": "text",
+      "bounds": [
+        488,
+        288,
+        118,
+        27
+      ],
+      "content": {
+        "text": "9",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task02",
+      "elementType": "text",
+      "bounds": [
+        48,
+        316,
+        180,
+        27
+      ],
+      "content": {
+        "text": "2KL8",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v020",
+      "elementType": "text",
+      "bounds": [
+        238,
+        316,
+        118,
+        27
+      ],
+      "content": {
+        "text": "96",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v021",
+      "elementType": "text",
+      "bounds": [
+        363,
+        316,
+        118,
+        27
+      ],
+      "content": {
+        "text": "95",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v022",
+      "elementType": "text",
+      "bounds": [
+        488,
+        316,
+        118,
+        27
+      ],
+      "content": {
+        "text": "34",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task03",
+      "elementType": "text",
+      "bounds": [
+        48,
+        344,
+        180,
+        27
+      ],
+      "content": {
+        "text": "6E6R long",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v030",
+      "elementType": "text",
+      "bounds": [
+        238,
+        344,
+        118,
+        27
+      ],
+      "content": {
+        "text": "86",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v031",
+      "elementType": "text",
+      "bounds": [
+        363,
+        344,
+        118,
+        27
+      ],
+      "content": {
+        "text": "4",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v032",
+      "elementType": "text",
+      "bounds": [
+        488,
+        344,
+        118,
+        27
+      ],
+      "content": {
+        "text": "1",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task04",
+      "elementType": "text",
+      "bounds": [
+        48,
+        372,
+        180,
+        27
+      ],
+      "content": {
+        "text": "6EXZ long",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v040",
+      "elementType": "text",
+      "bounds": [
+        238,
+        372,
+        118,
+        27
+      ],
+      "content": {
+        "text": "76",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v041",
+      "elementType": "text",
+      "bounds": [
+        363,
+        372,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v042",
+      "elementType": "text",
+      "bounds": [
+        488,
+        372,
+        118,
+        27
+      ],
+      "content": {
+        "text": "4",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task05",
+      "elementType": "text",
+      "bounds": [
+        48,
+        400,
+        180,
+        27
+      ],
+      "content": {
+        "text": "1YCR",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v050",
+      "elementType": "text",
+      "bounds": [
+        238,
+        400,
+        118,
+        27
+      ],
+      "content": {
+        "text": "74",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v051",
+      "elementType": "text",
+      "bounds": [
+        363,
+        400,
+        118,
+        27
+      ],
+      "content": {
+        "text": "57",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v052",
+      "elementType": "text",
+      "bounds": [
+        488,
+        400,
+        118,
+        27
+      ],
+      "content": {
+        "text": "61",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task06",
+      "elementType": "text",
+      "bounds": [
+        48,
+        428,
+        180,
+        27
+      ],
+      "content": {
+        "text": "6VW1",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v060",
+      "elementType": "text",
+      "bounds": [
+        238,
+        428,
+        118,
+        27
+      ],
+      "content": {
+        "text": "69",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v061",
+      "elementType": "text",
+      "bounds": [
+        363,
+        428,
+        118,
+        27
+      ],
+      "content": {
+        "text": "24",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v062",
+      "elementType": "text",
+      "bounds": [
+        488,
+        428,
+        118,
+        27
+      ],
+      "content": {
+        "text": "32",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task07",
+      "elementType": "text",
+      "bounds": [
+        48,
+        456,
+        180,
+        27
+      ],
+      "content": {
+        "text": "5TPN",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v070",
+      "elementType": "text",
+      "bounds": [
+        238,
+        456,
+        118,
+        27
+      ],
+      "content": {
+        "text": "61",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v071",
+      "elementType": "text",
+      "bounds": [
+        363,
+        456,
+        118,
+        27
+      ],
+      "content": {
+        "text": "3",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v072",
+      "elementType": "text",
+      "bounds": [
+        488,
+        456,
+        118,
+        27
+      ],
+      "content": {
+        "text": "1",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task08",
+      "elementType": "text",
+      "bounds": [
+        48,
+        484,
+        180,
+        27
+      ],
+      "content": {
+        "text": "6EXZ med",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v080",
+      "elementType": "text",
+      "bounds": [
+        238,
+        484,
+        118,
+        27
+      ],
+      "content": {
+        "text": "49",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v081",
+      "elementType": "text",
+      "bounds": [
+        363,
+        484,
+        118,
+        27
+      ],
+      "content": {
+        "text": "3",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v082",
+      "elementType": "text",
+      "bounds": [
+        488,
+        484,
+        118,
+        27
+      ],
+      "content": {
+        "text": "15",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task09",
+      "elementType": "text",
+      "bounds": [
+        48,
+        512,
+        180,
+        27
+      ],
+      "content": {
+        "text": "4ZYP",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v090",
+      "elementType": "text",
+      "bounds": [
+        238,
+        512,
+        118,
+        27
+      ],
+      "content": {
+        "text": "40",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v091",
+      "elementType": "text",
+      "bounds": [
+        363,
+        512,
+        118,
+        27
+      ],
+      "content": {
+        "text": "21",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v092",
+      "elementType": "text",
+      "bounds": [
+        488,
+        512,
+        118,
+        27
+      ],
+      "content": {
+        "text": "18",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task010",
+      "elementType": "text",
+      "bounds": [
+        48,
+        540,
+        180,
+        27
+      ],
+      "content": {
+        "text": "6E6R short",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v0100",
+      "elementType": "text",
+      "bounds": [
+        238,
+        540,
+        118,
+        27
+      ],
+      "content": {
+        "text": "39",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v0101",
+      "elementType": "text",
+      "bounds": [
+        363,
+        540,
+        118,
+        27
+      ],
+      "content": {
+        "text": "23",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v0102",
+      "elementType": "text",
+      "bounds": [
+        488,
+        540,
+        118,
+        27
+      ],
+      "content": {
+        "text": "7",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task011",
+      "elementType": "text",
+      "bounds": [
+        48,
+        568,
+        180,
+        27
+      ],
+      "content": {
+        "text": "5TRV long",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v0110",
+      "elementType": "text",
+      "bounds": [
+        238,
+        568,
+        118,
+        27
+      ],
+      "content": {
+        "text": "37",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v0111",
+      "elementType": "text",
+      "bounds": [
+        363,
+        568,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v0112",
+      "elementType": "text",
+      "bounds": [
+        488,
+        568,
+        118,
+        27
+      ],
+      "content": {
+        "text": "2",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task012",
+      "elementType": "text",
+      "bounds": [
+        48,
+        596,
+        180,
+        27
+      ],
+      "content": {
+        "text": "3IXT",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v0120",
+      "elementType": "text",
+      "bounds": [
+        238,
+        596,
+        118,
+        27
+      ],
+      "content": {
+        "text": "35",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v0121",
+      "elementType": "text",
+      "bounds": [
+        363,
+        596,
+        118,
+        27
+      ],
+      "content": {
+        "text": "62",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v0122",
+      "elementType": "text",
+      "bounds": [
+        488,
+        596,
+        118,
+        27
+      ],
+      "content": {
+        "text": "34",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "hh1",
+      "elementType": "text",
+      "bounds": [
+        668,
+        221,
+        185,
+        30
+      ],
+      "content": {
+        "text": "任务",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 19,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col10",
+      "elementType": "text",
+      "bounds": [
+        858,
+        221,
+        122,
+        30
+      ],
+      "content": {
+        "text": "RFdiffusion",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col11",
+      "elementType": "text",
+      "bounds": [
+        983,
+        221,
+        122,
+        30
+      ],
+      "content": {
+        "text": "RFjoint",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#61729D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "col12",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        221,
+        122,
+        30
+      ],
+      "content": {
+        "text": "Hallucination",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task10",
+      "elementType": "text",
+      "bounds": [
+        668,
+        260,
+        180,
+        27
+      ],
+      "content": {
+        "text": "5TRV med",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v100",
+      "elementType": "text",
+      "bounds": [
+        858,
+        260,
+        118,
+        27
+      ],
+      "content": {
+        "text": "24",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v101",
+      "elementType": "text",
+      "bounds": [
+        983,
+        260,
+        118,
+        27
+      ],
+      "content": {
+        "text": "3",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v102",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        260,
+        118,
+        27
+      ],
+      "content": {
+        "text": "3",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task11",
+      "elementType": "text",
+      "bounds": [
+        668,
+        288,
+        180,
+        27
+      ],
+      "content": {
+        "text": "7MRX 85",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v110",
+      "elementType": "text",
+      "bounds": [
+        858,
+        288,
+        118,
+        27
+      ],
+      "content": {
+        "text": "11",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v111",
+      "elementType": "text",
+      "bounds": [
+        983,
+        288,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v112",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        288,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task12",
+      "elementType": "text",
+      "bounds": [
+        668,
+        316,
+        180,
+        27
+      ],
+      "content": {
+        "text": "7MRX 128",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v120",
+      "elementType": "text",
+      "bounds": [
+        858,
+        316,
+        118,
+        27
+      ],
+      "content": {
+        "text": "9",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v121",
+      "elementType": "text",
+      "bounds": [
+        983,
+        316,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v122",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        316,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task13",
+      "elementType": "text",
+      "bounds": [
+        668,
+        344,
+        180,
+        27
+      ],
+      "content": {
+        "text": "1PRW",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v130",
+      "elementType": "text",
+      "bounds": [
+        858,
+        344,
+        118,
+        27
+      ],
+      "content": {
+        "text": "9",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v131",
+      "elementType": "text",
+      "bounds": [
+        983,
+        344,
+        118,
+        27
+      ],
+      "content": {
+        "text": "22",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v132",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        344,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task14",
+      "elementType": "text",
+      "bounds": [
+        668,
+        372,
+        180,
+        27
+      ],
+      "content": {
+        "text": "5TRV short",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v140",
+      "elementType": "text",
+      "bounds": [
+        858,
+        372,
+        118,
+        27
+      ],
+      "content": {
+        "text": "7",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v141",
+      "elementType": "text",
+      "bounds": [
+        983,
+        372,
+        118,
+        27
+      ],
+      "content": {
+        "text": "2",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v142",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        372,
+        118,
+        27
+      ],
+      "content": {
+        "text": "1",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task15",
+      "elementType": "text",
+      "bounds": [
+        668,
+        400,
+        180,
+        27
+      ],
+      "content": {
+        "text": "7MRX 60",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v150",
+      "elementType": "text",
+      "bounds": [
+        858,
+        400,
+        118,
+        27
+      ],
+      "content": {
+        "text": "2",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v151",
+      "elementType": "text",
+      "bounds": [
+        983,
+        400,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v152",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        400,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task16",
+      "elementType": "text",
+      "bounds": [
+        668,
+        428,
+        180,
+        27
+      ],
+      "content": {
+        "text": "6EXZ short",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v160",
+      "elementType": "text",
+      "bounds": [
+        858,
+        428,
+        118,
+        27
+      ],
+      "content": {
+        "text": "4",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v161",
+      "elementType": "text",
+      "bounds": [
+        983,
+        428,
+        118,
+        27
+      ],
+      "content": {
+        "text": "27",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v162",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        428,
+        118,
+        27
+      ],
+      "content": {
+        "text": "15",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task17",
+      "elementType": "text",
+      "bounds": [
+        668,
+        456,
+        180,
+        27
+      ],
+      "content": {
+        "text": "5IUS",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v170",
+      "elementType": "text",
+      "bounds": [
+        858,
+        456,
+        118,
+        27
+      ],
+      "content": {
+        "text": "2",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v171",
+      "elementType": "text",
+      "bounds": [
+        983,
+        456,
+        118,
+        27
+      ],
+      "content": {
+        "text": "1",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v172",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        456,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task18",
+      "elementType": "text",
+      "bounds": [
+        668,
+        484,
+        180,
+        27
+      ],
+      "content": {
+        "text": "5YUI",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v180",
+      "elementType": "text",
+      "bounds": [
+        858,
+        484,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v181",
+      "elementType": "text",
+      "bounds": [
+        983,
+        484,
+        118,
+        27
+      ],
+      "content": {
+        "text": "1",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v182",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        484,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task19",
+      "elementType": "text",
+      "bounds": [
+        668,
+        512,
+        180,
+        27
+      ],
+      "content": {
+        "text": "5WN9",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v190",
+      "elementType": "text",
+      "bounds": [
+        858,
+        512,
+        118,
+        27
+      ],
+      "content": {
+        "text": "1",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v191",
+      "elementType": "text",
+      "bounds": [
+        983,
+        512,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v192",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        512,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task110",
+      "elementType": "text",
+      "bounds": [
+        668,
+        540,
+        180,
+        27
+      ],
+      "content": {
+        "text": "4JHW",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v1100",
+      "elementType": "text",
+      "bounds": [
+        858,
+        540,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v1101",
+      "elementType": "text",
+      "bounds": [
+        983,
+        540,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v1102",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        540,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task111",
+      "elementType": "text",
+      "bounds": [
+        668,
+        568,
+        180,
+        27
+      ],
+      "content": {
+        "text": "1QJG",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v1110",
+      "elementType": "text",
+      "bounds": [
+        858,
+        568,
+        118,
+        27
+      ],
+      "content": {
+        "text": "2",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v1111",
+      "elementType": "text",
+      "bounds": [
+        983,
+        568,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#61729D",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "v1112",
+      "elementType": "text",
+      "bounds": [
+        1108,
+        568,
+        118,
+        27
+      ],
+      "content": {
+        "text": "0",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

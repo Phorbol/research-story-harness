@@ -1,0 +1,26 @@
+problem,RFdiffusion_noise0,RFdiffusion_noise1,RFjoint,RFjoint_MPNN,Hallucination,Hallucination_MPNN
+1BCF,100,98,65,100,0,0
+6E6R med,89,67,0,27,2,9
+2KL8,88,96,71,95,20,34
+6E6R long,86,63,0,4,0,1
+6EXZ long,76,51,0,0,1,4
+1YCR,74,58,12,57,11,61
+6VW1,69,66,0,24,2,32
+5TPN,61,59,0,3,0,1
+6EXZ med,49,33,0,3,5,15
+4ZYP,40,31,1,21,1,18
+6E6R short,39,29,0,23,3,7
+5TRV long,37,30,0,0,0,2
+3IXT,35,16,21,62,2,34
+5TRV med,24,20,0,3,0,3
+7MRX 85,11,6,0,0,0,0
+7MRX 128,9,4,0,0,0,0
+1PRW,8,9,0,22,0,0
+5TRV short,4,7,0,2,0,1
+7MRX 60,2,0,0,0,0,0
+6EXZ short,2,4,1,27,4,15
+5IUS,2,0,0,1,0,0
+5YUI,0,0,0,1,0,0
+5WN9,0,1,0,0,0,0
+4JHW,0,0,0,0,0,0
+1QJG,0,2,0,0,0,0

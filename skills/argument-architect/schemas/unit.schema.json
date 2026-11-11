@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "unit",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "results",
+        "caption",
+        "abstract",
+        "introduction",
+        "methods",
+        "discussion",
+        "other"
+      ]
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "citation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "plan_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+          },
+          "record": {
+            "type": "object",
+            "properties": {
+              "subject": {
+                "type": "string",
+                "minLength": 1
+              },
+              "metric": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": "number"
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1
+              },
+              "population": {
+                "type": "string",
+                "minLength": 1
+              },
+              "conditions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "analysis_version": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "subject",
+              "metric",
+              "value",
+              "unit",
+              "population",
+              "conditions",
+              "analysis_version"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "evidence_id",
+          "record"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "kind",
+    "text",
+    "claim_ids",
+    "evidence_ids",
+    "citation_ids",
+    "plan_ids",
+    "assertions"
+  ],
+  "additionalProperties": false
+}

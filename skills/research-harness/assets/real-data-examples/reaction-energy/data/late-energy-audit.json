@@ -1,0 +1,2027 @@
+{
+  "audit_scope": "Independent primary-source audit; no existing reviews or reconstruction data read",
+  "sources": {
+    "figure": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+    "caption": "sources/article.txt:730-740; author-article.pdf p.8 Fig.5 caption",
+    "table": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+    "methods": "sources/article.txt:641-650; author-article.pdf p.6 (printed p.8153)",
+    "raw_coordinates": "sources/author-supplement.pdf pp.19–106; sources/supplement.txt:1002–4884"
+  },
+  "decision": {
+    "complete_four_route_reported_arithmetic": "supported with explicit attribution and nonclosure caveat",
+    "exact_complete_Fig5B_Gibbs_reconstruction": "not supported from supplied sources",
+    "not_a_rounding_only_issue": true,
+    "reason": "Same nominal final products have route endpoint differences 0.08/0.15 eV in Fig5A-derived sums, larger than 0.05 eV worst-case rounding across 7+3 local reaction energies; phase/coadsorbate chemical potentials are not resolved."
+  },
+  "ledger_convention": {
+    "total_atoms": "C3H10O3: glycerol + 2 spectator H initially; source coordinate blocks all have this composition plus Cu64",
+    "meaning": "Stoichiometric embedding of explicit Fig5A transformations. Assumes H/OH/H2O stay on surface until stated, and a single-site symbol per species solely for formal vacancy accounting. Actual adsorption footprint and coadsorbate free energies are not established.",
+    "vacancies": "v0 is initial empty-site count. Printed S6 row20 and row23 have one final * whereas gas product would require two under its own single-site notation; terminal phase/site ambiguity is retained.",
+    "TS_ledger": "Same total atoms as adjoining states; during bond change component labels are not unique.",
+    "gaseous_exchange": "No H2 uptake, H2O desorption, or PDO desorption correction is added to Fig5A sums."
+  },
+  "figure5A_paths": [
+    {
+      "id": "12_deH",
+      "zero": "G(glycerol*)=0",
+      "source_family": "Fig5A_printed_annotations_only",
+      "status": "complete_reported_edge_cumulative_restatement; not thermodynamically closed or exact Fig5B reconstruction",
+      "states": [
+        {
+          "id": "glycerol",
+          "energy_eV": 0,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "formula": "Chosen zero: G(glycerol*) = 0",
+          "ledger": {
+            "organic": "glycerol* (C3H8O3)",
+            "H_star": 2,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": 0
+          }
+        },
+        {
+          "id": "2",
+          "energy_eV": -0.33,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow ending at 2",
+          "formula": "0.00 + (-0.33) = -0.33",
+          "ledger": {
+            "organic": "2* (C3H7O3)",
+            "H_star": 3,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": -1
+          }
+        },
+        {
+          "id": "8",
+          "energy_eV": 0.1,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow ending at 8",
+          "formula": "-0.33 + (0.43) = 0.10",
+          "ledger": {
+            "organic": "8*, dihydroxyacetone (C3H6O3)",
+            "H_star": 4,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": -2
+          }
+        },
+        {
+          "id": "6",
+          "energy_eV": -0.32,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow ending at 6",
+          "formula": "0.10 + (-0.42) = -0.32",
+          "ledger": {
+            "organic": "6* (C3H5O2)",
+            "H_star": 4,
+            "OH_star": 1,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": -3
+          }
+        },
+        {
+          "id": "acetol_OH",
+          "energy_eV": -0.76,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow ending at acetol_OH",
+          "formula": "-0.32 + (-0.44) = -0.76",
+          "ledger": {
+            "organic": "acetol* (C3H6O2)",
+            "H_star": 3,
+            "OH_star": 1,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": -2
+          }
+        },
+        {
+          "id": "acetol_water",
+          "energy_eV": -0.94,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow ending at acetol_water",
+          "formula": "-0.76 + (-0.18) = -0.94",
+          "ledger": {
+            "organic": "acetol* (C3H6O2)",
+            "H_star": 2,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": -1
+          }
+        },
+        {
+          "id": "11",
+          "energy_eV": -1.34,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow ending at 11",
+          "formula": "-0.94 + (-0.40) = -1.34",
+          "ledger": {
+            "organic": "11* (C3H7O2)",
+            "H_star": 1,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": 0
+          }
+        },
+        {
+          "id": "PDO12",
+          "energy_eV": -1.49,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow ending at PDO12",
+          "formula": "-1.34 + (-0.15) = -1.49",
+          "ledger": {
+            "organic": "1,2-PDO (C3H8O2); final phase not unambiguously specified by Fig.5A",
+            "H_star": 0,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": {
+              "if_PDO_gas": 2,
+              "if_PDO_adsorbed": 1
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "from_state": "glycerol",
+          "to_state": "2",
+          "forward_barrier_eV": 0.81,
+          "reaction_energy_eV": -0.33,
+          "derived_reverse_barrier_eV": 1.14,
+          "transition_energy_eV": 0.81,
+          "final_energy_eV": -0.33,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow glycerol -> 2",
+          "formulas": {
+            "peak": "0.00 + 0.81 = 0.81",
+            "final": "0.00 + (-0.33) = -0.33"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 2,
+          "from_state": "2",
+          "to_state": "8",
+          "forward_barrier_eV": 0.85,
+          "reaction_energy_eV": 0.43,
+          "derived_reverse_barrier_eV": 0.42,
+          "transition_energy_eV": 0.52,
+          "final_energy_eV": 0.1,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow 2 -> 8",
+          "formulas": {
+            "peak": "-0.33 + 0.85 = 0.52",
+            "final": "-0.33 + (0.43) = 0.10"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 3,
+          "from_state": "8",
+          "to_state": "6",
+          "forward_barrier_eV": 0.81,
+          "reaction_energy_eV": -0.42,
+          "derived_reverse_barrier_eV": 1.23,
+          "transition_energy_eV": 0.91,
+          "final_energy_eV": -0.32,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow 8 -> 6",
+          "formulas": {
+            "peak": "0.10 + 0.81 = 0.91",
+            "final": "0.10 + (-0.42) = -0.32"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 4,
+          "from_state": "6",
+          "to_state": "acetol_OH",
+          "forward_barrier_eV": 0.43,
+          "reaction_energy_eV": -0.44,
+          "derived_reverse_barrier_eV": 0.87,
+          "transition_energy_eV": 0.11,
+          "final_energy_eV": -0.76,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow 6 -> acetol_OH",
+          "formulas": {
+            "peak": "-0.32 + 0.43 = 0.11",
+            "final": "-0.32 + (-0.44) = -0.76"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 5,
+          "from_state": "acetol_OH",
+          "to_state": "acetol_water",
+          "forward_barrier_eV": 0.69,
+          "reaction_energy_eV": -0.18,
+          "derived_reverse_barrier_eV": 0.87,
+          "transition_energy_eV": -0.07,
+          "final_energy_eV": -0.94,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow acetol_OH -> acetol_water",
+          "formulas": {
+            "peak": "-0.76 + 0.69 = -0.07",
+            "final": "-0.76 + (-0.18) = -0.94"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 6,
+          "from_state": "acetol_water",
+          "to_state": "11",
+          "forward_barrier_eV": 0.36,
+          "reaction_energy_eV": -0.4,
+          "derived_reverse_barrier_eV": 0.76,
+          "transition_energy_eV": -0.58,
+          "final_energy_eV": -1.34,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow acetol_water -> 11",
+          "formulas": {
+            "peak": "-0.94 + 0.36 = -0.58",
+            "final": "-0.94 + (-0.40) = -1.34"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 7,
+          "from_state": "11",
+          "to_state": "PDO12",
+          "forward_barrier_eV": 0.94,
+          "reaction_energy_eV": -0.15,
+          "derived_reverse_barrier_eV": 1.09,
+          "transition_energy_eV": -0.4,
+          "final_energy_eV": -1.49,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH arrow 11 -> PDO12",
+          "formulas": {
+            "peak": "-1.34 + 0.94 = -0.40",
+            "final": "-1.34 + (-0.15) = -1.49"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        }
+      ]
+    },
+    {
+      "id": "13_deH",
+      "zero": "G(glycerol*)=0",
+      "source_family": "Fig5A_printed_annotations_only",
+      "status": "complete_reported_edge_cumulative_restatement; not thermodynamically closed or exact Fig5B reconstruction",
+      "states": [
+        {
+          "id": "glycerol",
+          "energy_eV": 0,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "formula": "Chosen zero: G(glycerol*) = 0",
+          "ledger": {
+            "organic": "glycerol* (C3H8O3)",
+            "H_star": 2,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": 0
+          }
+        },
+        {
+          "id": "3",
+          "energy_eV": -0.07,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow ending at 3",
+          "formula": "0.00 + (-0.07) = -0.07",
+          "ledger": {
+            "organic": "3* (C3H7O3)",
+            "H_star": 3,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": -1
+          }
+        },
+        {
+          "id": "9",
+          "energy_eV": 0.53,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow ending at 9",
+          "formula": "-0.07 + (0.60) = 0.53",
+          "ledger": {
+            "organic": "9*, glyceraldehyde (C3H6O3)",
+            "H_star": 4,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": -2
+          }
+        },
+        {
+          "id": "10_OH",
+          "energy_eV": -0.21,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow ending at 10_OH",
+          "formula": "0.53 + (-0.74) = -0.21",
+          "ledger": {
+            "organic": "10 skeleton* (C3H5O2)",
+            "H_star": 4,
+            "OH_star": 1,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": -3
+          }
+        },
+        {
+          "id": "10_water",
+          "energy_eV": -0.7,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow ending at 10_water",
+          "formula": "-0.21 + (-0.49) = -0.70",
+          "ledger": {
+            "organic": "10* as drawn in Fig.5A (C3H5O2)",
+            "H_star": 3,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": -2
+          }
+        },
+        {
+          "id": "HPA_water",
+          "energy_eV": -0.68,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow ending at HPA_water",
+          "formula": "-0.70 + (0.02) = -0.68",
+          "ledger": {
+            "organic": "3-hydroxypropanal* (C3H6O2)",
+            "H_star": 2,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": -1
+          }
+        },
+        {
+          "id": "12",
+          "energy_eV": -1.08,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow ending at 12",
+          "formula": "-0.68 + (-0.40) = -1.08",
+          "ledger": {
+            "organic": "12* (C3H7O2)",
+            "H_star": 1,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": 0
+          }
+        },
+        {
+          "id": "PDO13",
+          "energy_eV": -1.43,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow ending at PDO13",
+          "formula": "-1.08 + (-0.35) = -1.43",
+          "ledger": {
+            "organic": "1,3-PDO (C3H8O2); final phase not unambiguously specified by Fig.5A",
+            "H_star": 0,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": {
+              "if_PDO_gas": 2,
+              "if_PDO_adsorbed": 1
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "from_state": "glycerol",
+          "to_state": "3",
+          "forward_barrier_eV": 1.03,
+          "reaction_energy_eV": -0.07,
+          "derived_reverse_barrier_eV": 1.1,
+          "transition_energy_eV": 1.03,
+          "final_energy_eV": -0.07,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow glycerol -> 3",
+          "formulas": {
+            "peak": "0.00 + 1.03 = 1.03",
+            "final": "0.00 + (-0.07) = -0.07"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 2,
+          "from_state": "3",
+          "to_state": "9",
+          "forward_barrier_eV": 1.02,
+          "reaction_energy_eV": 0.6,
+          "derived_reverse_barrier_eV": 0.42,
+          "transition_energy_eV": 0.95,
+          "final_energy_eV": 0.53,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow 3 -> 9",
+          "formulas": {
+            "peak": "-0.07 + 1.02 = 0.95",
+            "final": "-0.07 + (0.60) = 0.53"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 3,
+          "from_state": "9",
+          "to_state": "10_OH",
+          "forward_barrier_eV": 0.65,
+          "reaction_energy_eV": -0.74,
+          "derived_reverse_barrier_eV": 1.39,
+          "transition_energy_eV": 1.18,
+          "final_energy_eV": -0.21,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow 9 -> 10_OH",
+          "formulas": {
+            "peak": "0.53 + 0.65 = 1.18",
+            "final": "0.53 + (-0.74) = -0.21"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 4,
+          "from_state": "10_OH",
+          "to_state": "10_water",
+          "forward_barrier_eV": 0.65,
+          "reaction_energy_eV": -0.49,
+          "derived_reverse_barrier_eV": 1.14,
+          "transition_energy_eV": 0.44,
+          "final_energy_eV": -0.7,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow 10_OH -> 10_water",
+          "formulas": {
+            "peak": "-0.21 + 0.65 = 0.44",
+            "final": "-0.21 + (-0.49) = -0.70"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 5,
+          "from_state": "10_water",
+          "to_state": "HPA_water",
+          "forward_barrier_eV": 0.71,
+          "reaction_energy_eV": 0.02,
+          "derived_reverse_barrier_eV": 0.69,
+          "transition_energy_eV": 0.01,
+          "final_energy_eV": -0.68,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow 10_water -> HPA_water",
+          "formulas": {
+            "peak": "-0.70 + 0.71 = 0.01",
+            "final": "-0.70 + (0.02) = -0.68"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 6,
+          "from_state": "HPA_water",
+          "to_state": "12",
+          "forward_barrier_eV": 0.42,
+          "reaction_energy_eV": -0.4,
+          "derived_reverse_barrier_eV": 0.82,
+          "transition_energy_eV": -0.26,
+          "final_energy_eV": -1.08,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow HPA_water -> 12",
+          "formulas": {
+            "peak": "-0.68 + 0.42 = -0.26",
+            "final": "-0.68 + (-0.40) = -1.08"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 7,
+          "from_state": "12",
+          "to_state": "PDO13",
+          "forward_barrier_eV": 1.08,
+          "reaction_energy_eV": -0.35,
+          "derived_reverse_barrier_eV": 1.43,
+          "transition_energy_eV": 0.0,
+          "final_energy_eV": -1.43,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH arrow 12 -> PDO13",
+          "formulas": {
+            "peak": "-1.08 + 1.08 = 0.00",
+            "final": "-1.08 + (-0.35) = -1.43"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        }
+      ]
+    },
+    {
+      "id": "12_deH2O",
+      "zero": "G(glycerol*)=0",
+      "source_family": "Fig5A_printed_annotations_only",
+      "status": "complete_reported_edge_cumulative_restatement; not thermodynamically closed or exact Fig5B reconstruction",
+      "states": [
+        {
+          "id": "glycerol",
+          "energy_eV": 0,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "formula": "Chosen zero: G(glycerol*) = 0",
+          "ledger": {
+            "organic": "glycerol* (C3H8O3)",
+            "H_star": 2,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": 0
+          }
+        },
+        {
+          "id": "7",
+          "energy_eV": 0.83,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH2O arrow ending at 7",
+          "formula": "0.00 + (0.83) = 0.83",
+          "ledger": {
+            "organic": "7* protonated glycerol (C3H9O3)",
+            "H_star": 1,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": 1
+          }
+        },
+        {
+          "id": "13",
+          "energy_eV": -0.07,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH2O arrow ending at 13",
+          "formula": "0.83 + (-0.90) = -0.07",
+          "ledger": {
+            "organic": "13* (C3H7O2)",
+            "H_star": 1,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": 0
+          }
+        },
+        {
+          "id": "PDO12",
+          "energy_eV": -1.41,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH2O arrow ending at PDO12",
+          "formula": "-0.07 + (-1.34) = -1.41",
+          "ledger": {
+            "organic": "1,2-PDO (C3H8O2); final phase not unambiguously specified by Fig.5A",
+            "H_star": 0,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": {
+              "if_PDO_gas": 2,
+              "if_PDO_adsorbed": 1
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "from_state": "glycerol",
+          "to_state": "7",
+          "forward_barrier_eV": 0.84,
+          "reaction_energy_eV": 0.83,
+          "derived_reverse_barrier_eV": 0.01,
+          "transition_energy_eV": 0.84,
+          "final_energy_eV": 0.83,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH2O arrow glycerol -> 7",
+          "formulas": {
+            "peak": "0.00 + 0.84 = 0.84",
+            "final": "0.00 + (0.83) = 0.83"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 2,
+          "from_state": "7",
+          "to_state": "13",
+          "forward_barrier_eV": 0.68,
+          "reaction_energy_eV": -0.9,
+          "derived_reverse_barrier_eV": 1.58,
+          "transition_energy_eV": 1.51,
+          "final_energy_eV": -0.07,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH2O arrow 7 -> 13",
+          "formulas": {
+            "peak": "0.83 + 0.68 = 1.51",
+            "final": "0.83 + (-0.90) = -0.07"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 3,
+          "from_state": "13",
+          "to_state": "PDO12",
+          "forward_barrier_eV": 0.42,
+          "reaction_energy_eV": -1.34,
+          "derived_reverse_barrier_eV": 1.76,
+          "transition_energy_eV": 0.35,
+          "final_energy_eV": -1.41,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 12_deH2O arrow 13 -> PDO12",
+          "formulas": {
+            "peak": "-0.07 + 0.42 = 0.35",
+            "final": "-0.07 + (-1.34) = -1.41"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        }
+      ]
+    },
+    {
+      "id": "13_deH2O",
+      "zero": "G(glycerol*)=0",
+      "source_family": "Fig5A_printed_annotations_only",
+      "status": "complete_reported_edge_cumulative_restatement; not thermodynamically closed or exact Fig5B reconstruction",
+      "states": [
+        {
+          "id": "glycerol",
+          "energy_eV": 0,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "formula": "Chosen zero: G(glycerol*) = 0",
+          "ledger": {
+            "organic": "glycerol* (C3H8O3)",
+            "H_star": 2,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": 0
+          }
+        },
+        {
+          "id": "1",
+          "energy_eV": 0.74,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH2O arrow ending at 1",
+          "formula": "0.00 + (0.74) = 0.74",
+          "ledger": {
+            "organic": "1* protonated glycerol (C3H9O3)",
+            "H_star": 1,
+            "OH_star": 0,
+            "H2O_star": 0,
+            "vacancies_relative_to_initial": 1
+          }
+        },
+        {
+          "id": "14",
+          "energy_eV": 0.25,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH2O arrow ending at 14",
+          "formula": "0.74 + (-0.49) = 0.25",
+          "ledger": {
+            "organic": "14* (C3H7O2)",
+            "H_star": 1,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": 0
+          }
+        },
+        {
+          "id": "PDO13",
+          "energy_eV": -1.28,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH2O arrow ending at PDO13",
+          "formula": "0.25 + (-1.53) = -1.28",
+          "ledger": {
+            "organic": "1,3-PDO (C3H8O2); final phase not unambiguously specified by Fig.5A",
+            "H_star": 0,
+            "OH_star": 0,
+            "H2O_star": 1,
+            "vacancies_relative_to_initial": {
+              "if_PDO_gas": 2,
+              "if_PDO_adsorbed": 1
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "from_state": "glycerol",
+          "to_state": "1",
+          "forward_barrier_eV": 0.78,
+          "reaction_energy_eV": 0.74,
+          "derived_reverse_barrier_eV": 0.04,
+          "transition_energy_eV": 0.78,
+          "final_energy_eV": 0.74,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH2O arrow glycerol -> 1",
+          "formulas": {
+            "peak": "0.00 + 0.78 = 0.78",
+            "final": "0.00 + (0.74) = 0.74"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 2,
+          "from_state": "1",
+          "to_state": "14",
+          "forward_barrier_eV": 0.72,
+          "reaction_energy_eV": -0.49,
+          "derived_reverse_barrier_eV": 1.21,
+          "transition_energy_eV": 1.46,
+          "final_energy_eV": 0.25,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH2O arrow 1 -> 14",
+          "formulas": {
+            "peak": "0.74 + 0.72 = 1.46",
+            "final": "0.74 + (-0.49) = 0.25"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        },
+        {
+          "step": 3,
+          "from_state": "14",
+          "to_state": "PDO13",
+          "forward_barrier_eV": 0.03,
+          "reaction_energy_eV": -1.53,
+          "derived_reverse_barrier_eV": 1.56,
+          "transition_energy_eV": 0.28,
+          "final_energy_eV": -1.28,
+          "source": "sources/author-article.pdf, p.8 (printed p.8155), Fig.5A; visual reading of printed numeric annotations, NOT curve digitization",
+          "source_locator": "Fig.5A 13_deH2O arrow 14 -> PDO13",
+          "formulas": {
+            "peak": "0.25 + 0.03 = 0.28",
+            "final": "0.25 + (-1.53) = -1.28"
+          },
+          "precision": "reported inputs to 0.01 eV; arithmetic result, not higher precision"
+        }
+      ]
+    }
+  ],
+  "figure5A_thermodynamic_cycle_residuals": [
+    {
+      "product": "1,2-PDO",
+      "deH_final": -1.49,
+      "deH2O_final": -1.41,
+      "difference_eV": -0.08,
+      "max_rounding_bound_eV": 0.05
+    },
+    {
+      "product": "1,3-PDO",
+      "deH_final": -1.43,
+      "deH2O_final": -1.28,
+      "difference_eV": -0.15,
+      "max_rounding_bound_eV": 0.05
+    }
+  ],
+  "separate_optional_figure_reference_check": {
+    "derived_shift_eV": 0.25,
+    "formula": "Fig5 caption G(state2)=-0.08 minus Fig5A delta(glycerol*->2)=-0.33 => G(glycerol*)=+0.25",
+    "use": "Only cross-check, not mixed into primary zero-reference curves",
+    "derived_CO_peak_eV": {
+      "12_deH": 1.17,
+      "13_deH": 1.43,
+      "12_deH2O": 1.76,
+      "13_deH2O": 1.71
+    },
+    "Fig5B_printed_TS_eV": {
+      "12_deH": 1.16,
+      "13_deH": 1.44,
+      "12_deH2O": 1.77,
+      "13_deH2O": 1.71
+    },
+    "differences": "0.00–0.01 eV, consistent with cumulative two-decimal rounding, unlike terminal nonclosure"
+  },
+  "S6_rows": [
+    {
+      "no": 0,
+      "reaction_as_printed": "glycerol* -> glycerol(g)+*",
+      "forward_eV": 0,
+      "reverse_eV": 0.249,
+      "delta_eV": -0.249,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:816-821"
+    },
+    {
+      "no": 1,
+      "reaction_as_printed": "acetol* -> acetol(g)+*",
+      "forward_eV": 0,
+      "reverse_eV": 0.408,
+      "delta_eV": -0.408,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:822-827"
+    },
+    {
+      "no": 2,
+      "reaction_as_printed": "3-hydroxypropanal* -> 3-hydroxypropanal(g)+*",
+      "forward_eV": 0,
+      "reverse_eV": 0.512,
+      "delta_eV": -0.512,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:828-833"
+    },
+    {
+      "no": 3,
+      "reaction_as_printed": "H2O* -> H2O(g)+*",
+      "forward_eV": 0,
+      "reverse_eV": 0.549,
+      "delta_eV": -0.549,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:835-840"
+    },
+    {
+      "no": 4,
+      "reaction_as_printed": "OH*+H* -> H2O*+*",
+      "forward_eV": 0.69,
+      "reverse_eV": 0.871,
+      "delta_eV": -0.181,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:841-846"
+    },
+    {
+      "no": 5,
+      "reaction_as_printed": "H2(g)+*+* -> H*+H*",
+      "forward_eV": 0.751,
+      "reverse_eV": 0.831,
+      "delta_eV": -0.08,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:847-852"
+    },
+    {
+      "no": 6,
+      "reaction_as_printed": "glycerol*+* -> 2*+H*",
+      "forward_eV": 0.809,
+      "reverse_eV": 1.14,
+      "delta_eV": -0.331,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:853-858"
+    },
+    {
+      "no": 7,
+      "reaction_as_printed": "2*+* -> 8*+H*",
+      "forward_eV": 0.847,
+      "reverse_eV": 0.414,
+      "delta_eV": 0.433,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:859-864"
+    },
+    {
+      "no": 8,
+      "reaction_as_printed": "8*+* -> 6*+OH*",
+      "forward_eV": 0.813,
+      "reverse_eV": 1.238,
+      "delta_eV": -0.425,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:865-870"
+    },
+    {
+      "no": 9,
+      "reaction_as_printed": "6*+H* -> acetol*+*",
+      "forward_eV": 0.426,
+      "reverse_eV": 0.864,
+      "delta_eV": -0.438,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:871-876"
+    },
+    {
+      "no": 10,
+      "reaction_as_printed": "acetol*+H* -> 11*+*",
+      "forward_eV": 0.363,
+      "reverse_eV": 0.768,
+      "delta_eV": -0.405,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:877-882"
+    },
+    {
+      "no": 11,
+      "reaction_as_printed": "11*+H* -> 1,2-PDO+*+*",
+      "forward_eV": 0.938,
+      "reverse_eV": 1.088,
+      "delta_eV": -0.15,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:883-888"
+    },
+    {
+      "no": 12,
+      "reaction_as_printed": "glycerol*+* -> 3*+H*",
+      "forward_eV": 1.031,
+      "reverse_eV": 1.095,
+      "delta_eV": -0.064,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:889-894"
+    },
+    {
+      "no": 13,
+      "reaction_as_printed": "3*+* -> 9*+H*",
+      "forward_eV": 1.019,
+      "reverse_eV": 0.415,
+      "delta_eV": 0.604,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:895-900"
+    },
+    {
+      "no": 14,
+      "reaction_as_printed": "9*+* -> 10*+OH*",
+      "forward_eV": 0.653,
+      "reverse_eV": 1.397,
+      "delta_eV": -0.744,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:901-906"
+    },
+    {
+      "no": 15,
+      "reaction_as_printed": "10*+H* -> 3-hydroxypropanal*+*",
+      "forward_eV": 0.217,
+      "reverse_eV": 0.69,
+      "delta_eV": -0.473,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:907-912"
+    },
+    {
+      "no": 16,
+      "reaction_as_printed": "3-hydroxypropanal*+H* -> 12*+*",
+      "forward_eV": 0.424,
+      "reverse_eV": 0.826,
+      "delta_eV": -0.402,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:913-918"
+    },
+    {
+      "no": 17,
+      "reaction_as_printed": "12*+H* -> 1,3-PDO+*+*",
+      "forward_eV": 1.082,
+      "reverse_eV": 1.432,
+      "delta_eV": -0.35,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:919-924"
+    },
+    {
+      "no": 18,
+      "reaction_as_printed": "glycerol*+H* -> 7*+*",
+      "forward_eV": 0.837,
+      "reverse_eV": 0.006,
+      "delta_eV": 0.831,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:925-930"
+    },
+    {
+      "no": 19,
+      "reaction_as_printed": "7*+* -> 13*+H2O*",
+      "forward_eV": 0.684,
+      "reverse_eV": 1.581,
+      "delta_eV": -0.897,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:931-936"
+    },
+    {
+      "no": 20,
+      "reaction_as_printed": "13*+H* -> 1,2-PDO+*",
+      "forward_eV": 0.425,
+      "reverse_eV": 1.766,
+      "delta_eV": -1.341,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:937-942"
+    },
+    {
+      "no": 21,
+      "reaction_as_printed": "glycerol*+H* -> 1*+*",
+      "forward_eV": 0.781,
+      "reverse_eV": 0.044,
+      "delta_eV": 0.737,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:943-948"
+    },
+    {
+      "no": 22,
+      "reaction_as_printed": "1*+* -> 14*+H2O*",
+      "forward_eV": 0.719,
+      "reverse_eV": 1.204,
+      "delta_eV": -0.485,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:949-954"
+    },
+    {
+      "no": 23,
+      "reaction_as_printed": "14*+H* -> 1,3-PDO+*",
+      "forward_eV": 0.032,
+      "reverse_eV": 1.559,
+      "delta_eV": -1.527,
+      "formula": "delta = forward - reverse",
+      "source": "sources/author-supplement.pdf p.17 (S17), Table S6; checked visually; supplementary/SC-013-D2SC02107B-s001.pdf p.17 gives same table",
+      "source_lines": "sources/supplement.txt:955-960"
+    }
+  ],
+  "S6_formal_paths": [
+    {
+      "id": "12_deH",
+      "zero": "glycerol*=0; adding 0.249 produces S6-derived glycerol(g)=0 reference",
+      "status": "formal cumulative Table S6 route; no claim of globally consistent state energies",
+      "steps": [
+        {
+          "row": 6,
+          "start_eV": 0,
+          "peak_eV": 0.809,
+          "end_eV": -0.331,
+          "formula": "Gend=0.000+(0.809-1.140)=-0.331; Gpeak=0.000+0.809=0.809",
+          "source_lines": "sources/supplement.txt:853-858"
+        },
+        {
+          "row": 7,
+          "start_eV": -0.331,
+          "peak_eV": 0.516,
+          "end_eV": 0.102,
+          "formula": "Gend=-0.331+(0.847-0.414)=0.102; Gpeak=-0.331+0.847=0.516",
+          "source_lines": "sources/supplement.txt:859-864"
+        },
+        {
+          "row": 8,
+          "start_eV": 0.102,
+          "peak_eV": 0.915,
+          "end_eV": -0.323,
+          "formula": "Gend=0.102+(0.813-1.238)=-0.323; Gpeak=0.102+0.813=0.915",
+          "source_lines": "sources/supplement.txt:865-870"
+        },
+        {
+          "row": 9,
+          "start_eV": -0.323,
+          "peak_eV": 0.103,
+          "end_eV": -0.761,
+          "formula": "Gend=-0.323+(0.426-0.864)=-0.761; Gpeak=-0.323+0.426=0.103",
+          "source_lines": "sources/supplement.txt:871-876"
+        },
+        {
+          "row": 4,
+          "start_eV": -0.761,
+          "peak_eV": -0.071,
+          "end_eV": -0.942,
+          "formula": "Gend=-0.761+(0.690-0.871)=-0.942; Gpeak=-0.761+0.690=-0.071",
+          "source_lines": "sources/supplement.txt:841-846"
+        },
+        {
+          "row": 10,
+          "start_eV": -0.942,
+          "peak_eV": -0.579,
+          "end_eV": -1.347,
+          "formula": "Gend=-0.942+(0.363-0.768)=-1.347; Gpeak=-0.942+0.363=-0.579",
+          "source_lines": "sources/supplement.txt:877-882"
+        },
+        {
+          "row": 11,
+          "start_eV": -1.347,
+          "peak_eV": -0.409,
+          "end_eV": -1.497,
+          "formula": "Gend=-1.347+(0.938-1.088)=-1.497; Gpeak=-1.347+0.938=-0.409",
+          "source_lines": "sources/supplement.txt:883-888"
+        }
+      ],
+      "final_eV": -1.497
+    },
+    {
+      "id": "13_deH_formal_balanced_S6_route_NOT_Fig5A",
+      "zero": "glycerol*=0; adding 0.249 produces S6-derived glycerol(g)=0 reference",
+      "status": "formal cumulative Table S6 route; no claim of globally consistent state energies",
+      "steps": [
+        {
+          "row": 12,
+          "start_eV": 0,
+          "peak_eV": 1.031,
+          "end_eV": -0.064,
+          "formula": "Gend=0.000+(1.031-1.095)=-0.064; Gpeak=0.000+1.031=1.031",
+          "source_lines": "sources/supplement.txt:889-894"
+        },
+        {
+          "row": 13,
+          "start_eV": -0.064,
+          "peak_eV": 0.955,
+          "end_eV": 0.54,
+          "formula": "Gend=-0.064+(1.019-0.415)=0.540; Gpeak=-0.064+1.019=0.955",
+          "source_lines": "sources/supplement.txt:895-900"
+        },
+        {
+          "row": 14,
+          "start_eV": 0.54,
+          "peak_eV": 1.193,
+          "end_eV": -0.204,
+          "formula": "Gend=0.540+(0.653-1.397)=-0.204; Gpeak=0.540+0.653=1.193",
+          "source_lines": "sources/supplement.txt:901-906"
+        },
+        {
+          "row": 4,
+          "start_eV": -0.204,
+          "peak_eV": 0.486,
+          "end_eV": -0.385,
+          "formula": "Gend=-0.204+(0.690-0.871)=-0.385; Gpeak=-0.204+0.690=0.486",
+          "source_lines": "sources/supplement.txt:841-846"
+        },
+        {
+          "row": 15,
+          "start_eV": -0.385,
+          "peak_eV": -0.168,
+          "end_eV": -0.858,
+          "formula": "Gend=-0.385+(0.217-0.690)=-0.858; Gpeak=-0.385+0.217=-0.168",
+          "source_lines": "sources/supplement.txt:907-912"
+        },
+        {
+          "row": 16,
+          "start_eV": -0.858,
+          "peak_eV": -0.434,
+          "end_eV": -1.26,
+          "formula": "Gend=-0.858+(0.424-0.826)=-1.260; Gpeak=-0.858+0.424=-0.434",
+          "source_lines": "sources/supplement.txt:913-918"
+        },
+        {
+          "row": 17,
+          "start_eV": -1.26,
+          "peak_eV": -0.178,
+          "end_eV": -1.61,
+          "formula": "Gend=-1.260+(1.082-1.432)=-1.610; Gpeak=-1.260+1.082=-0.178",
+          "source_lines": "sources/supplement.txt:919-924"
+        }
+      ],
+      "final_eV": -1.61
+    },
+    {
+      "id": "12_deH2O",
+      "zero": "glycerol*=0; adding 0.249 produces S6-derived glycerol(g)=0 reference",
+      "status": "formal cumulative Table S6 route; no claim of globally consistent state energies",
+      "steps": [
+        {
+          "row": 18,
+          "start_eV": 0,
+          "peak_eV": 0.837,
+          "end_eV": 0.831,
+          "formula": "Gend=0.000+(0.837-0.006)=0.831; Gpeak=0.000+0.837=0.837",
+          "source_lines": "sources/supplement.txt:925-930"
+        },
+        {
+          "row": 19,
+          "start_eV": 0.831,
+          "peak_eV": 1.515,
+          "end_eV": -0.066,
+          "formula": "Gend=0.831+(0.684-1.581)=-0.066; Gpeak=0.831+0.684=1.515",
+          "source_lines": "sources/supplement.txt:931-936"
+        },
+        {
+          "row": 20,
+          "start_eV": -0.066,
+          "peak_eV": 0.359,
+          "end_eV": -1.407,
+          "formula": "Gend=-0.066+(0.425-1.766)=-1.407; Gpeak=-0.066+0.425=0.359",
+          "source_lines": "sources/supplement.txt:937-942"
+        }
+      ],
+      "final_eV": -1.407
+    },
+    {
+      "id": "13_deH2O",
+      "zero": "glycerol*=0; adding 0.249 produces S6-derived glycerol(g)=0 reference",
+      "status": "formal cumulative Table S6 route; no claim of globally consistent state energies",
+      "steps": [
+        {
+          "row": 21,
+          "start_eV": 0,
+          "peak_eV": 0.781,
+          "end_eV": 0.737,
+          "formula": "Gend=0.000+(0.781-0.044)=0.737; Gpeak=0.000+0.781=0.781",
+          "source_lines": "sources/supplement.txt:943-948"
+        },
+        {
+          "row": 22,
+          "start_eV": 0.737,
+          "peak_eV": 1.456,
+          "end_eV": 0.252,
+          "formula": "Gend=0.737+(0.719-1.204)=0.252; Gpeak=0.737+0.719=1.456",
+          "source_lines": "sources/supplement.txt:949-954"
+        },
+        {
+          "row": 23,
+          "start_eV": 0.252,
+          "peak_eV": 0.284,
+          "end_eV": -1.275,
+          "formula": "Gend=0.252+(0.032-1.559)=-1.275; Gpeak=0.252+0.032=0.284",
+          "source_lines": "sources/supplement.txt:955-960"
+        }
+      ],
+      "final_eV": -1.275
+    }
+  ],
+  "conditions": {
+    "Fig5": "473 K; total 1 atm; glycerol:H2:H2O=1:140:12; glycerol(g) zero at 0.0065 atm",
+    "S6": "473 K; pH2=1 bar; all listed organic gases and water=0.0065 bar; table also says total pressure 1 atm",
+    "gas_relative_values_from_S6": {
+      "glycerol_desorption_eV": -0.249,
+      "water_desorption_eV": -0.549,
+      "H2_dissociative_adsorption_eV": -0.08
+    },
+    "missing": "No separate absolute gas chemical potentials, per-state Gibbs corrections, complete spectator energies or explicit matching of every Fig5A endpoint phase are tabulated. Do not add reservoir corrections by guess.",
+    "water_pressure_mismatch_estimate_eV": 0.102
+  },
+  "raw_coordinate_records": [
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 1,
+      "source_start_line": 1005,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.393794,
+      "energy_source_line": 1006
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 2,
+      "source_start_line": 1093,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.585191,
+      "energy_source_line": 1094
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 3,
+      "source_start_line": 1181,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.725594,
+      "energy_source_line": 1182
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 4,
+      "source_start_line": 1268,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.878386,
+      "energy_source_line": 1269
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 5,
+      "source_start_line": 1356,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.292497,
+      "energy_source_line": 1357
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 6,
+      "source_start_line": 1444,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.479659,
+      "energy_source_line": 1445
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 7,
+      "source_start_line": 1532,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.717437,
+      "energy_source_line": 1533
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 8,
+      "source_start_line": 1620,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.291786,
+      "energy_source_line": 1621
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 9,
+      "source_start_line": 1708,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -329.155742,
+      "energy_source_line": 1709
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 10,
+      "source_start_line": 1796,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.465836,
+      "energy_source_line": 1797
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 11,
+      "source_start_line": 1884,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -329.336524,
+      "energy_source_line": 1885
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 12,
+      "source_start_line": 1972,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.795602,
+      "energy_source_line": 1973
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 13,
+      "source_start_line": 2060,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -329.239448,
+      "energy_source_line": 2061
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 14,
+      "source_start_line": 2148,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.550947,
+      "energy_source_line": 2149
+    },
+    {
+      "path": "1,2-PDO-dehydrogenation path",
+      "structure": 15,
+      "source_start_line": 2236,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -329.441014,
+      "energy_source_line": 2237
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 1,
+      "source_start_line": 2328,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.393794,
+      "energy_source_line": 2329
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 2,
+      "source_start_line": 2415,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.362606,
+      "energy_source_line": 2417
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 3,
+      "source_start_line": 2503,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.457244,
+      "energy_source_line": 2504
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 4,
+      "source_start_line": 2591,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.437892,
+      "energy_source_line": 2592
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 5,
+      "source_start_line": 2679,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.85242,
+      "energy_source_line": 2680
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 6,
+      "source_start_line": 2767,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.199327,
+      "energy_source_line": 2768
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 7,
+      "source_start_line": 2855,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.59621,
+      "energy_source_line": 2856
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 8,
+      "source_start_line": 2943,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.946519,
+      "energy_source_line": 2944
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 9,
+      "source_start_line": 3031,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.59621,
+      "energy_source_line": 3032
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 10,
+      "source_start_line": 3119,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.378927,
+      "energy_source_line": 3120
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 11,
+      "source_start_line": 3207,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -329.069025,
+      "energy_source_line": 3208
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 12,
+      "source_start_line": 3295,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.388769,
+      "energy_source_line": 3296
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 13,
+      "source_start_line": 3383,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -329.457201,
+      "energy_source_line": 3384
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 14,
+      "source_start_line": 3471,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.246663,
+      "energy_source_line": 3472
+    },
+    {
+      "path": "1,3-PDO-dehydrogenation path",
+      "structure": 15,
+      "source_start_line": 3559,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -329.569683,
+      "energy_source_line": 3560
+    },
+    {
+      "path": "1,2-PDO-dehydration path",
+      "structure": 1,
+      "source_start_line": 3651,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.393794,
+      "energy_source_line": 3652
+    },
+    {
+      "path": "1,2-PDO-dehydration path",
+      "structure": 2,
+      "source_start_line": 3738,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.556893,
+      "energy_source_line": 3740
+    },
+    {
+      "path": "1,2-PDO-dehydration path",
+      "structure": 3,
+      "source_start_line": 3826,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.562977,
+      "energy_source_line": 3827
+    },
+    {
+      "path": "1,2-PDO-dehydration path",
+      "structure": 4,
+      "source_start_line": 3914,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -326.878552,
+      "energy_source_line": 3915
+    },
+    {
+      "path": "1,2-PDO-dehydration path",
+      "structure": 5,
+      "source_start_line": 4002,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.459695,
+      "energy_source_line": 4003
+    },
+    {
+      "path": "1,2-PDO-dehydration path",
+      "structure": 6,
+      "source_start_line": 4090,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.034574,
+      "energy_source_line": 4091
+    },
+    {
+      "path": "1,2-PDO-dehydration path",
+      "structure": 7,
+      "source_start_line": 4178,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -329.441014,
+      "energy_source_line": 4179
+    },
+    {
+      "path": "1,3-PDO-dehydration path",
+      "structure": 1,
+      "source_start_line": 4270,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.393794,
+      "energy_source_line": 4271
+    },
+    {
+      "path": "1,3-PDO-dehydration path",
+      "structure": 2,
+      "source_start_line": 4357,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.612508,
+      "energy_source_line": 4359
+    },
+    {
+      "path": "1,3-PDO-dehydration path",
+      "structure": 3,
+      "source_start_line": 4445,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -327.656648,
+      "energy_source_line": 4446
+    },
+    {
+      "path": "1,3-PDO-dehydration path",
+      "structure": 4,
+      "source_start_line": 4533,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -326.937938,
+      "energy_source_line": 4534
+    },
+    {
+      "path": "1,3-PDO-dehydration path",
+      "structure": 5,
+      "source_start_line": 4621,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.142288,
+      "energy_source_line": 4622
+    },
+    {
+      "path": "1,3-PDO-dehydration path",
+      "structure": 6,
+      "source_start_line": 4709,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -328.11066,
+      "energy_source_line": 4710
+    },
+    {
+      "path": "1,3-PDO-dehydration path",
+      "structure": 7,
+      "source_start_line": 4797,
+      "elements": {
+        "H": 10,
+        "C": 3,
+        "O": 3,
+        "Cu": 64
+      },
+      "reported_VASP_energy_eV": -329.569683,
+      "energy_source_line": 4798
+    }
+  ],
+  "observed_source_defects": [
+    {
+      "where": "sources/supplement.txt:2855 and 3031; author-supplement.pdf pp.60 and 64",
+      "fact": "1,3-PDO deH Str9 repeats Str7 energy -328.596210 eV and coordinates, although the path between them is supposed to generate water",
+      "impact": "Cannot use this source block to recover missing red water-generated minimum."
+    },
+    {
+      "where": "sources/supplement.txt:1972-2237; 3295-3560",
+      "fact": "Late appended VASP headers do not reproduce the Fig5A/S6 late barriers after a constant shift. 1,2 deH Str12-Str11=0.540922 eV whereas S6 row10 forward=0.363 eV. Str13 non-Cu connectivity corresponds to C3H8O2+OH+H using short-bond inspection, not C3H7O2+H2O+H of state11.",
+      "impact": "Raw coordinate structure serial number is not a verified Fig5A state mapping; direct whole-curve offset is invalid."
+    },
+    {
+      "where": "Table S6 rows4,15 vs Fig5A red post-C–O two steps",
+      "fact": "S6 generic water formation 0.690/-0.181 and hydrogenation 0.217/-0.473 do not match Fig5A 0.65/-0.49 then0.71/+0.02",
+      "impact": "Cannot splice S6 into Fig5A red late segment or treat the sequences as identical."
+    },
+    {
+      "where": "Table S6 rows20,23",
+      "fact": "Printed surface-vacancy bookkeeping ambiguous for final PDO phase",
+      "impact": "Do not assume terminal desorption correction or same surface state merely from PDO label."
+    }
+  ],
+  "verification": {
+    "PDF_table_visual_checked": true,
+    "raw_coordinate_total_atom_check": true,
+    "raw_coordinate_blocks": 44,
+    "all_Fig5A_arithmetic_recomputed": true,
+    "plot_curve_pixels_used": false
+  },
+  "blue_S6_within_route_continuation": {
+    "status": "source-reported within-route continuation; not exact verified original Fig5B late curve",
+    "conditions": "473 K; pH2=1 bar; all listed organic gases and water=0.0065 bar; table also says total pressure 1 atm",
+    "zero": "S6 glycerol(g)=0; G(glycerol*)=+0.249 from row0 reverse barrier",
+    "initial_state": {
+      "id": "glycerol",
+      "G_eV": 0.249,
+      "source_lines": "sources/supplement.txt:816-821",
+      "ledger": {
+        "organic": "glycerol* (C3H8O3)",
+        "H_star": 2,
+        "OH_star": 0,
+        "H2O_star": 0,
+        "vacancies_relative_to_initial": 0
+      }
+    },
+    "steps": [
+      {
+        "step": 1,
+        "S6_row": 6,
+        "from_state": "glycerol",
+        "to_state": "2",
+        "forward_eV": 0.809,
+        "reverse_eV": 1.14,
+        "delta_eV": -0.331,
+        "initial_G_eV": 0.249,
+        "TS_G_eV": 1.058,
+        "final_G_eV": -0.082,
+        "formula": "G_TS=0.249+0.809=1.058; G_final=0.249+(0.809-1.140)=-0.082",
+        "source_lines": "sources/supplement.txt:853-858",
+        "source_pdf": "sources/author-supplement.pdf p.17 (S17), Table S6",
+        "state_ledger": {
+          "organic": "2* (C3H7O3)",
+          "H_star": 3,
+          "OH_star": 0,
+          "H2O_star": 0,
+          "vacancies_relative_to_initial": -1,
+          "organic_phase_note": "Organic states are adsorbed until final S6 row11. Final PDO interpreted as gas from omitted star and two liberated vacancies; no separate desorption correction added."
+        },
+        "TS_ledger": "Same total C3H10O3; reacting H/OH/organic moieties undergoing bond change; spectator bookkeeping retained."
+      },
+      {
+        "step": 2,
+        "S6_row": 7,
+        "from_state": "2",
+        "to_state": "8",
+        "forward_eV": 0.847,
+        "reverse_eV": 0.414,
+        "delta_eV": 0.433,
+        "initial_G_eV": -0.082,
+        "TS_G_eV": 0.765,
+        "final_G_eV": 0.351,
+        "formula": "G_TS=-0.082+0.847=0.765; G_final=-0.082+(0.847-0.414)=0.351",
+        "source_lines": "sources/supplement.txt:859-864",
+        "source_pdf": "sources/author-supplement.pdf p.17 (S17), Table S6",
+        "state_ledger": {
+          "organic": "8*, dihydroxyacetone (C3H6O3)",
+          "H_star": 4,
+          "OH_star": 0,
+          "H2O_star": 0,
+          "vacancies_relative_to_initial": -2,
+          "organic_phase_note": "Organic states are adsorbed until final S6 row11. Final PDO interpreted as gas from omitted star and two liberated vacancies; no separate desorption correction added."
+        },
+        "TS_ledger": "Same total C3H10O3; reacting H/OH/organic moieties undergoing bond change; spectator bookkeeping retained."
+      },
+      {
+        "step": 3,
+        "S6_row": 8,
+        "from_state": "8",
+        "to_state": "6",
+        "forward_eV": 0.813,
+        "reverse_eV": 1.238,
+        "delta_eV": -0.425,
+        "initial_G_eV": 0.351,
+        "TS_G_eV": 1.164,
+        "final_G_eV": -0.074,
+        "formula": "G_TS=0.351+0.813=1.164; G_final=0.351+(0.813-1.238)=-0.074",
+        "source_lines": "sources/supplement.txt:865-870",
+        "source_pdf": "sources/author-supplement.pdf p.17 (S17), Table S6",
+        "state_ledger": {
+          "organic": "6* (C3H5O2)",
+          "H_star": 4,
+          "OH_star": 1,
+          "H2O_star": 0,
+          "vacancies_relative_to_initial": -3,
+          "organic_phase_note": "Organic states are adsorbed until final S6 row11. Final PDO interpreted as gas from omitted star and two liberated vacancies; no separate desorption correction added."
+        },
+        "TS_ledger": "Same total C3H10O3; reacting H/OH/organic moieties undergoing bond change; spectator bookkeeping retained."
+      },
+      {
+        "step": 4,
+        "S6_row": 9,
+        "from_state": "6",
+        "to_state": "acetol_OH",
+        "forward_eV": 0.426,
+        "reverse_eV": 0.864,
+        "delta_eV": -0.438,
+        "initial_G_eV": -0.074,
+        "TS_G_eV": 0.352,
+        "final_G_eV": -0.512,
+        "formula": "G_TS=-0.074+0.426=0.352; G_final=-0.074+(0.426-0.864)=-0.512",
+        "source_lines": "sources/supplement.txt:871-876",
+        "source_pdf": "sources/author-supplement.pdf p.17 (S17), Table S6",
+        "state_ledger": {
+          "organic": "acetol* (C3H6O2)",
+          "H_star": 3,
+          "OH_star": 1,
+          "H2O_star": 0,
+          "vacancies_relative_to_initial": -2,
+          "organic_phase_note": "Organic states are adsorbed until final S6 row11. Final PDO interpreted as gas from omitted star and two liberated vacancies; no separate desorption correction added."
+        },
+        "TS_ledger": "Same total C3H10O3; reacting H/OH/organic moieties undergoing bond change; spectator bookkeeping retained."
+      },
+      {
+        "step": 5,
+        "S6_row": 4,
+        "from_state": "acetol_OH",
+        "to_state": "acetol_water",
+        "forward_eV": 0.69,
+        "reverse_eV": 0.871,
+        "delta_eV": -0.181,
+        "initial_G_eV": -0.512,
+        "TS_G_eV": 0.178,
+        "final_G_eV": -0.693,
+        "formula": "G_TS=-0.512+0.690=0.178; G_final=-0.512+(0.690-0.871)=-0.693",
+        "source_lines": "sources/supplement.txt:841-846",
+        "source_pdf": "sources/author-supplement.pdf p.17 (S17), Table S6",
+        "state_ledger": {
+          "organic": "acetol* (C3H6O2)",
+          "H_star": 2,
+          "OH_star": 0,
+          "H2O_star": 1,
+          "vacancies_relative_to_initial": -1,
+          "organic_phase_note": "Organic states are adsorbed until final S6 row11. Final PDO interpreted as gas from omitted star and two liberated vacancies; no separate desorption correction added."
+        },
+        "TS_ledger": "Same total C3H10O3; reacting H/OH/organic moieties undergoing bond change; spectator bookkeeping retained."
+      },
+      {
+        "step": 6,
+        "S6_row": 10,
+        "from_state": "acetol_water",
+        "to_state": "11",
+        "forward_eV": 0.363,
+        "reverse_eV": 0.768,
+        "delta_eV": -0.405,
+        "initial_G_eV": -0.693,
+        "TS_G_eV": -0.33,
+        "final_G_eV": -1.098,
+        "formula": "G_TS=-0.693+0.363=-0.330; G_final=-0.693+(0.363-0.768)=-1.098",
+        "source_lines": "sources/supplement.txt:877-882",
+        "source_pdf": "sources/author-supplement.pdf p.17 (S17), Table S6",
+        "state_ledger": {
+          "organic": "11* (C3H7O2)",
+          "H_star": 1,
+          "OH_star": 0,
+          "H2O_star": 1,
+          "vacancies_relative_to_initial": 0,
+          "organic_phase_note": "Organic states are adsorbed until final S6 row11. Final PDO interpreted as gas from omitted star and two liberated vacancies; no separate desorption correction added."
+        },
+        "TS_ledger": "Same total C3H10O3; reacting H/OH/organic moieties undergoing bond change; spectator bookkeeping retained."
+      },
+      {
+        "step": 7,
+        "S6_row": 11,
+        "from_state": "11",
+        "to_state": "PDO12",
+        "forward_eV": 0.938,
+        "reverse_eV": 1.088,
+        "delta_eV": -0.15,
+        "initial_G_eV": -1.098,
+        "TS_G_eV": -0.16,
+        "final_G_eV": -1.248,
+        "formula": "G_TS=-1.098+0.938=-0.160; G_final=-1.098+(0.938-1.088)=-1.248",
+        "source_lines": "sources/supplement.txt:883-888",
+        "source_pdf": "sources/author-supplement.pdf p.17 (S17), Table S6",
+        "state_ledger": {
+          "organic": "1,2-PDO(g) as implied by S6 row11",
+          "H_star": 0,
+          "OH_star": 0,
+          "H2O_star": 1,
+          "vacancies_relative_to_initial": 2,
+          "organic_phase_note": "Organic states are adsorbed until final S6 row11. Final PDO interpreted as gas from omitted star and two liberated vacancies; no separate desorption correction added."
+        },
+        "TS_ledger": "Same total C3H10O3; reacting H/OH/organic moieties undergoing bond change; spectator bookkeeping retained."
+      }
+    ],
+    "limitations": [
+      "S6 local energies are cumulatively continued; fixed spectator thermodynamics is not independently supplied.",
+      "H2O remains adsorbed; no row3 water desorption, row5 H2 adsorption or extra PDO desorption correction added.",
+      "Final PDO phase inferred from row11; Fig5B endpoint phase is not independently established.",
+      "Use cross-route comparisons only for separately checked early region. S6 blue routes differ by 0.090 eV at nominal same terminal products.",
+      "Three-decimal results reflect S6 input precision, not newly calculated or digitized Gibbs energies."
+    ]
+  }
+}

@@ -1,0 +1,419 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "作者把六篇文献中的25个motif支架设计任务放进统一基准，每个方法、每个任务生成100个骨架，并用ProteinMPNN设计序列。这里的大数字不是设计样本的成功率，而是有没有至少找到一个通过计算指标的设计。RFdiffusion在测试的噪声设置合并后解决23类任务，按补充表汇总，RFjoint是17类，Hallucination是15类。右边的结构例子说明，输入的小片段可以被嵌入全新的骨架。需要同时保留负面结果：并不是每一类任务RFdiffusion都占优，4JHW和5YUI在两种噪声设置下都没有成功。正文对RFjoint报告19类，与表值汇总不一致；这里采用可复核表值，并保留这个差异。完整逐任务表放在备份页。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "条件生成证据 · 25个任务的统一基准",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "Motif 支架设计：更多任务能找到可行解",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 4a; SI Tables 9–10, PDF pp. 84–87.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "09",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "metric",
+      "elementType": "text",
+      "bounds": [
+        48,
+        164,
+        600,
+        42
+      ],
+      "content": {
+        "text": "至少有一个计算成功设计的任务数",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "label0",
+      "elementType": "text",
+      "bounds": [
+        48,
+        244,
+        220,
+        38
+      ],
+      "content": {
+        "text": "RFdiffusion",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "bar0",
+      "elementType": "shape",
+      "bounds": [
+        285,
+        244,
+        266.8,
+        34
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#BF7086"
+      }
+    },
+    {
+      "elementId": "value0",
+      "elementType": "text",
+      "bounds": [
+        600,
+        240,
+        140,
+        48
+      ],
+      "content": {
+        "text": "23 / 25",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 33,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "label1",
+      "elementType": "text",
+      "bounds": [
+        48,
+        359,
+        220,
+        38
+      ],
+      "content": {
+        "text": "RFjoint",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#61729D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "bar1",
+      "elementType": "shape",
+      "bounds": [
+        285,
+        359,
+        197.2,
+        34
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#61729D"
+      }
+    },
+    {
+      "elementId": "value1",
+      "elementType": "text",
+      "bounds": [
+        600,
+        355,
+        140,
+        48
+      ],
+      "content": {
+        "text": "17 / 25",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 33,
+        "color": "#61729D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "label2",
+      "elementType": "text",
+      "bounds": [
+        48,
+        474,
+        220,
+        38
+      ],
+      "content": {
+        "text": "Hallucination",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "bar2",
+      "elementType": "shape",
+      "bounds": [
+        285,
+        474,
+        174.0,
+        34
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#5F6C73"
+      }
+    },
+    {
+      "elementId": "value2",
+      "elementType": "text",
+      "bounds": [
+        600,
+        470,
+        140,
+        48
+      ],
+      "content": {
+        "text": "15 / 25",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 33,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "scope",
+      "elementType": "text",
+      "bounds": [
+        48,
+        598,
+        665,
+        50
+      ],
+      "content": {
+        "text": "按 SI Table 10 合并变体。正文 RFjoint 为 19/25，\n表值合并为 17/25；这里采用可复核表值。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "motifs",
+      "elementType": "image",
+      "bounds": [
+        775,
+        186,
+        450,
+        306
+      ],
+      "src": "media/final-09-motifs.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "examples",
+      "elementType": "text",
+      "bounds": [
+        775,
+        518,
+        450,
+        112
+      ],
+      "content": {
+        "text": "青：固定 motif；彩色：AF2 预测\n\n两项仍未解决：4JHW、5YUI。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 21,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

@@ -1,0 +1,27 @@
+{
+  "synthetic": true,
+  "nodes": [
+    "input",
+    "branchA",
+    "branchB",
+    "merge"
+  ],
+  "edges": [
+    [
+      "input",
+      "branchA"
+    ],
+    [
+      "input",
+      "branchB"
+    ],
+    [
+      "branchA",
+      "merge"
+    ],
+    [
+      "branchB",
+      "merge"
+    ]
+  ]
+}

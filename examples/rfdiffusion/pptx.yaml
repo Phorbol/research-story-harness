@@ -1,0 +1,31 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "version": "v2",
+  "title": "RFdiffusion：从几何要求生成蛋白质",
+  "size": [
+    1280,
+    720
+  ],
+  "pages": [
+    "page-68e141f44a0b43769a044d77d970f33a.page.yaml",
+    "page-b07cf5f575824f74995f89168a145bf7.page.yaml",
+    "page-f4f405392ff8414a90915fae5e3fe5e8.page.yaml",
+    "page-50f4fddffdeb49629133b2210c0867ab.page.yaml",
+    "page-7d298746551d42ba97a5c90c77d48b8b.page.yaml",
+    "page-06f9c203db594e769fb61d2eb6152f94.page.yaml",
+    "page-1ae2919ed8dc446cb1dd39d479a9b761.page.yaml",
+    "page-a6d2297917234fa4a7135b94ba792e75.page.yaml",
+    "page-153a27376d504bc2b52c169aad4ac907.page.yaml",
+    "page-a93c7822a4654fe29d4392691fdadb94.page.yaml",
+    "page-722cc38755c5415aa55a175baa0b4fa9.page.yaml",
+    "page-706169e57e4645519ad2dd462d276a9a.page.yaml",
+    "page-aa1ef8a1fe284e9a8983744eee455e24.page.yaml",
+    "page-8c6706e8d84646a191c89ca94208b33c.page.yaml",
+    "page-51bb46696333478194b6a4e0e07076e9.page.yaml",
+    "page-48239ec072c2445fb644dbfe0a295cf5.page.yaml",
+    "page-df66e4f567124c75be148c0e8dd090e7.page.yaml",
+    "page-53bad256de87492c9e262424513c96d7.page.yaml",
+    "page-ccc840bb3dc24f0db04e4ff2e7d2c5ca.page.yaml",
+    "page-fd299ca7bbb347d9b774346710c318bb.page.yaml"
+  ]
+}

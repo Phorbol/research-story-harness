@@ -1,0 +1,3 @@
+# Optional re-extraction of the included CC BY 4.0 HDF5 source data.
+-r requirements.txt
+h5py>=3.10

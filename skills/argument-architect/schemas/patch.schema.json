@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "patch",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+    },
+    "base_revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "read_dependencies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "affected_units": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "claim_delta": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "issue_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "replacements": {
+      "type": "array",
+      "items": {
+        "$ref": "unit.schema.json"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id",
+    "base_revision",
+    "read_dependencies",
+    "affected_units",
+    "claim_delta",
+    "issue_ids",
+    "replacements"
+  ],
+  "additionalProperties": false
+}

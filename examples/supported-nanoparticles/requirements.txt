@@ -1,0 +1,4 @@
+ovito==3.16.0
+ase==3.26.0
+matplotlib==3.9.4
+Pillow

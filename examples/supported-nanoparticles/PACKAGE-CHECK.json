@@ -1,0 +1,72 @@
+{
+  "scope": "Existing-render metadata and source/packaging identity checks. No OVITO rendering or model construction was rerun.",
+  "new_render_performed": false,
+  "construction_rerun": false,
+  "models": {
+    "PdZn": {
+      "coordinate_source_hash_matches_recorded_scene": true,
+      "transparent_png_copied_byte_identically": true,
+      "png_size": [
+        2000,
+        1375
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "atom_count": 1413,
+      "counts": {
+        "O": 524,
+        "Zn": 652,
+        "Pd": 237
+      },
+      "support_atoms": 1048,
+      "particle_atoms": 365,
+      "recorded_backend": "OVITO Tachyon CPU",
+      "recorded_ovito_version": "3.16.0",
+      "recorded_quality": "final",
+      "not_paper_coordinates": true,
+      "not_relaxed": true
+    },
+    "PdCu": {
+      "coordinate_source_hash_matches_recorded_scene": true,
+      "transparent_png_copied_byte_identically": true,
+      "png_size": [
+        2000,
+        1375
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "atom_count": 1413,
+      "counts": {
+        "O": 524,
+        "Zn": 524,
+        "Cu": 128,
+        "Pd": 237
+      },
+      "support_atoms": 1048,
+      "particle_atoms": 365,
+      "recorded_backend": "OVITO Tachyon CPU",
+      "recorded_ovito_version": "3.16.0",
+      "recorded_quality": "final",
+      "not_paper_coordinates": true,
+      "not_relaxed": true
+    }
+  },
+  "comparison": {
+    "positions_and_tags_identical": true,
+    "element_substitutions_Zn_to_Cu": 128
+  },
+  "public_package_checks": {
+    "private_paths_or_internal_case_terms_found": [],
+    "local_readme_links_checked": 9,
+    "construction_code_syntax": "passed",
+    "provided_coordinate_hashes_match_recorded_source": true,
+    "preview_composition_executed": true,
+    "preview_actually_viewed": true,
+    "preview_geometry_or_render_content_changed": false,
+    "full_ovito_rerun_claimed": false
+  }
+}

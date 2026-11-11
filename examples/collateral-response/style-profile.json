@@ -1,0 +1,103 @@
+{
+  "name": "collateral-native-mm",
+  "font_family": "DejaVu Sans",
+  "text_color": "#243746",
+  "roles": {
+    "body": {
+      "size_pt": 7.5,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "title": {
+      "size_pt": 9.5,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "subtitle": {
+      "size_pt": 7.5,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "panel": {
+      "size_pt": 10,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "axis": {
+      "size_pt": 7.5,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "tick": {
+      "size_pt": 7.5,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "legend": {
+      "size_pt": 6.5,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "note": {
+      "size_pt": 6.5,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "symbol": {
+      "size_pt": 8,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "toc_title": {
+      "size_pt": 8.5,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "data_value": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "evidence_legend": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "example_locator": {
+      "size_pt": 8,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "sign_mark": {
+      "size_pt": 6.5,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "focus_value": {
+      "size_pt": 9,
+      "weight": "normal",
+      "style": "normal"
+    }
+  },
+  "notation": {
+    "mathtext_fontset": "dejavusans"
+  },
+  "semantic_colors": {
+    "sensitive": "#176E96",
+    "resistant": "#C35D37",
+    "within_threshold": "#E4E8EA",
+    "opposite_signs": "#705C9B",
+    "one_sign_plus_zero": "#B5BFC5",
+    "all_zero": "#FFFFFF",
+    "direct_response": "#F2F4F5",
+    "organism_fill": "#EDF3F3",
+    "border": "#CCD4D9",
+    "muted": "#697983",
+    "white": "#FFFFFF",
+    "culture_fill": "#DCE7E4",
+    "culture_outline": "#536C69",
+    "isolate_field": "#EDF3F1",
+    "focus_field": "#F4F0F8"
+  },
+  "scope": "Local design decisions at native size, not journal-wide requirements."
+}

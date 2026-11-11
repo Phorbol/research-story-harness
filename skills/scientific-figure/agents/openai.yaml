@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研绘图"
+  short_description: "Plan and revise scientifically faithful figures"
+  default_prompt: "使用 $scientific-figure，把研究问题与证据转成可编辑、可核验的科研图。"

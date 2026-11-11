@@ -1,0 +1,11 @@
+{
+  "frame": -1,
+  "style_preset": "molecule",
+  "repeat": [1, 1, 1],
+  "show_cell": false,
+  "crop": true,
+  "transparent_background": true,
+  "bonds": {"mode": "none", "width_angstrom": 0.18},
+  "views": [{"name": "oblique", "direction": [0.25, -0.5, -1], "up": [0, 1, 0], "projection": "orthographic", "margin": 1.04}],
+  "pixel_size": [2000, 1600]
+}

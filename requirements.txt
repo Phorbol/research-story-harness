@@ -1,0 +1,5 @@
+# Python 3.11+; plotting, PDF reference intake, slide YAML and structure preparation.
+-r skills/research-harness/assets/requirements.txt
+-r skills/scientific-figure/assets/requirements-reference.txt
+PyYAML==6.0.3
+ase==3.26.0

@@ -1,0 +1,11 @@
+{
+  "frame": -1,
+  "style_preset": "surface",
+  "repeat": [1, 1, 1],
+  "show_cell": false,
+  "crop": true,
+  "transparent_background": true,
+  "bonds": {"mode": "none"},
+  "views": [{"name": "oblique", "direction": [1, -1, -0.8], "up": [0, 0, 1], "projection": "orthographic", "margin": 1.04}],
+  "pixel_size": [2000, 1600]
+}

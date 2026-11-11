@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "context",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "layer": {
+      "type": "string",
+      "enum": [
+        "venue",
+        "study_design",
+        "domain",
+        "genre",
+        "author"
+      ]
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "applicability": {
+      "type": "string",
+      "minLength": 1
+    },
+    "uncertainty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "strength": {
+            "type": "string",
+            "enum": [
+              "must",
+              "should",
+              "typically"
+            ]
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "official_policy",
+              "corpus",
+              "author",
+              "pedagogy"
+            ]
+          },
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+          },
+          "condition": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "statement",
+          "strength",
+          "basis",
+          "source_id",
+          "condition"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "purpose": {
+            "type": "string",
+            "minLength": 1
+          },
+          "trigger": {
+            "type": "string",
+            "minLength": 1
+          },
+          "diagnostic": {
+            "type": "string",
+            "minLength": 1
+          },
+          "operation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exception": {
+            "type": "string",
+            "minLength": 1
+          },
+          "invariants": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "purpose",
+          "trigger",
+          "diagnostic",
+          "operation",
+          "exception",
+          "invariants"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "sample_size": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "layer",
+    "source_ids",
+    "applicability",
+    "uncertainty",
+    "rules",
+    "principles",
+    "sample_size"
+  ],
+  "additionalProperties": false
+}

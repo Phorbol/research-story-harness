@@ -1,0 +1,37 @@
+id,path,state,stage,G
+deH12-0,deH12,G(g),0,0
+deH12-1,deH12,G*,1,0.249
+deH12-2,deH12,TS(6),2,1.058
+deH12-3,deH12,2,3,-0.082
+deH12-4,deH12,TS(7),4,0.765
+deH12-5,deH12,8 (DHA),5,0.351
+deH12-6,deH12,TS1,6,1.164
+deH12-7,deH12,6 + OH,7,-0.074
+deH12-8,deH12,TS(S6:9),8,0.352
+deH12-9,deH12,acetol_OH,9,-0.512
+deH12-10,deH12,TS(S6:4),10,0.178
+deH12-11,deH12,acetol_water,11,-0.693
+deH12-12,deH12,TS(S6:10),12,-0.33
+deH12-13,deH12,11,13,-1.098
+deH12-14,deH12,TS(S6:11),14,-0.16
+deH12-15,deH12,PDO12,15,-1.248
+deH13-0,deH13,G(g),0,0
+deH13-1,deH13,G*,1,0.249
+deH13-2,deH13,TS(12),2,1.28
+deH13-3,deH13,3,3,0.185
+deH13-4,deH13,TS(13),4,1.204
+deH13-5,deH13,9 (GA),5,0.789
+deH13-6,deH13,TS2,6,1.442
+deH13-7,deH13,enol + OH,7,0.045
+water12-0,water12,G(g),0,0
+water12-1,water12,G*,1,0.249
+water12-2,water12,TS(18),2,1.086
+water12-3,water12,7,3,1.08
+water12-4,water12,TS4,4,1.764
+water12-5,water12,13 + H2O,5,0.183
+water13-0,water13,G(g),0,0
+water13-1,water13,G*,1,0.249
+water13-2,water13,TS(21),2,1.03
+water13-3,water13,1,3,0.986
+water13-4,water13,TS3,4,1.705
+water13-5,water13,14 + H2O,5,0.501

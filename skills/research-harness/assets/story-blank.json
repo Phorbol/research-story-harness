@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "StoryDiscussion",
+  "mode": "explore",
+  "brief": {
+    "starting_point": "作者可能还不知道主线、图种或呈现方法。先读现有材料，再提出可讨论的读者问题。",
+    "own_results_status": "not_provided",
+    "audience": "待结合材料与作者目标明确",
+    "user_intent": null
+  },
+  "guidance": [
+    {"when": "还说不清要讲什么", "prompt": "先指出材料里最让你意外、最重要或最困惑的一处。若仍不清楚，代理先从材料提出几种可能的认识变化供比较。"},
+    {"when": "结果很多、主线不清", "prompt": "系统先把结果按共同问题、有效对照、矛盾和缺口归组，再比较哪些可以连成同一条证据链。不要让作者先报图名。"},
+    {"when": "知道结论、不知如何呈现", "prompt": "读者要通过什么比较才能相信这句话？系统给出不同构图的草图，解释各自强调和隐藏了什么，让作者按含义反馈。"}
+  ],
+  "papers": [],
+  "observations": [],
+  "synthesis": {"themes": [], "disagreements": [], "comparability_limits": []},
+  "candidates": [],
+  "panels": [],
+  "decisions": [],
+  "selection": null
+}

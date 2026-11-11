@@ -1,0 +1,19 @@
+{
+  "source": "Watson et al. Nature 2023, DOI 10.1038/s41586-023-06415-8",
+  "scope": "Existing final public-paper presentation; source closure only, not a new quality evaluation",
+  "slides": 20,
+  "speaker_notes_parts": 20,
+  "pptx_xml_relationship_parts_scanned": 98,
+  "private_path_or_internal_project_pattern_hits": 0,
+  "source_pages": 20,
+  "referenced_media": 37,
+  "asset_map_records": 37,
+  "excluded": [
+    "full original PDFs",
+    "frozen tool copies",
+    "authoring history",
+    "production records",
+    "review conversations",
+    "unused media"
+  ]
+}

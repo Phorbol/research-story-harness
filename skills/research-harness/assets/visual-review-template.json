@@ -1,0 +1,19 @@
+{
+  "category": "publication",
+  "status": "unknown",
+  "reviewer": "",
+  "independent": true,
+  "record_path": "reviews/visual-observations.md",
+  "visual_gate": {
+    "version": 1,
+    "artifact_paths": [],
+    "viewing": {"inspected": false, "context": ""},
+    "dimensions": {
+      "story": {"status": "not_reviewed", "observation": ""},
+      "hierarchy": {"status": "not_reviewed", "observation": ""},
+      "aesthetics": {"status": "not_reviewed", "observation": ""},
+      "legibility": {"status": "not_reviewed", "observation": ""}
+    },
+    "issues": []
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "scientific-sans-v1",
+  "font_family": "DejaVu Sans",
+  "text_color": "#172936",
+  "roles": {
+    "body": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "title": {
+      "size_pt": 10,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "subtitle": {
+      "size_pt": 8,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "panel": {
+      "size_pt": 10,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "axis": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "tick": {
+      "size_pt": 7,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "legend": {
+      "size_pt": 7,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "note": {
+      "size_pt": 6.5,
+      "weight": "normal",
+      "style": "normal",
+      "color": "#596775"
+    },
+    "variable": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "italic"
+    }
+  },
+  "notation": {
+    "chemical_formula": "upright symbols; subscripts for stoichiometry",
+    "units": "upright; explicit unit on axes",
+    "variables": "italic via MathText where scientifically appropriate",
+    "emphasis": "panel/subtitle bold; body regular; no arbitrary emphasis",
+    "mathtext_fontset": "dejavusans"
+  },
+  "provenance": "Local design profile informed by observed published figures; not a universal journal requirement."
+}

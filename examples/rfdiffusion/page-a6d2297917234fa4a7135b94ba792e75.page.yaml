@@ -1,0 +1,488 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "为什么这套方法能覆盖多种任务？条件不是一句抽象的功能标签，而是可以放进三维空间的具体要求。指定对称群，就约束多个亚基如何排列；输入靶蛋白和界面热点，就规定新蛋白应该接近哪个表面；固定功能motif，则要求生成的骨架保留它的局部几何。右侧按行展示原作者图中的输入条件与最终结构，中间采样状态在这里省略。概念上是同一种条件生成框架，但不同任务并不意味着完全相同的权重和训练设置：结合蛋白、折叠拓扑以及催化位点任务都有相应微调。下面先从功能片段的固定展开，再看对称性与结合界面。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "可控性 · 同一思路覆盖不同设计要求",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "条件改变几何边界，生成器补全剩余结构",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 1b; pp. 1090, 1093, 1096.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "08",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "given",
+      "elementType": "text",
+      "bounds": [
+        635,
+        164,
+        215,
+        35
+      ],
+      "content": {
+        "text": "输入的几何条件",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "result",
+      "elementType": "text",
+      "bounds": [
+        1000,
+        164,
+        220,
+        35
+      ],
+      "content": {
+        "text": "最终生成结构",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "h-sym",
+      "elementType": "text",
+      "bounds": [
+        48,
+        223,
+        500,
+        43
+      ],
+      "content": {
+        "text": "对称性",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 31,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "b-sym",
+      "elementType": "text",
+      "bounds": [
+        48,
+        279,
+        530,
+        70
+      ],
+      "content": {
+        "text": "按点群复制初始噪声，约束亚基排列。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "in-sym",
+      "elementType": "image",
+      "bounds": [
+        655,
+        215,
+        180,
+        128
+      ],
+      "src": "media/complete-08-in-sym.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "to-sym",
+      "elementType": "line",
+      "bounds": [
+        870,
+        280,
+        100,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "out-sym",
+      "elementType": "image",
+      "bounds": [
+        1000,
+        215,
+        220,
+        128
+      ],
+      "src": "media/complete-08-out-sym.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "h-target",
+      "elementType": "text",
+      "bounds": [
+        48,
+        374,
+        500,
+        43
+      ],
+      "content": {
+        "text": "结合靶点",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 31,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "b-target",
+      "elementType": "text",
+      "bounds": [
+        48,
+        430,
+        530,
+        70
+      ],
+      "content": {
+        "text": "给定靶结构与热点，在其表面生成结合蛋白。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "in-target",
+      "elementType": "image",
+      "bounds": [
+        655,
+        366,
+        180,
+        128
+      ],
+      "src": "media/complete-08-in-target.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "to-target",
+      "elementType": "line",
+      "bounds": [
+        870,
+        431,
+        100,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "out-target",
+      "elementType": "image",
+      "bounds": [
+        1000,
+        366,
+        220,
+        128
+      ],
+      "src": "media/clean-08-out-target.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "h-motif",
+      "elementType": "text",
+      "bounds": [
+        48,
+        525,
+        500,
+        43
+      ],
+      "content": {
+        "text": "功能 motif",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 31,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "b-motif",
+      "elementType": "text",
+      "bounds": [
+        48,
+        581,
+        530,
+        70
+      ],
+      "content": {
+        "text": "固定局部几何，生成承载它的新支架。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "in-motif",
+      "elementType": "image",
+      "bounds": [
+        655,
+        517,
+        180,
+        128
+      ],
+      "src": "media/complete-08-in-motif.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "to-motif",
+      "elementType": "line",
+      "bounds": [
+        870,
+        582,
+        100,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "out-motif",
+      "elementType": "image",
+      "bounds": [
+        1000,
+        517,
+        220,
+        128
+      ],
+      "src": "media/clean-08-out-motif.png",
+      "fit": {
+        "mode": "contain"
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

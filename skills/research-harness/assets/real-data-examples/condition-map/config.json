@@ -1,0 +1,90 @@
+{
+  "figure_mm": [
+    148.16,
+    126
+  ],
+  "font_family": "DejaVu Sans",
+  "colors": {
+    "linear": "#BF5315",
+    "branched": "#087D89"
+  },
+  "references": [
+    {
+      "name": "L1",
+      "descriptor": -24.45
+    },
+    {
+      "name": "L2",
+      "descriptor": -15.35
+    },
+    {
+      "name": "L3",
+      "descriptor": 7.13
+    }
+  ],
+  "titles": [
+    "298.15 K \u00b7 24 h",
+    "353.15 K \u00b7 24 h",
+    "Temperature sweep \u00b7 24 h",
+    "Time sweep \u00b7 353.15 K"
+  ],
+  "dpi": 300,
+  "text_roles_pt": {
+    "body": 7.6,
+    "axis": 7.8,
+    "title": 8.0,
+    "tick": 7.3,
+    "legend": 8.0,
+    "annotation": 7.5,
+    "small": 7.4,
+    "panel": 9,
+    "colorbar": 7.4
+  },
+  "text_weights": {
+    "body": "normal",
+    "emphasis": "normal",
+    "panel": "bold"
+  },
+  "scientific_text_semantics": {
+    "chemical_species_and_units": "upright",
+    "math_variables": "mathtext italic only where written as mathematical variables",
+    "emphasis": "L2 is located by its reference guide and colored concentration markers; no extra bold weight",
+    "panel_letters": "bold",
+    "curve_style": "solid and dashed encode series/route; never infer uncertainty"
+  },
+  "layout": {
+    "axes_rects": [
+      [
+        0.1,
+        0.635,
+        0.4,
+        0.255
+      ],
+      [
+        0.59,
+        0.635,
+        0.39,
+        0.255
+      ],
+      [
+        0.1,
+        0.225,
+        0.4,
+        0.275
+      ],
+      [
+        0.59,
+        0.225,
+        0.39,
+        0.275
+      ]
+    ],
+    "footer_y": 0.132
+  },
+  "annotation_labels": {
+    "temperature_slices": {
+      "a": "panel a",
+      "b": "panel b"
+    }
+  }
+}

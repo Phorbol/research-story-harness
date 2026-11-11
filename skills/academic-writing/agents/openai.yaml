@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术写作"
+  short_description: "Build manuscripts from traceable claims and evidence"
+  default_prompt: "使用 $academic-writing，依据我的数据和证据组织论文并修改正文。"

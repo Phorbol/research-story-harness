@@ -1,0 +1,367 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "先区分三个对象。序列是一串氨基酸；骨架是这些残基在三维空间中的总体组织；功能位点则是其中承担结合或催化作用的局部几何。结构预测从序列出发，而设计需要从所需功能出发，寻找能够稳定承载这个功能的序列和结构。右图以p53的一段螺旋为例：它能接触MDM2，但我们希望有一个更大的新骨架固定这段螺旋，并形成额外接触。这样的约束通常只规定局部，剩余结构有许多可能解，因此既需要生成的多样性，也需要精准遵守条件。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "问题 · 听众所需的三个对象",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "设计任务先规定“做什么”，再寻找“怎么折叠”",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, pp. 1089–1090; Fig. 4c.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "02",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "seq-title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        166,
+        500,
+        40
+      ],
+      "content": {
+        "text": "序列决定可以折叠成什么",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 28,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "seq",
+      "elementType": "shape",
+      "bounds": [
+        48,
+        235,
+        195,
+        70
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#61729D"
+      }
+    },
+    {
+      "elementId": "seq-text",
+      "elementType": "text",
+      "bounds": [
+        60,
+        250,
+        171,
+        42
+      ],
+      "content": {
+        "text": "氨基酸序列",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "seq-arrow",
+      "elementType": "line",
+      "bounds": [
+        260,
+        270,
+        60,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "backbone",
+      "elementType": "shape",
+      "bounds": [
+        338,
+        235,
+        210,
+        70
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#BF7086"
+      }
+    },
+    {
+      "elementId": "backbone-text",
+      "elementType": "text",
+      "bounds": [
+        350,
+        250,
+        186,
+        42
+      ],
+      "content": {
+        "text": "三维骨架",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "seq-description",
+      "elementType": "text",
+      "bounds": [
+        48,
+        337,
+        500,
+        100
+      ],
+      "content": {
+        "text": "RFdiffusion 生成骨架；\nProteinMPNN 随后为骨架设计序列。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task",
+      "elementType": "text",
+      "bounds": [
+        48,
+        489,
+        500,
+        110
+      ],
+      "content": {
+        "text": "功能约束只规定局部几何。\n其余骨架需要在大量可能解中生成。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "motif-example",
+      "elementType": "image",
+      "bounds": [
+        660,
+        180,
+        545,
+        320
+      ],
+      "src": "media/fig4-p53.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "motif-key",
+      "elementType": "text",
+      "bounds": [
+        660,
+        520,
+        550,
+        95
+      ],
+      "content": {
+        "text": "示例：把 p53 螺旋固定在新骨架中\n青：MDM2 靶点；灰：p53；粉：新增骨架",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 21,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": [
+    {
+      "elements": [
+        "seq",
+        "seq-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "backbone",
+        "backbone-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    }
+  ]
+}

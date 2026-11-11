@@ -1,0 +1,1496 @@
+{
+  "queried_on": "2026-10-24",
+  "scope": "Bounded multi-journal sample selected for user topics; observed figures are neither representative prevalence estimates nor independent scientific validation",
+  "counts": {
+    "records": 26,
+    "visually_inspected_records": 16,
+    "identified_not_inspected": 10
+  },
+  "journal_search_targets": [
+    "Nature Machine Intelligence",
+    "Nature Computational Science",
+    "Nature Catalysis",
+    "Nature Chemistry",
+    "Nature Communications",
+    "Chemical Science",
+    "JACS",
+    "ACS Catalysis",
+    "JPCL",
+    "JCTC",
+    "JPCC",
+    "arXiv"
+  ],
+  "search_protocol": [
+    "Start from reader task + scientific object + topic, then journal and figure type",
+    "Publisher / arXiv / author institutional repository / Europe PMC",
+    "Verify versions and access state; inspect actual page + caption + relevant prose",
+    "Use six-layer cards and retain observed versus inferred fields",
+    "Transfer patterns using real user data; review readability at target physical size"
+  ],
+  "records": [
+    {
+      "id": "nmi",
+      "journal": "Nature Machine Intelligence",
+      "title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling",
+      "doi": "10.1038/s42256-023-00716-3",
+      "url": "https://www.nature.com/articles/s42256-023-00716-3.pdf",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-23",
+      "bytes": 2664200,
+      "sha256": "fa4a98d6e4bd6560b1fdc85c5676ab8587e2db5a4602394d0f0df8a6a388444f",
+      "preview_page": 3,
+      "page_count": 11,
+      "pdf_metadata": {
+        "format": "PDF 1.4",
+        "title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling",
+        "author": "Bowen Deng",
+        "subject": "Nature Machine Intelligence, doi:10.1038/s42256-023-00716-3",
+        "keywords": "",
+        "creator": "Springer",
+        "producer": "",
+        "creationDate": "D:20230918124008+05'30'",
+        "modDate": "D:20230918124101+05'30'",
+        "trapped": "",
+        "encryption": null
+      },
+      "figure_locator": "PDF p3, Fig1 and Fig2",
+      "observation_scope": "Only the located figures; not a complete paper or scientific validation",
+      "pattern": {
+        "title": "Architecture plus element/data-coverage overview",
+        "task_tags": [
+          "model architecture",
+          "coverage matrix",
+          "count table"
+        ],
+        "layout_tags": [
+          "Nested modules and an element-grid inventory separate computation from training coverage."
+        ],
+        "style_tags": [
+          "Dense small labels and colored element cells; sans-serif figure labels."
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Architecture plus element/data-coverage overview",
+            "origin": "observed",
+            "locator": "PDF p3, Fig1 and Fig2"
+          },
+          "relations": {
+            "value": "Named relations must be read with the caption; dependencies are not automatically causality",
+            "origin": "inferred",
+            "locator": "PDF p3, Fig1 and Fig2"
+          },
+          "argument_role": {
+            "value": "For a charge-aware potential, distinguish inputs, updates and coverage.",
+            "origin": "inferred",
+            "locator": "PDF p3, Fig1 and Fig2"
+          },
+          "visual_encoding": {
+            "value": "Dense small labels and colored element cells; sans-serif figure labels.",
+            "origin": "observed",
+            "locator": "PDF p3, Fig1 and Fig2"
+          },
+          "layout": {
+            "value": "Nested modules and an element-grid inventory separate computation from training coverage.",
+            "origin": "observed",
+            "locator": "PDF p3, Fig1 and Fig2"
+          },
+          "surface_style": {
+            "value": "Dense small labels and colored element cells; sans-serif figure labels.",
+            "origin": "observed",
+            "locator": "PDF p3, Fig1 and Fig2"
+          }
+        },
+        "transfer_conditions": [
+          "For a charge-aware potential, distinguish inputs, updates and coverage."
+        ],
+        "do_not_transfer": [
+          "Do not interpret the element inventory as equal data quality or transfer reported accuracy."
+        ],
+        "reproduction_status": "observed_pattern_only; no pixel reconstruction or result reproduction"
+      },
+      "research_download_filename": "nmi.pdf",
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "ncs",
+      "journal": "Nature Computational Science",
+      "title": "Digital Twin for Chemical Science: a case study on water interactions on the Ag(111) surface",
+      "doi": "10.1038/s43588-025-00857-y",
+      "url": "https://www.nature.com/articles/s43588-025-00857-y.pdf",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-23",
+      "bytes": 1321204,
+      "sha256": "a1a3bf37fc230cd5f33ee9af24f86764076efafd91ba8e3c7b6977b677d01fe1",
+      "preview_page": 4,
+      "page_count": 8,
+      "pdf_metadata": {
+        "format": "PDF 1.4",
+        "title": "Digital Twin for Chemical Science: a case study on water interactions on the Ag(111) surface",
+        "author": "Jin Qian",
+        "subject": "Nature Computational Science, doi:10.1038/s43588-025-00857-y",
+        "keywords": "",
+        "creator": "Springer",
+        "producer": "",
+        "creationDate": "D:20250922130838+05'30'",
+        "modDate": "D:20250922130929+05'30'",
+        "trapped": "",
+        "encryption": null
+      },
+      "figure_locator": "PDF p4, Fig3",
+      "observation_scope": "Only the located figures; not a complete paper or scientific validation",
+      "pattern": {
+        "title": "Aligned specification, simulation and digital-twin views",
+        "task_tags": [
+          "workflow",
+          "time trace",
+          "spatial field",
+          "spectrum"
+        ],
+        "layout_tags": [
+          "Three columns connect code/specification, simulated observables and a matching target view."
+        ],
+        "style_tags": [
+          "Repeated magenta/orange modules identify corresponding operations across columns."
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Aligned specification, simulation and digital-twin views",
+            "origin": "observed",
+            "locator": "PDF p4, Fig3"
+          },
+          "relations": {
+            "value": "Named relations must be read with the caption; dependencies are not automatically causality",
+            "origin": "inferred",
+            "locator": "PDF p4, Fig3"
+          },
+          "argument_role": {
+            "value": "Useful when the reader must map one operation to one observable.",
+            "origin": "inferred",
+            "locator": "PDF p4, Fig3"
+          },
+          "visual_encoding": {
+            "value": "Repeated magenta/orange modules identify corresponding operations across columns.",
+            "origin": "observed",
+            "locator": "PDF p4, Fig3"
+          },
+          "layout": {
+            "value": "Three columns connect code/specification, simulated observables and a matching target view.",
+            "origin": "observed",
+            "locator": "PDF p4, Fig3"
+          },
+          "surface_style": {
+            "value": "Repeated magenta/orange modules identify corresponding operations across columns.",
+            "origin": "observed",
+            "locator": "PDF p4, Fig3"
+          }
+        },
+        "transfer_conditions": [
+          "Useful when the reader must map one operation to one observable."
+        ],
+        "do_not_transfer": [
+          "Column alignment does not independently establish causal sufficiency or experimental agreement."
+        ],
+        "reproduction_status": "observed_pattern_only; no pixel reconstruction or result reproduction"
+      },
+      "research_download_filename": "ncs.pdf",
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "natcat",
+      "journal": "Nature Catalysis",
+      "title": "General reactive element-based machine learning potentials for heterogeneous catalysis",
+      "doi": "10.1038/s41929-025-01398-3",
+      "url": "https://www.nature.com/articles/s41929-025-01398-3.pdf",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-23",
+      "access_error": "Response is not PDF; kept access status rather than labeling it a paper PDF",
+      "open_version_pdf_url": "https://itcc.nju.edu.cn/dqxie/article/34.pdf",
+      "figure_locator": "PDF p2, Fig1 a–c",
+      "observation_scope": "Only the located figures; not a complete paper or scientific validation",
+      "preview_page": 2,
+      "sha256": "d6472d6c14b0627312195d1cf286aad9f5e696e63569239e6d30c89068dfba8e",
+      "pattern": {
+        "title": "Workflow, atomistic examples and application rail",
+        "task_tags": [
+          "workflow",
+          "structure gallery",
+          "histogram",
+          "application schematic"
+        ],
+        "layout_tags": [
+          "Wide upper training pipeline, lower structural dataset examples and a narrow right application rail."
+        ],
+        "style_tags": [
+          "Pale nested regions, element-colored spheres, compact histogram and consistent arrow grouping."
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Workflow, atomistic examples and application rail",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1 a–c"
+          },
+          "relations": {
+            "value": "Named relations must be read with the caption; dependencies are not automatically causality",
+            "origin": "inferred",
+            "locator": "PDF p2, Fig1 a–c"
+          },
+          "argument_role": {
+            "value": "Keep generation, selection, dataset balance and fitting separate; pair abstract stages with concrete objects.",
+            "origin": "inferred",
+            "locator": "PDF p2, Fig1 a–c"
+          },
+          "visual_encoding": {
+            "value": "Pale nested regions, element-colored spheres, compact histogram and consistent arrow grouping.",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1 a–c"
+          },
+          "layout": {
+            "value": "Wide upper training pipeline, lower structural dataset examples and a narrow right application rail.",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1 a–c"
+          },
+          "surface_style": {
+            "value": "Pale nested regions, element-colored spheres, compact histogram and consistent arrow grouping.",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1 a–c"
+          }
+        },
+        "transfer_conditions": [
+          "Keep generation, selection, dataset balance and fitting separate; pair abstract stages with concrete objects."
+        ],
+        "do_not_transfer": [
+          "Do not copy illustrative energy/free-energy curves as computed values or assume a cutoff is a chemical bond."
+        ],
+        "reproduction_status": "observed_pattern_only; no pixel reconstruction or result reproduction"
+      },
+      "research_download_filename": "natcat.pdf",
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "natchem",
+      "journal": "Nature Chemistry",
+      "title": "Amino acid composition drives aggregation during peptide synthesis",
+      "doi": "10.1038/s41557-026-02090-0",
+      "url": "https://www.nature.com/articles/s41557-026-02090-0.pdf",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-23",
+      "bytes": 1361582,
+      "sha256": "3130f5fd4fe8a18446891ed2c5874dcb0fd74fc11615d0bb43195b3c9ff6490f",
+      "preview_page": 2,
+      "page_count": 11,
+      "pdf_metadata": {
+        "format": "PDF 1.4",
+        "title": "Amino acid composition drives aggregation during peptide synthesis",
+        "author": "Bálint Tamás",
+        "subject": "Nature Chemistry, doi:10.1038/s41557-026-02090-0",
+        "keywords": "",
+        "creator": "Springer",
+        "producer": "",
+        "creationDate": "D:20260401103825+05'30'",
+        "modDate": "D:20260401103905+05'30'",
+        "trapped": "",
+        "encryption": null
+      },
+      "figure_locator": "PDF p2, Fig1 a–d",
+      "observation_scope": "Only the located figures; not a complete paper or scientific validation",
+      "pattern": {
+        "title": "Measurement apparatus to observations and interpretation",
+        "task_tags": [
+          "apparatus",
+          "chemical structure",
+          "time trace",
+          "mechanism schematic"
+        ],
+        "layout_tags": [
+          "Instrument/chemical zoom precedes pulse features, structural interpretation and model."
+        ],
+        "style_tags": [
+          "Restrained gray/salmon accents and labeled panels carry different observation levels."
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Measurement apparatus to observations and interpretation",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1 a–d"
+          },
+          "relations": {
+            "value": "Named relations must be read with the caption; dependencies are not automatically causality",
+            "origin": "inferred",
+            "locator": "PDF p2, Fig1 a–d"
+          },
+          "argument_role": {
+            "value": "Use when an apparatus feature must be connected to an extracted signal and an explicit interpretation.",
+            "origin": "inferred",
+            "locator": "PDF p2, Fig1 a–d"
+          },
+          "visual_encoding": {
+            "value": "Restrained gray/salmon accents and labeled panels carry different observation levels.",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1 a–d"
+          },
+          "layout": {
+            "value": "Instrument/chemical zoom precedes pulse features, structural interpretation and model.",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1 a–d"
+          },
+          "surface_style": {
+            "value": "Restrained gray/salmon accents and labeled panels carry different observation levels.",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1 a–d"
+          }
+        },
+        "transfer_conditions": [
+          "Use when an apparatus feature must be connected to an extracted signal and an explicit interpretation."
+        ],
+        "do_not_transfer": [
+          "The mechanistic drawing is an interpretation, not an additional measurement."
+        ],
+        "reproduction_status": "observed_pattern_only; no pixel reconstruction or result reproduction"
+      },
+      "research_download_filename": "natchem.pdf",
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "natcomm",
+      "journal": "Nature Communications",
+      "title": "Accurate descriptions of molecule-surface interactions in electrocatalytic CO2 reduction on the copper surfaces",
+      "doi": "10.1038/s41467-023-36695-7",
+      "url": "https://www.nature.com/articles/s41467-023-36695-7.pdf",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-23",
+      "bytes": 986650,
+      "sha256": "b3827c0461b0000955c336732883fd752675fc1aabcca182d5e52f9d486ad6ce",
+      "preview_page": 2,
+      "page_count": 9,
+      "pdf_metadata": {
+        "format": "PDF 1.4",
+        "title": "Accurate descriptions of molecule-surface interactions in electrocatalytic CO2 reduction on the copper surfaces",
+        "author": "Zheng Chen",
+        "subject": "Nature Communications, doi:10.1038/s41467-023-36695-7",
+        "keywords": "",
+        "creator": "Springer",
+        "producer": "iText® 5.3.5 ©2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version)",
+        "creationDate": "D:20230218153701+05'30'",
+        "modDate": "D:20230220091427+01'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "figure_locator": "PDF p2, Fig1",
+      "observation_scope": "Only the located figures; not a complete paper or scientific validation",
+      "pattern": {
+        "title": "Structure-linked thermodynamic cycle",
+        "task_tags": [
+          "surface structure",
+          "energy cycle",
+          "reaction schematic"
+        ],
+        "layout_tags": [
+          "Atomic surface snapshots anchor a compact cycle of named energy contributions."
+        ],
+        "style_tags": [
+          "Green/blue/black paths distinguish energy terms; sphere colors retain atom identity."
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Structure-linked thermodynamic cycle",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1"
+          },
+          "relations": {
+            "value": "Named relations must be read with the caption; dependencies are not automatically causality",
+            "origin": "inferred",
+            "locator": "PDF p2, Fig1"
+          },
+          "argument_role": {
+            "value": "Specify common reference states before comparing adsorption and reaction contributions.",
+            "origin": "inferred",
+            "locator": "PDF p2, Fig1"
+          },
+          "visual_encoding": {
+            "value": "Green/blue/black paths distinguish energy terms; sphere colors retain atom identity.",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1"
+          },
+          "layout": {
+            "value": "Atomic surface snapshots anchor a compact cycle of named energy contributions.",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1"
+          },
+          "surface_style": {
+            "value": "Green/blue/black paths distinguish energy terms; sphere colors retain atom identity.",
+            "origin": "observed",
+            "locator": "PDF p2, Fig1"
+          }
+        },
+        "transfer_conditions": [
+          "Specify common reference states before comparing adsorption and reaction contributions."
+        ],
+        "do_not_transfer": [
+          "Arrow geometry and color cannot establish a mechanism or validate energy bookkeeping."
+        ],
+        "reproduction_status": "observed_pattern_only; no pixel reconstruction or result reproduction"
+      },
+      "research_download_filename": "natcomm.pdf",
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "chemsci",
+      "journal": "Chemical Science",
+      "title": "Automation and machine learning augmented by large language models in a catalysis study",
+      "doi": "10.1039/D3SC07012C",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2024/sc/d3sc07012c",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-23",
+      "access_error": "HTTP Error 403: Forbidden",
+      "europepmc": {
+        "id": "39118602",
+        "source": "MED",
+        "pmid": "39118602",
+        "pmcid": "PMC11304797",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11304797"
+          ]
+        },
+        "doi": "10.1039/d3sc07012c",
+        "title": "Automation and machine learning augmented by large language models in a catalysis study.",
+        "authorString": "Su Y, Wang X, Ye Y, Xie Y, Xu Y, Jiang Y, Wang C.",
+        "journalTitle": "Chem Sci",
+        "issue": "31",
+        "journalVolume": "15",
+        "pubYear": "2024",
+        "journalIssn": "2041-6520; 2041-6539; ",
+        "pageInfo": "12200-12233",
+        "pubType": "review-article; review; journal article",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 29,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "firstPublicationDate": "2024-06-26",
+        "firstIndexDate": "2024-08-09"
+      },
+      "xml_path": "chemsci.xml",
+      "xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11304797/fullTextXML",
+      "figure_locator": "Europe PMC PMC11304797, Fig1, enlarged browser view",
+      "observation_scope": "Only the located figures; not a complete paper or scientific validation",
+      "pattern": {
+        "title": "Dual experimental/computational feedback loops",
+        "task_tags": [
+          "workflow",
+          "feedback network"
+        ],
+        "layout_tags": [
+          "Literature feeds knowledge/dataset and a hypothesis node; experimental and simulation branches close labeled data loops."
+        ],
+        "style_tags": [
+          "Pale region colors separate branches, while blue/red return arrows identify data provenance."
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Dual experimental/computational feedback loops",
+            "origin": "observed",
+            "locator": "Europe PMC PMC11304797, Fig1, enlarged browser view"
+          },
+          "relations": {
+            "value": "Named relations must be read with the caption; dependencies are not automatically causality",
+            "origin": "inferred",
+            "locator": "Europe PMC PMC11304797, Fig1, enlarged browser view"
+          },
+          "argument_role": {
+            "value": "Use for coordinated experimental/computational learning when both loops actually exist.",
+            "origin": "inferred",
+            "locator": "Europe PMC PMC11304797, Fig1, enlarged browser view"
+          },
+          "visual_encoding": {
+            "value": "Pale region colors separate branches, while blue/red return arrows identify data provenance.",
+            "origin": "observed",
+            "locator": "Europe PMC PMC11304797, Fig1, enlarged browser view"
+          },
+          "layout": {
+            "value": "Literature feeds knowledge/dataset and a hypothesis node; experimental and simulation branches close labeled data loops.",
+            "origin": "observed",
+            "locator": "Europe PMC PMC11304797, Fig1, enlarged browser view"
+          },
+          "surface_style": {
+            "value": "Pale region colors separate branches, while blue/red return arrows identify data provenance.",
+            "origin": "observed",
+            "locator": "Europe PMC PMC11304797, Fig1, enlarged browser view"
+          }
+        },
+        "transfer_conditions": [
+          "Use for coordinated experimental/computational learning when both loops actually exist."
+        ],
+        "do_not_transfer": [
+          "Review figures with third-party reuse notices require attribution to original work; this card covers Fig1 only."
+        ],
+        "reproduction_status": "observed_pattern_only; no pixel reconstruction or result reproduction"
+      },
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "jacs",
+      "journal": "JACS",
+      "title": "Multi-Variable Multi-Metric Optimization of Self-Assembled Photocatalytic CO2 Reduction Performance Using Machine Learning Algorithms",
+      "doi": "10.1021/jacs.4c01305",
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/jacs.4c01305",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-23",
+      "access_error": "HTTP Error 403: Forbidden",
+      "europepmc": {
+        "id": "38767460",
+        "source": "MED",
+        "pmid": "38767460",
+        "pmcid": "PMC11157525",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11157525"
+          ]
+        },
+        "doi": "10.1021/jacs.4c01305",
+        "title": "Multi-Variable Multi-Metric Optimization of Self-Assembled Photocatalytic CO<sub>2</sub> Reduction Performance Using Machine Learning Algorithms.",
+        "authorString": "Bonke SA, Trezza G, Bergamasco L, Song H, Rodríguez-Jiménez S, Hammarström L, Chiavazzo E, Reisner E.",
+        "journalTitle": "J Am Chem Soc",
+        "issue": "22",
+        "journalVolume": "146",
+        "pubYear": "2024",
+        "journalIssn": "0002-7863; 1520-5126; ",
+        "pageInfo": "15648-15658",
+        "pubType": "research-article; journal article",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 7,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "firstPublicationDate": "2024-05-20",
+        "firstIndexDate": "2024-05-20"
+      },
+      "xml_path": "jacs.xml",
+      "xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11157525/fullTextXML",
+      "figure_locator": "Europe PMC PMC11157525, Fig1 A–B, enlarged browser view",
+      "observation_scope": "Only the located figures; not a complete paper or scientific validation",
+      "pattern": {
+        "title": "Chemical mechanism next to quantitative performance",
+        "task_tags": [
+          "molecular schematic",
+          "grouped bar chart",
+          "uncertainty"
+        ],
+        "layout_tags": [
+          "A micellar system with specific catalyst/photosensitizer structures sits next to grouped CO/H2 performance bars."
+        ],
+        "style_tags": [
+          "Chemical roles carry named colors; consistent condition labels connect schematic and bar panels."
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Chemical mechanism next to quantitative performance",
+            "origin": "observed",
+            "locator": "Europe PMC PMC11157525, Fig1 A–B, enlarged browser view"
+          },
+          "relations": {
+            "value": "Named relations must be read with the caption; dependencies are not automatically causality",
+            "origin": "inferred",
+            "locator": "Europe PMC PMC11157525, Fig1 A–B, enlarged browser view"
+          },
+          "argument_role": {
+            "value": "Useful when readers need both the concrete reaction environment and the measured outcome.",
+            "origin": "inferred",
+            "locator": "Europe PMC PMC11157525, Fig1 A–B, enlarged browser view"
+          },
+          "visual_encoding": {
+            "value": "Chemical roles carry named colors; consistent condition labels connect schematic and bar panels.",
+            "origin": "observed",
+            "locator": "Europe PMC PMC11157525, Fig1 A–B, enlarged browser view"
+          },
+          "layout": {
+            "value": "A micellar system with specific catalyst/photosensitizer structures sits next to grouped CO/H2 performance bars.",
+            "origin": "observed",
+            "locator": "Europe PMC PMC11157525, Fig1 A–B, enlarged browser view"
+          },
+          "surface_style": {
+            "value": "Chemical roles carry named colors; consistent condition labels connect schematic and bar panels.",
+            "origin": "observed",
+            "locator": "Europe PMC PMC11157525, Fig1 A–B, enlarged browser view"
+          }
+        },
+        "transfer_conditions": [
+          "Useful when readers need both the concrete reaction environment and the measured outcome."
+        ],
+        "do_not_transfer": [
+          "Do not transfer replicate counts, error definitions, catalytic mechanisms or molecular identities to another study."
+        ],
+        "reproduction_status": "observed_pattern_only; no pixel reconstruction or result reproduction"
+      },
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "acscat",
+      "journal": "ACS Catalysis",
+      "title": "ML-Accelerated Automatic Process Exploration Reveals Facile O-Induced Pd Step-Edge Restructuring",
+      "doi": "10.1021/acscatal.4c06414",
+      "url": "https://pure.mpg.de/pubman/item/item_3628448_3/component/file_3628656/poths-et-al-2024-ml-accelerated-automatic-process-exploration-reveals-facile-o-induced-pd-step-edge-restructuring-on.pdf?mode=download",
+      "status": "identified_access_not_obtained",
+      "queried_on": "2026-10-23",
+      "access_error": "HTTP Error 403: Forbidden",
+      "figure_locator": null,
+      "pattern": null,
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "jpcl",
+      "journal": "JPCL",
+      "title": "Machine Learning Optimization of Non-Kasha Behavior and of Transient Dynamics in Model Retinal Isomerization",
+      "doi": "10.1021/acs.jpclett.4c02714",
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpclett.4c02714",
+      "status": "identified_access_not_obtained",
+      "queried_on": "2026-10-23",
+      "access_error": "HTTP Error 403: Forbidden",
+      "europepmc": {
+        "id": "39680656",
+        "source": "MED",
+        "pmid": "39680656",
+        "doi": "10.1021/acs.jpclett.4c02714",
+        "title": "Machine Learning Optimization of Non-Kasha Behavior and of Transient Dynamics in Model Retinal Isomerization.",
+        "authorString": "Singh D, Chuang C, Brumer P.",
+        "journalTitle": "J Phys Chem Lett",
+        "issue": "51",
+        "journalVolume": "15",
+        "pubYear": "2024",
+        "journalIssn": "1948-7185",
+        "pageInfo": "12543-12550",
+        "pubType": "journal article",
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 3,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasTMAccessionNumbers": "N",
+        "firstPublicationDate": "2024-12-16",
+        "firstIndexDate": "2024-12-16"
+      },
+      "figure_locator": null,
+      "pattern": null,
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "jctc",
+      "journal": "JCTC",
+      "title": "MACE: Automated Assessment of Stereochemistry of Transition Metal Complexes and Its Applications in Computational Catalysis",
+      "doi": "10.1021/acs.jctc.3c01313",
+      "url": "https://pure.tudelft.nl/ws/portalfiles/portal/181596201/chernyshov-pidko-2024-mace-automated-assessment-of-stereochemistry-of-transition-metal-complexes-and-its-applications.pdf",
+      "status": "identified_access_not_obtained",
+      "queried_on": "2026-10-23",
+      "access_error": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+      "europepmc": {
+        "id": "38365199",
+        "source": "MED",
+        "pmid": "38365199",
+        "doi": "10.1021/acs.jctc.3c01313",
+        "title": "MACE: Automated Assessment of Stereochemistry of Transition Metal Complexes and Its Applications in Computational Catalysis.",
+        "authorString": "Chernyshov IY, Pidko EA.",
+        "journalTitle": "J Chem Theory Comput",
+        "issue": "5",
+        "journalVolume": "20",
+        "pubYear": "2024",
+        "journalIssn": "1549-9618; 1549-9626; ",
+        "pageInfo": "2313-2320",
+        "pubType": "journal article",
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 8,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "N",
+        "firstPublicationDate": "2024-02-16",
+        "firstIndexDate": "2024-02-18"
+      },
+      "figure_locator": null,
+      "pattern": null,
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "jpcc",
+      "journal": "JPCC",
+      "title": "A Machine Learning and Explainable AI Framework Tailored for Unbalanced Experimental Catalyst Discovery",
+      "doi": "10.1021/acs.jpcc.4c05332",
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpcc.4c05332",
+      "status": "identified_access_not_obtained",
+      "queried_on": "2026-10-23",
+      "access_error": "HTTP Error 403: Forbidden",
+      "figure_locator": null,
+      "pattern": null,
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "jctc_bde",
+      "journal": "JCTC",
+      "title": "Transferable Machine Learning Interatomic Potential for Bond Dissociation Energy Prediction of Drug-like Molecules",
+      "doi": "10.1021/acs.jctc.3c00710",
+      "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/894641a9-5683-4703-9ea1-d2414cae7598/content",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-23",
+      "bytes": 4284934,
+      "sha256": "a68265460ce46d51b7bd0eb4ef9d90b528cfcfb1169e853c77a7a6ac70f26255",
+      "preview_page": 2,
+      "page_count": 14,
+      "pdf_metadata": {
+        "format": "PDF 1.4",
+        "title": "ct3c00710 1..14",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Arbortext Publishing Engine",
+        "producer": "PDFlib+PDI 9.1.2p4 (C++/Win64)",
+        "creationDate": "D:20231229150906-05'00'",
+        "modDate": "D:20231229150906-05'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "figure_locator": "Author repository PDF p2, Fig1",
+      "observation_scope": "Only the located figures; not a complete paper or scientific validation",
+      "pattern": {
+        "title": "Two computational routes with shared endpoints",
+        "task_tags": [
+          "comparative workflow",
+          "molecular computation"
+        ],
+        "layout_tags": [
+          "Highlighted regions contrast the AM1 and MACE routes while preserving the same prediction task."
+        ],
+        "style_tags": [
+          "Two block colors organize alternatives; common endpoint and arrows make the comparison legible."
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Two computational routes with shared endpoints",
+            "origin": "observed",
+            "locator": "Author repository PDF p2, Fig1"
+          },
+          "relations": {
+            "value": "Named relations must be read with the caption; dependencies are not automatically causality",
+            "origin": "inferred",
+            "locator": "Author repository PDF p2, Fig1"
+          },
+          "argument_role": {
+            "value": "Compare computational cost or representation choices only when endpoint definitions agree.",
+            "origin": "inferred",
+            "locator": "Author repository PDF p2, Fig1"
+          },
+          "visual_encoding": {
+            "value": "Two block colors organize alternatives; common endpoint and arrows make the comparison legible.",
+            "origin": "observed",
+            "locator": "Author repository PDF p2, Fig1"
+          },
+          "layout": {
+            "value": "Highlighted regions contrast the AM1 and MACE routes while preserving the same prediction task.",
+            "origin": "observed",
+            "locator": "Author repository PDF p2, Fig1"
+          },
+          "surface_style": {
+            "value": "Two block colors organize alternatives; common endpoint and arrows make the comparison legible.",
+            "origin": "observed",
+            "locator": "Author repository PDF p2, Fig1"
+          }
+        },
+        "transfer_conditions": [
+          "Compare computational cost or representation choices only when endpoint definitions agree."
+        ],
+        "do_not_transfer": [
+          "Matching flowchart endpoints does not prove equal scientific accuracy or validated computational savings."
+        ],
+        "reproduction_status": "observed_pattern_only; no pixel reconstruction or result reproduction"
+      },
+      "research_download_filename": "jctc_bde.pdf",
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "mattergen_nature",
+      "journal": "Nature",
+      "title": "A generative model for inorganic materials design",
+      "doi": "10.1038/s41586-025-08628-5",
+      "url": "https://www.nature.com/articles/s41586-025-08628-5",
+      "queried_on": "2026-10-23",
+      "status": "visually_inspected_selected_figures",
+      "figure_locator": "Nature PDF pp2,7, Fig1 and Fig6",
+      "version_family": "mattergen",
+      "pattern": {
+        "title": "Conditioned generation and model/measurement comparison",
+        "task_tags": [
+          "workflow",
+          "structure rendering",
+          "XRD",
+          "indentation",
+          "parity plot"
+        ],
+        "layout_tags": [
+          "Staged generation schematic and multi-panel experimental evidence distinguish design from validation."
+        ],
+        "style_tags": [
+          "See located figure; no universal journal typography inferred"
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Conditioned generation and model/measurement comparison",
+            "origin": "observed",
+            "locator": "Nature PDF pp2,7, Fig1 and Fig6"
+          },
+          "relations": {
+            "value": "Named computation/data relations; keep state identity and reference definitions",
+            "origin": "inferred",
+            "locator": "Nature PDF pp2,7, Fig1 and Fig6"
+          },
+          "argument_role": {
+            "value": "Connect concrete objects and evidence to the reader question",
+            "origin": "inferred",
+            "locator": "Nature PDF pp2,7, Fig1 and Fig6"
+          },
+          "visual_encoding": {
+            "value": "Staged generation schematic and multi-panel experimental evidence distinguish design from validation.",
+            "origin": "observed",
+            "locator": "Nature PDF pp2,7, Fig1 and Fig6"
+          },
+          "layout": {
+            "value": "Staged generation schematic and multi-panel experimental evidence distinguish design from validation.",
+            "origin": "observed",
+            "locator": "Nature PDF pp2,7, Fig1 and Fig6"
+          },
+          "surface_style": {
+            "value": "Visual observation only; exact font recovered only where PDF text allows",
+            "origin": "observed",
+            "locator": "Nature PDF pp2,7, Fig1 and Fig6"
+          }
+        },
+        "transfer_conditions": [
+          "Retain scientific identities, units and evidence boundaries; layout may be adapted"
+        ],
+        "do_not_transfer": [
+          "Do not reuse numbers, structures or mechanisms without their actual sources"
+        ],
+        "reproduction_status": "real public-data transfer and three narrative recompositions; not original-figure pixel reconstruction"
+      },
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "mattergen_arxiv_v2",
+      "journal": "arXiv",
+      "title": "A generative model for inorganic materials design (v2)",
+      "doi": "10.48550/arXiv.2312.03687",
+      "url": "https://arxiv.org/abs/2312.03687v2",
+      "queried_on": "2026-10-23",
+      "status": "visually_inspected_selected_figures",
+      "figure_locator": "arXiv v2 PDF p3, Fig1",
+      "version_family": "mattergen",
+      "pattern": {
+        "title": "Earlier generative architecture view",
+        "task_tags": [
+          "workflow",
+          "diffusion schematic"
+        ],
+        "layout_tags": [
+          "Earlier architecture view supports learning composition; this version does not contain the final Nature experimental Fig6."
+        ],
+        "style_tags": [
+          "See located figure; no universal journal typography inferred"
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Earlier generative architecture view",
+            "origin": "observed",
+            "locator": "arXiv v2 PDF p3, Fig1"
+          },
+          "relations": {
+            "value": "Named computation/data relations; keep state identity and reference definitions",
+            "origin": "inferred",
+            "locator": "arXiv v2 PDF p3, Fig1"
+          },
+          "argument_role": {
+            "value": "Connect concrete objects and evidence to the reader question",
+            "origin": "inferred",
+            "locator": "arXiv v2 PDF p3, Fig1"
+          },
+          "visual_encoding": {
+            "value": "Earlier architecture view supports learning composition; this version does not contain the final Nature experimental Fig6.",
+            "origin": "observed",
+            "locator": "arXiv v2 PDF p3, Fig1"
+          },
+          "layout": {
+            "value": "Earlier architecture view supports learning composition; this version does not contain the final Nature experimental Fig6.",
+            "origin": "observed",
+            "locator": "arXiv v2 PDF p3, Fig1"
+          },
+          "surface_style": {
+            "value": "Visual observation only; exact font recovered only where PDF text allows",
+            "origin": "observed",
+            "locator": "arXiv v2 PDF p3, Fig1"
+          }
+        },
+        "transfer_conditions": [
+          "Retain scientific identities, units and evidence boundaries; layout may be adapted"
+        ],
+        "do_not_transfer": [
+          "Do not reuse numbers, structures or mechanisms without their actual sources"
+        ],
+        "reproduction_status": "observed pattern only; final experimental claims cannot be backfilled into the earlier version"
+      },
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "scigen_natmat",
+      "journal": "Nature Materials",
+      "title": "SCIGEN geometry-constrained crystal generation",
+      "doi": "10.1038/s41563-025-02355-y",
+      "url": "https://www.nature.com/articles/s41563-025-02355-y/figures/1",
+      "queried_on": "2026-10-23",
+      "status": "visually_inspected_selected_figures",
+      "figure_locator": "Official figure page, Fig1 a–c, actual browser view",
+      "version_family": "scigen",
+      "pattern": {
+        "title": "Geometry constraints and paired denoising trajectories",
+        "task_tags": [
+          "structure rendering",
+          "constraint schematic",
+          "paired process"
+        ],
+        "layout_tags": [
+          "Dark-background atomistic geometry panels lead to constraint definitions and matched constrained/unconstrained trajectories."
+        ],
+        "style_tags": [
+          "See located figure; no universal journal typography inferred"
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "Geometry constraints and paired denoising trajectories",
+            "origin": "observed",
+            "locator": "Official figure page, Fig1 a–c, actual browser view"
+          },
+          "relations": {
+            "value": "Named computation/data relations; keep state identity and reference definitions",
+            "origin": "inferred",
+            "locator": "Official figure page, Fig1 a–c, actual browser view"
+          },
+          "argument_role": {
+            "value": "Connect concrete objects and evidence to the reader question",
+            "origin": "inferred",
+            "locator": "Official figure page, Fig1 a–c, actual browser view"
+          },
+          "visual_encoding": {
+            "value": "Dark-background atomistic geometry panels lead to constraint definitions and matched constrained/unconstrained trajectories.",
+            "origin": "observed",
+            "locator": "Official figure page, Fig1 a–c, actual browser view"
+          },
+          "layout": {
+            "value": "Dark-background atomistic geometry panels lead to constraint definitions and matched constrained/unconstrained trajectories.",
+            "origin": "observed",
+            "locator": "Official figure page, Fig1 a–c, actual browser view"
+          },
+          "surface_style": {
+            "value": "Visual observation only; exact font recovered only where PDF text allows",
+            "origin": "observed",
+            "locator": "Official figure page, Fig1 a–c, actual browser view"
+          }
+        },
+        "transfer_conditions": [
+          "Retain scientific identities, units and evidence boundaries; layout may be adapted"
+        ],
+        "do_not_transfer": [
+          "Do not reuse numbers, structures or mechanisms without their actual sources"
+        ],
+        "reproduction_status": "observed pattern only; URL ending .pdf returned HTML, not a downloaded paper PDF"
+      },
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "jpcl_free_energy_preprint",
+      "journal": "JPCL-related arXiv preprint",
+      "title": "Accelerated free energy estimation in ab initio path integral Monte Carlo simulations",
+      "doi": "10.1021/acs.jpclett.5c02193",
+      "url": "https://arxiv.org/abs/2507.12960",
+      "queried_on": "2026-10-23",
+      "status": "visually_inspected_selected_figures",
+      "figure_locator": "arXiv v1 PDF p5 Fig1–2 and p11 Table SI",
+      "version_family": "jpcl_free_energy",
+      "pattern": {
+        "title": "State-transition computation, extrapolation and exact parameter table",
+        "task_tags": [
+          "state graph",
+          "uncertainty plot",
+          "parameter table"
+        ],
+        "layout_tags": [
+          "Sector backgrounds group states, colored arrows encode computational difficulty; companion plot shows marker/CI distinctions, while Table SI groups simulation conditions."
+        ],
+        "style_tags": [
+          "See located figure; no universal journal typography inferred"
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": "State-transition computation, extrapolation and exact parameter table",
+            "origin": "observed",
+            "locator": "arXiv v1 PDF p5 Fig1–2 and p11 Table SI"
+          },
+          "relations": {
+            "value": "Named computation/data relations; keep state identity and reference definitions",
+            "origin": "inferred",
+            "locator": "arXiv v1 PDF p5 Fig1–2 and p11 Table SI"
+          },
+          "argument_role": {
+            "value": "Connect concrete objects and evidence to the reader question",
+            "origin": "inferred",
+            "locator": "arXiv v1 PDF p5 Fig1–2 and p11 Table SI"
+          },
+          "visual_encoding": {
+            "value": "Sector backgrounds group states, colored arrows encode computational difficulty; companion plot shows marker/CI distinctions, while Table SI groups simulation conditions.",
+            "origin": "observed",
+            "locator": "arXiv v1 PDF p5 Fig1–2 and p11 Table SI"
+          },
+          "layout": {
+            "value": "Sector backgrounds group states, colored arrows encode computational difficulty; companion plot shows marker/CI distinctions, while Table SI groups simulation conditions.",
+            "origin": "observed",
+            "locator": "arXiv v1 PDF p5 Fig1–2 and p11 Table SI"
+          },
+          "surface_style": {
+            "value": "Visual observation only; exact font recovered only where PDF text allows",
+            "origin": "observed",
+            "locator": "arXiv v1 PDF p5 Fig1–2 and p11 Table SI"
+          }
+        },
+        "transfer_conditions": [
+          "Retain scientific identities, units and evidence boundaries; layout may be adapted"
+        ],
+        "do_not_transfer": [
+          "Do not reuse numbers, structures or mechanisms without their actual sources"
+        ],
+        "reproduction_status": "observed author-preprint figures only; journal-reference metadata verified, publisher typography not inspected"
+      },
+      "preprint_url": "https://arxiv.org/pdf/2507.12960v1",
+      "publisher_layout_status": "not_inspected",
+      "sha256": "dc9b88d8355f8376ca307226d43722f662fb16bf1cc02cc82a89f13ca7e3e701",
+      "source_file_distribution": "Original PDFs retained as research inputs, not included in skill library; source links retained"
+    },
+    {
+      "id": "v4-nc-hotspot",
+      "journal": "Nature communications",
+      "title": "The geometric-electronic coupled design of diatomic catalyst towards oxygen reduction reaction.",
+      "doi": "10.1038/s41467-025-60170-0",
+      "url": "https://doi.org/10.1038/s41467-025-60170-0",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-24",
+      "access": "full_text_xml",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "Fig. 1",
+      "observations": [
+        "以特征筛选→计算→学习→筛选/验证分叉表达工作流；不同形状的对象承载不同任务。",
+        "结构、漏斗、脑形图标、实验装置的材质与字体并不完全统一；可学叙事分叉，不把混合装饰当成期刊规范。"
+      ],
+      "application": "用于校准 the target method 的输入、选择、训练、输出对象，而非再简化成四个等大卡片。",
+      "figure_locator": "Fig. 1",
+      "pattern": {
+        "title": "The geometric-electronic coupled design of diatomic catalyst towards oxygen reduction reaction.",
+        "task_tags": [
+          "workflow",
+          "feature selection",
+          "screening",
+          "experimental validation"
+        ],
+        "layout_tags": [
+          "以特征筛选→计算→学习→筛选/验证分叉表达工作流；不同形状的对象承载不同任务。"
+        ],
+        "style_tags": [
+          "结构、漏斗、脑形图标、实验装置的材质与字体并不完全统一；可学叙事分叉，不把混合装饰当成期刊规范。"
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": [
+              "workflow",
+              "feature selection",
+              "screening",
+              "experimental validation"
+            ],
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "relations": {
+            "value": "以特征筛选→计算→学习→筛选/验证分叉表达工作流；不同形状的对象承载不同任务。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "argument_role": {
+            "value": "用于校准 the target method 的输入、选择、训练、输出对象，而非再简化成四个等大卡片。",
+            "origin": "inferred",
+            "locator": "Fig. 1"
+          },
+          "visual_encoding": {
+            "value": "结构、漏斗、脑形图标、实验装置的材质与字体并不完全统一；可学叙事分叉，不把混合装饰当成期刊规范。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "layout": {
+            "value": "以特征筛选→计算→学习→筛选/验证分叉表达工作流；不同形状的对象承载不同任务。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "surface_style": {
+            "value": "结构、漏斗、脑形图标、实验装置的材质与字体并不完全统一；可学叙事分叉，不把混合装饰当成期刊规范。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          }
+        },
+        "transfer_conditions": [
+          "用于校准 the target method 的输入、选择、训练、输出对象，而非再简化成四个等大卡片。"
+        ],
+        "do_not_transfer": [
+          "Do not infer a universal journal style or scientific validity from these selected visuals."
+        ],
+        "reproduction_status": "observed_pattern_only; not a new reproduction"
+      }
+    },
+    {
+      "id": "v4-nc-topology",
+      "journal": "Nature communications",
+      "title": "Active phase discovery in heterogeneous catalysis via topology-guided sampling and machine learning.",
+      "doi": "10.1038/s41467-025-57824-4",
+      "url": "https://doi.org/10.1038/s41467-025-57824-4",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-24",
+      "access": "full_text_xml",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "Fig. 1",
+      "observations": [
+        "原子视图保持同一蓝色材质与视角，新位点用粉色形成前后对照。",
+        "左侧分解/采样与右侧训练/相图有明确空间层级；小图上的能量/拓扑符号与正文对应。"
+      ],
+      "application": "空间放大和变换关系应靠重复对象及稳定视角建立，不仅靠箭头。",
+      "figure_locator": "Fig. 1",
+      "pattern": {
+        "title": "Active phase discovery in heterogeneous catalysis via topology-guided sampling and machine learning.",
+        "task_tags": [
+          "structural comparison",
+          "sampling",
+          "atomistic structure"
+        ],
+        "layout_tags": [
+          "原子视图保持同一蓝色材质与视角，新位点用粉色形成前后对照。"
+        ],
+        "style_tags": [
+          "左侧分解/采样与右侧训练/相图有明确空间层级；小图上的能量/拓扑符号与正文对应。"
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": [
+              "structural comparison",
+              "sampling",
+              "atomistic structure"
+            ],
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "relations": {
+            "value": "原子视图保持同一蓝色材质与视角，新位点用粉色形成前后对照。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "argument_role": {
+            "value": "空间放大和变换关系应靠重复对象及稳定视角建立，不仅靠箭头。",
+            "origin": "inferred",
+            "locator": "Fig. 1"
+          },
+          "visual_encoding": {
+            "value": "左侧分解/采样与右侧训练/相图有明确空间层级；小图上的能量/拓扑符号与正文对应。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "layout": {
+            "value": "原子视图保持同一蓝色材质与视角，新位点用粉色形成前后对照。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "surface_style": {
+            "value": "左侧分解/采样与右侧训练/相图有明确空间层级；小图上的能量/拓扑符号与正文对应。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          }
+        },
+        "transfer_conditions": [
+          "空间放大和变换关系应靠重复对象及稳定视角建立，不仅靠箭头。"
+        ],
+        "do_not_transfer": [
+          "Do not infer a universal journal style or scientific validity from these selected visuals."
+        ],
+        "reproduction_status": "observed_pattern_only; not a new reproduction"
+      }
+    },
+    {
+      "id": "v4-ncs-pathways",
+      "journal": "Nature computational science",
+      "title": "Iterative variational learning of committor-consistent transition pathways using artificial neural networks.",
+      "doi": "10.1038/s43588-025-00828-3",
+      "url": "https://doi.org/10.1038/s43588-025-00828-3",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-24",
+      "access": "publisher_html_and_original_figure",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "Fig. 1",
+      "observations": [
+        "共享权重的双输入在左，损失与输出在中，循环收敛条件在右。",
+        "绿色输入/蓝色隐藏层/橙色输出各有语义；否分支有闭合反馈路径。球体材质和面板字体承担不同层级。"
+      ],
+      "application": "流程图要保留共享、并行及否分支；不是所有箭头都意味着前向步骤。",
+      "figure_locator": "Fig. 1",
+      "pattern": {
+        "title": "Iterative variational learning of committor-consistent transition pathways using artificial neural networks.",
+        "task_tags": [
+          "shared weights",
+          "workflow",
+          "convergence feedback"
+        ],
+        "layout_tags": [
+          "共享权重的双输入在左，损失与输出在中，循环收敛条件在右。"
+        ],
+        "style_tags": [
+          "绿色输入/蓝色隐藏层/橙色输出各有语义；否分支有闭合反馈路径。球体材质和面板字体承担不同层级。"
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": [
+              "shared weights",
+              "workflow",
+              "convergence feedback"
+            ],
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "relations": {
+            "value": "共享权重的双输入在左，损失与输出在中，循环收敛条件在右。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "argument_role": {
+            "value": "流程图要保留共享、并行及否分支；不是所有箭头都意味着前向步骤。",
+            "origin": "inferred",
+            "locator": "Fig. 1"
+          },
+          "visual_encoding": {
+            "value": "绿色输入/蓝色隐藏层/橙色输出各有语义；否分支有闭合反馈路径。球体材质和面板字体承担不同层级。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "layout": {
+            "value": "共享权重的双输入在左，损失与输出在中，循环收敛条件在右。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          },
+          "surface_style": {
+            "value": "绿色输入/蓝色隐藏层/橙色输出各有语义；否分支有闭合反馈路径。球体材质和面板字体承担不同层级。",
+            "origin": "observed",
+            "locator": "Fig. 1"
+          }
+        },
+        "transfer_conditions": [
+          "流程图要保留共享、并行及否分支；不是所有箭头都意味着前向步骤。"
+        ],
+        "do_not_transfer": [
+          "Do not infer a universal journal style or scientific validity from these selected visuals."
+        ],
+        "reproduction_status": "observed_pattern_only; not a new reproduction"
+      }
+    },
+    {
+      "id": "v4-chemsci-ch",
+      "journal": "Chemical science",
+      "title": "Molecular Machine Learning Approach to Enantioselective C-H Bond Activation Reactions: From Generative AI to Experimental Validation.",
+      "doi": "10.1039/D5SC01098E",
+      "url": "https://doi.org/10.1039/D5SC01098E",
+      "status": "identified_not_visually_inspected",
+      "queried_on": "2026-10-24",
+      "access": "full_text_xml",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "not inspected",
+      "observations": [],
+      "application": "Candidate only; do not infer a visual style without original inspection"
+    },
+    {
+      "id": "v4-jpcl-water",
+      "journal": "The journal of physical chemistry letters",
+      "title": "Transferable Water Potentials Using Equivariant Neural Networks.",
+      "doi": "10.1021/acs.jpclett.4c00605",
+      "url": "https://doi.org/10.1021/acs.jpclett.4c00605",
+      "status": "identified_not_visually_inspected",
+      "queried_on": "2026-10-24",
+      "access": "metadata_only",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "not inspected",
+      "observations": [],
+      "application": "Candidate only; do not infer a visual style without original inspection"
+    },
+    {
+      "id": "v4-jctc-proteome",
+      "journal": "Journal of chemical theory and computation",
+      "title": "Physics-Based Machine Learning Trains Hamiltonians and Decodes the Sequence-Conformation Relation in the Disordered Proteome.",
+      "doi": "10.1021/acs.jctc.4c01114",
+      "url": "https://doi.org/10.1021/acs.jctc.4c01114",
+      "status": "identified_not_visually_inspected",
+      "queried_on": "2026-10-24",
+      "access": "metadata/incomplete",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "not inspected",
+      "observations": [],
+      "application": "Candidate only; do not infer a visual style without original inspection"
+    },
+    {
+      "id": "v4-jpcc-uncertainty",
+      "journal": "The journal of physical chemistry. C, Nanomaterials and interfaces",
+      "title": "Uncertainty Quantification of Linear Scaling, Machine Learning, and Density Functional Theory Derived Thermodynamics for the Catalytic Partial Oxidation of Methane on Rhodium.",
+      "doi": "10.1021/acs.jpcc.4c05107",
+      "url": "https://doi.org/10.1021/acs.jpcc.4c05107",
+      "status": "identified_not_visually_inspected",
+      "queried_on": "2026-10-24",
+      "access": "full_text_xml",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "not inspected",
+      "observations": [],
+      "application": "Candidate only; do not infer a visual style without original inspection"
+    },
+    {
+      "id": "v4-nmi-synthesis",
+      "journal": "Nature Machine Intelligence",
+      "title": "Large language models to accelerate organic chemistry synthesis",
+      "doi": "10.1038/s42256-025-01066-y",
+      "url": "https://doi.org/10.1038/s42256-025-01066-y",
+      "status": "identified_not_visually_inspected",
+      "queried_on": "2026-10-24",
+      "access": "metadata_only",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "not inspected",
+      "observations": [],
+      "application": "Candidate only; do not infer a visual style without original inspection"
+    },
+    {
+      "id": "v4-acscat-hdo",
+      "journal": "ACS Catalysis",
+      "title": "Machine Learning Accelerated First-Principles Study of the Hydrodeoxygenation of Propanoic Acid",
+      "doi": "10.1021/acscatal.4c01419",
+      "url": "https://doi.org/10.1021/acscatal.4c01419",
+      "status": "identified_not_visually_inspected",
+      "queried_on": "2026-10-24",
+      "access": "metadata_only",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "not inspected",
+      "observations": [],
+      "application": "Candidate only; do not infer a visual style without original inspection"
+    },
+    {
+      "id": "v4-arxiv-foundation",
+      "journal": "arXiv",
+      "title": "Foundation Models for Atomistic Simulation of Chemistry and Materials",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2503.10538v1",
+      "status": "visually_inspected_selected_figures",
+      "queried_on": "2026-10-24",
+      "access": "verified_pdf",
+      "coverage_note": "Actual selected figure study only; no scientific validation or reproduction claimed",
+      "observed_figures": "v1, Fig.1 p8 and Fig.2 p12",
+      "observations": [
+        "Fig.1 把力偏软分布、远程带电分子的失败、短程/长程模型比较和结构失稳并置，数据服务具体失效论证。",
+        "Fig.2 用一致边框组织多类结构素材；它是研究缺口地图，不应当成单项定量结论。"
+      ],
+      "application": "数据图先定义失败/成功判据和基线，再决定用分布、曲线或结构轨迹；数量表不能替代这个论证。",
+      "figure_locator": "v1, Fig.1 p8 and Fig.2 p12",
+      "pattern": {
+        "title": "Foundation Models for Atomistic Simulation of Chemistry and Materials",
+        "task_tags": [
+          "model failure",
+          "controlled comparison",
+          "distribution",
+          "long-range interactions"
+        ],
+        "layout_tags": [
+          "Fig.1 把力偏软分布、远程带电分子的失败、短程/长程模型比较和结构失稳并置，数据服务具体失效论证。"
+        ],
+        "style_tags": [
+          "Fig.2 用一致边框组织多类结构素材；它是研究缺口地图，不应当成单项定量结论。"
+        ],
+        "layers": {
+          "scientific_objects": {
+            "value": [
+              "model failure",
+              "controlled comparison",
+              "distribution",
+              "long-range interactions"
+            ],
+            "origin": "observed",
+            "locator": "v1, Fig.1 p8 and Fig.2 p12"
+          },
+          "relations": {
+            "value": "Fig.1 把力偏软分布、远程带电分子的失败、短程/长程模型比较和结构失稳并置，数据服务具体失效论证。",
+            "origin": "observed",
+            "locator": "v1, Fig.1 p8 and Fig.2 p12"
+          },
+          "argument_role": {
+            "value": "数据图先定义失败/成功判据和基线，再决定用分布、曲线或结构轨迹；数量表不能替代这个论证。",
+            "origin": "inferred",
+            "locator": "v1, Fig.1 p8 and Fig.2 p12"
+          },
+          "visual_encoding": {
+            "value": "Fig.2 用一致边框组织多类结构素材；它是研究缺口地图，不应当成单项定量结论。",
+            "origin": "observed",
+            "locator": "v1, Fig.1 p8 and Fig.2 p12"
+          },
+          "layout": {
+            "value": "Fig.1 把力偏软分布、远程带电分子的失败、短程/长程模型比较和结构失稳并置，数据服务具体失效论证。",
+            "origin": "observed",
+            "locator": "v1, Fig.1 p8 and Fig.2 p12"
+          },
+          "surface_style": {
+            "value": "Fig.2 用一致边框组织多类结构素材；它是研究缺口地图，不应当成单项定量结论。",
+            "origin": "observed",
+            "locator": "v1, Fig.1 p8 and Fig.2 p12"
+          }
+        },
+        "transfer_conditions": [
+          "数据图先定义失败/成功判据和基线，再决定用分布、曲线或结构轨迹；数量表不能替代这个论证。"
+        ],
+        "do_not_transfer": [
+          "Do not infer a universal journal style or scientific validity from these selected visuals."
+        ],
+        "reproduction_status": "observed_pattern_only; not a new reproduction"
+      }
+    }
+  ]
+}

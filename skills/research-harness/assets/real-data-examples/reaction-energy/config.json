@@ -1,0 +1,44 @@
+{
+  "font_family": "DejaVu Sans",
+  "dpi": 300,
+  "text_roles_pt": {
+    "body": 7.2,
+    "axis": 8,
+    "title": 8,
+    "tick": 7,
+    "legend": 7,
+    "annotation": 7,
+    "small": 7,
+    "panel": 10,
+    "distance": 7.2,
+    "footnote": 7
+  },
+  "text_weights": {
+    "body": "normal",
+    "emphasis": "bold",
+    "panel": "bold"
+  },
+  "scientific_text_semantics": {
+    "chemical_species_and_units": "upright",
+    "math_variables": "mathtext italic only where written as mathematical variables",
+    "emphasis": "reference L2 / numbered states / TS identity",
+    "panel_letters": "bold",
+    "curve_style": "solid and dashed encode series/route; never infer uncertainty"
+  },
+  "colors": {
+    "blue": "#2478A5",
+    "red": "#C94E45",
+    "ink": "#182B35"
+  },
+  "figure_mm": [
+    171,
+    112
+  ],
+  "dimension_basis": {
+    "url": "https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/chemical-science",
+    "verified": "2026-11-09",
+    "width_mm": 171,
+    "height_mm": "112 selected for content; <=233 maximum",
+    "method": "reflow with structure strip; no postexport downscale"
+  }
+}

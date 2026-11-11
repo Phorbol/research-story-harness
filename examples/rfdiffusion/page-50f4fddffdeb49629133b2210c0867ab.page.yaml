@@ -1,0 +1,199 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "理解采样时，需要区分当前带噪输入和模型对最终结构的预测。图上排是每一步的输入，下排是相应的干净结构预测。早期输入几乎是随机点，模型的预测也不必已经是完整的蛋白质；随着多次更新，可兼容的结构范围逐渐缩小。每一步向当前预测靠近，并按扩散过程加入适当噪声，产生下一步输入。典型轨迹有200步。由于起点和过程具有随机性，同一个功能要求可以得到不同骨架。这个图展示的是论文的一条300残基生成轨迹，不能把横向距离当作物理折叠时间。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "方法 · 真实的去噪轨迹",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "采样逐步收紧可能解，最终形成蛋白质骨架",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 1c, p. 1091; 300-residue unconditional trajectory.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "04",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "labels",
+      "elementType": "text",
+      "bounds": [
+        48,
+        164,
+        1180,
+        38
+      ],
+      "content": {
+        "text": "当前输入与“最终结构预测”是两个不同对象",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "trajectory",
+      "elementType": "image",
+      "bounds": [
+        48,
+        231,
+        1184,
+        300
+      ],
+      "src": "media/fig1-trajectory.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "iteration",
+      "elementType": "text",
+      "bounds": [
+        48,
+        574,
+        1184,
+        65
+      ],
+      "content": {
+        "text": "从随机残基框架出发 → 反复预测干净结构 → 向预测更新并加入噪声\n这是生成过程；横向顺序不代表蛋白质的物理折叠动力学。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "description": "Seed patterns synthesized from the supplied design research, not measured reference reconstructions.",
+  "cards": [
+    {
+      "id": "paired-comparison",
+      "task_tags": [
+        "compare",
+        "within_subject"
+      ],
+      "layout_tags": [
+        "paired_positions"
+      ],
+      "style_tags": [
+        "medium_specific",
+        "semantic_color"
+      ],
+      "inputs": [
+        "unique pair ID",
+        "before/after",
+        "same unit"
+      ],
+      "organization": "Match the reader task before adapting the surface style.",
+      "invariants": [
+        "pair identity",
+        "n",
+        "missingness"
+      ],
+      "replaceable": [
+        "font",
+        "palette within semantic namespaces",
+        "label positions",
+        "journal dimensions"
+      ],
+      "not_applicable": [
+        "unmatched groups",
+        "unexplained incomplete pairs"
+      ],
+      "known_failures": [
+        "Connecting rows instead of identities"
+      ],
+      "provenance": {
+        "kind": "synthesized_design_proposal",
+        "paper": null,
+        "figure": null,
+        "caption": null,
+        "body_locator": null,
+        "parse_status": "not_extracted_from_reference_paper"
+      }
+    },
+    {
+      "id": "performance-table",
+      "task_tags": [
+        "lookup",
+        "compare"
+      ],
+      "layout_tags": [
+        "aligned_rows",
+        "shared_columns"
+      ],
+      "style_tags": [
+        "medium_specific",
+        "semantic_color"
+      ],
+      "inputs": [
+        "row entities",
+        "metric unit",
+        "denominator",
+        "missing status"
+      ],
+      "organization": "Match the reader task before adapting the surface style.",
+      "invariants": [
+        "cell to source mapping",
+        "denominator",
+        "zero versus missing"
+      ],
+      "replaceable": [
+        "font",
+        "palette within semantic namespaces",
+        "label positions",
+        "journal dimensions"
+      ],
+      "not_applicable": [
+        "incomparable denominators"
+      ],
+      "known_failures": [
+        "Turning missing into zero or claiming a unique winner"
+      ],
+      "provenance": {
+        "kind": "synthesized_design_proposal",
+        "paper": null,
+        "figure": null,
+        "caption": null,
+        "body_locator": null,
+        "parse_status": "not_extracted_from_reference_paper"
+      }
+    },
+    {
+      "id": "discrete-path",
+      "task_tags": [
+        "compare",
+        "trace_path"
+      ],
+      "layout_tags": [
+        "shared_energy_axis",
+        "state_sequence"
+      ],
+      "style_tags": [
+        "medium_specific",
+        "semantic_color"
+      ],
+      "inputs": [
+        "state IDs",
+        "typed edges",
+        "energy",
+        "unit",
+        "reference"
+      ],
+      "organization": "Match the reader task before adapting the surface style.",
+      "invariants": [
+        "reference",
+        "topology",
+        "state identity",
+        "conditions"
+      ],
+      "replaceable": [
+        "font",
+        "palette within semantic namespaces",
+        "label positions",
+        "journal dimensions"
+      ],
+      "not_applicable": [
+        "incompatible reference states",
+        "multidimensional surfaces"
+      ],
+      "known_failures": [
+        "Smooth curves implying continuous computation or barriers proving selectivity"
+      ],
+      "provenance": {
+        "kind": "synthesized_design_proposal",
+        "paper": null,
+        "figure": null,
+        "caption": null,
+        "body_locator": null,
+        "parse_status": "not_extracted_from_reference_paper"
+      }
+    },
+    {
+      "id": "parallel-method",
+      "task_tags": [
+        "trace_dependency"
+      ],
+      "layout_tags": [
+        "parallel_branches"
+      ],
+      "style_tags": [
+        "medium_specific",
+        "semantic_color"
+      ],
+      "inputs": [
+        "nodes",
+        "typed edges",
+        "I/O types"
+      ],
+      "organization": "Match the reader task before adapting the surface style.",
+      "invariants": [
+        "dependency graph",
+        "parallelism"
+      ],
+      "replaceable": [
+        "font",
+        "palette within semantic namespaces",
+        "label positions",
+        "journal dimensions"
+      ],
+      "not_applicable": [
+        "untyped arrows"
+      ],
+      "known_failures": [
+        "Layout converting parallel branches to a sequence"
+      ],
+      "provenance": {
+        "kind": "synthesized_design_proposal",
+        "paper": null,
+        "figure": null,
+        "caption": null,
+        "body_locator": null,
+        "parse_status": "not_extracted_from_reference_paper"
+      }
+    },
+    {
+      "id": "toc-contribution",
+      "task_tags": [
+        "identify_object",
+        "understand_contribution"
+      ],
+      "layout_tags": [
+        "linear",
+        "parallel",
+        "nested",
+        "cyclic"
+      ],
+      "style_tags": [
+        "medium_specific",
+        "semantic_color"
+      ],
+      "inputs": [
+        "concrete object",
+        "supported contribution",
+        "conditions"
+      ],
+      "organization": "Match the reader task before adapting the surface style.",
+      "invariants": [
+        "claim strength",
+        "object identity"
+      ],
+      "replaceable": [
+        "font",
+        "palette within semantic namespaces",
+        "label positions",
+        "journal dimensions"
+      ],
+      "not_applicable": [
+        "unsupported mechanism",
+        "unrecognizable abstraction"
+      ],
+      "known_failures": [
+        "Aesthetic simplification deleting the scientific object"
+      ],
+      "provenance": {
+        "kind": "synthesized_design_proposal",
+        "paper": null,
+        "figure": null,
+        "caption": null,
+        "body_locator": null,
+        "parse_status": "not_extracted_from_reference_paper"
+      }
+    }
+  ],
+  "indexes": {
+    "task_tags": {
+      "compare": [
+        "paired-comparison",
+        "performance-table",
+        "discrete-path"
+      ],
+      "identify_object": [
+        "toc-contribution"
+      ],
+      "lookup": [
+        "performance-table"
+      ],
+      "trace_dependency": [
+        "parallel-method"
+      ],
+      "trace_path": [
+        "discrete-path"
+      ],
+      "understand_contribution": [
+        "toc-contribution"
+      ],
+      "within_subject": [
+        "paired-comparison"
+      ]
+    },
+    "layout_tags": {
+      "aligned_rows": [
+        "performance-table"
+      ],
+      "cyclic": [
+        "toc-contribution"
+      ],
+      "linear": [
+        "toc-contribution"
+      ],
+      "nested": [
+        "toc-contribution"
+      ],
+      "paired_positions": [
+        "paired-comparison"
+      ],
+      "parallel": [
+        "toc-contribution"
+      ],
+      "parallel_branches": [
+        "parallel-method"
+      ],
+      "shared_columns": [
+        "performance-table"
+      ],
+      "shared_energy_axis": [
+        "discrete-path"
+      ],
+      "state_sequence": [
+        "discrete-path"
+      ]
+    },
+    "style_tags": {
+      "medium_specific": [
+        "paired-comparison",
+        "performance-table",
+        "discrete-path",
+        "parallel-method",
+        "toc-contribution"
+      ],
+      "semantic_color": [
+        "paired-comparison",
+        "performance-table",
+        "discrete-path",
+        "parallel-method",
+        "toc-contribution"
+      ]
+    }
+  }
+}

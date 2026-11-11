@@ -1,0 +1,399 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "把结构预测器接到扩散采样上本身还不够。左图比较300残基无条件生成时，AF2重新预测的结构与设计骨架之间的偏差，越靠左越好。完整模型明显集中在小偏差区域；去掉预训练、去掉微调、替换均方误差目标，或去掉self-conditioning，分布都会变差。均方误差在这里不做全局对齐，帮助不同时间步保持全局坐标系连续；self-conditioning把前一步对最终结构的预测反馈给当前网络，帮助整个轨迹协调。这组结果支持组合方案的必要性，但它衡量的仍是计算一致性，并不直接等价于实验折叠成功。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "方法证据 · 消融定位贡献",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "高质量生成来自预训练、训练目标与轨迹一致性",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 2e, p. 1092; Extended Data Fig. 1d–h.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "05",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "ablation",
+      "elementType": "image",
+      "bounds": [
+        48,
+        165,
+        625,
+        465
+      ],
+      "src": "media/fig2-ablation.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "direction",
+      "elementType": "text",
+      "bounds": [
+        48,
+        630,
+        625,
+        28
+      ],
+      "content": {
+        "text": "横轴：AF2 与设计的骨架 RMSD（Å）；越低越好",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 18,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "n01",
+      "elementType": "text",
+      "bounds": [
+        730,
+        180,
+        60,
+        45
+      ],
+      "content": {
+        "text": "01",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 31,
+        "color": "#61729D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "h01",
+      "elementType": "text",
+      "bounds": [
+        805,
+        180,
+        390,
+        40
+      ],
+      "content": {
+        "text": "复用结构知识",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "b01",
+      "elementType": "text",
+      "bounds": [
+        805,
+        233,
+        390,
+        80
+      ],
+      "content": {
+        "text": "预训练优于等计算量从零训练。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "n02",
+      "elementType": "text",
+      "bounds": [
+        730,
+        330,
+        60,
+        45
+      ],
+      "content": {
+        "text": "02",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 31,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "h02",
+      "elementType": "text",
+      "bounds": [
+        805,
+        330,
+        390,
+        40
+      ],
+      "content": {
+        "text": "稳定全局坐标",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "b02",
+      "elementType": "text",
+      "bounds": [
+        805,
+        383,
+        390,
+        80
+      ],
+      "content": {
+        "text": "不对齐的均方误差，\n让全局坐标随时间步保持连续。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "n03",
+      "elementType": "text",
+      "bounds": [
+        730,
+        480,
+        60,
+        45
+      ],
+      "content": {
+        "text": "03",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 31,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "h03",
+      "elementType": "text",
+      "bounds": [
+        805,
+        480,
+        390,
+        40
+      ],
+      "content": {
+        "text": "复用上一步预测",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "b03",
+      "elementType": "text",
+      "bounds": [
+        805,
+        533,
+        390,
+        80
+      ],
+      "content": {
+        "text": "Self-conditioning 提高轨迹的一致性。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

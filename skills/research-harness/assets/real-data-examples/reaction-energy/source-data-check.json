@@ -1,0 +1,46 @@
+{
+  "TS1": {
+    "source_path": "1,2-PDO-dehydrogenation path",
+    "Str": 6,
+    "pair": [
+      11,
+      14
+    ],
+    "coordinate_distance_A": 1.884276529509436,
+    "overlay_distance_A": 1.884276529509436,
+    "difference_A": 0.0
+  },
+  "TS2": {
+    "source_path": "1,3-PDO-dehydrogenation path",
+    "Str": 6,
+    "pair": [
+      10,
+      13
+    ],
+    "coordinate_distance_A": 2.009439975145938,
+    "overlay_distance_A": 2.009439975145938,
+    "difference_A": 0.0
+  },
+  "TS3": {
+    "source_path": "1,3-PDO-dehydration path",
+    "Str": 4,
+    "pair": [
+      10,
+      13
+    ],
+    "coordinate_distance_A": 2.2857148425966476,
+    "overlay_distance_A": 2.2857148425966476,
+    "difference_A": 0.0
+  },
+  "TS4": {
+    "source_path": "1,2-PDO-dehydration path",
+    "Str": 4,
+    "pair": [
+      11,
+      14
+    ],
+    "coordinate_distance_A": 2.5603082803430914,
+    "overlay_distance_A": 2.5603082803430914,
+    "difference_A": 0.0
+  }
+}

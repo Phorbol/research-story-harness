@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术论文起草与修订"
+  short_description: "依据研究证据起草与润色正文、图注和摘要，通过可审阅补丁保持科学含义及版本关系"
+  default_prompt: "请使用 $manuscript-editor 处理当前学术论文写作任务，并报告实际证据与未决问题。"

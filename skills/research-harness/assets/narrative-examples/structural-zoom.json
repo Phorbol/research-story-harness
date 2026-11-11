@@ -1,0 +1,2699 @@
+{
+  "track": "explanatory",
+  "canvas": [
+    1320,
+    1076
+  ],
+  "geometry_basis": "illustrative_reconstruction",
+  "scope_note": "Reconstruction of the source diagram composition and content; not measured coordinates or new scientific validation.",
+  "provenance": {
+    "locator": "Chen et al. Nat Commun 2023, Fig2a–c; complete figure crop"
+  },
+  "palette": {
+    "ink": "#000000",
+    "blue": "#00B2DE",
+    "green": "#00B44F",
+    "red": "#F00000",
+    "white": "#FFFFFF"
+  },
+  "objects": [
+    {
+      "id": "text-1",
+      "semantic_id": "text-1",
+      "type": "text",
+      "xy": [
+        14,
+        1044
+      ],
+      "text": "a",
+      "role": "panel",
+      "color_role": "ink",
+      "ha": "left",
+      "z": 20
+    },
+    {
+      "id": "text-2",
+      "semantic_id": "text-2",
+      "type": "text",
+      "xy": [
+        14,
+        532
+      ],
+      "text": "b",
+      "role": "panel",
+      "color_role": "ink",
+      "ha": "left",
+      "z": 20
+    },
+    {
+      "id": "text-3",
+      "semantic_id": "text-3",
+      "type": "text",
+      "xy": [
+        717,
+        532
+      ],
+      "text": "c",
+      "role": "panel",
+      "color_role": "ink",
+      "ha": "left",
+      "z": 20
+    },
+    {
+      "id": "polygon-4",
+      "semantic_id": "polygon-4",
+      "type": "polygon",
+      "points": [
+        [
+          101,
+          987
+        ],
+        [
+          510,
+          997
+        ],
+        [
+          686,
+          879
+        ],
+        [
+          267,
+          802
+        ]
+      ],
+      "color": "#FFDA7A",
+      "stroke": "none",
+      "z": 2,
+      "gradient": {
+        "colors": [
+          "#FFE08A",
+          "#FFD063"
+        ],
+        "direction": [
+          0.45,
+          -1
+        ]
+      }
+    },
+    {
+      "id": "polygon-5",
+      "semantic_id": "polygon-5",
+      "type": "polygon",
+      "points": [
+        [
+          267,
+          802
+        ],
+        [
+          686,
+          879
+        ],
+        [
+          656,
+          798
+        ],
+        [
+          247,
+          688
+        ]
+      ],
+      "color": "#D77B2A",
+      "stroke": "none",
+      "z": 2,
+      "gradient": {
+        "colors": [
+          "#E99542",
+          "#C86B24"
+        ],
+        "direction": [
+          1,
+          -0.2
+        ]
+      }
+    },
+    {
+      "id": "polygon-6",
+      "semantic_id": "polygon-6",
+      "type": "polygon",
+      "points": [
+        [
+          101,
+          987
+        ],
+        [
+          267,
+          802
+        ],
+        [
+          247,
+          688
+        ],
+        [
+          91,
+          887
+        ]
+      ],
+      "color": "#E9A550",
+      "stroke": "none",
+      "z": 2,
+      "gradient": {
+        "colors": [
+          "#F7C36C",
+          "#E79F4D"
+        ],
+        "direction": [
+          0.4,
+          -1
+        ]
+      }
+    },
+    {
+      "id": "line-7",
+      "semantic_id": "line-7",
+      "type": "line",
+      "points": [
+        [
+          539.5415398317218,
+          888.7405784457513
+        ],
+        [
+          538.5555726268076,
+          885.921158430874
+        ],
+        [
+          536.8991919352904,
+          883.2723344885292
+        ],
+        [
+          534.5836651053776,
+          880.8121249534213
+        ],
+        [
+          531.6247432546769,
+          878.5572651314112
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-8",
+      "semantic_id": "line-8",
+      "type": "line",
+      "points": [
+        [
+          522.277369010636,
+          874.1566213725229
+        ],
+        [
+          517.3354244530674,
+          872.6918378442597
+        ],
+        [
+          511.86741414230363,
+          871.4876413926241
+        ],
+        [
+          505.91053361949486,
+          870.5522234320657
+        ],
+        [
+          499.505303911856,
+          869.8919470407916
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-9",
+      "semantic_id": "line-9",
+      "type": "line",
+      "points": [
+        [
+          482.96704360779285,
+          869.444817848961
+        ],
+        [
+          475.39331175080963,
+          869.7271583707965
+        ],
+        [
+          467.5788207677734,
+          870.2902528766143
+        ],
+        [
+          459.57672787756417,
+          871.1302709777226
+        ],
+        [
+          451.4414664404847,
+          872.2414985430075
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-10",
+      "semantic_id": "line-10",
+      "type": "line",
+      "points": [
+        [
+          432.1437335690887,
+          875.8676918240982
+        ],
+        [
+          423.9675897474595,
+          877.821503481216
+        ],
+        [
+          415.90050464031566,
+          880.001008226391
+        ],
+        [
+          407.9973537103963,
+          882.3913802173464
+        ],
+        [
+          400.31189727615777,
+          884.9763592104651
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-11",
+      "semantic_id": "line-11",
+      "type": "line",
+      "points": [
+        [
+          383.425503776071,
+          891.7042394032096
+        ],
+        [
+          376.83773912400204,
+          894.8059999399225
+        ],
+        [
+          370.6796288324829,
+          898.0179183880853
+        ],
+        [
+          364.99306277218653,
+          901.3181460243013
+        ],
+        [
+          359.8167231858078,
+          904.6842334115962
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-12",
+      "semantic_id": "line-12",
+      "type": "line",
+      "points": [
+        [
+          349.8663645584527,
+          912.7110704515753
+        ],
+        [
+          346.63216529439217,
+          916.1296656369562
+        ],
+        [
+          344.03309049801203,
+          919.5133668337669
+        ],
+        [
+          342.08682009090137,
+          922.8391567852808
+        ],
+        [
+          340.8065933643018,
+          926.0844121696736
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-13",
+      "semantic_id": "line-13",
+      "type": "line",
+      "points": [
+        [
+          340.45846016827824,
+          933.2594215542487
+        ],
+        [
+          341.4444273731924,
+          936.078841569126
+        ],
+        [
+          343.1008080647095,
+          938.7276655114708
+        ],
+        [
+          345.4163348946224,
+          941.1878750465787
+        ],
+        [
+          348.3752567453231,
+          943.4427348685887
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-14",
+      "semantic_id": "line-14",
+      "type": "line",
+      "points": [
+        [
+          357.722630989364,
+          947.8433786274771
+        ],
+        [
+          362.66457554693267,
+          949.3081621557403
+        ],
+        [
+          368.13258585769637,
+          950.5123586073759
+        ],
+        [
+          374.08946638050514,
+          951.4477765679343
+        ],
+        [
+          380.494696088144,
+          952.1080529592084
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-15",
+      "semantic_id": "line-15",
+      "type": "line",
+      "points": [
+        [
+          397.03295639220715,
+          952.555182151039
+        ],
+        [
+          404.6066882491904,
+          952.2728416292035
+        ],
+        [
+          412.4211792322266,
+          951.7097471233857
+        ],
+        [
+          420.4232721224358,
+          950.8697290222774
+        ],
+        [
+          428.5585335595153,
+          949.7585014569925
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-16",
+      "semantic_id": "line-16",
+      "type": "line",
+      "points": [
+        [
+          447.8562664309113,
+          946.1323081759018
+        ],
+        [
+          456.03241025254044,
+          944.178496518784
+        ],
+        [
+          464.0994953596843,
+          941.998991773609
+        ],
+        [
+          472.0026462896038,
+          939.6086197826536
+        ],
+        [
+          479.68810272384223,
+          937.0236407895349
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-17",
+      "semantic_id": "line-17",
+      "type": "line",
+      "points": [
+        [
+          496.574496223929,
+          930.2957605967904
+        ],
+        [
+          503.1622608759981,
+          927.1940000600775
+        ],
+        [
+          509.3203711675171,
+          923.9820816119147
+        ],
+        [
+          515.0069372278134,
+          920.6818539756987
+        ],
+        [
+          520.1832768141923,
+          917.3157665884038
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-18",
+      "semantic_id": "line-18",
+      "type": "line",
+      "points": [
+        [
+          530.1336354415473,
+          909.2889295484247
+        ],
+        [
+          533.3678347056078,
+          905.8703343630439
+        ],
+        [
+          535.966909501988,
+          902.4866331662331
+        ],
+        [
+          537.9131799090986,
+          899.1608432147193
+        ],
+        [
+          539.1934066356981,
+          895.9155878303264
+        ]
+      ],
+      "color": "#335F9A",
+      "lw": 1.5,
+      "linestyle": "-",
+      "z": 8
+    },
+    {
+      "id": "line-19",
+      "semantic_id": "line-19",
+      "type": "line",
+      "points": [
+        [
+          476,
+          945
+        ],
+        [
+          835,
+          1003
+        ]
+      ],
+      "color": "#3D6EAB",
+      "lw": 1.2,
+      "linestyle": "--",
+      "z": 8
+    },
+    {
+      "id": "line-20",
+      "semantic_id": "line-20",
+      "type": "line",
+      "points": [
+        [
+          469,
+          877
+        ],
+        [
+          835,
+          751
+        ]
+      ],
+      "color": "#3D6EAB",
+      "lw": 1.2,
+      "linestyle": "--",
+      "z": 8
+    },
+    {
+      "id": "ellipse-21",
+      "semantic_id": "ellipse-21",
+      "type": "ellipse",
+      "box": [
+        775,
+        728,
+        502,
+        326
+      ],
+      "color": "#FFF3CB",
+      "stroke": "#315993",
+      "lw": 1.7,
+      "z": 2
+    },
+    {
+      "id": "rect-22",
+      "semantic_id": "rect-22",
+      "type": "rect",
+      "box": [
+        912,
+        799,
+        226,
+        68
+      ],
+      "color": "#E87D37",
+      "stroke": "none",
+      "lw": 0.8,
+      "z": 3,
+      "gradient": {
+        "colors": [
+          "#F5A15C",
+          "#EE8942",
+          "#DC692E"
+        ],
+        "direction": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "ellipse-23",
+      "semantic_id": "ellipse-23",
+      "type": "ellipse",
+      "box": [
+        912,
+        762,
+        226,
+        75
+      ],
+      "color": "#E87D37",
+      "stroke": "none",
+      "lw": 1,
+      "z": 3,
+      "gradient": {
+        "colors": [
+          "#F5A15C",
+          "#EE8942",
+          "#DC692E"
+        ],
+        "direction": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "ellipse-24",
+      "semantic_id": "ellipse-24",
+      "type": "ellipse",
+      "box": [
+        912,
+        819,
+        226,
+        80
+      ],
+      "color": "#FFBE69",
+      "stroke": "none",
+      "lw": 1,
+      "z": 4,
+      "gradient": {
+        "colors": [
+          "#FFCF83",
+          "#FFB961"
+        ],
+        "direction": [
+          0.6,
+          -1
+        ]
+      }
+    },
+    {
+      "id": "line-25",
+      "semantic_id": "line-25",
+      "type": "line",
+      "points": [
+        [
+          447,
+          961
+        ],
+        [
+          442,
+          912
+        ]
+      ],
+      "color": "#E38542",
+      "lw": 7,
+      "linestyle": "-",
+      "z": 5
+    },
+    {
+      "id": "line-26",
+      "semantic_id": "line-26",
+      "type": "line",
+      "points": [
+        [
+          428,
+          1005
+        ],
+        [
+          419,
+          1013
+        ]
+      ],
+      "color": "#506DC4",
+      "lw": 6,
+      "linestyle": "-",
+      "z": 12
+    },
+    {
+      "id": "line-27",
+      "semantic_id": "line-27",
+      "type": "line",
+      "points": [
+        [
+          470,
+          1005
+        ],
+        [
+          481,
+          1014
+        ]
+      ],
+      "color": "#506DC4",
+      "lw": 6,
+      "linestyle": "-",
+      "z": 12
+    },
+    {
+      "id": "sphere-28",
+      "semantic_id": "sphere-28",
+      "type": "sphere",
+      "box": [
+        378.0,
+        1003.0,
+        52.0,
+        52.0
+      ],
+      "color": "#F5A3AE",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 8,
+      "material": {
+        "shadow_color": "#D86680",
+        "light_color": "#F9BBC4",
+        "specular": 0.35,
+        "shininess": 16
+      }
+    },
+    {
+      "id": "sphere-29",
+      "semantic_id": "sphere-29",
+      "type": "sphere",
+      "box": [
+        473.0,
+        1002.0,
+        52.0,
+        52.0
+      ],
+      "color": "#F5A3AE",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 8,
+      "material": {
+        "shadow_color": "#D86680",
+        "light_color": "#F9BBC4",
+        "specular": 0.35,
+        "shininess": 16
+      }
+    },
+    {
+      "id": "sphere-30",
+      "semantic_id": "sphere-30",
+      "type": "sphere",
+      "box": [
+        419.0,
+        955.0,
+        60.0,
+        60.0
+      ],
+      "color": "#8CE4E3",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 9,
+      "material": {
+        "shadow_color": "#58C5D2",
+        "light_color": "#8FE9F0",
+        "specular": 0.4,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "line-31",
+      "semantic_id": "line-31",
+      "type": "line",
+      "points": [
+        [
+          1031,
+          934
+        ],
+        [
+          1026,
+          885
+        ]
+      ],
+      "color": "#E38542",
+      "lw": 7,
+      "linestyle": "-",
+      "z": 5
+    },
+    {
+      "id": "line-32",
+      "semantic_id": "line-32",
+      "type": "line",
+      "points": [
+        [
+          1012,
+          978
+        ],
+        [
+          1003,
+          986
+        ]
+      ],
+      "color": "#506DC4",
+      "lw": 6,
+      "linestyle": "-",
+      "z": 12
+    },
+    {
+      "id": "line-33",
+      "semantic_id": "line-33",
+      "type": "line",
+      "points": [
+        [
+          1054,
+          978
+        ],
+        [
+          1065,
+          987
+        ]
+      ],
+      "color": "#506DC4",
+      "lw": 6,
+      "linestyle": "-",
+      "z": 12
+    },
+    {
+      "id": "sphere-34",
+      "semantic_id": "sphere-34",
+      "type": "sphere",
+      "box": [
+        958.36,
+        972.36,
+        59.279999999999994,
+        59.279999999999994
+      ],
+      "color": "#F5A3AE",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 8,
+      "material": {
+        "shadow_color": "#D86680",
+        "light_color": "#F9BBC4",
+        "specular": 0.35,
+        "shininess": 16
+      }
+    },
+    {
+      "id": "sphere-35",
+      "semantic_id": "sphere-35",
+      "type": "sphere",
+      "box": [
+        1053.36,
+        971.36,
+        59.279999999999994,
+        59.279999999999994
+      ],
+      "color": "#F5A3AE",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 8,
+      "material": {
+        "shadow_color": "#D86680",
+        "light_color": "#F9BBC4",
+        "specular": 0.35,
+        "shininess": 16
+      }
+    },
+    {
+      "id": "sphere-36",
+      "semantic_id": "sphere-36",
+      "type": "sphere",
+      "box": [
+        998.8,
+        923.8,
+        68.39999999999999,
+        68.39999999999999
+      ],
+      "color": "#8CE4E3",
+      "stroke": "none",
+      "lw": 0.75,
+      "z": 9,
+      "material": {
+        "shadow_color": "#58C5D2",
+        "light_color": "#8FE9F0",
+        "specular": 0.4,
+        "shininess": 20
+      }
+    },
+    {
+      "id": "text-37",
+      "semantic_id": "text-37",
+      "type": "text",
+      "xy": [
+        456,
+        667
+      ],
+      "text": "PBC@L",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "text-38",
+      "semantic_id": "text-38",
+      "type": "text",
+      "xy": [
+        456,
+        601
+      ],
+      "text": "L=GGA+D",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "text-39",
+      "semantic_id": "text-39",
+      "type": "text",
+      "xy": [
+        1029,
+        667
+      ],
+      "text": "Cluster@H",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "text-40",
+      "semantic_id": "text-40",
+      "type": "text",
+      "xy": [
+        972,
+        601
+      ],
+      "text": "H=",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "text-41",
+      "semantic_id": "text-41",
+      "type": "text",
+      "xy": [
+        1058,
+        601
+      ],
+      "text": "XYG3",
+      "role": "subtitle",
+      "color_role": "red",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "ellipse-42",
+      "semantic_id": "ellipse-42",
+      "type": "ellipse",
+      "box": [
+        103,
+        93,
+        530,
+        412
+      ],
+      "color": "#FFF3CB",
+      "stroke": "#315993",
+      "lw": 1.6,
+      "z": 2
+    },
+    {
+      "id": "ellipse-43",
+      "semantic_id": "ellipse-43",
+      "type": "ellipse",
+      "box": [
+        783,
+        93,
+        530,
+        412
+      ],
+      "color": "#FFF3CB",
+      "stroke": "#315993",
+      "lw": 1.6,
+      "z": 2
+    },
+    {
+      "id": "sphere-44",
+      "semantic_id": "sphere-44",
+      "type": "sphere",
+      "box": [
+        298.0,
+        377,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-45",
+      "semantic_id": "sphere-45",
+      "type": "sphere",
+      "box": [
+        378.0,
+        377,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-46",
+      "semantic_id": "sphere-46",
+      "type": "sphere",
+      "box": [
+        258.0,
+        308,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-47",
+      "semantic_id": "sphere-47",
+      "type": "sphere",
+      "box": [
+        338.0,
+        308,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-48",
+      "semantic_id": "sphere-48",
+      "type": "sphere",
+      "box": [
+        418.0,
+        308,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-49",
+      "semantic_id": "sphere-49",
+      "type": "sphere",
+      "box": [
+        218.0,
+        239,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-50",
+      "semantic_id": "sphere-50",
+      "type": "sphere",
+      "box": [
+        298.0,
+        239,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-51",
+      "semantic_id": "sphere-51",
+      "type": "sphere",
+      "box": [
+        378.0,
+        239,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-52",
+      "semantic_id": "sphere-52",
+      "type": "sphere",
+      "box": [
+        458.0,
+        239,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-53",
+      "semantic_id": "sphere-53",
+      "type": "sphere",
+      "box": [
+        258.0,
+        170,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-54",
+      "semantic_id": "sphere-54",
+      "type": "sphere",
+      "box": [
+        338.0,
+        170,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-55",
+      "semantic_id": "sphere-55",
+      "type": "sphere",
+      "box": [
+        418.0,
+        170,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-56",
+      "semantic_id": "sphere-56",
+      "type": "sphere",
+      "box": [
+        256.0,
+        407,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-57",
+      "semantic_id": "sphere-57",
+      "type": "sphere",
+      "box": [
+        336.0,
+        407,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-58",
+      "semantic_id": "sphere-58",
+      "type": "sphere",
+      "box": [
+        416.0,
+        407,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-59",
+      "semantic_id": "sphere-59",
+      "type": "sphere",
+      "box": [
+        216.0,
+        338,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-60",
+      "semantic_id": "sphere-60",
+      "type": "sphere",
+      "box": [
+        296.0,
+        338,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-61",
+      "semantic_id": "sphere-61",
+      "type": "sphere",
+      "box": [
+        376.0,
+        338,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-62",
+      "semantic_id": "sphere-62",
+      "type": "sphere",
+      "box": [
+        456.0,
+        338,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-63",
+      "semantic_id": "sphere-63",
+      "type": "sphere",
+      "box": [
+        176.0,
+        269,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-64",
+      "semantic_id": "sphere-64",
+      "type": "sphere",
+      "box": [
+        256.0,
+        269,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-65",
+      "semantic_id": "sphere-65",
+      "type": "sphere",
+      "box": [
+        336.0,
+        269,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-66",
+      "semantic_id": "sphere-66",
+      "type": "sphere",
+      "box": [
+        416.0,
+        269,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-67",
+      "semantic_id": "sphere-67",
+      "type": "sphere",
+      "box": [
+        496.0,
+        269,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-68",
+      "semantic_id": "sphere-68",
+      "type": "sphere",
+      "box": [
+        216.0,
+        200,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-69",
+      "semantic_id": "sphere-69",
+      "type": "sphere",
+      "box": [
+        296.0,
+        200,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-70",
+      "semantic_id": "sphere-70",
+      "type": "sphere",
+      "box": [
+        376.0,
+        200,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-71",
+      "semantic_id": "sphere-71",
+      "type": "sphere",
+      "box": [
+        456.0,
+        200,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-72",
+      "semantic_id": "sphere-72",
+      "type": "sphere",
+      "box": [
+        256.0,
+        131,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-73",
+      "semantic_id": "sphere-73",
+      "type": "sphere",
+      "box": [
+        336.0,
+        131,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-74",
+      "semantic_id": "sphere-74",
+      "type": "sphere",
+      "box": [
+        416.0,
+        131,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-75",
+      "semantic_id": "sphere-75",
+      "type": "sphere",
+      "box": [
+        904.0,
+        395,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-76",
+      "semantic_id": "sphere-76",
+      "type": "sphere",
+      "box": [
+        980.0,
+        395,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-77",
+      "semantic_id": "sphere-77",
+      "type": "sphere",
+      "box": [
+        1056.0,
+        395,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-78",
+      "semantic_id": "sphere-78",
+      "type": "sphere",
+      "box": [
+        1132.0,
+        395,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-79",
+      "semantic_id": "sphere-79",
+      "type": "sphere",
+      "box": [
+        904.0,
+        313,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-80",
+      "semantic_id": "sphere-80",
+      "type": "sphere",
+      "box": [
+        980.0,
+        313,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-81",
+      "semantic_id": "sphere-81",
+      "type": "sphere",
+      "box": [
+        1056.0,
+        313,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-82",
+      "semantic_id": "sphere-82",
+      "type": "sphere",
+      "box": [
+        1132.0,
+        313,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-83",
+      "semantic_id": "sphere-83",
+      "type": "sphere",
+      "box": [
+        904.0,
+        231,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-84",
+      "semantic_id": "sphere-84",
+      "type": "sphere",
+      "box": [
+        980.0,
+        231,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-85",
+      "semantic_id": "sphere-85",
+      "type": "sphere",
+      "box": [
+        1056.0,
+        231,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-86",
+      "semantic_id": "sphere-86",
+      "type": "sphere",
+      "box": [
+        1132.0,
+        231,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-87",
+      "semantic_id": "sphere-87",
+      "type": "sphere",
+      "box": [
+        904.0,
+        149,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-88",
+      "semantic_id": "sphere-88",
+      "type": "sphere",
+      "box": [
+        980.0,
+        149,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-89",
+      "semantic_id": "sphere-89",
+      "type": "sphere",
+      "box": [
+        1056.0,
+        149,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-90",
+      "semantic_id": "sphere-90",
+      "type": "sphere",
+      "box": [
+        1132.0,
+        149,
+        60,
+        60
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 5,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-91",
+      "semantic_id": "sphere-91",
+      "type": "sphere",
+      "box": [
+        864,
+        352,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-92",
+      "semantic_id": "sphere-92",
+      "type": "sphere",
+      "box": [
+        940,
+        352,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-93",
+      "semantic_id": "sphere-93",
+      "type": "sphere",
+      "box": [
+        1016,
+        352,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-94",
+      "semantic_id": "sphere-94",
+      "type": "sphere",
+      "box": [
+        1092,
+        352,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-95",
+      "semantic_id": "sphere-95",
+      "type": "sphere",
+      "box": [
+        1168,
+        352,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-96",
+      "semantic_id": "sphere-96",
+      "type": "sphere",
+      "box": [
+        864,
+        271,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-97",
+      "semantic_id": "sphere-97",
+      "type": "sphere",
+      "box": [
+        940,
+        271,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-98",
+      "semantic_id": "sphere-98",
+      "type": "sphere",
+      "box": [
+        1016,
+        271,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-99",
+      "semantic_id": "sphere-99",
+      "type": "sphere",
+      "box": [
+        1092,
+        271,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-100",
+      "semantic_id": "sphere-100",
+      "type": "sphere",
+      "box": [
+        1168,
+        271,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-101",
+      "semantic_id": "sphere-101",
+      "type": "sphere",
+      "box": [
+        864,
+        190,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-102",
+      "semantic_id": "sphere-102",
+      "type": "sphere",
+      "box": [
+        940,
+        190,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-103",
+      "semantic_id": "sphere-103",
+      "type": "sphere",
+      "box": [
+        1016,
+        190,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-104",
+      "semantic_id": "sphere-104",
+      "type": "sphere",
+      "box": [
+        1092,
+        190,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "sphere-105",
+      "semantic_id": "sphere-105",
+      "type": "sphere",
+      "box": [
+        1168,
+        190,
+        64,
+        64
+      ],
+      "color": "#EDAC6C",
+      "stroke": "#2B2A24",
+      "lw": 0.75,
+      "z": 7,
+      "material": {
+        "shadow_color": "#D88C4F",
+        "light_color": "#FAD2A2",
+        "specular": 0.05,
+        "shininess": 12,
+        "light": [
+          -0.65,
+          0.8,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "text-106",
+      "semantic_id": "text-106",
+      "type": "text",
+      "xy": [
+        368,
+        42
+      ],
+      "text": "Cu$_{31}$ Cluster for Cu(111)",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "id": "text-107",
+      "semantic_id": "text-107",
+      "type": "text",
+      "xy": [
+        1048,
+        42
+      ],
+      "text": "Cu$_{31}$ Cluster for Cu(100)",
+      "role": "subtitle",
+      "color_role": "ink",
+      "ha": "center",
+      "z": 20
+    },
+    {
+      "type": "shadow",
+      "id": "periodic-contact",
+      "semantic_id": "periodic-contact",
+      "box": [
+        341,
+        862,
+        208,
+        49
+      ],
+      "color": "#D26E29",
+      "alpha": 0.36,
+      "falloff": 2,
+      "z": 3
+    },
+    {
+      "type": "shadow",
+      "id": "periodic-cast",
+      "semantic_id": "periodic-cast",
+      "box": [
+        410,
+        896,
+        207,
+        32
+      ],
+      "color": "#DC872E",
+      "alpha": 0.18,
+      "falloff": 3,
+      "z": 3
+    },
+    {
+      "type": "shadow",
+      "id": "cluster-contact",
+      "semantic_id": "cluster-contact",
+      "box": [
+        947,
+        833,
+        154,
+        42
+      ],
+      "color": "#CC652F",
+      "alpha": 0.3,
+      "falloff": 2,
+      "z": 4.2
+    }
+  ],
+  "connections": []
+}

@@ -1,0 +1,700 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "现在可以重新理解论文所说的通用性。它指多种几何条件能够通过同一扩散设计思路处理，而不是每种任务已经具有相同成熟度。单体设计的计算一致性和部分物理表征，支持能够生成稳定骨架；对称组装的SEC和电镜，支持它们按预期形成较大形状；MDM2和Ni结合测量进一步支持某些功能；HA_20则给出高分辨率结构验证。另一方面，催化位点虽然能在计算上被固定，却还没有在本文中展示催化反应活性。这种证据分层对于AI4S很重要：可计算的代理指标帮助筛选，而实验需要继续验证我们真正想要的科学对象。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "综合判断 · 不同任务不能共用一个成功标签",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "同一框架的“通用性”，由不同层次的证据支撑",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Figs. 2–6; SI §§5.1–5.3.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "16",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "head1",
+      "elementType": "text",
+      "bounds": [
+        48,
+        166,
+        320,
+        36
+      ],
+      "content": {
+        "text": "任务",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "head2",
+      "elementType": "text",
+      "bounds": [
+        410,
+        166,
+        340,
+        36
+      ],
+      "content": {
+        "text": "本文达到的验证",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "head3",
+      "elementType": "text",
+      "bounds": [
+        790,
+        166,
+        440,
+        36
+      ],
+      "content": {
+        "text": "可以形成的判断",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#5F6C73",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "task0",
+      "elementType": "text",
+      "bounds": [
+        48,
+        230,
+        320,
+        55
+      ],
+      "content": {
+        "text": "无条件单体",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "ev0",
+      "elementType": "text",
+      "bounds": [
+        410,
+        230,
+        340,
+        64
+      ],
+      "content": {
+        "text": "AF2 / ESMFold；CD 与耐热实验",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "scope0",
+      "elementType": "text",
+      "bounds": [
+        790,
+        230,
+        440,
+        55
+      ],
+      "content": {
+        "text": "骨架可设计性与部分物理性质",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "row0",
+      "elementType": "line",
+      "bounds": [
+        48,
+        294,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "task1",
+      "elementType": "text",
+      "bounds": [
+        48,
+        307,
+        320,
+        55
+      ],
+      "content": {
+        "text": "对称组装",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "ev1",
+      "elementType": "text",
+      "bounds": [
+        410,
+        307,
+        340,
+        55
+      ],
+      "content": {
+        "text": "SEC；子集 nsEM / cryo-EM",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "scope1",
+      "elementType": "text",
+      "bounds": [
+        790,
+        307,
+        440,
+        55
+      ],
+      "content": {
+        "text": "组装状态与代表性整体形态",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "row1",
+      "elementType": "line",
+      "bounds": [
+        48,
+        371,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "task2",
+      "elementType": "text",
+      "bounds": [
+        48,
+        384,
+        320,
+        55
+      ],
+      "content": {
+        "text": "功能 motif / Ni²⁺",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "ev2",
+      "elementType": "text",
+      "bounds": [
+        410,
+        384,
+        340,
+        55
+      ],
+      "content": {
+        "text": "BLI / ITC；H52A 突变对照",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "scope2",
+      "elementType": "text",
+      "bounds": [
+        790,
+        384,
+        440,
+        55
+      ],
+      "content": {
+        "text": "部分设计的结合功能及位点依赖",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "row2",
+      "elementType": "line",
+      "bounds": [
+        48,
+        448,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "task3",
+      "elementType": "text",
+      "bounds": [
+        48,
+        461,
+        320,
+        55
+      ],
+      "content": {
+        "text": "靶点结合蛋白",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "ev3",
+      "elementType": "text",
+      "bounds": [
+        410,
+        461,
+        340,
+        55
+      ],
+      "content": {
+        "text": "五靶点 BLI；HA_20 cryo-EM",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "scope3",
+      "elementType": "text",
+      "bounds": [
+        790,
+        461,
+        440,
+        55
+      ],
+      "content": {
+        "text": "命中与一个代表性原子级结构",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "row3",
+      "elementType": "line",
+      "bounds": [
+        48,
+        525,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "task4",
+      "elementType": "text",
+      "bounds": [
+        48,
+        538,
+        320,
+        55
+      ],
+      "content": {
+        "text": "酶活性位点",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "ev4",
+      "elementType": "text",
+      "bounds": [
+        410,
+        538,
+        340,
+        55
+      ],
+      "content": {
+        "text": "AF2 几何一致性",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "scope4",
+      "elementType": "text",
+      "bounds": [
+        790,
+        538,
+        440,
+        55
+      ],
+      "content": {
+        "text": "位点支架可行性；尚未证明催化",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "row4",
+      "elementType": "line",
+      "bounds": [
+        48,
+        602,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    }
+  ],
+  "allowedOverlaps": []
+}

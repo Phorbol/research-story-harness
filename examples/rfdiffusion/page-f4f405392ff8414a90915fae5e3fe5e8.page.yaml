@@ -1,0 +1,585 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "RFdiffusion没有从零重新发明蛋白质几何。它以预训练的RoseTTAFold为基础，保留了能够处理三维残基关系的网络。在这里每个残基用一个局部刚体表示，包含Cα的位置以及N、Cα、C定义的方向。训练时，真实结构被不同程度地加噪：位置用三维高斯噪声，方向在旋转空间上扰动。网络接收带噪结构和时间信息，预测干净结构。于是输入的主角从氨基酸序列变成了带噪坐标，而已经学到的结构知识成为去噪的基础。图中的连接表达训练关系，不是新的实验轨迹。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "方法 · 预测网络成为生成网络",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "核心改造：让结构预测器学习“去噪”",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, pp. 1090–1091, Fig. 1a; SI §§1–2.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "03",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "original-l",
+      "elementType": "text",
+      "bounds": [
+        48,
+        167,
+        1140,
+        36
+      ],
+      "content": {
+        "text": "原来的任务：给定序列，预测结构",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "sequence",
+      "elementType": "shape",
+      "bounds": [
+        48,
+        229,
+        220,
+        74
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#61729D"
+      }
+    },
+    {
+      "elementId": "sequence-text",
+      "elementType": "text",
+      "bounds": [
+        60,
+        244,
+        196,
+        46
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">序列 + 模板</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "a1",
+      "elementType": "line",
+      "bounds": [
+        283,
+        267,
+        79,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "rf",
+      "elementType": "shape",
+      "bounds": [
+        382,
+        229,
+        330,
+        74
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#61729D"
+      }
+    },
+    {
+      "elementId": "rf-text",
+      "elementType": "text",
+      "bounds": [
+        394,
+        244,
+        306,
+        46
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">预训练 RoseTTAFold</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "a2",
+      "elementType": "line",
+      "bounds": [
+        731,
+        267,
+        78,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "prediction",
+      "elementType": "shape",
+      "bounds": [
+        829,
+        229,
+        330,
+        74
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#61729D"
+      }
+    },
+    {
+      "elementId": "prediction-text",
+      "elementType": "text",
+      "bounds": [
+        841,
+        244,
+        306,
+        46
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">预测蛋白质结构</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "new-l",
+      "elementType": "text",
+      "bounds": [
+        48,
+        350,
+        1150,
+        38
+      ],
+      "content": {
+        "text": "新的训练任务：从带噪残基坐标恢复干净结构",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 25,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "noise",
+      "elementType": "shape",
+      "bounds": [
+        48,
+        417,
+        280,
+        94
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#258C85"
+      }
+    },
+    {
+      "elementId": "noise-text",
+      "elementType": "text",
+      "bounds": [
+        60,
+        432,
+        256,
+        70
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">带噪结构 + 时间步</p><p style=\"text-align:center\">位置与方向均被扰动</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 22,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "a3",
+      "elementType": "line",
+      "bounds": [
+        344,
+        465,
+        80,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "denoiser",
+      "elementType": "shape",
+      "bounds": [
+        444,
+        417,
+        270,
+        94
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#BF7086"
+      }
+    },
+    {
+      "elementId": "denoiser-text",
+      "elementType": "text",
+      "bounds": [
+        456,
+        432,
+        246,
+        70
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">微调后的 RF</p><p style=\"text-align:center\">预测干净结构</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "a4",
+      "elementType": "line",
+      "bounds": [
+        731,
+        465,
+        78,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 2,
+        "color": "#5F6C73"
+      },
+      "arrow": [
+        null,
+        "arrow"
+      ]
+    },
+    {
+      "elementId": "clean",
+      "elementType": "shape",
+      "bounds": [
+        829,
+        417,
+        330,
+        94
+      ],
+      "shapeName": "rect",
+      "fill": {
+        "type": "solid",
+        "color": "#BF7086"
+      }
+    },
+    {
+      "elementId": "clean-text",
+      "elementType": "text",
+      "bounds": [
+        841,
+        432,
+        306,
+        70
+      ],
+      "content": {
+        "text": "<p style=\"text-align:center\">与真实结构比较</p><p style=\"text-align:center\">均方误差训练</p>",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 24,
+        "color": "#FFFFFF",
+        "bold": true,
+        "align": [
+          "center",
+          "middle"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "frame",
+      "elementType": "text",
+      "bounds": [
+        48,
+        559,
+        1160,
+        62
+      ],
+      "content": {
+        "text": "残基表示：Cα 位置 + N–Cα–C 局部方向。\n位置采用高斯扰动；方向采用旋转空间上的 Brownian motion。",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 21,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    }
+  ],
+  "allowedOverlaps": [
+    {
+      "elements": [
+        "sequence",
+        "sequence-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "rf",
+        "rf-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "prediction",
+        "prediction-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "noise",
+        "noise-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "denoiser",
+        "denoiser-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    },
+    {
+      "elements": [
+        "clean",
+        "clean-text"
+      ],
+      "reason": "Label inside its native diagram node"
+    }
+  ]
+}

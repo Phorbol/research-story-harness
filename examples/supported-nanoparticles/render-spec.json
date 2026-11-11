@@ -1,0 +1,58 @@
+{
+  "style_preset": "solid",
+  "repeat": [
+    1,
+    1,
+    1
+  ],
+  "show_cell": false,
+  "crop": false,
+  "transparent_background": true,
+  "bonds": {
+    "mode": "none"
+  },
+  "element_colors": {
+    "Pd": "#AAB8C6",
+    "Zn": "#D1BF8C",
+    "Cu": "#BD7C58",
+    "O": "#B85E55"
+  },
+  "element_radii_angstrom": {
+    "Pd": 1.35,
+    "Cu": 1.35,
+    "Zn": 1.15,
+    "O": 0.85
+  },
+  "render_settings": {
+    "ambient_occlusion_brightness": 0.8,
+    "direct_light_intensity": 0.65,
+    "shadows": false
+  },
+  "views": [
+    {
+      "name": "oblique",
+      "direction": [
+        0.22,
+        -1,
+        -0.34
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "projection": "orthographic",
+      "margin": 1.03,
+      "fov_angstrom": 21.900368302954526,
+      "camera_pos_angstrom": [
+        0.0,
+        0.0,
+        11.05462137
+      ]
+    }
+  ],
+  "pixel_size": [
+    2000,
+    1375
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术来源检索"
+  short_description: "按用途整理学术来源、原文快照、检索覆盖范围与缺失材料，供后续论证和写作使用"
+  default_prompt: "请使用 $source-harvester 处理当前学术论文写作任务，并报告实际证据与未决问题。"

@@ -1,0 +1,18 @@
+{
+  "upstream": "https://github.com/ansatzX/ansatz-slides",
+  "commit": "2c5669a795722d9da9bdba81572d45db35b5d3c9",
+  "version": "0.0.1",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Binaryify Zhuang",
+  "changes": [
+    "SKILL.md replaced with a scoped research-story harness entrypoint",
+    "Upstream SKILL.md retained verbatim at reference/upstream-SKILL.md; its original relative links are documented separately",
+    "Modified reference/production/figures.md, reference/review.md, and reference/technical.md",
+    "Added reference/harness-integration.md and reference/paper-to-deck.md",
+    "Added scripts/compose_talk.py for a structured speaking-notes projection",
+    "Packaged the unmodified upstream src/ansatz_slide tree under python/ansatz_slide with standalone pyproject.toml and uv.lock",
+    "Added LICENSE, provenance.json, and reference/upstream-archive.md"
+  ],
+  "runtime": "Unmodified Python runtime from the pinned upstream commit; scripts/ansatz_slide.py, scripts/python_runtime.py and scripts/render_equation.py also match upstream.",
+  "distribution_note": "Public standalone bundle; first-party additions have no blanket open-source license grant. See repository THIRD_PARTY_NOTICES.md."
+}

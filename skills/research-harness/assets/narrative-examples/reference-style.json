@@ -1,0 +1,69 @@
+{
+  "name": "scientific-sans-v1",
+  "font_family": "Arial",
+  "text_color": "#000000",
+  "roles": {
+    "body": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "normal",
+      "color": "#000000"
+    },
+    "title": {
+      "size_pt": 10,
+      "weight": "normal",
+      "style": "normal",
+      "color": "#000000"
+    },
+    "subtitle": {
+      "size_pt": 8,
+      "weight": "bold",
+      "style": "normal",
+      "color": "#000000"
+    },
+    "panel": {
+      "size_pt": 10.5,
+      "weight": "bold",
+      "style": "normal",
+      "color": "#000000"
+    },
+    "axis": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "normal",
+      "color": "#000000"
+    },
+    "tick": {
+      "size_pt": 7,
+      "weight": "normal",
+      "style": "normal",
+      "color": "#000000"
+    },
+    "legend": {
+      "size_pt": 7,
+      "weight": "normal",
+      "style": "normal",
+      "color": "#000000"
+    },
+    "note": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "normal",
+      "color": "#000000"
+    },
+    "variable": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "italic",
+      "color": "#000000"
+    }
+  },
+  "notation": {
+    "chemical_formula": "upright symbols; subscripts for stoichiometry",
+    "units": "upright; explicit unit on axes",
+    "variables": "italic via MathText where scientifically appropriate",
+    "emphasis": "panel/subtitle bold; body regular; no arbitrary emphasis",
+    "mathtext_fontset": "custom"
+  },
+  "provenance": "Local design profile informed by observed published figures; not a universal journal requirement."
+}

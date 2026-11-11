@@ -1,0 +1,74 @@
+[
+  {
+    "id": "DAP-M1-test-CRO",
+    "selecting": "DAP",
+    "testing": "CRO",
+    "replicate": 1,
+    "value": 1.74,
+    "cell": "B10",
+    "collateral": 1
+  },
+  {
+    "id": "DAP-M2-test-CRO",
+    "selecting": "DAP",
+    "testing": "CRO",
+    "replicate": 2,
+    "value": -8.68,
+    "cell": "C10",
+    "collateral": 1
+  },
+  {
+    "id": "DAP-M3-test-CRO",
+    "selecting": "DAP",
+    "testing": "CRO",
+    "replicate": 3,
+    "value": 0,
+    "cell": "D10",
+    "collateral": 1
+  },
+  {
+    "id": "DAP-M4-test-CRO",
+    "selecting": "DAP",
+    "testing": "CRO",
+    "replicate": 4,
+    "value": 1.3,
+    "cell": "E10",
+    "collateral": 1
+  },
+  {
+    "id": "CRO-M1-test-RIF",
+    "selecting": "CRO",
+    "testing": "RIF",
+    "replicate": 1,
+    "value": -3.43,
+    "cell": "N21",
+    "collateral": 1
+  },
+  {
+    "id": "CRO-M2-test-RIF",
+    "selecting": "CRO",
+    "testing": "RIF",
+    "replicate": 2,
+    "value": -4.14,
+    "cell": "O21",
+    "collateral": 1
+  },
+  {
+    "id": "CRO-M3-test-RIF",
+    "selecting": "CRO",
+    "testing": "RIF",
+    "replicate": 3,
+    "value": -3.68,
+    "cell": "P21",
+    "collateral": 1
+  },
+  {
+    "id": "CRO-M4-test-RIF",
+    "selecting": "CRO",
+    "testing": "RIF",
+    "replicate": 4,
+    "value": -4.46,
+    "cell": "Q21",
+    "collateral": 1
+  }
+]

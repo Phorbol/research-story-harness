@@ -1,0 +1,196 @@
+{
+  "DHA": [
+    {
+      "kind": "C\u2013O separation",
+      "indices": [
+        11,
+        14
+      ],
+      "pixels": [
+        [
+          718.3974500675972,
+          648.1010182504165
+        ],
+        [
+          629.797167262559,
+          526.0063235077046
+        ]
+      ],
+      "distance_A": 1.4139013162039018
+    },
+    {
+      "kind": "O\u2013nearest Cu geometric separation",
+      "indices": [
+        13,
+        64
+      ],
+      "Cu_display_image": [
+        0,
+        0,
+        0
+      ],
+      "pixels": [
+        [
+          999.489951631878,
+          525.2436060408693
+        ],
+        [
+          989.8201132965299,
+          715.2189050072672
+        ]
+      ],
+      "distance_A": 3.1012035637348827,
+      "caution": "Proximity only, not a bond or electron-transfer proof. Cu center can be occluded by foreground O; annotate line segment without claiming center visibility."
+    }
+  ],
+  "TS1": [
+    {
+      "kind": "C\u2013O separation",
+      "indices": [
+        11,
+        14
+      ],
+      "pixels": [
+        [
+          734.8670555282995,
+          741.3665087390591
+        ],
+        [
+          575.4079621063665,
+          848.7574576197449
+        ]
+      ],
+      "distance_A": 1.884276529509436
+    },
+    {
+      "kind": "O\u2013nearest Cu geometric separation",
+      "indices": [
+        13,
+        68
+      ],
+      "Cu_display_image": [
+        0,
+        0,
+        0
+      ],
+      "pixels": [
+        [
+          1007.6232746435031,
+          916.9236755452006
+        ],
+        [
+          1019.0758142740319,
+          1036.743075264742
+        ]
+      ],
+      "distance_A": 2.103835228108658,
+      "caution": "Proximity only, not a bond or electron-transfer proof. Cu center can be occluded by foreground O; annotate line segment without claiming center visibility."
+    }
+  ],
+  "state6": [
+    {
+      "kind": "C\u2013O separation",
+      "indices": [
+        11,
+        14
+      ],
+      "pixels": [
+        [
+          1109.3129758813698,
+          716.4715507309977
+        ],
+        [
+          997.2457406044213,
+          1232.938910386526
+        ]
+      ],
+      "distance_A": 3.855048391258508
+    },
+    {
+      "kind": "O\u2013nearest Cu geometric separation",
+      "indices": [
+        13,
+        76
+      ],
+      "Cu_display_image": [
+        0,
+        -1,
+        0
+      ],
+      "pixels": [
+        [
+          774.4103297540287,
+          745.2886685219249
+        ],
+        [
+          736.9741826665413,
+          875.5478031880859
+        ]
+      ],
+      "distance_A": 2.094015381273754,
+      "caution": "Proximity only, not a bond or electron-transfer proof. Cu center can be occluded by foreground O; annotate line segment without claiming center visibility."
+    }
+  ],
+  "TS2": [
+    {
+      "kind": "C\u2013O separation",
+      "indices": [
+        10,
+        13
+      ],
+      "pixels": [
+        [
+          965.4269396351729,
+          711.9665448618612
+        ],
+        [
+          1010.3351613023002,
+          969.5540302454363
+        ]
+      ],
+      "distance_A": 2.009439975145938
+    }
+  ],
+  "TS3": [
+    {
+      "kind": "C\u2013O separation",
+      "indices": [
+        10,
+        13
+      ],
+      "pixels": [
+        [
+          965.5616453245092,
+          688.3499862778629
+        ],
+        [
+          1073.1447153998977,
+          540.0529650941041
+        ]
+      ],
+      "distance_A": 2.2857148425966476
+    }
+  ],
+  "TS4": [
+    {
+      "kind": "C\u2013O separation",
+      "indices": [
+        11,
+        14
+      ],
+      "pixels": [
+        [
+          1071.8476484497241,
+          661.4173468908577
+        ],
+        [
+          951.7504165366934,
+          438.9374482817038
+        ]
+      ],
+      "distance_A": 2.5603082803430914
+    }
+  ],
+  "glycerol": [],
+  "acetol": []
+}

@@ -1,0 +1,5 @@
+method,score,n
+Baseline,0.71,20
+Candidate,0.76,20
+Unavailable,,20
+Zero,0,20

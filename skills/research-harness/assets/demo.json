@@ -1,0 +1,541 @@
+{
+  "schema_version": 1,
+  "revision": 0,
+  "project": {
+    "title": "Traceable research: synthetic demonstration",
+    "question": "Can four figure types retain identity, values and accepted edits across revisions?",
+    "synthetic": true
+  },
+  "sources": [
+    {
+      "id": "SRCpaired",
+      "kind": "synthetic",
+      "path": "data/paired.csv",
+      "locator": "All rows; synthetic fixture generated for harness validation",
+      "verified": true
+    },
+    {
+      "id": "SRCtable",
+      "kind": "synthetic",
+      "path": "data/performance.csv",
+      "locator": "All rows; synthetic fixture generated for harness validation",
+      "verified": true
+    },
+    {
+      "id": "SRCenergy",
+      "kind": "synthetic",
+      "path": "data/energy.csv",
+      "locator": "All rows; synthetic fixture generated for harness validation",
+      "verified": true
+    },
+    {
+      "id": "SRCmethod",
+      "kind": "synthetic",
+      "path": "data/workflow.json",
+      "locator": "All rows; synthetic fixture generated for harness validation",
+      "verified": true
+    }
+  ],
+  "datasets": [
+    {
+      "id": "Dpaired",
+      "source_id": "SRCpaired",
+      "path": "data/paired.csv",
+      "row_key": "sample",
+      "columns": {
+        "sample": "string",
+        "before": "number",
+        "after": "number"
+      },
+      "units": {
+        "before": "a.u.",
+        "after": "a.u."
+      },
+      "conditions": "Five synthetic matched samples; arbitrary measurement units; no interval estimate",
+      "transforms": []
+    },
+    {
+      "id": "Dtable",
+      "source_id": "SRCtable",
+      "path": "data/performance.csv",
+      "row_key": "method",
+      "columns": {
+        "method": "string",
+        "score": "number",
+        "n": "number"
+      },
+      "units": {
+        "score": "dimensionless",
+        "n": "count"
+      },
+      "conditions": "Same 20 synthetic evaluation cases; no significance test",
+      "transforms": []
+    },
+    {
+      "id": "Denergy",
+      "source_id": "SRCenergy",
+      "path": "data/energy.csv",
+      "row_key": "state",
+      "columns": {
+        "state": "string",
+        "energy": "number"
+      },
+      "units": {
+        "energy": "eV"
+      },
+      "conditions": "Synthetic discrete states under one illustrative condition",
+      "reference": "R = 0 eV",
+      "transforms": []
+    }
+  ],
+  "claims": [
+    {
+      "id": "Cpaired",
+      "text": "Four of five synthetic samples increase; the response is not uniform.",
+      "status": "supported",
+      "evidence_ids": [
+        "Dpaired"
+      ],
+      "scope": "Five synthetic pairs",
+      "limitations": "No causal or population inference; no uncertainty interval or test.",
+      "alternatives": []
+    },
+    {
+      "id": "Ctable",
+      "text": "The synthetic candidate score is higher than the baseline on the stated cases.",
+      "status": "supported",
+      "evidence_ids": [
+        "Dtable"
+      ],
+      "scope": "The same 20 synthetic evaluation cases",
+      "limitations": "No statistical superiority claim; missing score is not zero.",
+      "alternatives": []
+    },
+    {
+      "id": "Cenergy",
+      "text": "The illustrative TS is 0.8 eV above the shared reactant reference.",
+      "status": "supported",
+      "evidence_ids": [
+        "Denergy"
+      ],
+      "scope": "A synthetic single sequence of discrete states",
+      "limitations": "Not a real molecular mechanism or computed continuous surface; does not establish selectivity.",
+      "alternatives": []
+    },
+    {
+      "id": "Cmethod",
+      "text": "The illustrative workflow has two parallel branches before comparison.",
+      "status": "supported",
+      "evidence_ids": [
+        "SRCmethod"
+      ],
+      "scope": "Synthetic workflow topology",
+      "limitations": "Data dependencies are not causal scientific mechanisms.",
+      "alternatives": []
+    }
+  ],
+  "entities": [
+    {
+      "id": "before",
+      "label": "Before",
+      "kind": "measurement",
+      "source_ids": [
+        "SRCpaired"
+      ]
+    },
+    {
+      "id": "after",
+      "label": "After",
+      "kind": "measurement",
+      "source_ids": [
+        "SRCpaired"
+      ]
+    },
+    {
+      "id": "Baseline",
+      "label": "Baseline",
+      "kind": "method",
+      "source_ids": [
+        "SRCtable"
+      ]
+    },
+    {
+      "id": "Candidate",
+      "label": "Candidate",
+      "kind": "method",
+      "source_ids": [
+        "SRCtable"
+      ]
+    },
+    {
+      "id": "R",
+      "label": "Reactant",
+      "kind": "state",
+      "source_ids": [
+        "SRCenergy"
+      ]
+    },
+    {
+      "id": "TS",
+      "label": "TS",
+      "kind": "transition_state",
+      "source_ids": [
+        "SRCenergy"
+      ]
+    },
+    {
+      "id": "I",
+      "label": "Intermediate",
+      "kind": "state",
+      "source_ids": [
+        "SRCenergy"
+      ]
+    },
+    {
+      "id": "P",
+      "label": "Product",
+      "kind": "state",
+      "source_ids": [
+        "SRCenergy"
+      ]
+    },
+    {
+      "id": "input",
+      "label": "Input",
+      "kind": "dataset",
+      "source_ids": [
+        "SRCmethod"
+      ]
+    },
+    {
+      "id": "branchA",
+      "label": "Analysis A",
+      "kind": "process",
+      "source_ids": [
+        "SRCmethod"
+      ]
+    },
+    {
+      "id": "branchB",
+      "label": "Analysis B",
+      "kind": "process",
+      "source_ids": [
+        "SRCmethod"
+      ]
+    },
+    {
+      "id": "merge",
+      "label": "Compare",
+      "kind": "process",
+      "source_ids": [
+        "SRCmethod"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "E1",
+      "from": "R",
+      "to": "TS",
+      "type": "transformation",
+      "basis": "hypothesis",
+      "source_ids": [
+        "SRCenergy"
+      ]
+    },
+    {
+      "id": "E2",
+      "from": "TS",
+      "to": "I",
+      "type": "transformation",
+      "basis": "hypothesis",
+      "source_ids": [
+        "SRCenergy"
+      ]
+    },
+    {
+      "id": "E3",
+      "from": "I",
+      "to": "P",
+      "type": "transformation",
+      "basis": "hypothesis",
+      "source_ids": [
+        "SRCenergy"
+      ]
+    },
+    {
+      "id": "M1",
+      "from": "input",
+      "to": "branchA",
+      "type": "data_flow",
+      "basis": "computed",
+      "source_ids": [
+        "SRCmethod"
+      ]
+    },
+    {
+      "id": "M2",
+      "from": "input",
+      "to": "branchB",
+      "type": "data_flow",
+      "basis": "computed",
+      "source_ids": [
+        "SRCmethod"
+      ]
+    },
+    {
+      "id": "M3",
+      "from": "branchA",
+      "to": "merge",
+      "type": "data_flow",
+      "basis": "computed",
+      "source_ids": [
+        "SRCmethod"
+      ]
+    },
+    {
+      "id": "M4",
+      "from": "branchB",
+      "to": "merge",
+      "type": "data_flow",
+      "basis": "computed",
+      "source_ids": [
+        "SRCmethod"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "Fpaired",
+      "kind": "paired",
+      "claim_ids": [
+        "Cpaired"
+      ],
+      "entity_ids": [
+        "before",
+        "after"
+      ],
+      "relation_ids": [],
+      "reader_question": "Compare each matched sample before and after",
+      "reader_task": "Compare each matched sample before and after",
+      "evidence_role": "comparison",
+      "cannot_infer": [
+        "Population causality or an established chemical mechanism"
+      ],
+      "invariants": [
+        "Source row identity",
+        "Source values",
+        "Previously accepted changes"
+      ],
+      "caption": "Synthetic demonstration. Lines connect the same sample ID (n = 5 pairs). All individual values are shown in arbitrary units; no error bars, significance test or causal claim.",
+      "representation": "quantitative",
+      "dataset_id": "Dpaired",
+      "mapping": {
+        "before": "before",
+        "after": "after",
+        "labels": [
+          "Before",
+          "After"
+        ]
+      },
+      "visual": {
+        "title": "Matched sample responses",
+        "width_mm": 140,
+        "height_mm": 95,
+        "font_size": 9,
+        "colors": [
+          "#0072B2",
+          "#D55E00"
+        ]
+      }
+    },
+    {
+      "id": "Ftable",
+      "kind": "table",
+      "claim_ids": [
+        "Ctable"
+      ],
+      "entity_ids": [
+        "Baseline",
+        "Candidate"
+      ],
+      "relation_ids": [],
+      "reader_question": "Compare scores using the same denominator and distinguish NA from zero",
+      "reader_task": "Compare scores using the same denominator and distinguish NA from zero",
+      "evidence_role": "comparison",
+      "cannot_infer": [
+        "Population causality or an established chemical mechanism"
+      ],
+      "invariants": [
+        "Source row identity",
+        "Source values",
+        "Previously accepted changes"
+      ],
+      "caption": "Synthetic demonstration. Scores use the same 20 evaluation cases. NA denotes an unavailable score, not zero. No uncertainty estimate or statistically unique best result is asserted.",
+      "representation": "quantitative",
+      "dataset_id": "Dtable",
+      "mapping": {
+        "columns": [
+          "method",
+          "score",
+          "n"
+        ],
+        "denominator": "same 20 synthetic cases",
+        "missing_label": "NA",
+        "formats": {
+          "score": ".2f",
+          "n": ".0f"
+        }
+      },
+      "visual": {
+        "title": "Performance with explicit missingness",
+        "width_mm": 140,
+        "height_mm": 95,
+        "font_size": 9,
+        "colors": [
+          "#0072B2",
+          "#D55E00"
+        ]
+      }
+    },
+    {
+      "id": "Fenergy",
+      "kind": "energy",
+      "claim_ids": [
+        "Cenergy"
+      ],
+      "entity_ids": [
+        "R",
+        "TS",
+        "I",
+        "P"
+      ],
+      "relation_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "reader_question": "Compare discrete state energies against the same reactant reference",
+      "reader_task": "Compare discrete state energies against the same reactant reference",
+      "evidence_role": "comparison",
+      "cannot_infer": [
+        "Population causality or an established chemical mechanism"
+      ],
+      "invariants": [
+        "Source row identity",
+        "Source values",
+        "Previously accepted changes"
+      ],
+      "caption": "Synthetic demonstration. Energies in eV use R = 0 eV. Dashed connectors are schematic links between discrete states, not a calculated continuous surface. No molecular structure or selectivity claim is supported.",
+      "representation": "schematic",
+      "dataset_id": "Denergy",
+      "mapping": {
+        "value": "energy",
+        "order": [
+          "R",
+          "TS",
+          "I",
+          "P"
+        ]
+      },
+      "visual": {
+        "title": "Discrete energy states",
+        "width_mm": 140,
+        "height_mm": 95,
+        "font_size": 9,
+        "colors": [
+          "#0072B2",
+          "#D55E00"
+        ]
+      }
+    },
+    {
+      "id": "Fmethod",
+      "kind": "methods",
+      "claim_ids": [
+        "Cmethod"
+      ],
+      "entity_ids": [
+        "input",
+        "branchA",
+        "branchB",
+        "merge"
+      ],
+      "relation_ids": [
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "reader_question": "Trace the two independent branches and their shared input",
+      "reader_task": "Trace the two independent branches and their shared input",
+      "evidence_role": "method",
+      "cannot_infer": [
+        "Population causality or an established chemical mechanism"
+      ],
+      "invariants": [
+        "Source row identity",
+        "Source values",
+        "Previously accepted changes"
+      ],
+      "caption": "Synthetic demonstration. Arrows indicate typed data dependencies, not scientific causality. Analyses A and B run as parallel branches; their results are compared downstream.",
+      "representation": "schematic",
+      "dataset_id": null,
+      "mapping": {
+        "topology_source_id": "SRCmethod"
+      },
+      "visual": {
+        "title": "Parallel analysis workflow",
+        "width_mm": 140,
+        "height_mm": 95,
+        "font_size": 9,
+        "colors": [
+          "#0072B2",
+          "#D55E00"
+        ],
+        "nodes": {
+          "input": [
+            0.14,
+            0.5
+          ],
+          "branchA": [
+            0.5,
+            0.76
+          ],
+          "branchB": [
+            0.5,
+            0.24
+          ],
+          "merge": [
+            0.86,
+            0.5
+          ]
+        }
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "Results",
+      "title": "Demonstration results",
+      "path": "manuscript/results.md",
+      "claim_ids": [
+        "Cpaired",
+        "Ctable",
+        "Cenergy",
+        "Cmethod"
+      ],
+      "figure_ids": [
+        "Fpaired",
+        "Ftable",
+        "Fenergy",
+        "Fmethod"
+      ],
+      "citation_ids": []
+    }
+  ],
+  "protected": [],
+  "reviews": [],
+  "history": [],
+  "journal_profile": "journal-profile.json"
+}

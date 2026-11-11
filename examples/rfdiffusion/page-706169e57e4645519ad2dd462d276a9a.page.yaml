@@ -1,0 +1,288 @@
+# 此文件已存在时，请通过 ansatz-slide CLI 修改，不要直接编辑；请编辑候选文件后由 CLI 校验并写回。
+{
+  "pageType": "content",
+  "background": {
+    "type": "solid",
+    "color": "#FFFFFF"
+  },
+  "notes": "把motif和对称性结合，就能设计由多个亚基共同组成的功能位点。作者用四个组氨酸侧链构成方平面的镍结合几何，然后围绕它生成C4对称蛋白。功能证据比外形相似更进一步：36个接受量热测定的设计中18个结合镍离子。右下的代表性曲线比较野生型和H52A突变体，把用于配位的组氨酸换成丙氨酸后，结合明显减弱。所有成功表达的17个对应突变体都表现出丧失或显著减弱，另一个未表达。这个对照把功能与设计位点联系起来；上方电镜则支持组装形态，二者回答不同的问题。",
+  "elements": [
+    {
+      "elementId": "section",
+      "elementType": "text",
+      "bounds": [
+        48,
+        22,
+        1100,
+        24
+      ],
+      "content": {
+        "text": "机制关联证据 · Ni²⁺ 结合与突变对照",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 15,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "title",
+      "elementType": "text",
+      "bounds": [
+        48,
+        61,
+        1184,
+        58
+      ],
+      "content": {
+        "text": "对称 motif 的功能来自指定残基，而非外形相似",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 34,
+        "color": "#1C303D",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "rule",
+      "elementType": "line",
+      "bounds": [
+        48,
+        130,
+        1184,
+        1
+      ],
+      "viewBox": [
+        1,
+        1
+      ],
+      "points": "0,0 1,1",
+      "border": {
+        "width": 1,
+        "color": "#D5DEDF"
+      },
+      "arrow": [
+        null,
+        null
+      ]
+    },
+    {
+      "elementId": "source",
+      "elementType": "text",
+      "bounds": [
+        48,
+        677,
+        1110,
+        24
+      ],
+      "content": {
+        "text": "Watson et al., 2023, Fig. 5b,c; p. 1096; Extended Data Fig. 7.",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 13,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "number",
+      "elementType": "text",
+      "bounds": [
+        1175,
+        674,
+        57,
+        27
+      ],
+      "content": {
+        "text": "12",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 16,
+        "color": "#5F6C73",
+        "bold": false,
+        "align": [
+          "right",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "spec",
+      "elementType": "text",
+      "bounds": [
+        48,
+        167,
+        760,
+        40
+      ],
+      "content": {
+        "text": "四个组氨酸规定方平面配位几何",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 27,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "nickel-generation",
+      "elementType": "image",
+      "bounds": [
+        48,
+        235,
+        760,
+        230
+      ],
+      "src": "media/complete-12-nickel-generation.png",
+      "fit": {
+        "mode": "contain"
+      }
+    },
+    {
+      "elementId": "hit",
+      "elementType": "text",
+      "bounds": [
+        48,
+        505,
+        340,
+        62
+      ],
+      "content": {
+        "text": "18 / 36",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 43,
+        "color": "#BF7086",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "hit-text",
+      "elementType": "text",
+      "bounds": [
+        48,
+        577,
+        340,
+        62
+      ],
+      "content": {
+        "text": "接受 ITC 测试的设计\n检测到 Ni²⁺ 结合",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "mutation",
+      "elementType": "text",
+      "bounds": [
+        425,
+        505,
+        380,
+        62
+      ],
+      "content": {
+        "text": "17 / 17",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 43,
+        "color": "#258C85",
+        "bold": true,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "mutation-text",
+      "elementType": "text",
+      "bounds": [
+        425,
+        577,
+        380,
+        62
+      ],
+      "content": {
+        "text": "成功表达的 H52A 突变体\n结合消失或显著减弱",
+        "fontFamily": {
+          "latin": "Arial",
+          "ea": "Arial Unicode MS"
+        },
+        "fontSize": 23,
+        "color": "#1C303D",
+        "bold": false,
+        "align": [
+          "left",
+          "top"
+        ],
+        "lineHeight": 1.12
+      }
+    },
+    {
+      "elementId": "validation",
+      "elementType": "image",
+      "bounds": [
+        860,
+        161,
+        354,
+        477
+      ],
+      "src": "media/fig5-nickel-validation.png",
+      "fit": {
+        "mode": "contain"
+      }
+    }
+  ],
+  "allowedOverlaps": []
+}

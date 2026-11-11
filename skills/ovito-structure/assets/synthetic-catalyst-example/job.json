@@ -1,0 +1,74 @@
+{
+  "synthetic": true,
+  "description": "Algorithmically constructed Cu slab with tagged C/O/H display objects; not scientific results.",
+  "prefix": "synthetic-surface",
+  "states": [
+    {
+      "name": "A",
+      "path": "structures/A.extxyz"
+    },
+    {
+      "name": "B",
+      "path": "structures/B.extxyz"
+    },
+    {
+      "name": "C",
+      "path": "structures/C.extxyz"
+    },
+    {
+      "name": "D",
+      "path": "structures/D.extxyz"
+    }
+  ],
+  "adsorbate_tag": 2,
+  "focus_atoms": [
+    64,
+    65,
+    66
+  ],
+  "center_atoms": [
+    64,
+    65,
+    66
+  ],
+  "orient": [
+    64,
+    65
+  ],
+  "request": [
+    [
+      64,
+      65,
+      "break"
+    ],
+    [
+      65,
+      66,
+      "form"
+    ]
+  ],
+  "scene": {
+    "layers": 4,
+    "keep_radius": 14
+  },
+  "style": {
+    "colors": {
+      "Cu": [
+        0.65,
+        0.7,
+        0.75
+      ]
+    }
+  },
+  "camera": {
+    "size": [
+      640,
+      480
+    ],
+    "half_height": 6
+  },
+  "renderer": {
+    "ao_samples": 8,
+    "aa_samples": 2
+  }
+}

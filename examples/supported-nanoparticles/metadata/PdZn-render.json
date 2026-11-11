@@ -1,0 +1,82 @@
+{
+  "metadata_origin": "Selected fields from the existing OVITO scene record; only the coordinate path was normalized for the public example. No new rendering was performed.",
+  "source": {
+    "path": "models/illustrative-PdZn-ZnO.extxyz",
+    "sha256": "caddf1b2098ff354ecdc1e04c4425ffb2a28bd035f6f81dd9528cc9da0c8f008",
+    "model_origin": "constructed_illustration",
+    "not_relaxed": true,
+    "not_paper_coordinates": true
+  },
+  "base_cell": [
+    [
+      50.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      45.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      40.0
+    ]
+  ],
+  "pbc": [
+    false,
+    false,
+    false
+  ],
+  "weighted_composition": {
+    "O": 524.0,
+    "Zn": 652.0,
+    "Pd": 237.0
+  },
+  "render": {
+    "backend": "OVITO Tachyon CPU",
+    "ovito_version": "3.16.0",
+    "camera_pos": [
+      0.0,
+      0.0,
+      11.05462137
+    ],
+    "camera_dir": [
+      0.20391359938401776,
+      -0.9268799972000807,
+      -0.3151391990480275
+    ],
+    "camera_up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "fov": 21.900368302954526,
+    "projection": "orthographic",
+    "quality": "final",
+    "size": [
+      2000,
+      1375
+    ],
+    "render_settings": {
+      "ambient_occlusion": true,
+      "ambient_occlusion_brightness": 0.8,
+      "ambient_occlusion_samples": 40,
+      "antialiasing_samples": 12,
+      "direct_light": true,
+      "direct_light_intensity": 0.65,
+      "shadows": false
+    },
+    "crop": false,
+    "raster_content": "3D ray-traced particles; vector labels must be composed separately",
+    "particle_count": 1413
+  },
+  "display_radii_angstrom_by_element": {
+    "Pd": 1.35,
+    "Cu": 1.35,
+    "Zn": 1.15,
+    "O": 0.85
+  },
+  "render_spec_file": "render-spec.json"
+}

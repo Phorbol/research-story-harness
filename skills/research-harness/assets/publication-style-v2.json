@@ -1,0 +1,79 @@
+{
+  "name": "publication-working-v2",
+  "font_family": "DejaVu Sans",
+  "text_color": "#172936",
+  "roles": {
+    "body": {
+      "size_pt": 7.5,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "title": {
+      "size_pt": 9,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "subtitle": {
+      "size_pt": 8,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "panel": {
+      "size_pt": 9,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "axis": {
+      "size_pt": 7.5,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "tick": {
+      "size_pt": 7,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "legend": {
+      "size_pt": 7.5,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "note": {
+      "size_pt": 7,
+      "weight": "normal",
+      "style": "normal",
+      "color": "#596775"
+    },
+    "annotation": {
+      "size_pt": 7.5,
+      "weight": "normal",
+      "style": "normal"
+    },
+    "identity": {
+      "size_pt": 8,
+      "weight": "bold",
+      "style": "normal"
+    },
+    "variable": {
+      "size_pt": 7.5,
+      "weight": "normal",
+      "style": "italic"
+    }
+  },
+  "notation": {
+    "chemical_formula": "upright symbols; subscripts for stoichiometry",
+    "units": "upright; explicit unit on axes",
+    "variables": "italic via MathText where scientifically appropriate",
+    "emphasis": "Panel letters and selected scientific identities use bold; descriptive headings regular. Mathematical vector bold is separate semantic notation.",
+    "mathtext_fontset": "dejavusans",
+    "descriptive_subscripts": "upright; variable and index subscripts follow meaning"
+  },
+  "provenance": "Working profile from 2026-11-09 current-figure reflows. Not a universal journal requirement; target-specific requirements override sizes. Validate at native mm, never post-export resize to fit.",
+  "size_policy": {
+    "meaning": "pt at final output size",
+    "target_width": "set per purpose and verified venue",
+    "unknown_source_print_size": "declare unknown; show source at explicitly chosen comparison width",
+    "dense_content": "reflow groups/annotations or split panels before reducing fonts",
+    "legacy_compatibility": "opt-in file; original style-profile.json unchanged"
+  }
+}
