@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.pytest_cache/
+# Generated local projects and verification outputs are not source.
+/build/
+/work/
+/installed-skills/
+**/real-data-examples/*/output/
+**/synthetic-catalyst-example/renders/
