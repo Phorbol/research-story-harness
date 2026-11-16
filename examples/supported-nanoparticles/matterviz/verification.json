@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-17",
+  "purpose": "Optional structural inspection, not publication rendering or physical validation",
+  "matterviz_commit": "6d3fbfc9f17581a7a6733dbf6558f190ef83aac6",
+  "svelte_widgets_npm": "1.11.0",
+  "svelte_widgets_gitHead": "29a64aa5cd8e18867fee9b469882b1a0715f8b5a",
+  "node": "26.8.2",
+  "pnpm_effective": "11.5.0",
+  "playwright": "1.65.1",
+  "platform": "macOS 26.6 arm64",
+  "installation": "fresh checkout without node_modules/dist/build-authorization config; download and browser caches reused",
+  "inputs": [
+    {
+      "path": "../models/illustrative-PdCu-ZnO.extxyz",
+      "sha256": "7f4086317606c7846ce394512a06a3a7663902a076b6ae1f29da98a6877b744e",
+      "sites": 1413,
+      "elements": {
+        "O": 524,
+        "Zn": 524,
+        "Cu": 128,
+        "Pd": 237
+      },
+      "tags": {
+        "0": 1048,
+        "1": 365
+      },
+      "pbc": [
+        false,
+        false,
+        false
+      ],
+      "lattice_angstrom": [
+        [
+          50,
+          0,
+          0
+        ],
+        [
+          0,
+          45,
+          0
+        ],
+        [
+          0,
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "path": "../models/illustrative-PdZn-ZnO.extxyz",
+      "sha256": "caddf1b2098ff354ecdc1e04c4425ffb2a28bd035f6f81dd9528cc9da0c8f008",
+      "sites": 1413,
+      "elements": {
+        "O": 524,
+        "Zn": 652,
+        "Pd": 237
+      },
+      "tags": {
+        "0": 1048,
+        "1": 365
+      },
+      "pbc": [
+        false,
+        false,
+        false
+      ],
+      "lattice_angstrom": [
+        [
+          50,
+          0,
+          0
+        ],
+        [
+          0,
+          45,
+          0
+        ],
+        [
+          0,
+          0,
+          40
+        ]
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "path": "previews/baseline-PdZn.png",
+      "width": 1000,
+      "height": 800,
+      "source": "../models/illustrative-PdZn-ZnO.extxyz",
+      "props": "../../../skills/ovito-structure/assets/matterviz-preview.json"
+    },
+    {
+      "path": "previews/baseline-PdCu.png",
+      "width": 1000,
+      "height": 800,
+      "source": "../models/illustrative-PdCu-ZnO.extxyz",
+      "props": "../../../skills/ovito-structure/assets/matterviz-preview.json"
+    },
+    {
+      "path": "previews/inspection-PdZn.png",
+      "width": 1000,
+      "height": 800,
+      "source": "../models/illustrative-PdZn-ZnO.extxyz",
+      "props": "inspection-view.json"
+    },
+    {
+      "path": "previews/inspection-PdCu.png",
+      "width": 1000,
+      "height": 800,
+      "source": "../models/illustrative-PdCu-ZnO.extxyz",
+      "props": "inspection-view.json"
+    }
+  ],
+  "parser_check": {
+    "all_sites_elements_occupancy_coordinates_tags_cell_pbc_match": true,
+    "max_coordinate_difference_angstrom": 0
+  },
+  "interactive_model": "illustrative-PdZn-ZnO.extxyz",
+  "interactive_verified": [
+    "element counts",
+    "site table coordinates and tags",
+    "rotation",
+    "hover coordinates",
+    "property coloring",
+    "hide support by tags"
+  ],
+  "not_verified": [
+    "two-point measurement (browser automation timed out)",
+    "VS Code extension",
+    "mixed occupancy",
+    "periodic images",
+    "editing and export round trip"
+  ],
+  "original_ovito_renders": "Existing reference images, not rerendered in this check"
+}

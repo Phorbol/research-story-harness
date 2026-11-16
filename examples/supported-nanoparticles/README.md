@@ -50,6 +50,8 @@ python scripts/make_preview.py
 
 ## What was checked
 
+For an optional interactive inspection route, see the [MatterViz example](matterviz/README.md): source-preserving previews, default/adjusted framing, a site table and particle/support isolation by tags. It supplements the OVITO output rather than replacing its publication rendering settings.
+
 The existing scene records explicitly identify **OVITO Tachyon CPU**, **OVITO 3.16.0**, final quality, 2000 × 1375 output, 1,413 particles, the shared orthographic camera, and the recorded ambient-occlusion/antialiasing settings. The coordinate hashes match those records; both provided PNGs retain their alpha channel. The packaged metadata are labeled extracts of those original records, with source paths normalized.
 
 This public packaging pass inspected the existing images, metadata, coordinate identity and construction-code syntax. It did **not** rerun model construction or OVITO rendering, and file presence is not presented as a fresh end-to-end test. The lightweight side-by-side composition was executed and viewed. See [PACKAGE-CHECK.json](PACKAGE-CHECK.json).

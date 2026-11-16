@@ -1,0 +1,28 @@
+{
+  "background_color": "#ffffff",
+  "scene_props": {
+    "show_bonds": "never",
+    "show_polyhedra": "never",
+    "show_cell_vectors": false,
+    "cell_edge_opacity": 0,
+    "cell_surface_opacity": 0,
+    "camera_projection": "perspective",
+    "camera_position": [
+      38,
+      -65,
+      37
+    ],
+    "camera_target": [
+      0,
+      0,
+      10
+    ],
+    "camera_up": [
+      0,
+      0,
+      1
+    ],
+    "atom_radius": 0.9,
+    "fov": 45
+  }
+}

@@ -16,12 +16,13 @@
 
 ## 复用官方快照 CLI
 
-已验证入口为 MatterViz **v0.9.0** 的 `src/scripts/snapshot.mjs`，见[固定版本源码](https://github.com/janosh/matterviz/blob/v0.9.0/src/scripts/snapshot.mjs)。它需要独立准备的 MatterViz checkout、Node >=24、该 checkout 的依赖和 Playwright Chromium；依赖安装沿上游说明执行，不加入 RSH 的 Python 默认环境。
+已验证入口为 MatterViz **v0.9.0** 的 `src/scripts/snapshot.mjs`，见[固定版本源码](https://github.com/janosh/matterviz/blob/v0.9.0/src/scripts/snapshot.mjs)。先按[固定依赖安装流程](matterviz-setup.md)准备独立 checkout、Node >=24、依赖和 Playwright Chromium。该版本原来的 Git main 依赖已出现不兼容，不能只固定 MatterViz tag 后直接安装；这些依赖不加入 RSH 的 Python 默认环境。
 
 下面从 RSH 仓库根运行，`MATTERVIZ_ROOT`指向已准备的独立 checkout。两个输入是本包中明确标注的未弛豫理想模型，不是实验结构。
 
 ```bash
 MATTERVIZ_ROOT=/path/to/matterviz
+export PLAYWRIGHT_BROWSERS_PATH="$MATTERVIZ_ROOT/.playwright-browsers"
 node "$MATTERVIZ_ROOT/src/scripts/snapshot.mjs" --help
 node "$MATTERVIZ_ROOT/src/scripts/snapshot.mjs" \
   examples/supported-nanoparticles/models/illustrative-PdZn-ZnO.extxyz \
@@ -35,6 +36,14 @@ node "$MATTERVIZ_ROOT/src/scripts/snapshot.mjs" \
 [预览选项](../assets/matterviz-preview.json)使用白色背景并关闭推断键和配位多面体，便于检查原子几何；需要这些关系时按来源和任务显式开启。该文件是起点，不是出版配色规范。轨迹默认使用第0帧；检查其他状态时显式传 `--frame`并记录选择。CLI 输出目录应是新的，已有同名图片会被拒绝；保留旧结果再选择新目录即可。
 
 无硬件 GPU 的受支持环境可按上游实现使用 `CI=1 node ...`选择软件 WebGPU adapter。本次 Linux smoke 使用该路径；依赖、浏览器或图形后端失败时检查原始错误，不将空白图作为成功。交互窗口、其他操作系统和新的 MatterViz 版本分别核验。
+
+## 把预览变成一次具体检查
+
+先提出本次需要回答的问题，例如“哪些位点属于颗粒，哪些属于载体，界面是否在当前投影中被遮挡”。在位点表中核对元素、坐标和源文件分组，再用属性着色或隐藏分组减少遮挡，从互补方向观察；将发现的问题定位到源位点，而非仅保存漂亮的快照。隐藏显示分组不等于删除原子，自动邻接不等于机理证据。
+
+有限模型即使 PBC 全为 false，也可能带有较大的辅助晶胞；v0.9.0 的自动取景包含晶胞角点。优先调整显示边/面透明度及完整相机规格（方向、up、target、投影、视场），不要为改善构图删除原件的 cell/PBC。仅隐藏盒子也不保证自动取景会收紧。改变显示后重新看真实输出。
+
+仓库中的[纳米颗粒检查案例](../../../examples/supported-nanoparticles/matterviz/README.md)保留默认/调整后图与位点表、tags 隔离截图，并列出已回答的问题和未验证能力。案例相机仅适用于那两个模型，不是通用预设；独立安装此 skill 时，案例仍可从[公开仓库](https://github.com/Phorbol/research-story-harness/tree/main/examples/supported-nanoparticles/matterviz)阅读。
 
 ## 检查实际输出并回到论文图
 
