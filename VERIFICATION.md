@@ -1,8 +1,35 @@
 # Reproducibility and verification
 
-Recorded environment and checks for the distributed examples and runtime, dated 2026-11-11. Use the commands below to verify your own installation.
+Recorded environment and checks for the distributed examples and runtime, dated per section (the original bundle checks are from 2026-11-11). Use the commands below to verify your own installation.
+
+## Optional MatterViz preview (2026-11-16)
+
+The [inspection and snapshot workflow](skills/ovito-structure/references/post-model-visualization.md) was exercised with MatterViz v0.9.0, commit `6d3fbfc9f17581a7a6733dbf6558f190ef83aac6`, Node 24.22.3 and Playwright Chromium on Linux/WSL. It reuses the upstream snapshot CLI; no RSH renderer, default dependency or project schema changed.
+
+- Both bundled `examples/supported-nanoparticles/models/illustrative-Pd{Zn,Cu}-ZnO.extxyz` files were supplied directly, without XYZ conversion or cell/PBC removal. They are unrelaxed illustrative models, not experimental structures.
+- With the bundled `matterviz-preview.json`, `--width 1000 --height 800 --dpi 72` and the upstream `CI=1` software-WebGPU path, the CLI exited successfully and returned **1,413 sites for each input**. Both PNG dimensions were 1000 × 800 and both source SHA-256 digests were unchanged after rendering.
+- Both actual PNGs were viewed: atoms, the supported-particle model and cell were visible, with no inferred bond/polyhedron network. The default view leaves the cell prominent and some sites occluded; this establishes working preview output, not publication-ready framing or visibility of every reaction site. Site-count equality and unchanged input bytes do not validate every detail of the viewer's structural interpretation.
+- The first launch failed because Chromium could not locate `libnspr4.so`. The retry supplied browser shared libraries from an existing environment through a process-local loader path. No system packages or global configuration were changed. This is an existing-environment smoke, not a clean installation or cross-platform test. The upstream Three.js deprecation warning remained non-fatal.
+- The normal RSH installer copied the new entry, reference and props into an isolated destination; their bytes matched the source. Relative links and `git diff --check` passed. The Python runtime was unchanged and the complete Python test suite was not rerun for these documentation/assets additions.
+
+Interactive editing in this checkout, mixed occupancy, periodic-image identity, shared-camera parity, atom-label projections and alternative operating systems remain outside this smoke. The snapshot captures the 3D canvas only; the existing OVITO publication workflow remains in place.
 
 ## Observed results
+
+### MatterViz maintainer rerun and dependency repair (2026-11-17)
+
+The [pinned setup](skills/ovito-structure/references/matterviz-setup.md) and [supported-particle inspection example](examples/supported-nanoparticles/matterviz/README.md) were checked on macOS 26.6 arm64 / Node 26.8.2. These results supplement, rather than replace, the contributor's Linux/WSL record above.
+
+- Unmodified v0.9.0 installation failed: pnpm 11.25.0 and 11.5.0 rejected the Git dependency's prepare step. A local authorization for that dependency revealed a second failure: `svelte-widgets#main` at `412ecfa6e1a5504ad4ecb96d113aa4d839ab7201` lacked exports needed by MatterViz, producing 13 build errors. A separate npm download timeout was resolved and was not treated as an API incompatibility.
+- The compatibility change uses the **npm release** `svelte-widgets@1.11.0` (gitHead `29a64aa5cd8e18867fee9b469882b1a0715f8b5a`) and the bundled dependency lockfile. A fresh checkout with no node_modules, dist or build-authorization configuration completed frozen installation and the full prepare build. Downloads were reused from a package cache; this is a fresh-checkout check on an existing OS, not a pristine-machine or cross-platform certification. The installation was bootstrapped by pnpm 11.25.0, which selected the upstream packageManager's **11.5.0**; the documented command selects 11.5.0 directly.
+- Playwright 1.65.1's Chromium installation entrypoint succeeded using the existing isolated browser cache. The fresh checkout rendered both models with both the original preview props and the example's display-only props: four actual 1000 × 800 PNGs, 1,413 sites each. The Mac run did not require `CI=1`. Non-fatal Node localStorage and Three.js deprecation warnings remained.
+- MatterViz's parser was compared with every source site: elements/occupancy, Cartesian coordinates, tags, cell and all-false PBC matched, with maximum coordinate difference 0 Å. Source SHA-256 digests remained unchanged. This does not extend to mixed occupancy or periodic-image validation.
+- The actual default images leave the auxiliary cell prominent and the interface obscured. The adjusted view makes the supported-particle relationship easier to see but remains an inspection preview, not a publication-quality replacement for OVITO. A first manual-camera attempt inherited a 10° field of view and was severely cropped; the example explicitly supplies 45°. These are example-specific display choices, not scientific defaults.
+- The local v0.9.0 PdZn viewer was exercised for site-table/coordinate reading, rotation, hover coordinates, coloring by tags and hiding the support group. Screenshots are bundled with the example. A two-point measurement attempt timed out in browser automation before a verified result; measurement is not counted as passed. The timeout alone does not identify a MatterViz defect. VS Code installation, editing/export round trips and other structures remain untested.
+
+The original OVITO images are comparison references, not newly rendered outputs in this check. File/skill validation establishes packaging integrity; actual image inspection and interactive observations establish the limited visual/inspection conclusions above.
+
+### Original bundle checks
 
 | Check | Result |
 |---|---|
