@@ -18,6 +18,7 @@ Windows: activate with `.venv\Scripts\activate`. The installer copies all 11 ski
 | Writing state, source metadata and structured review | Python standard library; source retrieval needs network access only when invoked |
 | Figure rendering and portable tests | `requirements.txt`: Matplotlib 3.9.4, ASE 3.26.0, PyMuPDF 1.26.5, PyYAML 6.0.3, with their package dependencies |
 | Actual 3D rendering | `python -m pip install -r requirements-3d.txt` adds OVITO 3.16.0; platform graphics/runtime support is also needed |
+| Optional interactive structure inspection / snapshots | MatterViz in its own environment; tested CLI v0.9.0 requires Node >=24, its checkout dependencies and Playwright Chromium. See [inspection and preview](skills/ovito-structure/references/post-model-visualization.md); it is not installed by the RSH Python requirements |
 | Re-extract condition-map HDF5 sources | `python -m pip install -r requirements-source-data.txt` adds h5py >=3.10; normal example plotting uses included CSVs |
 | Native editable-slide export | The bundled ansatz-slide Python CLI and PyYAML; no separate deck exporter is needed |
 | Slide PDF/PNG visual previews | A supported Office/LibreOffice renderer and the fonts used by the deck; availability depends on the host |

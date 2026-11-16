@@ -1,0 +1,7 @@
+{
+  "background_color": "#ffffff",
+  "scene_props": {
+    "show_bonds": "never",
+    "show_polyhedra": "never"
+  }
+}

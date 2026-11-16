@@ -1,6 +1,18 @@
 # Reproducibility and verification
 
-Recorded environment and checks for the distributed examples and runtime, dated 2026-11-11. Use the commands below to verify your own installation.
+Recorded environment and checks for the distributed examples and runtime, dated per section (the original bundle checks are from 2026-11-11). Use the commands below to verify your own installation.
+
+## Optional MatterViz preview (2026-11-16)
+
+The [inspection and snapshot workflow](skills/ovito-structure/references/post-model-visualization.md) was exercised with MatterViz v0.9.0, commit `6d3fbfc9f17581a7a6733dbf6558f190ef83aac6`, Node 24.22.3 and Playwright Chromium on Linux/WSL. It reuses the upstream snapshot CLI; no RSH renderer, default dependency or project schema changed.
+
+- Both bundled `examples/supported-nanoparticles/models/illustrative-Pd{Zn,Cu}-ZnO.extxyz` files were supplied directly, without XYZ conversion or cell/PBC removal. They are unrelaxed illustrative models, not experimental structures.
+- With the bundled `matterviz-preview.json`, `--width 1000 --height 800 --dpi 72` and the upstream `CI=1` software-WebGPU path, the CLI exited successfully and returned **1,413 sites for each input**. Both PNG dimensions were 1000 × 800 and both source SHA-256 digests were unchanged after rendering.
+- Both actual PNGs were viewed: atoms, the supported-particle model and cell were visible, with no inferred bond/polyhedron network. The default view leaves the cell prominent and some sites occluded; this establishes working preview output, not publication-ready framing or visibility of every reaction site. Site-count equality and unchanged input bytes do not validate every detail of the viewer's structural interpretation.
+- The first launch failed because Chromium could not locate `libnspr4.so`. The retry supplied browser shared libraries from an existing environment through a process-local loader path. No system packages or global configuration were changed. This is an existing-environment smoke, not a clean installation or cross-platform test. The upstream Three.js deprecation warning remained non-fatal.
+- The normal RSH installer copied the new entry, reference and props into an isolated destination; their bytes matched the source. Relative links and `git diff --check` passed. The Python runtime was unchanged and the complete Python test suite was not rerun for these documentation/assets additions.
+
+Interactive editing in this checkout, mixed occupancy, periodic-image identity, shared-camera parity, atom-label projections and alternative operating systems remain outside this smoke. The snapshot captures the 3D canvas only; the existing OVITO publication workflow remains in place.
 
 ## Observed results
 
