@@ -11,7 +11,7 @@
 [![License: Apache-2.0](https://img.shields.io/badge/Code%20%26%20docs-Apache--2.0-blue)](LICENSE)
 [第三方代码与素材许可](THIRD_PARTY_NOTICES.md)
 
-[看成图](#成图展厅) · [理解设计](#设计理念) · [开始使用](#开始使用) · [完整设计文档](design/HARNESS-DESIGN.md) · [Agent / Harness 方法论长文](design/AGENT-HARNESS-METHODOLOGY.zh-CN.md) · [许可与归属](THIRD_PARTY_NOTICES.md)
+[**在线成品展厅**](https://research-story-harness-gallery.inwardchart4.chatgpt.site) · [看成图](#成图展厅) · [理解设计](#设计理念) · [开始使用](#开始使用) · [完整设计文档](design/HARNESS-DESIGN.md) · [Agent / Harness 方法论长文](design/AGENT-HARNESS-METHODOLOGY.zh-CN.md) · [许可与归属](THIRD_PARTY_NOTICES.md)
 
 </div>
 
@@ -22,6 +22,8 @@
 **代码与文档采用 [Apache-2.0](LICENSE)。** 仓库包含 12 个 skills、绘图与汇报工具、模板和可运行示例。第三方代码、论文图像和数据按[各自许可](THIRD_PARTY_NOTICES.md)使用；其中反应能量示例的论文来源素材限非商业使用。
 
 ## 成图展厅
+
+**[打开可直接分享的网站](https://research-story-harness-gallery.inwardchart4.chatgpt.site)**：纳米颗粒材质前后对照、小分子封面与手机缩略图、RFdiffusion 完整汇报预览。支持桌面与手机；[网页源码与重建方法](docs/SHOWCASE.md)。
 
 下面的示例提供成图、来源、可编辑文件和重建入口。网页预览随屏幕缩放；按刊载尺寸查看请打开对应 PDF。
 
@@ -95,7 +97,7 @@
 
 <p align="center"><img src="examples/structure-covers/covers/caffeine-square.jpg" width="360" alt="咖啡因方形封面，完整分子结构在上方、标题在下方"></p>
 
-**[看完整展厅与大图](docs/structure-covers.md)** · [下载、来源与可运行代码](examples/structure-covers/) · [轻量 skill](skills/structure-cover/SKILL.md)
+**[在线展厅与大图](https://research-story-harness-gallery.inwardchart4.chatgpt.site#material)** · [GitHub 图文版](docs/structure-covers.md) · [下载、来源与可运行代码](examples/structure-covers/) · [轻量 skill](skills/structure-cover/SKILL.md)
 
 ```bash
 # 快速重排：使用随包无损结构渲染，输出JPEG/PNG、可编辑文字SVG和缩略图

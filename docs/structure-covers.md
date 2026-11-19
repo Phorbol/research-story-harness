@@ -1,5 +1,7 @@
 # 结构封面展厅：从原子模型到传播视觉
 
+**[打开独立展示网站](https://research-story-harness-gallery.inwardchart4.chatgpt.site)** · [网站源码与构建](SHOWCASE.md)
+
 [返回项目首页](../README.md) · [运行与编辑](../examples/structure-covers/README.md) · [静态 HTML 源文件](structure-covers.html)
 
 这组图来自实际 OVITO／Blender 制作和修改。下列成图使用 Blender Cycles；材质与构图选择来自看图后的自评，不是传播效果实验。
