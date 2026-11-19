@@ -83,18 +83,29 @@
 
 [透明原图、坐标、构造源码、相机和光照配置](examples/supported-nanoparticles/) · [独立 OVITO skill](skills/ovito-structure/SKILL.md)
 
-### 独立结构封面：OVITO 与 Blender
+### 独立结构封面：实际 Blender 材质与构图迭代
 
-只需要博文封面或分子美图时，可直接使用 [structure-cover](skills/structure-cover/SKILL.md)，无需初始化整篇论文项目。它包含共享坐标场景、两种真实渲染后端、可调材质与灯光配方，以及居中、双对象和方形组版入口。Blender 输出可编辑 `.blend`；封面输出 PNG/JPEG、文字可编辑 SVG 和手机缩略图。
+![相同纳米颗粒的材质修改：原版、金属高反射与缎面金属](examples/structure-covers/previews/material-comparison.jpg)
+
+**同一结构，三种实际渲染。** 左侧是偏塑料感的旧版，中间强化金属反射但高光偏碎，右侧提高粗糙度并调整矩形灯光，平衡金属感与小图清晰度。1413个原子的坐标、显示半径和相机均保持不变；这些是显示材质，不是材料光学参数或显微照片。
+
+![不同封面构图的320px手机缩略图对照](examples/structure-covers/previews/mobile-wide.jpg)
+
+小分子不再统一采用左文右图：居中特写突出单对象，并置适合比较两个独立对象，方形封面单独重排。它们服务不同的文章任务，不宣称某种布局总是更好或已提升点击率。
+
+<p align="center"><img src="examples/structure-covers/covers/caffeine-square.jpg" width="360" alt="咖啡因方形封面，完整分子结构在上方、标题在下方"></p>
+
+**[看完整展厅与大图](docs/structure-covers.md)** · [下载、来源与可运行代码](examples/structure-covers/) · [轻量 skill](skills/structure-cover/SKILL.md)
 
 ```bash
-# 已安装 Blender 时，用随包咖啡因示意构象实际渲染
-blender --background --python skills/structure-cover/scripts/render_blender.py -- \
-  skills/structure-cover/assets/caffeine-scene.json caffeine.png \
-  skills/structure-cover/assets/molecule-editorial.json
+# 快速重排：使用随包无损结构渲染，输出JPEG/PNG、可编辑文字SVG和缩略图
+python -m pip install -r examples/structure-covers/requirements.txt
+python examples/structure-covers/run.py --out build/covers
+# 从结构重新渲染，同时生成可编辑 .blend
+python examples/structure-covers/run.py --out build/covers-full --blender /path/to/blender
 ```
 
-示例是有明确化学拓扑的生成构象，不是实验坐标；原子球、连接杆与材质是显示表示，不计算光学性质。材质和构图仍需按使用尺寸看图选择，脚本不会自动判定美观。字体路径、依赖与更多组合方式见 [skill 说明](skills/structure-cover/SKILL.md)。
+纳米颗粒是已公开的 ASE 理想未弛豫模型；咖啡因和阿司匹林是有明确拓扑的生成构象，均非实验坐标。原始来源、完整坐标、材质与灯光配方、不同布局及字体配置均有[编辑入口](examples/structure-covers/README.md)。未包含内部论文材料。
 
 ### 07 · 完整汇报：从复杂论文到听众能跟随的讲述
 

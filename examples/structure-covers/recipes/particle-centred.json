@@ -1,0 +1,56 @@
+{
+  "size": [
+    2400,
+    1024
+  ],
+  "background": [
+    [
+      7,
+      13,
+      22
+    ],
+    [
+      30,
+      41,
+      51
+    ]
+  ],
+  "font_path": "FONT_CJK",
+  "font_family": "Hiragino Sans GB, Noto Sans CJK SC, sans-serif",
+  "subjects": [
+    {
+      "image": "../renders/satin-metal.webp",
+      "box": [
+        450,
+        185,
+        1500,
+        800
+      ]
+    }
+  ],
+  "text": [
+    {
+      "value": "纳米，另一种尺度",
+      "position": [
+        1200,
+        60
+      ],
+      "size": 112,
+      "color": "#F0ECE3",
+      "anchor": "mt"
+    },
+    {
+      "value": "Pd–Cu / ZnO  ·  理想结构示意",
+      "position": [
+        1200,
+        965
+      ],
+      "size": 25,
+      "color": "#9AACB7",
+      "anchor": "mt"
+    }
+  ],
+  "thumbnail_widths": [
+    320
+  ]
+}

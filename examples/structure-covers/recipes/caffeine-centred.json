@@ -1,0 +1,78 @@
+{
+  "size": [
+    2400,
+    1024
+  ],
+  "background": [
+    [
+      229,
+      226,
+      216
+    ],
+    [
+      250,
+      248,
+      239
+    ]
+  ],
+  "font_path": "FONT_CJK",
+  "font_family": "Hiragino Sans GB, Noto Sans CJK SC, sans-serif",
+  "subjects": [
+    {
+      "image": "../renders/caffeine.webp",
+      "box": [
+        550,
+        220,
+        1300,
+        720
+      ]
+    }
+  ],
+  "text": [
+    {
+      "value": "清醒的形状",
+      "position": [
+        1200,
+        65
+      ],
+      "size": 128,
+      "color": "#203645",
+      "anchor": "mt"
+    },
+    {
+      "value": "CAFFEINE",
+      "position": [
+        140,
+        850
+      ],
+      "size": 34,
+      "color": "#203645",
+      "anchor": "lt"
+    },
+    {
+      "value": "C₈H₁₀N₄O₂",
+      "position": [
+        2150,
+        850
+      ],
+      "size": 40,
+      "color": "#203645",
+      "anchor": "rt",
+      "font_path": "FONT_LATIN",
+      "font_family": "DejaVu Sans"
+    },
+    {
+      "value": "生成构象 · 非实验坐标",
+      "position": [
+        2150,
+        925
+      ],
+      "size": 25,
+      "color": "#687D85",
+      "anchor": "rt"
+    }
+  ],
+  "thumbnail_widths": [
+    320
+  ]
+}

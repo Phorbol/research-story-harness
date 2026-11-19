@@ -66,3 +66,7 @@ Three auditor scripts under `skills/research-harness/scripts/vendor/nature_figur
 ## Structure-cover example and runtime tools
 
 The caffeine JSON is an illustrative conformer generated from an explicit molecular graph using RDKit ETKDGv3 and MMFF, not third-party experimental coordinates. The package does not redistribute Blender, OVITO, RDKit or fonts. Those runtime tools and host fonts retain their own terms. Display materials are art-directed settings, not measured optical constants.
+
+### Generated structure-cover showcase assets
+
+`examples/structure-covers/` contains first-party generated renders and compositions, shared-model coordinate JSON, molecular topology and rendering/layout recipes. These generated assets use the repository Apache-2.0 license. The nanoparticle derives from the existing idealized ASE example (not a paper structure); caffeine/aspirin are generated conformers rather than experimental coordinates. No third-party paper figure, private manuscript, font binary or renderer installation is included. Molecular bond-order topology is retained in MOL/JSON, while rendered rods encode connectivity only.

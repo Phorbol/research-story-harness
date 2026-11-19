@@ -1,6 +1,6 @@
 # Repository contents
 
-Research Story Harness combines eleven optional skills with local writing, figure and presentation tools. Install only the dependencies needed for your workflow; see [DEPENDENCIES.md](DEPENDENCIES.md).
+Research Story Harness combines twelve optional skills with local writing, figure and presentation tools. Install only the dependencies needed for your workflow; see [DEPENDENCIES.md](DEPENDENCIES.md).
 
 | Directory | Contents |
 |---|---|

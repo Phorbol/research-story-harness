@@ -1,0 +1,68 @@
+{
+  "size": [
+    1080,
+    1080
+  ],
+  "background": [
+    [
+      12,
+      25,
+      38
+    ],
+    [
+      36,
+      58,
+      72
+    ]
+  ],
+  "font_path": "FONT_CJK",
+  "font_family": "Hiragino Sans GB, Noto Sans CJK SC, sans-serif",
+  "subjects": [
+    {
+      "image": "../renders/caffeine.webp",
+      "box": [
+        70,
+        60,
+        940,
+        720
+      ]
+    }
+  ],
+  "text": [
+    {
+      "value": "一颗分子的日常",
+      "position": [
+        540,
+        835
+      ],
+      "size": 70,
+      "color": "#F1EEE7",
+      "anchor": "mt"
+    },
+    {
+      "value": "CAFFEINE  /  C₈H₁₀N₄O₂",
+      "position": [
+        540,
+        945
+      ],
+      "size": 27,
+      "color": "#A9C1CE",
+      "anchor": "mt",
+      "font_path": "FONT_LATIN",
+      "font_family": "DejaVu Sans"
+    },
+    {
+      "value": "生成构象 · 非实验坐标",
+      "position": [
+        540,
+        1010
+      ],
+      "size": 20,
+      "color": "#90A6AF",
+      "anchor": "mt"
+    }
+  ],
+  "thumbnail_widths": [
+    320
+  ]
+}
