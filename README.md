@@ -218,32 +218,91 @@ python install_skills.py --dest ./installed-skills
 
 也可以不安装，直接让支持读取本地指引的 agent 访问 `skills/<name>/SKILL.md`。本仓库不是后台自动运行服务。
 
-### 3. 从意图启动
+### 3. 给论文或数据，选择一个起点
 
-> 阅读这篇论文与我的研究材料。我目前只怀疑平均误差不足以说明模型适用于研究任务。先区分材料支持什么、我希望表达什么，提出叙事候选；选定后制作 TOC、Fig1 和关键数据图，按目标尺寸反读它们是否仍在讲同一个故事。保留真实数据与缺口。
+将下面一段交给能读取本仓库的 agent，并替换方括号中的内容。无需先写完整图纲；不知道主线时也可以直接说“还不确定想表达什么”。**这些是交给 agent 的任务提示，不是终端命令。** 本仓库提供方法、状态与渲染工具，不包含自动理解任意 PDF 的一键服务。
 
-> 把这篇论文做成完整可编辑汇报。听众理解基础计算化学，但不熟悉这个方法。按听众需要重组讲述顺序，说明方法为何必要、证据如何支持结论及结论在哪里停止，并交付 PPTX、可编辑源和实际渲染后的审阅记录。
+**我有一篇论文：** 提供可访问的全文 PDF 或公开链接；若希望重绘定量图，同时提供或允许检索补充材料、Source Data。只有论文图片时，不能默认拥有原始数值。
 
-### 4. 直接运行一个真实数据例子
-
-```bash
-python skills/research-harness/assets/real-data-examples/condition-map/run.py --out ./build/condition-map
-python skills/research-harness/assets/real-data-examples/reaction-energy/run.py --out ./build/reaction-energy
+```text
+请从本仓库读取 skills/research-harness/SKILL.md 和
+skills/scientific-figure/SKILL.md，按需读取它们链接的说明。
+论文：[PDF 路径或公开链接]；补充数据：[路径/链接，或请检索]。
+我的模糊想法：[一句判断；也可以写“请帮我找主线”]。
+读者：[学科背景]；用途：[论文/文献解读/投稿草稿]。
+先区分论文事实、我的推测和材料缺口，提出两种叙事，
+再选择有证据支持的一种；关键歧义再问我。
+制作 TOC、Fig1 概览和一张真实数据图，分别明确读者任务。
+目标尺寸：TOC 80×40 mm；Fig1 178×100 mm；数据图178×120 mm。
+这些是本次工作尺寸，不是期刊官方要求；不得扩大后缩小交差。
+保持科学对象、条件和对照，不把全部内容变成普通流程框。
+保留第一份完整成图及之后的每轮实质修改，按实际尺寸看图。
+交付 PDF、SVG/可编辑源、PNG、正常图注、来源映射和重建命令。
+缺失原始数据时先报告缺口；不得用合成数值冒充论文结果。
 ```
 
-两例都能从随包数据重建 PNG / PDF / SVG。反应能量例默认使用已渲染结构资产；换坐标需要重新渲染结构并更新原子映射。
+**我有一组数据：** 提供 CSV/XLSX/H5 等文件，尽量说明列名、单位、样本/重复、分组、对照与缺失值。并非每份数据都适合强行做 TOC 和方法图；没有方法信息时应先补充，而非编造研究过程。
 
-初始化新研究项目：
+```text
+请从本仓库读取 research-harness 与 scientific-figure 的 SKILL.md。
+数据：[路径]；每行代表：[样本/时间点/计算状态等]。
+单位、重复、对照和缺失值定义：[已知信息，未知请标明]。
+我想弄清：[问题或模糊观察]；目标读者：[背景]。
+先检查数据结构与证据范围，提出能支持判断的图件方案。
+不要预设图型；区分连续数值热图、类别矩阵和普通表格。
+在确定的目标尺寸内制作真实数据图，给出可追溯的数据处理。
+若方法材料足够，再设计 Fig1 与 TOC，并分别验收。
+保留首稿、修改原因和可编辑源；不把相关性画成因果。
+```
+
+默认先做可修订图稿；期刊规范、投稿用途或尺寸有明确要求时，以用户提供并核实的要求替换示例值。科学主张、视觉完成度和程序检查分别评估。提示词本身不保证任意模型一次达到展厅的效果。
+
+**我需要完整汇报或结构封面：**
+
+- 汇报：读取 `skills/ansatz-slide/SKILL.md`，提供论文、听众背景、汇报时长与希望听众记住的判断；要求完整 PPTX、讲稿、可编辑源与逐页实际渲染审阅。不要直接照搬论文章节顺序。
+- 结构封面：读取 `skills/structure-cover/SKILL.md`，提供真实坐标、封面尺寸和用途；无坐标时先说明缺口，构造理想模型须明确授权并标注。Blender/OVITO 的材质、灯光和相机效果主要由配方参数决定，不靠一句外观提示稳定复现。
+
+### 4. 先重建一套公开成品，确认环境与编辑入口
+
+以下都是**终端命令**，在仓库根目录、上述虚拟环境中运行。它们重建已定义的案例，不会自动把你的新数据套入这些论文的结论。
+
+```bash
+# 同一故事的 TOC、Fig1 与数据图；输出 PDF / SVG / PNG
+python examples/collateral-response/scripts/rebuild.py TOC --out "$PWD/build/collateral"
+python examples/collateral-response/scripts/rebuild.py Fig1 --out "$PWD/build/collateral"
+python examples/collateral-response/scripts/rebuild.py Evidence --out "$PWD/build/collateral"
+
+# 从作者公开数据重建计算催化条件地图
+python skills/research-harness/assets/real-data-examples/condition-map/run.py --out build/condition-map
+
+# 快速重排结构封面；完整重新渲染另加 --blender /path/to/blender
+python examples/structure-covers/run.py --out build/covers
+```
+
+| 想改什么 | 编辑入口 |
+|---|---|
+| 三图的数据、对象、布局和字体 | [示例说明](examples/collateral-response/README.md)、[样式配置](examples/collateral-response/style-profile.json)、[真实数据](examples/collateral-response/data/) |
+| 条件地图的刻度、图例、条件和源数组 | [运行与数据定义](skills/research-harness/assets/real-data-examples/condition-map/README.md)、[config.json](skills/research-harness/assets/real-data-examples/condition-map/config.json) |
+| 纳米颗粒/小分子的材质、灯光与封面布局 | [结构与配方](examples/structure-covers/README.md) |
+| 完整科研汇报 | [RFdiffusion 的 PPTX、讲稿、页面源与重建命令](examples/rfdiffusion/README.md) |
+
+[在线展厅](https://research-story-harness-gallery.inwardchart4.chatgpt.site/#science)展示实际成品和真实修改前后；[提示示例](https://research-story-harness-gallery.inwardchart4.chatgpt.site/#prompts)可直接复制。重建成功只确认运行链路，不等于新论文设计已达标。
+
+### 5. 新材料的项目与交付
+
+让 agent 根据材料组织项目；需要本仓库的状态和渲染接口时，可先初始化空项目：
 
 ```bash
 python skills/research-harness/scripts/research.py init ./my-study
 cd my-study
-# 填写来源、问题、数据与图件规格后执行
+# agent 登记来源、主张、数据、对象与图件规格后，再执行：
 python scripts/research.py check research.json
 python scripts/research.py render research.json --out build
 ```
 
-仅为了解接口，可在另一空目录使用 `init --demo`；其数据明确为合成示例，不能当作科学结果。
+`init` 不是“论文转图片”命令；刚初始化的项目没有你的科学内容。复杂图允许在案例内编写可审阅的绘图代码，不要求全部套内置模板。只想了解接口时可在另一空目录使用 `init --demo`，其合成数据不得用于真实结果。
+
+完成时至少应拿到：**实际尺寸成图、可编辑源和重建命令、源数据与图注、首稿及返工记录、明确的剩余问题**。SVG 里嵌入的位图不等于逐对象可编辑；图看得懂、没有碰撞或检查通过，也不自动等于发表级质量。
 
 ## 12 个协作 skills
 

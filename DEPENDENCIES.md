@@ -11,7 +11,7 @@ python -m pip install -r requirements.txt
 python install_skills.py --dest ./installed-skills
 ```
 
-Windows: activate with `.venv\Scripts\activate`. The installer copies all 11 skills and their resources; it does not install Python dependencies and refuses to overwrite existing skills. Omit `--dest` to use `CODEX_HOME/skills`, or `~/.codex/skills` when CODEX_HOME is unset.
+Windows: activate with `.venv\Scripts\activate`. The installer copies all 12 skills and their resources; it does not install Python dependencies and refuses to overwrite existing skills. Omit `--dest` to use `CODEX_HOME/skills`, or `~/.codex/skills` when CODEX_HOME is unset.
 
 | Workflow | Dependencies |
 |---|---|
