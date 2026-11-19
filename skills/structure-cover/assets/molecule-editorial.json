@@ -1,0 +1,44 @@
+{
+  "name": "molecule-editorial",
+  "world_strength": 0.25,
+  "default_material": {
+    "metallic": 0,
+    "roughness": 0.4,
+    "specular": 0.2
+  },
+  "materials": {},
+  "lights": [
+    {
+      "name": "broad strip reflection",
+      "position": [
+        -26,
+        24,
+        33
+      ],
+      "power": 40000,
+      "size": 38,
+      "size_y": 9,
+      "color": [
+        0.91,
+        0.95,
+        1
+      ]
+    },
+    {
+      "name": "edge strip",
+      "position": [
+        30,
+        15,
+        -12
+      ],
+      "power": 17000,
+      "size": 9,
+      "size_y": 32,
+      "color": [
+        1,
+        0.9,
+        0.75
+      ]
+    }
+  ]
+}

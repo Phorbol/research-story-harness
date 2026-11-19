@@ -77,3 +77,9 @@ Observed environment: Python 3.12.14, Matplotlib 3.9.4, NumPy 2.5.4, ASE 3.26.0,
 ASE/NumPy and Matplotlib/pyparsing emitted deprecation warnings without failing the tests. These were not suppressed by changing test assertions. h5py was not installed in this environment; HDF5 re-extraction was not repeated, while the condition-map plot used the already included CSVs. Actual OVITO image rendering and Office visual preview are separate workflow checks; the portable surface tests exercise read-only identity and display preparation.
 
 The one-page native slide smoke proves export and editable package structure, not presentation quality. Real demonstration figures/decks in the showcase have their own sources and viewing scope. 
+
+## Incremental release — 2026-11-19
+
+The main-branch publication was assembled on top of the already merged MatterViz workflow; that integration was not reverted or replayed. The new structure-cover renderer/material and multi-object composition scripts were exercised on the existing idealized nanoparticle and two generated molecular conformers before packaging. This is local production evidence, not an independent aesthetic benchmark. Runtime installers and private paper materials are not part of the update.
+
+Release checks: five `test_visual_review.py` unittest cases passed; install_skills.py copied all12 skills into an empty destination; the structure-cover skill validator and git diff --check passed. A real export_audit.py run on the existing collateral-response Fig1 produced text/collision reports and an overlay, with visual_acceptance=not_evaluated. At the chosen7pt probe threshold the text report flagged23 runs (minimum4.55pt), and collision extraction reported60 candidates. These are unresolved tool findings requiring visual interpretation, not a clean export or a publication-quality claim; the old figure was not modified in this code release.

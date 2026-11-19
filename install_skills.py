@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Install only the eleven bundled skills, refusing to overwrite existing skills."""
+"""Install only the twelve bundled skills, refusing to overwrite existing skills."""
 import argparse
 import os
 import shutil
 from pathlib import Path
 
-NAMES = ('academic-writing', 'argument-architect', 'context-pack-builder', 'manuscript-auditor', 'manuscript-editor', 'paper-dissector', 'source-harvester', 'scientific-figure', 'research-harness', 'ovito-structure', 'ansatz-slide')
+NAMES = ('academic-writing', 'argument-architect', 'context-pack-builder', 'manuscript-auditor', 'manuscript-editor', 'paper-dissector', 'source-harvester', 'scientific-figure', 'research-harness', 'ovito-structure', 'ansatz-slide', 'structure-cover')
 
 
 def install(destination):

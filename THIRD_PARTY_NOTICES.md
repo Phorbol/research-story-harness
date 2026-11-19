@@ -58,3 +58,11 @@ The example covers a bounded local path/transition-state comparison; unresolved 
 ## Runtime dependency licenses
 
 Matplotlib, NumPy, ASE, OVITO, PyMuPDF, PyYAML, Pillow and optional h5py are installed separately. The optional [MatterViz](https://github.com/janosh/matterviz) workflow also installs MatterViz, svelte-widgets and Playwright separately under their own licenses. The bundled MatterViz lockfile records dependency resolution, not vendored package distributions. MatterViz previews and viewer screenshots in the supported-nanoparticle example were generated from this repository's illustrative models; viewer UI is attributable to MatterViz and svelte-widgets. Their own licenses, distribution requirements and platform availability apply. This repository does not replace their terms. Install only the dependencies needed for the selected workflow; see the root requirements files and individual example documentation.
+
+## Optional nature-figure export auditors
+
+Three auditor scripts under `skills/research-harness/scripts/vendor/nature_figure/` originate from [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills), commit `14ca69710cae192325395a380e9cdd4ae5d9d0c8`, under Apache-2.0. The upstream license, source locator and local rectangular-clip patch explanation are retained in that directory. No upstream workflow instructions are adopted by implication.
+
+## Structure-cover example and runtime tools
+
+The caffeine JSON is an illustrative conformer generated from an explicit molecular graph using RDKit ETKDGv3 and MMFF, not third-party experimental coordinates. The package does not redistribute Blender, OVITO, RDKit or fonts. Those runtime tools and host fonts retain their own terms. Display materials are art-directed settings, not measured optical constants.

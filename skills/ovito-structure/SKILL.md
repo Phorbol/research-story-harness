@@ -56,3 +56,5 @@ python3 <skill>/scripts/structure_render.py actual.cif render-spec.json --out fi
 与 `$scientific-figure` 配合决定图的论证职责；与 `$research-harness` 配合执行源绑定、TOC 组版、文字审计与连续修改。本 skill 自身可单独使用，不要求新建整篇论文。
 
 反应小分子被大球/高光或基底遮住时，可从[催化表面渲染](references/catalyst-surfaces.md)的低高光可选片段起步；它只在Cu上的C/H/O近景有案例证据，不是所有材料的默认风格。
+
+仅需博文封面或独立分子/材料美图时，可用 [structure-cover](../structure-cover/SKILL.md) 的轻量渲染与封面组版，不必启动整套论文 harness；周期结构和占据率仍先在本 skill 准备。

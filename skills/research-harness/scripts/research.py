@@ -39,12 +39,88 @@ def resolve(root, relative):
     return path
 
 
-def visual_review_consistency(record, root):
+def delivery_target_errors(target):
+    """Validate declared scope, not the truth or quality of its interpretation."""
+    if not isinstance(target, dict):
+        return ["delivery_target must be an object"]
+    errors = []
+    for field in ("id", "user_request"):
+        if not isinstance(target.get(field), str) or not target[field].strip():
+            errors.append("delivery_target needs " + field)
+    if target.get("representation") not in {"reference_reconstruction", "redesign", "abstract_schematic"}:
+        errors.append("delivery_target needs an explicit representation")
+    paths = target.get("reference_paths")
+    if not isinstance(paths, list) or any(not isinstance(p, str) or not p.strip() for p in paths):
+        errors.append("delivery_target reference_paths must be a list of paths")
+    elif target.get("representation") == "reference_reconstruction" and not paths:
+        errors.append("Reference reconstruction needs identified references")
+    acceptance = target.get("acceptance")
+    if not isinstance(acceptance, dict) or not acceptance or any(
+            not isinstance(k, str) or not k.strip() or not isinstance(v, str) or not v.strip()
+            for k, v in acceptance.items()):
+        errors.append("delivery_target acceptance must map task IDs to required expression tasks")
+    return errors
+
+
+def review_issue_errors(issues, passed, label):
+    """Use one issue vocabulary for local fixes and visual review observations."""
+    if not isinstance(issues, list):
+        return [label + " must be a list"]
+    errors = []
+    for item in issues:
+        if not isinstance(item, dict) or item.get("impact") not in {"blocking", "nonblocking"} or item.get("state") not in {"open", "resolved"}:
+            errors.append(label + " issues require impact and state")
+        elif passed and item["impact"] == "blocking" and item["state"] == "open":
+            errors.append(label + " still has open blocking issue: " + str(item.get("id", "unnamed")))
+    return errors
+
+
+def delivery_review_consistency(record, root, target):
+    if target is None or record.get("category") == "scientific":
+        return []
+    errors = delivery_target_errors(target)
+    if errors:
+        return errors
+    if record.get("delivery_target") != target:
+        errors.append("Review must quote the current delivery_target unchanged")
+    if record.get("category") != "publication":
+        return errors  # A specialist pass is not overall delivery acceptance.
+    overall = record.get("overall_delivery")
+    if not isinstance(overall, dict) or overall.get("status") not in {"passed", "partial", "blocked", "failed", "not_reviewed"}:
+        return errors + ["Review needs separate overall_delivery status"]
+    errors.extend(review_issue_errors(record.get("issue_resolution"),
+                                     record.get("status") == "passed" or overall.get("status") == "passed",
+                                     "issue_resolution"))
+    if record.get("status") == "passed":
+        if overall.get("status") != "passed":
+            errors.append("Local issue resolution cannot pass an unaccepted overall delivery")
+        if overall.get("representation") != target["representation"]:
+            errors.append("Passed delivery changed the requested representation scope")
+        tasks = overall.get("acceptance", {})
+        if not isinstance(tasks, dict) or set(tasks) != set(target["acceptance"]):
+            errors.append("Overall delivery must assess every original acceptance task")
+        else:
+            for key, item in tasks.items():
+                if not isinstance(item, dict) or item.get("status") != "met" or not isinstance(item.get("observation"), str) or not item["observation"].strip():
+                    errors.append("Passed delivery needs observed met acceptance task: " + key)
+        if record.get("visual_gate") is None:
+            errors.append("Passed target delivery needs an actual visual review")
+        for path in target["reference_paths"]:
+            try:
+                if not resolve(root, path).is_file():
+                    errors.append("Delivery reference missing: " + path)
+            except ValueError as exc:
+                errors.append(str(exc))
+    return errors
+
+
+def visual_review_consistency(record, root, target=None):
     """Reject contradictory optional visual records, never infer visual quality."""
+    target_errors = delivery_review_consistency(record, root, target)
     gate = record.get("visual_gate")
     if gate is None:
-        return []  # Legacy records do not claim the new review protocol.
-    errors = []
+        return target_errors  # Legacy compatibility applies only without a target.
+    errors = target_errors
     if not isinstance(gate, dict) or gate.get("version") != 1:
         return ["visual_gate must be a version 1 object"]
     dimensions = gate.get("dimensions", {})
@@ -56,14 +132,7 @@ def visual_review_consistency(record, root):
             errors.append("Invalid visual dimension: " + name)
         elif record.get("status") == "passed" and (item["status"] != "ready" or not isinstance(item.get("observation"), str) or not item["observation"].strip()):
             errors.append("Passed visual review requires observed ready dimension: " + name)
-    issues = gate.get("issues", [])
-    if not isinstance(issues, list):
-        return errors + ["visual_gate issues must be a list"]
-    for item in issues:
-        if not isinstance(item, dict) or item.get("impact") not in {"blocking", "nonblocking"} or item.get("state") not in {"open", "resolved"}:
-            errors.append("Visual issues require impact and state")
-        elif record.get("status") == "passed" and item["impact"] == "blocking" and item["state"] == "open":
-            errors.append("Passed visual review still has open blocking issue: " + str(item.get("id", "unnamed")))
+    errors.extend(review_issue_errors(gate.get("issues", []), record.get("status") == "passed", "visual_gate"))
     if record.get("status") == "passed":
         view = gate.get("viewing", {})
         if not isinstance(view, dict) or view.get("inspected") is not True or not isinstance(view.get("context"), str) or not view["context"].strip():
@@ -112,6 +181,13 @@ def signature(project, root):
             if item.get("path"):
                 path = resolve(root, item["path"])
                 files[item["path"]] = digest(path.read_bytes()) if path.is_file() else None
+    target = project.get("delivery_target")
+    if isinstance(target, dict) and isinstance(target.get("reference_paths"), list):
+        for relative in target["reference_paths"]:
+            if not isinstance(relative, str) or not relative.strip():
+                continue  # Schema failure remains in validate; do not traverse invalid entries.
+            path = resolve(root, relative)
+            files[relative] = digest(path.read_bytes()) if path.is_file() else None
     for field in ("journal_profile","style_profile","story_plan"):
         if project.get(field):
             profile = resolve(root, project[field])
@@ -334,12 +410,17 @@ def validate(project, root, export=None):
             require(pointer(project, guard["pointer"]) == guard["value"], "preserved_requirement", guard["pointer"])
         except (KeyError, IndexError, TypeError):
             add("preserved_requirement", "failed", guard["pointer"])
+    if "delivery_target" in project:
+        target_errors = delivery_target_errors(project["delivery_target"])
+        require(not target_errors, "delivery_target", "; ".join(target_errors) or "Declared delivery scope is explicit; quality requires independent review")
     sig = signature(project, root)
     for category in sorted(REVIEWS):
         records = [r for r in project.get("reviews", []) if r.get("category") == category and r.get("signature") == sig]
         if records:
             review = records[-1]
             status = review.get("status", "unknown")
+            if status in {"partial", "blocked"}:
+                status = "unknown"
             if status not in STATUSES:
                 status = "failed"
             if category == "reader" and not review.get("independent"):
@@ -347,7 +428,7 @@ def validate(project, root, export=None):
             record_path = resolve(root, review.get("record_path", ""))
             if not record_path.is_file() or digest(record_path.read_bytes()) != review.get("record_digest"):
                 status = "unknown"
-            if visual_review_consistency(review, root):
+            if visual_review_consistency(review, root, project.get("delivery_target")):
                 status = "failed"
             add("manual:" + category, status, "Recorded assessment (not an automatic proof): " + review.get("record_path", ""))
         else:
@@ -618,10 +699,25 @@ def argument_map(project):
     return "\n".join(lines)
 
 
-def init_project(destination, demo=False):
+def init_project(destination, demo=False, delivery_target_path=None):
     destination = Path(destination)
     if destination.exists() and any(destination.iterdir()):
         raise ValueError("Initialize an empty directory; existing project is not overwritten")
+    target = None
+    target_references = []
+    if delivery_target_path is not None:
+        target_path = Path(delivery_target_path).resolve()
+        target = read_json(target_path)
+        errors = delivery_target_errors(target)
+        if errors:
+            raise ValueError("Invalid delivery target: " + "; ".join(errors))
+        for index, reference in enumerate(target["reference_paths"]):
+            source = (target_path.parent / reference).resolve()
+            if not source.is_file():
+                raise ValueError("Delivery reference missing: " + str(source))
+            target_references.append((source, "references/%02d-%s" % (index + 1, source.name)))
+        target = copy.deepcopy(target)
+        target["reference_paths"] = [relative for _, relative in target_references]
     base = Path(__file__).resolve().parent.parent
     if not (base / "assets" / "blank.json").exists():
         raise ValueError("Initialization must run from installed skill, not copied project runtime")
@@ -644,6 +740,13 @@ def init_project(destination, demo=False):
         shutil.copy2(base / "assets" / name, destination / name)
     shutil.copy2(base / "assets" / ("demo.json" if demo else "blank.json"), destination / "research.json")
     initial=read_json(destination/'research.json');initial['story_plan']='story.json';write_json(destination/'research.json',initial)
+    if target is not None:
+        for source, relative in target_references:
+            output = destination / relative
+            output.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, output)
+        initial['delivery_target'] = target
+        write_json(destination/'research.json', initial)
     if demo:
         shutil.copytree(base / "assets" / "demo-data", destination / "data")
         shutil.copytree(base / "assets" / "demo-manuscript", destination / "manuscript")
@@ -659,6 +762,7 @@ def main(argv=None):
     init = subs.add_parser("init")
     init.add_argument("destination")
     init.add_argument("--demo", action="store_true")
+    init.add_argument("--delivery-target", type=Path, help="Predeclared target JSON; reference paths resolve relative to that file and are copied into the project")
     for name in ("check", "render", "map", "revise", "record-review"):
         p = subs.add_parser(name)
         p.add_argument("spec")
@@ -673,7 +777,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     try:
         if args.command == "init":
-            init_project(args.destination, args.demo)
+            init_project(args.destination, args.demo, args.delivery_target)
             print("Initialized: " + args.destination)
             return 0
         spec_path = Path(args.spec).resolve()
@@ -687,13 +791,13 @@ def main(argv=None):
             report = revise(spec_path, read_json(args.record))
         elif args.command == "record-review":
             record = read_json(args.record)
-            if record.get("category") not in REVIEWS or record.get("status") not in STATUSES:
+            if record.get("category") not in REVIEWS or record.get("status") not in STATUSES | {"partial", "blocked"}:
                 raise ValueError("Invalid review category/status")
             if not record.get("reviewer") or not record.get("record_path"):
                 raise ValueError("Review needs reviewer and a project-relative record_path")
             if not resolve(root, record["record_path"]).is_file():
                 raise ValueError("Review record must exist")
-            contradictions = visual_review_consistency(record, root)
+            contradictions = visual_review_consistency(record, root, project.get("delivery_target"))
             if contradictions:
                 raise ValueError("; ".join(contradictions))
             record["signature"] = signature(project, root)

@@ -1,0 +1,84 @@
+{
+  "size": [
+    2400,
+    1024
+  ],
+  "background": [
+    [
+      236,
+      231,
+      222
+    ],
+    [
+      251,
+      249,
+      243
+    ]
+  ],
+  "font_path": "/System/Library/Fonts/Hiragino Sans GB.ttc",
+  "font_family": "Hiragino Sans GB, Noto Sans CJK SC, sans-serif",
+  "subjects": [
+    {
+      "box": [
+        100,
+        255,
+        1010,
+        650
+      ]
+    },
+    {
+      "image": "aspirin.png",
+      "box": [
+        1290,
+        255,
+        1010,
+        650
+      ]
+    }
+  ],
+  "text": [
+    {
+      "value": "日常里的两种分子",
+      "position": [
+        1200,
+        60
+      ],
+      "size": 112,
+      "color": "#203645",
+      "anchor": "mt"
+    },
+    {
+      "value": "咖啡因  /  CAFFEINE",
+      "position": [
+        600,
+        930
+      ],
+      "size": 36,
+      "color": "#203645",
+      "anchor": "mt"
+    },
+    {
+      "value": "阿司匹林  /  ASPIRIN",
+      "position": [
+        1800,
+        930
+      ],
+      "size": 36,
+      "color": "#203645",
+      "anchor": "mt"
+    },
+    {
+      "value": "独立示意构象，不表示反应或相互作用",
+      "position": [
+        1200,
+        195
+      ],
+      "size": 27,
+      "color": "#667A80",
+      "anchor": "mt"
+    }
+  ],
+  "thumbnail_widths": [
+    320
+  ]
+}

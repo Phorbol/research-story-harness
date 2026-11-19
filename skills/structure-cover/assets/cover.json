@@ -1,0 +1,76 @@
+{
+  "size": [
+    2400,
+    1024
+  ],
+  "background": [
+    [
+      9,
+      19,
+      30
+    ],
+    [
+      25,
+      53,
+      69
+    ]
+  ],
+  "subject_box": [
+    1040,
+    50,
+    1310,
+    925
+  ],
+  "font_path": "/System/Library/Fonts/Hiragino Sans GB.ttc",
+  "font_family": "Hiragino Sans GB, Noto Sans CJK SC, sans-serif",
+  "thumbnail_widths": [
+    320
+  ],
+  "text": [
+    {
+      "value": "ATOMIC PERSPECTIVES",
+      "position": [
+        112,
+        160
+      ],
+      "size": 30,
+      "color": "#D4AA72"
+    },
+    {
+      "value": "材料之美",
+      "position": [
+        106,
+        300
+      ],
+      "size": 112,
+      "color": "#F2F3F0"
+    },
+    {
+      "value": "从原子开始",
+      "position": [
+        106,
+        460
+      ],
+      "size": 112,
+      "color": "#F2F3F0"
+    },
+    {
+      "value": "Pd–Cu / ZnO",
+      "position": [
+        112,
+        770
+      ],
+      "size": 38,
+      "color": "#F2F3F0"
+    },
+    {
+      "value": "理想结构示意",
+      "position": [
+        112,
+        930
+      ],
+      "size": 25,
+      "color": "#879BA5"
+    }
+  ]
+}

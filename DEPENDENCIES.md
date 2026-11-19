@@ -50,3 +50,9 @@ python skills/ansatz-slide/scripts/ansatz_slide.py inspect path/to/deck.pptx
 The slide `pyproject.toml`/`uv.lock` describe its standalone uv environment (`package = false`); they are not a promise that `pip install -e skills/ansatz-slide` registers a global CLI. Use the bundled script path shown above.
 
 Dependencies retain their upstream licensing terms. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Local verification used an existing environment, not a fresh installation on every supported platform; exact observed versions and limits are in [VERIFICATION.md](VERIFICATION.md).
+
+## Optional cover rendering and export auditors
+
+`structure-cover` uses ASE, NumPy and Pillow for finite-object scene preparation and composition; OVITO is required only for its OVITO backend. The Blender backend runs inside Blender's bundled Python (tested with Blender 4.5.0); it does not need a separately installed `bpy` package. The supplied caffeine scene is already prepared; RDKit 2025.9.1 was used to generate that illustrative conformer but is not required to render it. Fonts are host resources: adapt the sample paths and inspect chemical subscripts.
+
+The optional final-export auditors use PyMuPDF; rectangular-clip extraction was exercised with 1.26.5. Vendored code and limitations are listed in THIRD_PARTY_NOTICES.md.

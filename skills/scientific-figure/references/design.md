@@ -14,6 +14,14 @@
 
 每项记录 `value / origin (measured|observed|inferred|unknown) / locator / confidence`。PDF 字号路径可测量不等于轴标题语义已知；转曲、栅格化、裁剪与透明混合限制可恢复程度。只见位图不能承诺精确字体和原始矢量结构。
 
+### Make the reference analysis an actual production input
+
+For a task-matched reference, bind the existing six layers to visible regions: which scientific object supports which reader judgment, using shape, adjacency, shared scale, repeated identity or arrows? Distinguish overview, physical evidence, quantitative transformation and conditional policy. Keep observed visual facts separate from interpretations of their role. Hand this existing-field record and the original image to production; do not compile every scientific noun/verb into a uniform workflow node.
+
+Boxes are appropriate for operations and decisions, not a mandatory representation for the whole figure. Preserve specific molecular transformations, spatial apparatus and measurement-to-criterion objects. Cross-region dependencies can use repeated identity, adjacency or overview-to-detail mapping; drawing every dependency as a page-spanning wire can make the same logic harder to read. In mixed apparatus/data diagrams, route a feedback edge from the object that actually carries its information: a model update from a measured-data object, liquid transfer from a vessel port, and instrument control from a controller. Distinguish those relation types visually; a convenient geometric attachment can imply the wrong scientific relation. When feedback labels are crowded, recover space from lower-priority explanation and reserve a local return lane before increasing type size; review the resulting whole page rather than treating a font threshold as acceptance. When a redesign is tidier but more abstract, locate where an object that performed a reader task became prose before changing colours or generating more layouts.
+
+Keep a suggested implementation separate from the original delivery target. A method overview can visibly end with extraction/reporting; a quantitative result panel is needed only when its reader task requires that evidence. Do not promote a reviewer's optional panel suggestion into a new acceptance requirement. If a coordinator supplies source dissection, record this content assistance; a simultaneous model/host change does not identify the cause of any improvement.
+
 ### 把明确选定的原图区域变成素材
 
 整页解析仍用 `scripts/reference_intake.py paper.pdf --pages 3 --out inspection`。已有目标区域时用同一入口的 `--regions regions.json --out assets`；JSON是列表，例如：
@@ -34,6 +42,8 @@
 
 ## 修改与读图
 
-纯呈现修改检查标签、绑定与可读性；轴、归一化、裁剪、透明度、相机、排序等影响解释，重查公平比较和可见性；数据/分析修改追踪所有下游。
+先判断改动是否改变了图的职责。对大幅改稿，沿用上文已有的读者任务、证据角色与对象字段，把原图与拟替换部分放在同一目标尺寸看：原来能追踪的条件、选择、返回和终点，在新图哪里可见？将具体丢失项绑定到当前输出；不能仅凭新素材有真实来源，就把替换记为纯美化。方法图中的一次测量曲线可以解释数据如何进入决策，而一张最终结果曲线通常不能代替决策过程；是否保留由用户的图件任务决定，不设统一禁用图型。
+
+外部自由绘图脚本同样需要这次对照。现有 `revise` 对已登记字段的变更分类，无法检查绕过项目状态的任意 Python 输出；必须对实际成图记录职责是否保持。若构图困难导致关键关系被结果展示取代，先重做同职责的表达，再比较美观，而不是把这种变化降格为字号/配色修正。纯呈现修改检查标签、绑定与可读性；轴、归一化、裁剪、透明度、相机、排序等影响解释，重查公平比较和可见性；数据/分析修改追踪所有下游。
 
 科学核验读取源数据与规格。盲读只给最终图与目标上下文，问：对象/条件是什么、差异多大、误差是什么、箭头是什么、支持和不支持哪些结论。记录读者实际回答、身份/工具、是否独立及版本。无人进行盲读时结果是未知，不是自动通过。

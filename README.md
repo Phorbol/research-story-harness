@@ -6,7 +6,7 @@
 
 **Intent → Argument → Visual narrative → Figures · Manuscript · Slides**
 
-11 个协作 skills · 可运行绘图后端 · 真实数据范例 · 可追溯来源 · 实际尺寸审阅
+12 个协作 skills · 可运行绘图后端 · 真实数据范例 · 可追溯来源 · 实际尺寸审阅
 
 [![License: Apache-2.0](https://img.shields.io/badge/Code%20%26%20docs-Apache--2.0-blue)](LICENSE)
 [第三方代码与素材许可](THIRD_PARTY_NOTICES.md)
@@ -19,7 +19,7 @@
 
 科研绘图的起点往往不是“画一张什么图”，而是一个尚未讲清的研究判断。这个项目把材料、作者意图、主张、证据和科学对象连接起来，再为 TOC、论文图、正文与汇报分别组织表达。你可以从一篇论文、一个数据集或一段零散想法开始，借助 agent 梳理论证，再用本地工具制作和修改成品。
 
-**代码与文档采用 [Apache-2.0](LICENSE)。** 仓库包含 11 个 skills、绘图与汇报工具、模板和可运行示例。第三方代码、论文图像和数据按[各自许可](THIRD_PARTY_NOTICES.md)使用；其中反应能量示例的论文来源素材限非商业使用。
+**代码与文档采用 [Apache-2.0](LICENSE)。** 仓库包含 12 个 skills、绘图与汇报工具、模板和可运行示例。第三方代码、论文图像和数据按[各自许可](THIRD_PARTY_NOTICES.md)使用；其中反应能量示例的论文来源素材限非商业使用。
 
 ## 成图展厅
 
@@ -82,6 +82,19 @@
 **这是 ASE 构造的未弛豫理想示意模型，不是论文坐标或实测结构。** 每个模型含 1,413 个原子；构造参数和界面间距是本例示意选择。透明成图为 2000 × 1375，采用 OVITO 3.16.0 / Tachyon 渲染。你可以修改坐标、相机和显示配置后重新渲染。
 
 [透明原图、坐标、构造源码、相机和光照配置](examples/supported-nanoparticles/) · [独立 OVITO skill](skills/ovito-structure/SKILL.md)
+
+### 独立结构封面：OVITO 与 Blender
+
+只需要博文封面或分子美图时，可直接使用 [structure-cover](skills/structure-cover/SKILL.md)，无需初始化整篇论文项目。它包含共享坐标场景、两种真实渲染后端、可调材质与灯光配方，以及居中、双对象和方形组版入口。Blender 输出可编辑 `.blend`；封面输出 PNG/JPEG、文字可编辑 SVG 和手机缩略图。
+
+```bash
+# 已安装 Blender 时，用随包咖啡因示意构象实际渲染
+blender --background --python skills/structure-cover/scripts/render_blender.py -- \
+  skills/structure-cover/assets/caffeine-scene.json caffeine.png \
+  skills/structure-cover/assets/molecule-editorial.json
+```
+
+示例是有明确化学拓扑的生成构象，不是实验坐标；原子球、连接杆与材质是显示表示，不计算光学性质。材质和构图仍需按使用尺寸看图选择，脚本不会自动判定美观。字体路径、依赖与更多组合方式见 [skill 说明](skills/structure-cover/SKILL.md)。
 
 ### 07 · 完整汇报：从复杂论文到听众能跟随的讲述
 
@@ -219,7 +232,7 @@ python scripts/research.py render research.json --out build
 
 仅为了解接口，可在另一空目录使用 `init --demo`；其数据明确为合成示例，不能当作科学结果。
 
-## 11 个协作 skills
+## 12 个协作 skills
 
 | Skill | 职责 |
 |---|---|
@@ -234,6 +247,7 @@ python scripts/research.py render research.json --out build
 | [research-harness](skills/research-harness/SKILL.md) | 项目状态、渲染、定向修改与检查 |
 | [ovito-structure](skills/ovito-structure/SKILL.md) | 原子、晶体、表面与颗粒渲染 |
 | [ansatz-slide](skills/ansatz-slide/SKILL.md) | 从论文到完整可编辑学术汇报 |
+| [structure-cover](skills/structure-cover/SKILL.md) | 保留分子/材料结构，制作 OVITO／Blender 封面与缩略图 |
 
 按任务使用相应入口，不要求每次全套执行。Slide 实现基于 [ansatzX/ansatz-slides](https://github.com/ansatzX/ansatz-slides) 的固定 MIT 版本；本项目增加共享科研故事与汇报组织方法，保留上游归属和修改记录。
 
@@ -252,4 +266,4 @@ python scripts/research.py render research.json --out build
 
 ---
 
-**English summary.** Research Story Harness connects research intent, evidence, argument and scientific objects to editable figures, manuscripts and presentations. It packages eleven cooperating skills, executable rendering tools, reusable components and source-backed examples. Figure design starts from the reader's task; a talk reorganizes the same evidence for an audience rather than copying paper order. Use the examples to inspect the output, run the code, and adapt the editable sources to your own materials. Original code and documentation are licensed under Apache-2.0. Third-party code, paper figures and data retain their own licenses; the optional reaction-energy paper assets are CC BY-NC 3.0.
+**English summary.** Research Story Harness connects research intent, evidence, argument and scientific objects to editable figures, manuscripts and presentations. It packages twelve cooperating skills, executable rendering tools, reusable components and source-backed examples. Figure design starts from the reader's task; a talk reorganizes the same evidence for an audience rather than copying paper order. Use the examples to inspect the output, run the code, and adapt the editable sources to your own materials. Original code and documentation are licensed under Apache-2.0. Third-party code, paper figures and data retain their own licenses; the optional reaction-energy paper assets are CC BY-NC 3.0.

@@ -21,6 +21,8 @@ description: 为科研论文写作与绘图建立或维护可执行本地项目�
 
 用户直接给一篇论文要求汇报时，使用 ansatz-slide 的[论文入口](../ansatz-slide/reference/paper-to-deck.md)。由代理读取全文与关键图表、建立最小共享故事和来源定位，再制作整套汇报；不要求用户预先建立科研项目或逐页提纲。
 
+正式交付或参考质量验收时，用[交付目标契约](references/delivery-target.md)区分用户结果、制作表示与整体验收；局部问题关闭不能代替原目标完成。
+
 用户指出“像demo、普通流程图、远不如原版”时，先读[用户反馈到制作动作](references/feedback-to-practice.md)，回到具体成图的失败层；该说明也覆盖完整汇报与TOC/Fig1的职责区分。
 
 ## 建立项目
@@ -29,6 +31,8 @@ description: 为科研论文写作与绘图建立或维护可执行本地项目�
 
 ```bash
 python3 <skill>/scripts/research.py init <project>
+# 正式交付目标由发起端先固定，再交给制作代理
+python3 <skill>/scripts/research.py init <project> --delivery-target <target.json>
 # 仅教学与验收：显式合成数据，不能混入真实研究
 python3 <skill>/scripts/research.py init <project> --demo
 ```
@@ -59,7 +63,7 @@ python3 scripts/research.py check research.json --export build
 
 ## 按需阅读
 
-- [首稿视觉决策与严格盲评](references/first-draft-and-blind-review.md)：复杂论文的TOC/Fig1/完整汇报先作主次取舍和不同构图；独立试验保留首次完整稿，并把实质返工与首交质量分开。
+- [首稿视觉决策与严格盲评](references/first-draft-and-blind-review.md)：复杂概览先用真实对象制作原尺寸试片并比较读者路径，不以主题空框完成构图；提供 composition_probe.py 对照工具。独立试验保留首次完整稿和全部返工。
 - [原生尺寸迁移的实际修正](references/native-size-transfer.md)：小字、公式层级、注释方向，以及主图与源任务重建分开验收的实际成图经验和边界。
 - [真实数据与编辑入口范例](references/real-data-examples.md)：随包复制的条件地图、离散能量与真实TS；数据、代码、样式配置和来源俱全，区别可运行与视觉通过。
 - [项目契约与命令](references/contract.md)：字段、四个关联结构、数据格式、修改类型及边界。
@@ -79,3 +83,5 @@ python3 scripts/research.py check research.json --export build
 `assets/narrative-examples/index.json` 提供可编辑的流程、机理和结构示意模板。公共包泛化了项目名，并使用明确生成的定性景观资产；这些模板用于表达方式学习，不携带原用户研究结果，也不声明复现或普遍期刊规范。
 
 复杂化学/能量/结构图及论文到汇报的实际制作，读[成图制作循环](references/visual-production-cycle.md)，使用源状态组件并检查最终导出。用户要求独立迁移验收时读[冻结与独立迁移](references/independent-transfer.md)，保留自主首交与外部辅助的区别。
+
+最终 PDF 出现小字、碰撞或多面板错位时，使用[最终导出检查](references/export-audit.md)及 `scripts/export_audit.py` 定位；保存首次完整稿后再修正，检查通过不等于视觉验收。
