@@ -1,6 +1,7 @@
 """Build the public static gallery using only assets already in this repository."""
 import argparse
 import shutil
+import re
 from pathlib import Path
 from PIL import Image
 
@@ -42,6 +43,16 @@ def build(out):
     sheet=Image.open(covers/'previews/material-comparison.jpg')
     for i in range(3):
         sheet.crop((i*sheet.width//3,0,(i+1)*sheet.width//3,sheet.height)).save(assets/f'material-{i+1}.jpg',quality=95)
+    # Reserve image space before download so deep links and mobile reading do not jump.
+    page=out/'index.html'
+    def dimensions(match):
+        tag=match.group(0)
+        src=re.search(r'src="(assets/[^"]+)"',tag)
+        if not src or re.search(r'\bwidth=',tag):
+            return tag
+        with Image.open(out/src.group(1)) as im:
+            return tag[:-1]+f' width="{im.width}" height="{im.height}">'
+    page.write_text(re.sub(r'<img\b[^>]*>',dimensions,page.read_text()))
     print(f'Built gallery with {len(images)+3} public images: {out}')
 
 if __name__=='__main__':
