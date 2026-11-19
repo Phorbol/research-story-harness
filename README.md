@@ -23,7 +23,7 @@
 
 ## 成图展厅
 
-**[打开可直接分享的网站](https://research-story-harness-gallery.inwardchart4.chatgpt.site)**：纳米颗粒材质前后对照、小分子封面与手机缩略图、RFdiffusion 完整汇报预览。支持桌面与手机；[网页源码与重建方法](docs/SHOWCASE.md)。
+**[打开可直接分享的网站](https://research-story-harness-gallery.inwardchart4.chatgpt.site)**：TOC、Fig1、真实数据图的故事与历史前后对照，以及纳米颗粒、小分子封面和 RFdiffusion 汇报。支持桌面与手机；[网页源码与重建方法](docs/SHOWCASE.md)。
 
 下面的示例提供成图、来源、可编辑文件和重建入口。网页预览随屏幕缩放；按刊载尺寸查看请打开对应 PDF。
 

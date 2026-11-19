@@ -26,6 +26,9 @@ def build(out):
         'toc.webp': ROOT/'docs/images/toc-before-after.png',
         'ovito.webp': ROOT/'docs/images/supported-nanoparticles.png',
     }
+    images.update({f'science-{n.lower()}.webp':ROOT/f'examples/collateral-response/figures/{n}.png' for n in ['TOC','Fig1','Evidence']})
+    images.update({f'{n}-before.webp':ROOT/f'docs/images/revisions/{n}-before.webp' for n in ['toc','fig1','evidence','condition']})
+    images['science-condition.webp']=ROOT/'docs/images/condition-map.png'
     images.update({f'slide-{i:02d}.webp':ROOT/f'examples/rfdiffusion/slides/{i:02d}.png' for i in range(1,21)})
     for name, src in images.items():
         if name.endswith('.webp'):
